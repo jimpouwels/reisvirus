@@ -1,0 +1,1 @@
+<img src="{$image_url}" width="{$width}px" height="{$height}px" style="{if $align eq 'center'}display: block; margin-left: auto; margin-right: auto;{elseif $align eq 'right'}float: right;{/if}" />
