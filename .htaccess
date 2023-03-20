@@ -1,0 +1,6 @@
+RewriteEngine on
+RewriteCond %{REQUEST_URI} !^/index(.*)
+RewriteCond %{REQUEST_URI} !^/static(.*)
+RewriteCond %{REQUEST_URI} !^/upload(.*)
+RewriteCond %{REQUEST_URI} !^/admin(.*)
+RewriteRule ^.*$ index.php [NC,L]
