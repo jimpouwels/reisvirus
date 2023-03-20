@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl_NL" lang="nl_NL">
 	<head>
-		<title>🌴 J&Q Travel</title>
+		<title>🌴 J&Q Travel - {$page_title}</title>
         <meta name="keywords" content="J&Q Travel, JQ Travel, Jim Pouwels, Quirine de Loyer, Jim, Quirine, reizen, travel, rondreis, zelf organiseren" />
 	    <meta name="description" content="{$page.description}" />
 	    <meta name="Subject" content="J&Q Travel" />
