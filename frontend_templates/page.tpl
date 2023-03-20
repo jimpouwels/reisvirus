@@ -2,6 +2,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl_NL" lang="nl_NL">
 	<head>
 		<title>🌴 J&Q Travel</title>
+        <meta name="keywords" content="J&Q Travel, JQ Travel, Jim Pouwels, Quirine de Loyer, Jim, Quirine, reizen, travel, rondreis, zelf organiseren" />
+	    <meta name="description" content="{$page.description}" />
+	    <meta name="Subject" content="J&Q Travel" />
+	    <meta name="robots" content="index,follow" />
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
         <link rel="stylesheet" href="/static/css/styles.css">        

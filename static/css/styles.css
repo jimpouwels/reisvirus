@@ -174,7 +174,7 @@ h3 {
 .blogpost .title {
     font-size: 1.5em;
     margin-bottom: 0px;
-    margin-top: 0px;
+    margin-top: 5px;
     text-align: center;
 }
 
@@ -191,6 +191,7 @@ h3 {
 .blogpost .date {
     font-size: 0.8em;
     margin: 0px;
+    margin-top: 3px;
     text-align: center;
 }
 
@@ -226,16 +227,8 @@ h3 {
 
 .photo-album {
     margin: auto;
-    width: 930px;
     overflow: auto;
 }
-
-/* .photo-album-content {
-    margin: auto;
-    display: inline-block;
-    overflow: auto;
-    width: 930px;
-} */
 
 .photo-album-img {
     float: left;
