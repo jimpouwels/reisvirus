@@ -34,7 +34,7 @@
             </div>
             <div id="banner-wrapper">
                 <div id="banner">
-                    <div class="jarallax" data-jarallax data-video-src="https://www.youtube.com/watch?v=_5MuWHILuTg">
+                    <div class="jarallax" data-jarallax data-video-src="https://www.youtube.com/watch?v=RTqhONnPsR8">
                         <div id="title-wrapper">
                             {$page.blocks.quote[0]}
                         </div>
@@ -55,7 +55,34 @@
                 {/if}
             </div>
             <div id="footer">
-                <p>&copy; J&Q Travel {$smarty.now|date_format:"%Y"}</p>
+                <div id="footer-content">
+                    <div id="contact-panes">
+                        <div class="contact">
+                            <p>Jim Pouwels</p>
+                            <div class="social-media">
+                                <a href="https://www.instagram.com/jim_pouwels" title="@jimpouwels" target="_blank"><img src="/static/img/instagram.png" /></a>
+                                <a href="https://www.facebook.com/jimpouwels" title="Jim Pouwels" target="_blank"><img src="/static/img/facebook.png" /></a>
+                                <a href="https://twitter.com/JimPouwels" title="Jim Pouwels" target="_blank"><img src="/static/img/twitter.png" /></a>
+                                <a href="https://www.youtube.com/channel/UCWa7rOdjk3tOg9fwbPLxwpw" title="Jim Pouwels" target="_blank"><img src="/static/img/youtube.png" /></a>
+                                <a href="https://nl.linkedin.com/in/jim-pouwels-37923310" title="Jim Pouwels" target="_blank"><img class="last" src="/static/img/linkedin.png" /></a>
+                            </div>
+                        </div>
+                        <div class="contact">
+                            <p>J&Q Travel</p>
+                            <div class="social-media">
+                                <img src="/static/img/instagram.png" />
+                            </div>
+                        </div>
+                        <div class="contact">
+                            <p>Quirine de Loyer</p>
+                            <div class="social-media">
+                                <a href="https://www.instagram.com/quirinedeloyer" title="@qurinedeloyer" target="_blank"><img src="/static/img/instagram.png" /></a>
+                                <a href="https://www.facebook.com/quirine.deloyer" title="Quirine de Loyer" target="_blank"><img class="last" src="/static/img/facebook.png" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <p id="copyright"><a href="mailto:info@jqtravel.nl" title="info@jqtravel.nl">&copy; J&Q Travel 2023-{$smarty.now|date_format:"%Y"}</a></p>
+                </div>
             </div>
 		</div>
 	</body>

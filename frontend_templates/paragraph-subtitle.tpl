@@ -1,0 +1,1 @@
+<p class="paragraph-justified">{if $title}<strong>{$title}</strong><br />{/if}{$text}</p>
