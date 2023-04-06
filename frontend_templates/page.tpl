@@ -22,10 +22,10 @@
                     </div>
                     <div id="header-menu">
                         <ul>
-                            <li {if $root_page.is_current_page}class="selected"{/if}><a href="{$root_page.url}"><strong>{$root_page.title}</strong></a></li>
+                            <li {if $root_page.is_current_page}class="selected"{/if}><a href="{$root_page.url}">{$root_page.title}</a></li>
                             {foreach from=$root_page.children item=navigation_item}
                                 {if $navigation_item.show_in_navigation}
-                                    <li {if $navigation_item.is_current_page}class="selected"{/if}><a href="{$navigation_item.url}"><strong>{$navigation_item.title}</strong></a></li>
+                                    <li {if $navigation_item.is_current_page}class="selected"{/if}><a href="{$navigation_item.url}">{$navigation_item.title}</a></li>
                                 {/if}
                             {/foreach}
                         </ul>

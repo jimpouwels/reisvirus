@@ -65,6 +65,7 @@ h3 {
 #header-menu li.selected a {
     color: #087136;
     padding-bottom: 3px;
+    font-weight: bold;
     border-bottom: 3px solid #087136;
 }
 
@@ -299,4 +300,10 @@ h3 {
 }
 .photo-album-subtitle p {
     margin-top: -16px;
+}
+
+.anchor {
+    display: block;
+    top: -100px;
+    position: relative;
 }
