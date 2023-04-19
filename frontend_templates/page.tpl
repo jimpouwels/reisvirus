@@ -12,6 +12,9 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
         <script src="/static/js/jarallax.min.js" type="text/javascript"></script>
         <script src="/static/js/jarallax.video.min.js" type="text/javascript"></script>
+        {if $is_mobile_device}
+            <script src="/static/js/mobile_scripts.js" type="text/javascript"></script>
+        {/if}
 	</head>
 	<body>
 		<div id="content-wrapper">
@@ -20,6 +23,9 @@
                     <div id="header-title">
                         <a href="{$root_page.url}"><img src="/static/img/logo.png" height="55px"></a>
                     </div>
+                    {if $is_mobile_device}
+                        <div id="mobile-menu"><a href="#" onclick="showMenu(); return false;"><img src="/static/img/hamburger_menu.svg" /></a></div>
+                    {/if}
                     <div id="header-menu">
                         <ul>
                             <li {if $root_page.is_current_page}class="selected"{/if}><a href="{$root_page.url}">{$root_page.title}</a></li>
@@ -32,15 +38,17 @@
                     </div>
                 </div>
             </div>
-            <div id="banner-wrapper">
-                <div id="banner">
-                    <div class="jarallax" data-jarallax data-video-src="https://www.youtube.com/watch?v=RTqhONnPsR8">
-                        <div id="title-wrapper">
-                            {$page.blocks.quote[0]}
+            {if !$is_mobile_device}
+                <div id="banner-wrapper">
+                    <div id="banner">
+                        <div class="jarallax" data-jarallax data-video-src="https://www.youtube.com/watch?v=RTqhONnPsR8">
+                            <div id="title-wrapper">
+                                {$page.blocks.quote[0]}
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            {/if}
             <div id="page-content">
                 <div id="title-small">{$page_title}</div>
                 {if $article}
