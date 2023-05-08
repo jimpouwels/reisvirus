@@ -8,7 +8,7 @@
 	    <meta name="robots" content="index,follow" />
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-        <link rel="stylesheet" href="/static/css/styles.css">        
+        <link rel="stylesheet" href="/static/css/styles.css?id=1234">        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
         <script src="/static/js/jarallax.min.js" type="text/javascript"></script>
         <script src="/static/js/jarallax.video.min.js" type="text/javascript"></script>

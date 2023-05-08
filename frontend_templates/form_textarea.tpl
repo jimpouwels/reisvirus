@@ -1,1 +1,2 @@
-TextArea-Frontend
+<label for="{$name}">{$label}</label>
+<textarea name="{$name}"></textarea>

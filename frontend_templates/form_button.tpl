@@ -1,1 +1,1 @@
-Button-Frontend
+<button type="submit">{$label}</button>

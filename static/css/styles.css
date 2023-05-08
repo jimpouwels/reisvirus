@@ -3,6 +3,38 @@
     src: url(/static/fonts/Violante-eZoYg.ttf);
 }
 
+.contact-form-field {
+    overflow: auto;
+    clear: both;
+    margin-bottom: 15px;
+}
+
+.contact-form-field label {
+    float: left;
+    min-width: 200px;
+}
+
+.contact-form-field textarea {
+    width: 450px;
+    height: 250px;
+}
+
+.contact-form-field button {
+    background-color: #087136;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.contact-form-field button:hover {
+    background-color: #054922;
+    cursor: pointer;
+}
+
 html, body {
     margin: 0px;
     width: 100%;

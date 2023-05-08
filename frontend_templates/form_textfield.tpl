@@ -1,1 +1,2 @@
-TextField-Frontend
+<label for="{$name}">{$label}</label>
+<input type="text" name="{$name}" />
