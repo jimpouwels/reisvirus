@@ -3,6 +3,20 @@
     src: url(/static/fonts/Violante-eZoYg.ttf);
 }
 
+.error-field {
+    border: 1px solid red;
+}
+
+.form-error {
+    color: red;
+}
+
+.contact-form-container {
+    width: 670px;
+    margin: auto;
+    overflow: auto;
+}
+
 .contact-form-field {
     overflow: auto;
     clear: both;
@@ -14,8 +28,12 @@
     min-width: 200px;
 }
 
+.contact-form-field input {
+    min-width: 260px;
+}
+
 .contact-form-field textarea {
-    width: 450px;
+    width: 464px;
     height: 250px;
 }
 
@@ -28,6 +46,7 @@
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
+    float: right;
 }
 
 .contact-form-field button:hover {
