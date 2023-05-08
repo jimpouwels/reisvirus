@@ -3,6 +3,10 @@
     src: url(/static/fonts/Violante-eZoYg.ttf);
 }
 
+.mandatory-star {
+    color: red;
+}
+
 .error-field {
     border: 1px solid red;
 }
