@@ -50,7 +50,7 @@
                 </div>
             {/if}
             <div id="page-content">
-                <div id="title-small">{$page_title}</div>
+                <div id="title-small"><p>{$page_title}</p></div>
                 {if $article}
                     <p><a href="{$page.url}" title="Terug">&lt; Terug</a></p>
                     {foreach from=$article.elements item=element}
