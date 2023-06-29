@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl_NL" lang="nl_NL">
 	<head>
-		<title>🌴 J&Q Travel - {$page_title}</title>
+		<title>🌴 J&amp;Q Travel - {$page_title}</title>
         <meta name="keywords" content="J&Q Travel, JQ Travel, Jim Pouwels, Quirine de Loyer, Jim, Quirine, reizen, travel, rondreis, zelf organiseren" />
 	    <meta name="description" content="{$page.description}" />
 	    <meta name="Subject" content="J&Q Travel" />
@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="/static/css/styles.css?id=1234">        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
         <script src="/static/js/jarallax.min.js" type="text/javascript"></script>
+        <script src="/static/js/functions.js" type="text/javascript"></script>
         <script src="/static/js/jarallax.video.min.js" type="text/javascript"></script>
         {if $is_mobile_device}
             <script src="/static/js/mobile_scripts.js" type="text/javascript"></script>
@@ -56,6 +57,30 @@
                     {foreach from=$article.elements item=element}
                         {$element}
                     {/foreach}
+                    <div id="article-comments">
+                        {foreach from=$article.comments item=comment}
+                            <div class="blog-item-comment">
+                                <span class="name">{$comment.name}</span>
+                                <span class="timestamp">{$comment.created_at}</span>
+                                <p>{$comment.message}</p>
+                                <a href="#" onclick="respondToComment({$comment.id}, '{$comment.name}'); return false;">Reageer</a>
+                            </div>
+                            {foreach from=$comment.children item=child}
+                                <div class="blog-item-comment blog-item-comment-child">
+                                    <span class="name">{$child.name}</span>
+                                    <span class="timestamp">{$child.created_at}</span>
+                                    <p>{$child.message}</p>
+                                </div>
+                        {/foreach}
+                        {/foreach}
+                        <div id="article-comment-form">
+                            <div id="respond-to-container" style="display: none;">
+                                <span id="respond-to-name"></span>
+                                <a href="#" onclick="stopResponding(); return false;" id="stop-respond">Niet meer reageren</a>
+                            </div>
+                            {$article.comment_webform}
+                        </div>
+                    </div>
                 {else}
                     {foreach from=$page.elements item=element}
                         {$element}
