@@ -1,11 +1,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl_NL" lang="nl_NL">
 	<head>
-		<title>🌴 J&amp;Q Travel - {$page_title}</title>
-        <meta name="keywords" content="J&Q Travel, JQ Travel, Jim Pouwels, Quirine de Loyer, Jim, Quirine, reizen, travel, rondreis, zelf organiseren" />
-	    <meta name="description" content="{$page.description}" />
-	    <meta name="Subject" content="J&Q Travel" />
-	    <meta name="robots" content="index,follow" />
+		<title>{$page_title} : JQ-Travel</title>
+        <meta name="keywords" content="JQ-Travel, JQ Travel, Jim Pouwels, Quirine de Loyer, Jim, Quirine, reizen, travel, rondreis, zelf organiseren" />
+	    <meta name="description" content="{if $article}{$article.description}{else}{$page_title}{/if}" />
+	    <meta name="Subject" content="JQ-Travel" />
+	    <meta name="robots" content="index, follow" />
+        <meta property="og:site_name" content="JQ-Travel">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
         <link rel="stylesheet" href="/static/css/styles.css?id=1234">        
@@ -101,7 +102,7 @@
                             </div>
                         </div>
                         <div class="contact">
-                            <p>J&Q Travel</p>
+                            <p>JQ-Travel</p>
                             <div class="social-media">
                                 <img src="/static/img/instagram.png" />
                             </div>
