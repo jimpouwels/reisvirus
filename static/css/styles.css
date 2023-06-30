@@ -1,4 +1,9 @@
 @font-face {
+    font-family: Raleway;
+    src: url(/static/fonts/Raleway-VariableFont_wght.ttf);
+}
+
+@font-face {
     font-family: Violante;
     src: url(/static/fonts/Violante-eZoYg.ttf);
 }
@@ -61,7 +66,7 @@
 html, body {
     margin: 0px;
     width: 100%;
-    font-family: "Roboto","system-ui","San Francisco","Segoe UI","Oxygen","Ubuntu",Arial,sans-serif;
+    font-family: 'Raleway', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
 

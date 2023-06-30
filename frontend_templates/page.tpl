@@ -45,7 +45,7 @@
                     <div id="banner">
                         <div class="jarallax" data-jarallax data-video-src="https://www.youtube.com/watch?v=RTqhONnPsR8">
                             <div id="title-wrapper">
-                                {$page.blocks.quote[0]}
+                                <strong>{$page.blocks.quote[0]}</strong>
                             </div>
                         </div>
                     </div>
@@ -72,7 +72,7 @@
                                     <span class="timestamp">{$child.created_at}</span>
                                     <p>{$child.message}</p>
                                 </div>
-                        {/foreach}
+                            {/foreach}
                         {/foreach}
                         <div id="article-comment-form">
                             <div id="respond-to-container" style="display: none;">
