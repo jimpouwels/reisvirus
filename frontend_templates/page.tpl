@@ -3,7 +3,7 @@
 	<head>
 		<title>{$page_title} : JQ-Travel</title>
         <meta name="keywords" content="JQ-Travel, JQ Travel, Jim Pouwels, Quirine de Loyer, Jim, Quirine, reizen, travel, rondreis, zelf organiseren" />
-	    <meta name="description" content="{if $article}{$article.description}{else}{$page_title}{/if}" />
+	    <meta name="description" content="{$page.description}" />
 	    <meta name="Subject" content="JQ-Travel" />
 	    <meta name="robots" content="index, follow" />
         <meta property="og:site_name" content="JQ-Travel">
@@ -55,33 +55,7 @@
                 <div id="title-small"><p>{$page_title}</p></div>
                 {if $article}
                     <p><a href="{$page.url}" title="Terug">&lt; Terug</a></p>
-                    {foreach from=$article.elements item=element}
-                        {$element}
-                    {/foreach}
-                    <div id="article-comments">
-                        {foreach from=$article.comments item=comment}
-                            <div class="blog-item-comment">
-                                <span class="name">{$comment.name}</span>
-                                <span class="timestamp">{$comment.created_at}</span>
-                                <p>{$comment.message}</p>
-                                <a href="#" onclick="respondToComment({$comment.id}, '{$comment.name}'); return false;">Reageer</a>
-                            </div>
-                            {foreach from=$comment.children item=child}
-                                <div class="blog-item-comment blog-item-comment-child">
-                                    <span class="name">{$child.name}</span>
-                                    <span class="timestamp">{$child.created_at}</span>
-                                    <p>{$child.message}</p>
-                                </div>
-                            {/foreach}
-                        {/foreach}
-                        <div id="article-comment-form">
-                            <div id="respond-to-container" style="display: none;">
-                                <span id="respond-to-name"></span>
-                                <a href="#" onclick="stopResponding(); return false;" id="stop-respond">Niet meer reageren</a>
-                            </div>
-                            {$article.comment_webform}
-                        </div>
-                    </div>
+                    {$article}
                 {else}
                     {foreach from=$page.elements item=element}
                         {$element}
