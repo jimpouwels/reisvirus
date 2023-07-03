@@ -80,7 +80,7 @@
                         <div class="contact">
                             <p>JQ-Travel</p>
                             <div class="social-media">
-                                <img src="/static/img/instagram.png" />
+                                <a title="JQ-Travel Instagram" target="_blank" href="https://www.instagram.com/jq_travel/"><img src="/static/img/instagram.png" /></a>
                             </div>
                         </div>
                         <div class="contact">
