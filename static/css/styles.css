@@ -12,6 +12,12 @@
     color: red;
 }
 
+.logo {
+    font-family: Violante;
+    font-size: 2em;
+    font-weight: bold;
+}
+
 .error-field {
     border: 1px solid red;
 }
@@ -47,7 +53,7 @@
 }
 
 .contact-form-field button {
-    background-color: #087136;
+    background-color: green;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -77,23 +83,27 @@ html, body {
 #header-wrapper {
     position: fixed;
     top: 0;
-    background-color: #000000;
+    background-color: green;
+    height: 100px
     color: #ffffff;
-    border-bottom: 5px solid #087136;
     width: 100%;
 }
 
 #header-content {
-    padding-top: 17px;
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
     height: 70px;
 }
 
-.subtitle {
-    color: #087136;
+h2 {
+    color: green;
     font-size: 1.5em;
+    font-weight: normal;
+}
+
+h3 {
+    margin-bottom: 5px;
 }
 
 #header-title {
@@ -109,6 +119,7 @@ html, body {
 
 #header-menu {
     float: right;
+    margin-top: 10px;
 }
 
 #header-menu li {
@@ -123,14 +134,13 @@ html, body {
 }
 
 #header-menu li.selected a {
-    color: #087136;
+    color: #000000;
     padding-bottom: 3px;
-    font-weight: bold;
-    border-bottom: 3px solid #087136;
+    border-bottom: 2px solid #000000;
 }
 
 #header-menu a:hover {
-    color: #087136;
+    color: #000000;
 }
 
 #banner img {
@@ -141,12 +151,12 @@ html, body {
 #banner {
     display: flex;
     width: 100%;
+    margin-top: 70px;
 }
 
 #banner-wrapper {
     width: 100%;
     overflow: hidden;
-    margin-top: 91px;
 }
 
 #page-content {
@@ -161,12 +171,12 @@ html, body {
 }
 
 #page-content a {
-    color: #087136;
+    color: green;
     text-decoration: none;
 }
 
 #page-content a:hover {
-    color: #087136;
+    color: green;
     text-decoration: underline;
 }
 
@@ -175,7 +185,7 @@ html, body {
     height: 160px;
     color: #ffffff;
     text-align: center;
-    border-top: 5px solid #087136;
+    border-top: 5px solid green;
     overflow-y: auto;
 }
 
@@ -224,7 +234,7 @@ html, body {
 }
 
 #copyright a {
-    color: #087136;
+    color: green;
     text-decoration: none;
 }
 
@@ -237,36 +247,36 @@ html, body {
     text-align: center;
     margin-left: auto; 
     margin-right: auto;
-    margin-top: 150px;
+    margin-top: 190px;
     width: 1000px;
     height: 30px; 
     color: white;
 }
 
-#title-wrapper p {
-    font-size: 1.1em;
-    font-style: italic;
-}
-
 #title {
-    font-family: Violante;
-    font-size: 5em;
-    font-weight: bold;
+    font-family: Raleway;
+    font-size: 3em;
     text-align: center;
     margin: auto;
     margin-top: 3px;
+    font-weight: bold;
 }
 
-#title-small {
+#title-sub {
     text-align: center;
-    color: #087136;
-    font-size: 2em;
+}
+
+#title-container {
     border-bottom: 2px solid rgb(8, 71, 36, 0.3);
 }
 
-#title-small p {
+h1 {
+    text-align: center;
+    color: green;
+    font-size: 2em;
     margin-bottom: 20px;
     margin-top: 30px;
+    font-weight: normal;
 }
 
 .paragraph-justified {
@@ -297,7 +307,7 @@ html, body {
 
 .blogpost a {
     text-decoration: none;
-    color: #087136;
+    color: green;
 }
 
 .blogpost a:hover {
@@ -366,7 +376,7 @@ html, body {
 
 .anchor {
     display: block;
-    top: -100px;
+    top: -80px;
     position: relative;
 }
 
@@ -398,7 +408,7 @@ html, body {
 }
 
 #respond-to-name {
-    color: #087136;
+    color: green;
     font-style: italic;
     margin-right: 15px;
 }
@@ -411,6 +421,11 @@ html, body {
 #article-comment-form {
     border-top: 2px solid rgb(8, 71, 36, 0.3);
     padding-top: 15px;
+    margin: auto;
+}
+
+.table-of-contents {
+    line-height: 160%;
 }
 
 /* MOBILE STYLES */
@@ -446,7 +461,7 @@ html, body {
     }
 
     .blogpost {
-        height: 500px;
+        height: 580px;
         width: 95%;
         text-align: center;
     }

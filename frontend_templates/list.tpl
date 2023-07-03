@@ -1,4 +1,4 @@
-<p><strong>{$title}</strong></p>
+<p>{$title}</p>
 <ul>
     {foreach from=$items item=item}
         <li>{$item}</li>

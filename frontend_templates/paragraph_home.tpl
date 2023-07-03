@@ -1,2 +1,2 @@
-<p class="subtitle">{$title}</p>
+<h2>{$title}</h2>
 <p class="paragraph-home">{$text}</p>

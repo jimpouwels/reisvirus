@@ -8,8 +8,8 @@
 	    <meta name="robots" content="index, follow" />
         <meta property="og:site_name" content="JQ-Travel">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
-        <link rel="stylesheet" href="/static/css/styles.css?id=1234">        
+        <link rel="canonical" href="{$canonical_url}" />
+        <link rel="stylesheet" href="/static/css/styles.css">        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
         <script src="/static/js/jarallax.min.js" type="text/javascript"></script>
         <script src="/static/js/functions.js" type="text/javascript"></script>
@@ -23,7 +23,7 @@
             <div id="header-wrapper">
                 <div id="header-content">
                     <div id="header-title">
-                        <a href="{$root_page.url}"><img src="/static/img/logo.png" height="55px"></a>
+                        <a href="{$root_page.url}"><span class="logo">JQ-Travel<span></a>
                     </div>
                     {if $is_mobile_device}
                         <div id="mobile-menu"><a href="#" onclick="showMenu(); return false;"><img src="/static/img/hamburger_menu.svg" /></a></div>
@@ -45,14 +45,16 @@
                     <div id="banner">
                         <div class="jarallax" data-jarallax data-video-src="https://www.youtube.com/watch?v=RTqhONnPsR8">
                             <div id="title-wrapper">
-                                <strong>{$page.blocks.quote[0]}</strong>
+                                {$page.blocks.quote[0]}
                             </div>
                         </div>
                     </div>
                 </div>
             {/if}
             <div id="page-content">
-                <div id="title-small"><p>{$page_title}</p></div>
+                <div id="title-container">
+                    <h1>{$page_title}</h1>
+                </div>
                 {if $article}
                     <p><a href="{$page.url}" title="Terug">&lt; Terug</a></p>
                     {$article}
@@ -89,7 +91,7 @@
                             </div>
                         </div>
                     </div>
-                    <p id="copyright"><a href="mailto:info@jqtravel.nl" title="info@jqtravel.nl">&copy; J&Q Travel 2023-{$smarty.now|date_format:"%Y"}</a></p>
+                    <p id="copyright"><a href="mailto:info@jqtravel.nl" title="info@jqtravel.nl">&copy; JQ Travel 2023-{$smarty.now|date_format:"%Y"}</a></p>
                 </div>
             </div>
 		</div>

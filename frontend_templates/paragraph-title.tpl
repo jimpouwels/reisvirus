@@ -1,2 +1,2 @@
-{if $title}<p class="subtitle">{$title}</p>{/if}
+{if $title}<h2>{$title}</h2>{/if}
 <p class="paragraph-justified">{$text}</p>
