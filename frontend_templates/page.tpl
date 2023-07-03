@@ -86,7 +86,7 @@
                         <div class="contact">
                             <p>Quirine de Loyer</p>
                             <div class="social-media">
-                                <a href="https://www.instagram.com/quirinedeloyer" title="@qurinedeloyer" target="_blank"><img src="/static/img/instagram.png" /></a>
+                                <a href="https://www.instagram.com/quirinepouwels" title="@qurinedeloyer" target="_blank"><img src="/static/img/instagram.png" /></a>
                                 <a href="https://www.facebook.com/quirine.deloyer" title="Quirine de Loyer" target="_blank"><img class="last" src="/static/img/facebook.png" /></a>
                             </div>
                         </div>
