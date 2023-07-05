@@ -1,1 +1,1 @@
-<img src="{$image_url}" title="{$image.title}" alt-text="{$image.alt_text}" width="{$width}px" height="{$height}px" style="{if $align eq 'center'}display: block; margin-left: auto; margin-right: auto;{elseif $align eq 'right'}float: right;{/if}" />
+<img src="{$image_url}" alt="{$image.alt_text}" title="{$image.title}" alt-text="{$image.alt_text}" width="{$width}px" height="{$height}px" style="{if $align eq 'center'}display: block; margin-left: auto; margin-right: auto;{elseif $align eq 'right'}float: right;{/if}" />

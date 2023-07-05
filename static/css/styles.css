@@ -84,7 +84,7 @@ html, body {
     position: fixed;
     top: 0;
     background-color: green;
-    height: 100px
+    height: 69px;
     color: #ffffff;
     width: 100%;
 }
@@ -151,7 +151,7 @@ h3 {
 #banner {
     display: flex;
     width: 100%;
-    margin-top: 70px;
+    margin-top: 69px;
 }
 
 #banner-wrapper {
@@ -279,8 +279,16 @@ h1 {
     font-weight: normal;
 }
 
+h4 {
+    margin-bottom: 0px;
+}
+
 .paragraph-justified {
     text-align: justify;
+}
+
+.paragraph-h4 {
+    margin-top: 0px;
 }
 
 .paragraph-home {
