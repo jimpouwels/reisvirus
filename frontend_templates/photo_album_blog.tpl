@@ -19,7 +19,7 @@
             {/if}
         {/if}
         <div class="photo-album-img{$class}" style="{$clear}">
-            <img width="{$imgWidth}px" src="{$image.url}" title="{$image.title}" alt-text="{$image.alt_text}" />
+            <img loading="lazy" width="{$imgWidth}px" src="{$image.url}" title="{$image.title}" alt-text="{$image.alt_text}" />
         </div>
     {/foreach}
 </div>
