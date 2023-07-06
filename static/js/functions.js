@@ -14,13 +14,12 @@ $(document).ready(function() {
     var el = document.getElementById('right-content');
     el.style.marginTop = "20px";
     var initialPos = $('#right-content').position();
-    var initialPosY = initialPos.top;
-    handleScroll(initialPos, initialPosY);
+    handleScroll(initialPos);
     $(window).scroll(function(e) { 
-        handleScroll(initialPos, initialPosY);
+        handleScroll(initialPos);
     });
 
-    function handleScroll(initialPos, initialPosY) {
+    function handleScroll(initialPos) {
         var scrollPos = $(window).scrollTop();
         var currentPos = $('#right-content').position();
         if (scrollPos > 585) {
