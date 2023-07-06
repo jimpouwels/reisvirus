@@ -22,10 +22,8 @@ $(document).ready(function() {
 
     function handleScroll(initialPos, initialPosY) {
         var scrollPos = $(window).scrollTop();
-        var currentPosY = $("#right-content").position().top;
         var currentPos = $('#right-content').position();
         if (scrollPos > 585) {
-            // el.style.marginTop = Math.max(20, (scrollPos + 85 - initialPosY)) + 'px';
             $('#right-content').css({position: 'fixed', right: currentPos.right + 'px', top: 65 + 'px', left: currentPos.left + 'px', currentPos: initialPos.bottom + 'px'});
         } else {
             $('#right-content').css({position: 'static'});
