@@ -1,12 +1,12 @@
-{assign var="containerWidth" value=1000}
+{assign var="containerWidth" value=900}
 {assign var="imgWidth" value=0}
 {if count($images) == 1}
-    {assign var="imgWidth" value=500}
-    {assign var="containerWidth" value=500}
+    {assign var="imgWidth" value=900}
+    {assign var="containerWidth" value=900}
 {elseif count($images) == 2}
-    {assign var="imgWidth" value=490}
+    {assign var="imgWidth" value=440}
 {else}
-    {assign var="imgWidth" value=320}
+    {assign var="imgWidth" value=287}
 {/if}
 <div class="photo-album" style="width: {$containerWidth}px">
     {foreach from=$images item=image}
