@@ -19,7 +19,7 @@
         {/if}
 	</head>
 	<body>
-		<div id="content-wrapper">
+		<div id="root-wrapper">
             <div id="header-wrapper">
                 <div id="header-content">
                     <div id="header-title">
@@ -51,17 +51,28 @@
                     </div>
                 </div>
             {/if}
-            <div id="page-content">
+            <div id="content-wrapper">
                 <div id="title-container">
                     <h1>{$page_title}</h1>
                 </div>
-                {if $article}
-                    <p><a href="{$page.url}" title="Terug">&lt; Terug</a></p>
-                    {$article}
-                {else}
-                    {foreach from=$page.elements item=element}
-                        {$element}
-                    {/foreach}
+                <div id="page-content" class="content {if $page.is_homepage}homepage{/if}">
+                    {if $article}
+                        <p><a href="{$page.url}" title="Terug">&lt; Terug</a></p>
+                        {$article.to_string}
+                    {else}
+                        {foreach from=$page.elements item=element}
+                            {$element}
+                        {/foreach}
+                    {/if}
+                </div>
+                {if !$page.is_homepage}
+                    <div id="right-content" class="content">
+                        {if $article}
+                            {$article.elements[0]}
+                        {else}
+                            {$page.blocks.rechts[0]}
+                        {/if}
+                    </div>
                 {/if}
             </div>
             <div id="footer">

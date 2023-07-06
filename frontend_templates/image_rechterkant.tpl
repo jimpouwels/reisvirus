@@ -1,0 +1,1 @@
+<img src="{$image_url}" alt="{$image.alt_text}" title="{$image.title}" alt-text="{$image.alt_text}" width="100%" style="display: block; margin-left: auto; margin-right: auto;" />

@@ -1,5 +1,7 @@
 {foreach from=$elements item=element}
-    {$element}
+    {if ($element@iteration - 1) != 0}
+        {$element}
+    {/if}
 {/foreach}
 <div id="article-comments">
     {foreach from=$comments item=comment}
