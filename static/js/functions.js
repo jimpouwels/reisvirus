@@ -12,11 +12,12 @@ function stopResponding() {
 
 $(document).ready(function() {
     var el = document.getElementById('right-content');
-    el.style.marginTop = "20px";
+    el.style.marginTop = "2%";
     var initialPos = $('#right-content').position();
     var currentWidth = $('#right-content').width();
     var windowWidth = $(window).width();
     var windowWidthDelta = 0;
+    var threshold = $('#banner-wrapper').height() - $('#header-wrapper').height();
     var paddingPx = parseInt($('#right-content').css('padding').replace('px', ''));
     var marginLeftPx = parseInt($('#right-content').css('margin-left').replace('px', ''));
     var marginLeft = initialPos.left - ($('#page-content').position().left + $('#page-content').width());
@@ -37,7 +38,7 @@ $(document).ready(function() {
 
     function handleScroll(currentPos, initialPos, resize) {
         var scrollPos = $(window).scrollTop();
-        if (scrollPos > 585) {
+        if (scrollPos > threshold) {
             var newLeft = !resize ? (currentPos.left) : (($('#page-content').position().left + $('#page-content').width()) + marginLeft);
             $('#right-content').css({width: (currentWidth - windowWidthDelta) + 'px', marginLeft: marginLeftPx + 'px', padding: paddingPx + 'px', position: 'fixed', top: 65 + 'px', left: newLeft + 'px', bottom: initialPos.bottom + 'px'});
         } else {
