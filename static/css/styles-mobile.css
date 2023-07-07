@@ -49,10 +49,11 @@ body {
     margin-right: 15px;
 }
 
-.blogpost {
+.blogposts .blogpost {
     height: inherit;
-    width: 95%;
+    width: 100%;
     text-align: center;
+    margin-left: 0px;
 }
 
 .blogpost .description {
@@ -105,6 +106,10 @@ h3 {
 
 #content-wrapper {
     font-size: 40px;
+    width: 100%;
+}
+
+#header-content {
     width: 100%;
 }
 
