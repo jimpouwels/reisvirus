@@ -14,16 +14,17 @@ $(document).ready(function() {
     var el = document.getElementById('right-content');
     el.style.marginTop = "20px";
     var initialPos = $('#right-content').position();
-    handleScroll(initialPos);
+    var initialWidth = $('#right-content').width();
+    handleScroll(initialWidth, initialPos);
     $(window).scroll(function(e) { 
-        handleScroll(initialPos);
+        handleScroll(initialWidth, initialPos);
     });
 
-    function handleScroll(initialPos) {
+    function handleScroll(initialWidth, initialPos) {
         var scrollPos = $(window).scrollTop();
         var currentPos = $('#right-content').position();
         if (scrollPos > 585) {
-            $('#right-content').css({position: 'fixed', right: currentPos.right + 'px', top: 65 + 'px', left: currentPos.left + 'px', currentPos: initialPos.bottom + 'px'});
+            $('#right-content').css({width: initialWidth + 'px', position: 'fixed', top: 65 + 'px', left: currentPos.left + 'px', currentPos: initialPos.bottom + 'px'});
         } else {
             $('#right-content').css({position: 'static'});
         }

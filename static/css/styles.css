@@ -164,7 +164,7 @@ h3 {
 }
 
 #content-wrapper {
-    width: 1410px;
+    width: 85%;
     overflow-y: auto;
     margin: auto;
 }
@@ -175,7 +175,7 @@ h3 {
     overflow-y: auto;
     padding-bottom: 20px;
     line-height: 1.3em;
-    width: 900px;
+    width: 66%;
 }
 
 .homepage {
@@ -200,7 +200,7 @@ h3 {
 
 #right-content {
     float: left;
-    width: 400px;
+    width: 25%;
     padding: 25px;
     margin-left: 35px;
     margin-bottom: 20px;
@@ -342,11 +342,14 @@ h4 {
     margin-top: 0px;
 }
 
-.blogpost {
-    width: 275px;
+.blogposts .blogpost {
+    width: 32%;
     float: left;
-    margin-left: 25px;
-    margin-bottom: 15px;
+    margin-bottom: 3%;
+}
+
+.blogposts .not-last {
+    margin-left: 2%;
 }
 
 .blogpost .title {
@@ -377,7 +380,6 @@ h4 {
     margin-top: 10px;
     margin-bottom: 0px;
     text-align: justify;
-    height: 130px;
 }
 
 /* ELEMENTS */
@@ -412,15 +414,12 @@ h4 {
     margin-bottom: 15px;
 }
 
-.photo-album-img.not-first {
-    margin-left: 15px;
-} 
-
 .photo-album-subtitle {
     text-align: center;
     font-size: 0.8em;
     font-style: italic;
 }
+
 .photo-album-subtitle p {
     margin-top: -16px;
 }
