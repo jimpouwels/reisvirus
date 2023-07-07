@@ -355,10 +355,18 @@ h4 {
     margin-top: 0px;
 }
 
+.blogposts {
+    overflow-y: auto;
+}
+
 .blogposts .blogpost {
     width: 32%;
     float: left;
     margin-bottom: 3%;
+}
+
+.blogposts .blogpost-two-by-two {
+    width: 49%; 
 }
 
 .blogposts .not-last {
