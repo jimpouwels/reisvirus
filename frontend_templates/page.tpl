@@ -9,7 +9,7 @@
         <meta property="og:site_name" content="JQ-Travel">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <link rel="canonical" href="{$canonical_url}" />
-        <link rel="stylesheet" href="/static/css/styles.css?v=35">        
+        <link rel="stylesheet" href="/static/css/styles.css?v=36">        
         {if $is_mobile_device}
            <link rel="stylesheet" href="/static/css/styles-mobile.css?v=18">
         {/if}
@@ -59,8 +59,19 @@
                     <h1>{$page_title}</h1>
                 </div>
                 <div id="page-content" class="content {if $page.is_homepage}homepage{/if}">
+                    {if count($crumb_path) > 1}
+                        <div id="crumb_path">
+                            {foreach from=$crumb_path item=crumb_path_item name=crumb_path_item}
+                                <span class="crumb_path_item">
+                                    <a title="{$crumb_path_item.title}" href="{$crumb_path_item.url}">{$crumb_path_item.title}</a>
+                                    {if !$smarty.foreach.crumb_path_item.last}
+                                        <span>/</span>
+                                    {/if}
+                                </span>
+                            {/foreach}
+                        </div>
+                    {/if}
                     {if $article}
-                        <p><a href="{$page.url}" title="Terug">&lt; Terug</a></p>
                         {$article.to_string}
                     {else}
                         {foreach from=$page.elements item=element}
