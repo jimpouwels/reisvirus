@@ -11,7 +11,7 @@
         <link rel="canonical" href="{$canonical_url}" />
         <link rel="stylesheet" href="/static/css/styles.css?v=35">        
         {if $is_mobile_device}
-           <link rel="stylesheet" href="/static/css/styles-mobile.css?v=9">
+           <link rel="stylesheet" href="/static/css/styles-mobile.css?v=18">
         {/if}
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
         <script src="/static/js/jarallax.min.js" type="text/javascript"></script>
@@ -68,8 +68,8 @@
                         {/foreach}
                     {/if}
                 </div>
-                {if !$page.is_homepage}
-                    <div id="right-content" class="content" {if $is_mobile_device}style="display: none"{/if}>
+                {if !$page.is_homepage && !$is_mobile_device}
+                    <div id="right-content" class="content">
                         <div class="right-block">
                             {if $article}
                                 {$article.elements[0]}

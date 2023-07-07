@@ -1,5 +1,5 @@
 {foreach from=$elements item=element}
-    {if ($element@iteration - 1) != 0}
+    {if ($element@iteration - 1) != 0 || $is_mobile_device}
         {$element}
     {/if}
 {/foreach}
