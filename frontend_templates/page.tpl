@@ -9,7 +9,10 @@
         <meta property="og:site_name" content="JQ-Travel">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <link rel="canonical" href="{$canonical_url}" />
-        <link rel="stylesheet" href="/static/css/styles.css?v=30">        
+        <link rel="stylesheet" href="/static/css/styles.css?v=35">        
+        {if $is_mobile_device}
+           <link rel="stylesheet" href="/static/css/styles-mobile.css?v=9">
+        {/if}
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
         <script src="/static/js/jarallax.min.js" type="text/javascript"></script>
         <script src="/static/js/functions.js" type="text/javascript"></script>
@@ -23,7 +26,7 @@
             <div id="header-wrapper">
                 <div id="header-content">
                     <div id="header-title">
-                        <a href="{$root_page.url}"><span class="logo">JQ-Travel<span></a>
+                        <a class="logo" href="{$root_page.url}">JQ-Travel</a>
                     </div>
                     {if $is_mobile_device}
                         <div id="mobile-menu"><a href="#" onclick="showMenu(); return false;"><img src="/static/img/hamburger_menu.svg" /></a></div>
