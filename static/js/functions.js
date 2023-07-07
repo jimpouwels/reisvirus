@@ -15,8 +15,6 @@ $(document).ready(function() {
     el.style.marginTop = "20px";
     var initialPos = $('#right-content').position();
     var currentWidth = $('#right-content').width();
-    var initialWidth = $('#right-content').width() + 20;
-    console.log('test ' + initialWidth);
     var windowWidth = $(window).width();
     var windowWidthDelta = 0;
     var paddingPx = parseInt($('#right-content').css('padding').replace('px', ''));
