@@ -95,9 +95,8 @@ html, body {
 }
 
 #header-content {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 85%;
+    margin: auto;
 }
 
 h2 {
