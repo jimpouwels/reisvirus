@@ -20,15 +20,7 @@ $(document).ready(function() {
     var windowWidth = $(window).width();
     var windowWidthDelta = 0;
     var paddingPx = parseInt($('#right-content').css('padding').replace('px', ''));
-    var paddingLeftPx = parseInt($('#right-content').css('padding-left').replace('px', ''));
-
-    var marginPx = parseInt($('#right-content').css('margin').replace('px', ''));
     var marginLeftPx = parseInt($('#right-content').css('margin-left').replace('px', ''));
-    console.log('padding: ' + paddingPx);
-    console.log('padding-left: ' + paddingLeftPx);
-    console.log('margin: ' + marginPx);
-    console.log('margin-left: ' + marginLeftPx);
-    // var marginPx = parseInt($('#right-content').css('margin-left').replace('px', ''));
     var marginLeft = initialPos.left - ($('#page-content').position().left + $('#page-content').width());
     handleScroll(initialPos, currentWidth, initialPos, false);
     
