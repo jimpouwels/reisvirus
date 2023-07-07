@@ -17,7 +17,7 @@
             {assign var="style" value="margin-left: 2%; float: left"}
         {/if}
         <div class="photo-album-img" style="width: {$imgWidth}%; {$style}">
-            <img loading="lazy" width="100%" src="{$image.url}" title="{$image.title}" alt-text="{$image.alt_text}" />
+            <img width="100%" src="{$image.url}" title="{$image.title}" alt-text="{$image.alt_text}" />
         </div>
     {/foreach}
 </div>

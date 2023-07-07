@@ -169,6 +169,7 @@ h3 {
 }
 
 #page-content {
+    scroll-behavior: smooth;
     float: left;
     font-size: 1em;
     overflow-y: auto;

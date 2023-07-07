@@ -11,6 +11,19 @@ function stopResponding() {
 }
 
 $(document).ready(function() {
+    $('.table-of-contents a').each(function() {
+        $(this).on('click', function() {
+            scrollTo($(this).attr('href'));
+            return false;
+        });
+    });
+    
+    function scrollTo(hash) {
+        document.getElementById(hash.replace('#', '')).scrollIntoView({ behavior: 'smooth' });
+    }
+});
+
+$(document).ready(function() {
     var el = document.getElementById('right-content');
     el.style.marginTop = "2%";
     var initialPos = $('#right-content').position();
