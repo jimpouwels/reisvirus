@@ -9,7 +9,7 @@
         <meta property="og:site_name" content="JQ-Travel">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <link rel="canonical" href="{$canonical_url}" />
-        <link rel="stylesheet" href="/static/css/styles.css?v=73">        
+        <link rel="stylesheet" href="/static/css/styles.css?v=74">        
         {if $is_mobile_device}
            <link rel="stylesheet" href="/static/css/styles-mobile.css?v=19">
         {/if}
@@ -81,7 +81,7 @@
                 </div>
                 {if !$page.is_homepage && !$is_mobile_device}
                     <div id="right-content" class="content">
-                        <div class="right-block">
+                        <div class="right-block {if !$article}no_scroll{/if}">
                             {if $article}
                                 {$article.elements[0]}
                             {else}
