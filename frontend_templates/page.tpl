@@ -64,11 +64,12 @@
                             {foreach from=$crumb_path item=crumb_path_item name=crumb_path_item}
                                 <span class="crumb_path_item">
                                     <a title="{$crumb_path_item.title}" href="{$crumb_path_item.url}">{$crumb_path_item.title}</a>
-                                    {if !$smarty.foreach.crumb_path_item.last}
-                                        <span>/</span>
-                                    {/if}
+                                    <span>/</span>
                                 </span>
                             {/foreach}
+                            <span class="crumb_path_item" style="color: green">
+                                {$page_title}
+                            </span>
                         </div>
                     {/if}
                     {if $article}
