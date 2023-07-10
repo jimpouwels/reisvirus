@@ -1,6 +1,6 @@
 <p>{$title}</p>
 <ul>
     {foreach from=$items item=item}
-        <li>{$item}</li>
+        <li><span>{$item}</span></li>
     {/foreach}
 </ul>
