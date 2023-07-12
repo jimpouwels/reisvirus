@@ -10,7 +10,7 @@
         <meta property="og:site_name" content="JQ-Travel">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <link rel="canonical" href="{$canonical_url}" />
-        <link rel="stylesheet" href="/static/css/styles.css?v=115">        
+        <link rel="stylesheet" href="/static/css/styles.css?v=116">        
         {if $is_mobile_device}
            <link rel="stylesheet" href="/static/css/styles-mobile.css?v=66">
         {/if}

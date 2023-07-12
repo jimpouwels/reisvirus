@@ -128,16 +128,9 @@ h3 {
 }
 
 #header-menu {
-    float: left;
+    float: right;
     margin-top: 10px;
     font-size: 1em;
-}
-
-@media only screen and (max-width: 1400px) {
-    #header-menu {
-        float: right;
-        width: auto;
-    }
 }
 
 #header-menu li {
