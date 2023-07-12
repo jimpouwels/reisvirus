@@ -537,11 +537,6 @@ li span {
         width: 100%;
     }
 
-    #root-wrapper {
-        width: 100%;
-        overflow-x: auto;
-    }
-
     .homepage {
         width: 100% !important;
     }
@@ -814,4 +809,7 @@ li span {
         height: 65px;
     }
     
+}
+
+@media only screen and (hover: none) and (pointer: coarse) or  (max-width: 800px) {
 }
