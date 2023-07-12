@@ -49,15 +49,17 @@ body {
     margin-right: 15px;
 }
 
-.blogposts .blogpost {
-    height: inherit;
-    width: 100%;
-    text-align: center;
-    margin-left: 0px;
-}
+@media screen and (orientation:portrait) {
+    .blogposts .blogpost {
+        height: inherit;
+        width: 100%;
+        text-align: center;
+        margin-left: 0px;
+    }
 
-.blogpost .description {
-    height: inherit;
+    .blogpost .description {
+        height: inherit;
+    }
 }
 
 h3 {

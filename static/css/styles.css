@@ -377,8 +377,12 @@ li span {
     width: 49%; 
 }
 
-.blogposts .not-last {
+.blogposts .not-first {
     margin-left: 2%;
+}
+
+.blogposts .first {
+    clear: both;
 }
 
 .blogpost .title {

@@ -1,17 +1,18 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl_NL" lang="nl_NL">
 	<head>
-		<title>{$page_title} : JQ-Travel</title>
-        <meta name="keywords" content="JQ-Travel, JQ Travel, Jim Pouwels, Quirine de Loyer, Jim, Quirine, reizen, travel, rondreis, zelf organiseren" />
+		<title>JQ-Travel - {$title}</title>
+        <meta name="keywords" content="{if $keywords}{$keywords}, {/if}{$title}, JQ-Travel, JQ Travel, reizen, travel, rondreis, zelf organiseren" />
 	    <meta name="description" content="{$page.description}" />
-	    <meta name="Subject" content="JQ-Travel" />
+	    <meta name="Subject" content="JQ-Travel: {$title}" />
 	    <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=0.35, maximum-scale=0.35" />
         <meta property="og:site_name" content="JQ-Travel">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <link rel="canonical" href="{$canonical_url}" />
-        <link rel="stylesheet" href="/static/css/styles.css?v=88">        
+        <link rel="stylesheet" href="/static/css/styles.css?v=94">        
         {if $is_mobile_device}
-           <link rel="stylesheet" href="/static/css/styles-mobile.css?v=23`">
+           <link rel="stylesheet" href="/static/css/styles-mobile.css?v=31`">
         {/if}
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
         <script src="/static/js/jarallax.min.js" type="text/javascript"></script>
@@ -57,7 +58,7 @@
             <div id="content-wrapper">
                 <div id="page-content" class="content {if $page.is_homepage}homepage{/if}">
                     <div id="title-container">
-                        <h1>{$page_title}</h1>
+                        <h1>{$title}</h1>
                     </div>
                     {if count($crumb_path) > 1}
                         <div id="crumb_path">
@@ -68,7 +69,7 @@
                                 </span>
                             {/foreach}
                             <span class="crumb_path_item" style="color: green">
-                                {$page_title}
+                                {$title}
                             </span>
                         </div>
                     {/if}

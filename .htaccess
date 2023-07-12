@@ -1,6 +1,10 @@
 RewriteEngine on
+RewriteCond %{REQUEST_URI} !^/index.php
+RewriteRule ^sitemap.xml$ /index.php?sitemap=true [NC,L]
+
 RewriteCond %{REQUEST_URI} !^/index(.*)
 RewriteCond %{REQUEST_URI} !^/static(.*)
 RewriteCond %{REQUEST_URI} !^/upload(.*)
 RewriteCond %{REQUEST_URI} !^/admin(.*)
+RewriteCond %{REQUEST_URI} !^/sitemap.php
 RewriteRule ^.*$ index.php [NC,L]
