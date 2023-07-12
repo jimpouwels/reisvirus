@@ -89,7 +89,7 @@ html, body {
     position: fixed;
     top: 0;
     background-color: green;
-    height: 69px;
+    height: 75px;
     color: #ffffff;
     width: 100%;
 }
@@ -118,7 +118,7 @@ h3 {
 
 #header-title {
     float: left;
-    width: 35%;
+    width: 50%;
     font-size: 2em;
 }
 
@@ -502,6 +502,15 @@ li span {
     margin-right: 10px;
 }
 
+#right-content .table-of-contents {
+    display: block;
+    line-height: 160%;
+}
+
+#page-content .table-of-contents {
+    display: none;
+}
+
 #respond-to-container {
     margin-bottom: 10px;
 }
@@ -521,10 +530,6 @@ li span {
     border-top: 2px solid rgb(8, 71, 36, 0.3);
     padding-top: 15px;
     margin: auto;
-}
-
-.table-of-contents {
-    line-height: 160%;
 }
 
 @media only screen and (max-width: 800px) {
@@ -548,8 +553,6 @@ li span {
     }
 
     #page-content {
-        margin-top: 100px;
-        text-align: left;
         width: 100%;
         -moz-box-sizing: border-box; 
         -webkit-box-sizing: border-box; 
@@ -633,24 +636,34 @@ li span {
     }
 
     #footer {
-        height: 650px;
+        height: 370px;
+        width: 100%;
     }
 
     #footer #footer-content {
-        font-size: 30px;
         width: 100%;
         margin: auto;
     }
 
     #footer .contact {
         width: 100%;
-        font-size: 40px;
-        height: 180px;
+        height: 100px;
     }
 
     #copyright {
         padding-top: 20px;
-        font-size: 40px;
+    }
+
+    #right-content .table-of-contents {
+        display: none;
+    }
+    
+    #page-content .table-of-contents {
+        display: block;
+    }
+
+    #contact-panes {
+        width: 100%;
     }
 }
 

@@ -1,7 +1,5 @@
 {foreach from=$elements item=element}
-    {if ($element@iteration - 1) != 0 || $is_mobile_device}
-        {$element}
-    {/if}
+    {$element}
 {/foreach}
 <div id="article-comments">
     {foreach from=$comments item=comment}
