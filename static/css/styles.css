@@ -97,6 +97,13 @@ html, body {
 #header-content {
     width: 85%;
     margin: auto;
+    overflow: auto;
+}
+
+@media only screen and (max-width: 1400px) {
+    #header-content {
+        width: 100%;
+    }
 }
 
 h2 {
@@ -110,9 +117,9 @@ h3 {
 }
 
 #header-title {
-    font-size: 2em;
-    width: 250px;
     float: left;
+    width: 250px;
+    font-size: 2em;
 }
 
 #header-title a {
@@ -123,12 +130,20 @@ h3 {
 #header-menu {
     float: left;
     margin-top: 10px;
+    font-size: 1em;
+}
+
+@media only screen and (max-width: 1400px) {
+    #header-menu {
+        float: right;
+        width: auto;
+    }
 }
 
 #header-menu li {
     display: inline;
     margin-right: 15px;
-    text-transform: uppercase
+    text-transform: uppercase;
 }
 
 #header-menu a {
