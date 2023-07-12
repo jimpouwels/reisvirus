@@ -114,6 +114,7 @@ h2 {
 
 h3 {
     margin-bottom: 5px;
+    color: green;
 }
 
 #header-title {
@@ -347,10 +348,6 @@ h1 {
     font-weight: normal;
 }
 
-h3 {
-    color: green;
-}
-
 h4 {
     margin-bottom: 0px;
 }
@@ -554,10 +551,6 @@ li span {
         font-weight: normal;
     }
 
-    .paragraph-home {
-        width: 100%;
-    }
-
     .contact-form-field label {
         width: 40%;
     }
@@ -721,10 +714,7 @@ li span {
         padding-left: 30px;
         padding-right: 30px;
     }
-    
-    .paragraph-home {
-        width: 100%;
-    }
+
     
     #mobile-menu {
         display: block;
@@ -807,5 +797,9 @@ li span {
     
 }
 
-@media only screen and (hover: none) and (pointer: coarse) or  (max-width: 800px) {
+@media only screen and (((hover: none) and (pointer: coarse)) or (max-width: 800px)) {
+
+    .paragraph-home {
+        width: 100%;
+    }
 }
