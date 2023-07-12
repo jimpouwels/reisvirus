@@ -24,23 +24,24 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
+    var rightMenu = $('#right-content');
     var el = document.getElementById('right-content');
     if (!el) {
         return;
     }
     el.style.marginTop = "2%";
-    var initialPos = $('#right-content').position();
-    var currentWidth = $('#right-content').width();
+    var initialPos = rightMenu.position();
+    var currentWidth = rightMenu.width();
     var windowWidth = $(window).width();
     var windowWidthDelta = 0;
     var threshold = $('#banner-wrapper').height() - $('#header-wrapper').height();
-    var paddingPx = parseInt($('#right-content').css('padding').replace('px', ''));
-    var marginLeftPx = parseInt($('#right-content').css('margin-left').replace('px', ''));
+    var paddingPx = parseInt(rightMenu.css('padding').replace('px', ''));
+    var marginLeftPx = parseInt(rightMenu.css('margin-left').replace('px', ''));
     var marginLeft = initialPos.left - ($('#page-content').position().left + $('#page-content').width());
     handleScroll(initialPos, currentWidth, initialPos, false);
     
     $(window).scroll(function(e) { 
-        var currentPos = $('#right-content').position();
+        var currentPos = rightMenu.position();
         handleScroll(currentPos, initialPos, false);
     });
 
@@ -48,17 +49,18 @@ $(document).ready(function() {
         windowWidthDelta = windowWidth - $(this).width();
         windowWidth = $(this).width();
         currentWidth -= (windowWidthDelta * 0.25);
-        var currentPos = $('#right-content').position();
+        var currentPos = rightMenu.position();
         handleScroll(currentPos, initialPos, true);
     });
 
     function handleScroll(currentPos, initialPos, resize) {
         var scrollPos = $(window).scrollTop();
+
         if (scrollPos > threshold) {
             var newLeft = !resize ? (currentPos.left) : (($('#page-content').position().left + $('#page-content').width()) + marginLeft);
-            $('#right-content').css({width: (currentWidth - windowWidthDelta) + 'px', marginLeft: marginLeftPx + 'px', padding: paddingPx + 'px', position: 'fixed', top: 65 + 'px', left: newLeft + 'px', bottom: initialPos.bottom + 'px'});
+            rightMenu.css({width: (currentWidth - windowWidthDelta) + 'px', marginLeft: marginLeftPx + 'px', padding: paddingPx + 'px', position: 'fixed', top: 65 + 'px', left: newLeft + 'px', bottom: initialPos.bottom + 'px'});
         } else {
-            $('#right-content').css({position: 'static'});
+            rightMenu.css({position: 'static'});
         }
         windowWidthDelta = 0;
     }

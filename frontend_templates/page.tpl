@@ -16,7 +16,7 @@
         {/if}
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
         <script src="/static/js/jarallax.min.js" type="text/javascript"></script>
-        <script src="/static/js/functions.js?v=127" type="text/javascript"></script>
+        <script src="/static/js/functions.js?v=151" type="text/javascript"></script>
         <script src="/static/js/jarallax.video.min.js" type="text/javascript"></script>
         {if $is_mobile_device}
             <script src="/static/js/mobile_scripts.js?v=34" type="text/javascript"></script>
