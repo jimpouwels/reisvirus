@@ -612,14 +612,6 @@ li span {
         display: none;
     }
 
-    #right-content .table-of-contents {
-        display: none;
-    }
-    
-    #page-content .table-of-contents {
-        display: block;
-    }
-
     #page-content {
         display: block;
         width: 100%;
@@ -718,14 +710,6 @@ li span {
         line-height: 160%;
     }
     
-    #right-content .table-of-contents {
-        display: none;
-    }
-    
-    #page-content .table-of-contents {
-        display: block;
-    }
-    
     #footer {
         font-size: 30px;
         height: 820px;
@@ -794,5 +778,13 @@ li span {
 
     #right-content {
         display: none;
+    }
+    
+    #right-content .table-of-contents {
+        display: none;
+    }
+    
+    #page-content .table-of-contents {
+        display: block;
     }
 }
