@@ -1,82 +1,56 @@
-body {
+.blogposts .blogpost {
+    height: inherit;
     width: 100%;
+    text-align: center;
+    margin-left: 0px;
 }
 
-#root-wrapper {
-    width: 100%;
-    overflow-x: auto;
+.blogpost .description {
+    height: inherit;
 }
 
 .logo {
     font-size: 100px;
 }
 
-#header-wrapper {
-    position: relative;
-    overflow-y: auto;
-    width: 100%;
+.contact-form-field button {
+    font-size: 40px;
 }
 
-#header-title {
-    width: 50%;
-}
-
-#page-content {
-    text-align: left;
-    width: 100%;
-    -moz-box-sizing: border-box; 
-    -webkit-box-sizing: border-box; 
-    box-sizing: border-box; 
-    padding-left: 30px;
-    padding-right: 30px;
-}   
-
-.homepage {
-    width: 100% !important;
+#content-wrapper {
+    font-size: 40px;
 }
 
 #header-menu {
     display: none;
 }
 
-#mobile-menu img {
-    filter: invert(1);
-    width: 80px;
-}
-
-#mobile-menu {
-    float: right;
-    margin-right: 15px;
-}
-
-h3 {
-    font-weight: normal;
+#page-content {
+    width: 100%;
+    margin-top: 100px;
 }
 
 .paragraph-home {
     width: 100%;
 }
 
-.contact-form-field label {
-    width: 40%;
+#mobile-menu {
+    display: block;
+    float: right;
+    margin-top: 10px;
 }
 
-.contact-form-field input {
-    width: 60%;
-    height: 40px;
+#mobile-menu img {
+    width: 80px;
 }
 
-.contact-form-field textarea {
-    width: 95%;
-}
-
-.contact-form-field button {
-    width: 40%;
-    font-size: 40px;
+#header-content {
+    width: 100%;
 }
 
 #header-wrapper {
     height: 100px;
+    position: relative;
 }
 
 #header-menu {
@@ -84,53 +58,18 @@ h3 {
     right: 0px;
     display: none;
     top: 69px;
-    font-size: 3em;
     display: none;
     background-color: green;
     text-transform: none;
     width: 50%;
     max-width: 550px;
     z-index: 999;
+
+    font-size: 3em;
 }
 
 #header-menu li {
     display: block;
     margin-bottom: 10px;
     line-height: 160%;
-}
-
-#content-wrapper {
-    font-size: 40px;
-    width: 100%;
-}
-
-#header-content {
-    width: 100%;
-}
-
-.social-media img {
-    filter: grayscale(1);
-    width: 40px;
-    height: 40px;
-}
-
-#footer {
-    height: 650px;
-}
-
-#footer #footer-content {
-    font-size: 30px;
-    width: 100%;
-    margin: auto;
-}
-
-#footer .contact {
-    width: 100%;
-    font-size: 40px;
-    height: 180px;
-}
-
-#copyright {
-    padding-top: 20px;
-    font-size: 40px;
 }
