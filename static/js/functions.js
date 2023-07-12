@@ -25,6 +25,9 @@ $(document).ready(function() {
 
 $(document).ready(function() {
     var el = document.getElementById('right-content');
+    if (!el) {
+        return;
+    }
     el.style.marginTop = "2%";
     var initialPos = $('#right-content').position();
     var currentWidth = $('#right-content').width();
