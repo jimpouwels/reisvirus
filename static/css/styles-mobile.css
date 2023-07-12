@@ -49,19 +49,6 @@ body {
     margin-right: 15px;
 }
 
-@media screen and (orientation:portrait) {
-    .blogposts .blogpost {
-        height: inherit;
-        width: 100%;
-        text-align: center;
-        margin-left: 0px;
-    }
-
-    .blogpost .description {
-        height: inherit;
-    }
-}
-
 h3 {
     font-weight: normal;
 }
