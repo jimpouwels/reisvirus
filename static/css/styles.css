@@ -32,7 +32,7 @@
 }
 
 .contact-form-container {
-    width: 670px;
+    width: 100%;
     margin: auto;
     overflow: auto;
 }
@@ -53,7 +53,7 @@
 }
 
 .contact-form-field textarea {
-    width: 464px;
+    width: 60%;
     height: 250px;
 }
 
@@ -545,19 +545,6 @@ li span {
         font-weight: normal;
     }
 
-    .contact-form-field label {
-        width: 40%;
-    }
-
-    .contact-form-field input {
-        width: 60%;
-        height: 40px;
-    }
-
-    .contact-form-field textarea {
-        width: 95%;
-    }
-
     #header-menu {
         position: fixed;
         right: 0px;
@@ -774,7 +761,16 @@ li span {
         width: 65px;
         height: 65px;
     }
-    
+
+    .contact-form-field label {
+        width: 40%;
+    }
+
+    .contact-form-field input {
+        width: 60%;
+        height: 40px;
+    }
+
 }
 
 /*
