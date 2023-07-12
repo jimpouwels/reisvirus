@@ -619,7 +619,6 @@ li span {
     #header-wrapper {
         position: relative;
         overflow-y: auto;
-        width: 100%;
     }
 
 }
