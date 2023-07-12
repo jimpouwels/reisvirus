@@ -10,7 +10,7 @@
         <meta property="og:site_name" content="JQ-Travel">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <link rel="canonical" href="{$canonical_url}" />
-        <link rel="stylesheet" href="/static/css/styles.css?v=235">
+        <link rel="stylesheet" href="/static/css/styles.css?v=236">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
         <script src="/static/js/jarallax.min.js" type="text/javascript"></script>
         <script src="/static/js/functions.js?v=155" type="text/javascript"></script>
@@ -74,7 +74,7 @@
                         {/foreach}
                     {/if}
                 </div>
-                {if !$page.is_homepage && !$is_mobile_device}
+                {if !$page.is_homepage}
                     <div id="right-content" class="content">
                         <div class="right-block {if !$article}no_scroll{/if}">
                             {if $article}

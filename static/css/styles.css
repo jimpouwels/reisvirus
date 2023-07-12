@@ -612,10 +612,6 @@ li span {
         display: none;
     }
 
-    #right-content {
-        display: none;
-    }
-
     #right-content .table-of-contents {
         display: none;
     }
@@ -794,5 +790,9 @@ li span {
 
     #header-content {
         width: 100%;
+    }
+
+    #right-content {
+        display: none;
     }
 }
