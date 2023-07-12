@@ -88,22 +88,28 @@ h3 {
     font-size: 40px;
 }
 
+#header-wrapper {
+    height: 100px;
+}
+
 #header-menu {
     position: fixed;
-    left: 50%;
+    right: 0px;
+    display: none;
+    top: 69px;
     font-size: 3em;
+    display: none;
     background-color: green;
+    text-transform: none;
     width: 50%;
+    max-width: 550px;
     z-index: 999;
 }
 
 #header-menu li {
     display: block;
     margin-bottom: 10px;
-}
-
-#header-wrapper {
-    height: 100px;
+    line-height: 160%;
 }
 
 #content-wrapper {
