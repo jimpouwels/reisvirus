@@ -614,12 +614,6 @@ li span {
 
     #page-content {
         display: block;
-        width: 100%;
-        -moz-box-sizing: border-box; 
-        -webkit-box-sizing: border-box; 
-        box-sizing: border-box; 
-        padding-left: 30px;
-        padding-right: 30px;
     }
 
     #header-wrapper {
@@ -665,13 +659,7 @@ li span {
     }
     
     #page-content {
-        width: 100%;
         margin-top: 20px;
-        -moz-box-sizing: border-box; 
-        -webkit-box-sizing: border-box; 
-        box-sizing: border-box; 
-        padding-left: 30px;
-        padding-right: 30px;
     }
 
     #mobile-menu {
@@ -786,5 +774,14 @@ li span {
     
     #page-content .table-of-contents {
         display: block;
+    }
+
+    #page-content {
+        width: 100%;
+        -moz-box-sizing: border-box; 
+        -webkit-box-sizing: border-box; 
+        box-sizing: border-box; 
+        padding-left: 30px;
+        padding-right: 30px;
     }
 }
