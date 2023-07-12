@@ -118,7 +118,7 @@ h3 {
 
 #header-title {
     float: left;
-    width: 50%;
+    width: 37%;
     font-size: 2em;
 }
 
@@ -542,25 +542,6 @@ li span {
         overflow-x: auto;
     }
 
-    #header-wrapper {
-        position: relative;
-        overflow-y: auto;
-        width: 100%;
-    }
-
-    #banner-wrapper {
-        display: none;
-    }
-
-    #page-content {
-        width: 100%;
-        -moz-box-sizing: border-box; 
-        -webkit-box-sizing: border-box; 
-        box-sizing: border-box; 
-        padding-left: 30px;
-        padding-right: 30px;
-    }   
-
     .homepage {
         width: 100% !important;
     }
@@ -617,14 +598,6 @@ li span {
         line-height: 160%;
     }
 
-    #right-content {
-        display: none;
-    }
-
-    #content-wrapper {
-        width: 100%;
-    }
-
     #header-content {
         width: 100%;
     }
@@ -654,14 +627,6 @@ li span {
         padding-top: 20px;
     }
 
-    #right-content .table-of-contents {
-        display: none;
-    }
-    
-    #page-content .table-of-contents {
-        display: block;
-    }
-
     #contact-panes {
         width: 100%;
     }
@@ -678,6 +643,42 @@ li span {
 
     .blogpost .description {
         height: inherit;
+    }
+
+    #banner-wrapper {
+        display: none;
+    }
+
+    #right-content {
+        display: none;
+    }
+
+    #right-content .table-of-contents {
+        display: none;
+    }
+    
+    #page-content .table-of-contents {
+        display: block;
+    }
+
+    #content-wrapper {
+        width: 100%;
+    }
+
+    #page-content {
+        display: block;
+        width: 100%;
+        -moz-box-sizing: border-box; 
+        -webkit-box-sizing: border-box; 
+        box-sizing: border-box; 
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    #header-wrapper {
+        position: relative;
+        overflow-y: auto;
+        width: 100%;
     }
 
 }
