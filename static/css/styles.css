@@ -546,6 +546,7 @@ li span {
 
     #header-menu {
         margin-top: 0px;
+        width: 30%;
     }
 
     #header-menu li {
@@ -593,7 +594,6 @@ li span {
         height: inherit;
     }
 }
-
 
 @media only screen and (max-width: 1100px) {
 
@@ -665,6 +665,7 @@ li span {
     }
     
     #header-menu {
+        width: 50%;
         font-size: 3em;
     }
     
@@ -731,7 +732,6 @@ li span {
         top: 69px;
         background-color: green;
         text-transform: none;
-        width: 50%;
         max-width: 550px;
         z-index: 999;
     }
