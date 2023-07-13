@@ -30,7 +30,8 @@ $(document).ready(function() {
     if (!el) {
         return;
     }
-    el.style.marginTop = "2%";
+    var rightBlockMarginTop = 30;
+    el.style.marginTop = rightBlockMarginTop + "px";
     var initialPos = rightMenu.position();
     var threshold = $('#banner-wrapper').height() - $('#header-wrapper').height();
     var paddingPx = parseInt(rightMenu.css('padding').replace('px', ''));
@@ -51,7 +52,7 @@ $(document).ready(function() {
         var newWidth = (pageContent.width() / pageContentPercentWidth) * (100 - pageContentPercentWidth - 8);
         if ($(window).scrollTop() > threshold) {
             var newLeft = !resize ? (currentPos.left) : ((pageContent.position().left + pageContent.width()) + marginLeft);
-            rightMenu.css({width: newWidth + 'px', marginLeft: marginLeftPx + 'px', padding: paddingPx + 'px', position: 'fixed', top: 65 + 'px', left: newLeft + 'px', bottom: initialPos.bottom + 'px'});
+            rightMenu.css({width: newWidth + 'px', marginLeft: marginLeftPx + 'px', padding: paddingPx + 'px', position: 'fixed', top: $('#header-wrapper').height() + "px", left: newLeft + 'px', bottom: initialPos.bottom + 'px'});
         } else {
             rightMenu.css({width: newWidth + 'px', position: 'static'});
         }
