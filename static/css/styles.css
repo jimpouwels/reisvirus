@@ -643,6 +643,10 @@ li span {
         margin: auto;
     }
 
+    .contact-form-field textarea {
+        width: 95%;
+    }
+
     #footer .contact {
         width: 100%;
         height: 100px;
