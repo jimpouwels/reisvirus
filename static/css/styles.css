@@ -531,9 +531,8 @@ li span {
         width: 100%;
     }
 
-
     #mobile-menu {
-        display: inline;
+        display: block;
     }
 
     #mobile-menu img {
@@ -546,19 +545,10 @@ li span {
     }
 
     #header-menu {
-        position: fixed;
-        right: 0px;
-        margin-top: 69px;
-        background-color: green;
-        text-transform: none;
-        width: 50%;
-        max-width: 550px;
-        z-index: 999;
+        margin-top: 0px;
     }
 
     #header-menu li {
-        display: block;
-        margin-bottom: 10px;
         line-height: 160%;
     }
 
@@ -656,10 +646,6 @@ li span {
         font-size: 40px;
     }
     
-    #header-menu {
-        display: none;
-    }
-    
     #page-content {
         margin-top: 20px;
     }
@@ -679,17 +665,6 @@ li span {
     }
     
     #header-menu {
-        position: fixed;
-        right: 0px;
-        display: none;
-        top: 69px;
-        display: none;
-        background-color: green;
-        text-transform: none;
-        width: 50%;
-        max-width: 550px;
-        z-index: 999;
-    
         font-size: 3em;
     }
     
@@ -747,6 +722,23 @@ li span {
 
     .paragraph-home {
         width: 100%;
+    }
+    
+    #header-menu {
+        display: none;
+        position: fixed;
+        right: 0px;
+        top: 69px;
+        background-color: green;
+        text-transform: none;
+        width: 50%;
+        max-width: 550px;
+        z-index: 999;
+    }
+    
+    #header-menu li {
+        display: block;
+        margin-bottom: 10px;
     }
     
 }

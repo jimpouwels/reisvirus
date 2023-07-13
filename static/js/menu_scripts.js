@@ -27,14 +27,17 @@ $(document).ready(function() {
   $(window).scroll(function(e) {
     if ($("#mobile-menu").is(":visible") && ($(this).scrollTop() > lastScroll)) {
       $("#header-menu").hide();
+      isVisible = false;
     }
   });
-
+  
   $(window).resize(function() {
     if (!$("#mobile-menu").is(":visible")) {
       $("#header-menu").show();
+      isVisible = true;
     } else {
       $("#header-menu").hide();
+      isVisible = false;
     }
   });
 
