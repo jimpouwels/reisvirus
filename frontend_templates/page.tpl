@@ -6,13 +6,13 @@
 	    <meta name="description" content="{$page.description}" />
 	    <meta name="Subject" content="JQ-Travel: {$title}" />
 	    <meta name="robots" content="index, follow" />
-        <meta name="viewport" content="width=device-width, initial-scale=0.35, maximum-scale=0.35" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <meta property="og:site_name" content="JQ-Travel">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <link rel="canonical" href="{$canonical_url}" />
-        <link rel="stylesheet" href="/static/css/styles.css?v=285">
+        <link rel="stylesheet" href="/static/css/styles.css?v=304">
         {if !$is_mobile_device}
-            <link rel="stylesheet" href="/static/css/styles_desktop.css?v=2">
+            <link rel="stylesheet" href="/static/css/styles_desktop.css?v=3">
         {/if}
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
         <script src="/static/js/jarallax.min.js" type="text/javascript"></script>
