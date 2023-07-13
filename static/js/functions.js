@@ -25,6 +25,9 @@ $(document).ready(function() {
 
 $(document).ready(function() {
     var rightMenu = $('#right-content');
+
+    var percentWidth = rightMenu.width() / rightMenu.parent().width() * 100;
+
     var el = document.getElementById('right-content');
     if (!el) {
         return;
@@ -60,7 +63,7 @@ $(document).ready(function() {
             var newLeft = !resize ? (currentPos.left) : (($('#page-content').position().left + $('#page-content').width()) + marginLeft);
             rightMenu.css({width: (currentWidth - windowWidthDelta) + 'px', marginLeft: marginLeftPx + 'px', padding: paddingPx + 'px', position: 'fixed', top: 65 + 'px', left: newLeft + 'px', bottom: initialPos.bottom + 'px'});
         } else {
-            rightMenu.css({width: (currentWidth - windowWidthDelta) + 'px', position: 'static'});
+            rightMenu.css({width: percentWidth + '%', position: 'static'});
         }
         windowWidthDelta = 0;
     }

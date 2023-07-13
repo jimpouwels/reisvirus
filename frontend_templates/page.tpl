@@ -10,10 +10,13 @@
         <meta property="og:site_name" content="JQ-Travel">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <link rel="canonical" href="{$canonical_url}" />
-        <link rel="stylesheet" href="/static/css/styles.css?v=248">
+        <link rel="stylesheet" href="/static/css/styles.css?v=258">
+        {if !$is_mobile_device}
+            <link rel="stylesheet" href="/static/css/styles_desktop.css?v=2">
+        {/if}
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
         <script src="/static/js/jarallax.min.js" type="text/javascript"></script>
-        <script src="/static/js/functions.js?v=156" type="text/javascript"></script>
+        <script src="/static/js/functions.js?v=157" type="text/javascript"></script>
         <script src="/static/js/jarallax.video.min.js" type="text/javascript"></script>
         <script src="/static/js/mobile_scripts.js?v=53" type="text/javascript"></script>
 	</head>

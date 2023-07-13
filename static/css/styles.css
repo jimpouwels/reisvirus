@@ -16,7 +16,6 @@
     font-family: Violante;
     font-size: 2em;
     font-weight: bold;
-    margin-left: 30px;
 }
 
 #crumb_path {
@@ -752,6 +751,10 @@ li span {
 
     .paragraph-home {
         width: 100%;
+    }
+
+    .logo {
+        margin-left: 30px;
     }
     
     #content-wrapper {
