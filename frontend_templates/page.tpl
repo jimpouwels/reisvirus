@@ -16,7 +16,7 @@
         {/if}
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
         <script src="/static/js/jarallax.min.js" type="text/javascript"></script>
-        <script src="/static/js/functions.js?v=172" type="text/javascript"></script>
+        <script src="/static/js/functions.js?v=174" type="text/javascript"></script>
         <script src="/static/js/jarallax.video.min.js" type="text/javascript"></script>
         <script src="/static/js/mobile_scripts.js?v=53" type="text/javascript"></script>
 	</head>

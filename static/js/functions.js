@@ -34,14 +34,13 @@ $(document).ready(function() {
     }
     el.style.marginTop = "2%";
     var initialPos = rightMenu.position();
-    var currentWidth = rightMenu.width();
     var windowWidth = $(window).width();
     var windowWidthDelta = 0;
     var threshold = $('#banner-wrapper').height() - $('#header-wrapper').height();
     var paddingPx = parseInt(rightMenu.css('padding').replace('px', ''));
     var marginLeftPx = parseInt(rightMenu.css('margin-left').replace('px', ''));
     var marginLeft = initialPos.left - ($('#page-content').position().left + $('#page-content').width());
-    handleScroll(initialPos, currentWidth, initialPos, false);
+    handleScroll(initialPos, initialPos, false);
     
     $(window).scroll(function(e) { 
         var currentPos = rightMenu.position();
@@ -51,7 +50,6 @@ $(document).ready(function() {
     $(window).resize(function() {
         windowWidthDelta = windowWidth - $(this).width();
         windowWidth = $(this).width();
-        currentWidth -= (windowWidthDelta * 0.25);
         var currentPos = rightMenu.position();
         handleScroll(currentPos, initialPos, true);
     });
@@ -68,7 +66,6 @@ $(document).ready(function() {
         } else {
             rightMenu.css({width: percentWidth + '%', position: 'static'});
         }
-        currentWidth = rightMenu.width();
         windowWidthDelta = 0;
     }
 });
