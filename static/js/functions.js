@@ -58,13 +58,17 @@ $(document).ready(function() {
 
     function handleScroll(currentPos, initialPos, resize) {
         var scrollPos = $(window).scrollTop();
-
         if (scrollPos > threshold) {
+            var pageContentPercentWidth = $("#page-content").width() / $("#page-content").parent().width() * 100;
+            var pixelsPerPercent = $("#page-content").width() / pageContentPercentWidth;
+            var newWidth = pixelsPerPercent * (100 - pageContentPercentWidth - 7);
+
             var newLeft = !resize ? (currentPos.left) : (($('#page-content').position().left + $('#page-content').width()) + marginLeft);
-            rightMenu.css({width: (currentWidth - windowWidthDelta) + 'px', marginLeft: marginLeftPx + 'px', padding: paddingPx + 'px', position: 'fixed', top: 65 + 'px', left: newLeft + 'px', bottom: initialPos.bottom + 'px'});
+            rightMenu.css({width: newWidth + 'px', marginLeft: marginLeftPx + 'px', padding: paddingPx + 'px', position: 'fixed', top: 65 + 'px', left: newLeft + 'px', bottom: initialPos.bottom + 'px'});
         } else {
-            rightMenu.css({width: (percentWidth - 1)+ '%', position: 'static'});
+            rightMenu.css({width: percentWidth + '%', position: 'static'});
         }
+        currentWidth = rightMenu.width();
         windowWidthDelta = 0;
     }
 });
