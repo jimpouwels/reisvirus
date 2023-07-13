@@ -526,6 +526,57 @@ li span {
     margin: auto;
 }
 
+@media only screen and (max-width: 1100px) {
+
+    #banner-wrapper {
+        display: none;
+    }
+
+    #header-wrapper {
+        position: relative;
+        overflow-y: auto;
+    }
+    
+    .paragraph-home {
+        width: 100%;
+    }
+
+    .logo {
+        margin-left: 30px;
+    }
+    
+    #content-wrapper {
+        width: 100%;
+    }
+
+    #header-content {
+        width: 100%;
+    }
+
+    #right-content {
+        display: none;
+    }
+    
+    #right-content .table-of-contents {
+        display: none;
+    }
+    
+    #page-content .table-of-contents {
+        display: block;
+    }
+
+    #page-content {
+        display: block;
+        width: 100%;
+        -moz-box-sizing: border-box; 
+        -webkit-box-sizing: border-box; 
+        box-sizing: border-box; 
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+}
+
 @media only screen and (max-width: 900px) {
     body {
         width: 100%;
@@ -550,7 +601,7 @@ li span {
 
     #header-menu {
         margin-top: 0px;
-        width: 50%;
+        width: 30%;
         display: none;
         position: fixed;
         right: 0px;
@@ -611,55 +662,8 @@ li span {
     .blogpost .description {
         height: inherit;
     }
-}
 
-@media only screen and (max-width: 1100px) {
-
-    #banner-wrapper {
-        display: none;
+    #header-menu {
+        width: 50%;
     }
-
-    #header-wrapper {
-        position: relative;
-        overflow-y: auto;
-    }
-    
-    .paragraph-home {
-        width: 100%;
-    }
-
-    .logo {
-        margin-left: 30px;
-    }
-    
-    #content-wrapper {
-        width: 100%;
-    }
-
-    #header-content {
-        width: 100%;
-    }
-
-    #right-content {
-        display: none;
-    }
-    
-    #right-content .table-of-contents {
-        display: none;
-    }
-    
-    #page-content .table-of-contents {
-        display: block;
-    }
-
-    #page-content {
-        display: block;
-        width: 100%;
-        -moz-box-sizing: border-box; 
-        -webkit-box-sizing: border-box; 
-        box-sizing: border-box; 
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-
 }
