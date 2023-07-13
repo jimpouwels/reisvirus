@@ -63,7 +63,7 @@ $(document).ready(function() {
             var newLeft = !resize ? (currentPos.left) : (($('#page-content').position().left + $('#page-content').width()) + marginLeft);
             rightMenu.css({width: (currentWidth - windowWidthDelta) + 'px', marginLeft: marginLeftPx + 'px', padding: paddingPx + 'px', position: 'fixed', top: 65 + 'px', left: newLeft + 'px', bottom: initialPos.bottom + 'px'});
         } else {
-            rightMenu.css({width: percentWidth + '%', position: 'static'});
+            rightMenu.css({width: (percentWidth - 1)+ '%', position: 'static'});
         }
         windowWidthDelta = 0;
     }
