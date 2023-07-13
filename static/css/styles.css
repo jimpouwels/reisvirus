@@ -192,6 +192,10 @@ h3 {
     width: 100% !important;
 }
 
+.logo {
+    margin-left: 5px;
+}
+
 .content a {
     color: green;
     text-decoration: none;
@@ -226,7 +230,7 @@ h3 {
 }
 
 #right-content {
-    width: 27%;
+    width: 26%;
     float: left;
     padding: 1%;
     margin-left: 3%;

@@ -25,47 +25,35 @@ $(document).ready(function() {
 
 $(document).ready(function() {
     var rightMenu = $('#right-content');
-
-    var percentWidth = rightMenu.width() / rightMenu.parent().width() * 100;
-
     var el = document.getElementById('right-content');
     if (!el) {
         return;
     }
     el.style.marginTop = "2%";
     var initialPos = rightMenu.position();
-    var windowWidth = $(window).width();
-    var windowWidthDelta = 0;
     var threshold = $('#banner-wrapper').height() - $('#header-wrapper').height();
     var paddingPx = parseInt(rightMenu.css('padding').replace('px', ''));
     var marginLeftPx = parseInt(rightMenu.css('margin-left').replace('px', ''));
     var marginLeft = initialPos.left - ($('#page-content').position().left + $('#page-content').width());
-    handleScroll(initialPos, initialPos, false);
+    positionRightBlock(initialPos, initialPos, false);
     
     $(window).scroll(function(e) { 
-        var currentPos = rightMenu.position();
-        handleScroll(currentPos, initialPos, false);
+        positionRightBlock(rightMenu.position(), initialPos, false);
     });
 
     $(window).resize(function() {
-        windowWidthDelta = windowWidth - $(this).width();
-        windowWidth = $(this).width();
-        var currentPos = rightMenu.position();
-        handleScroll(currentPos, initialPos, true);
+        positionRightBlock(rightMenu.position(), initialPos, true);
     });
 
-    function handleScroll(currentPos, initialPos, resize) {
-        var scrollPos = $(window).scrollTop();
-        if (scrollPos > threshold) {
-            var pageContentPercentWidth = $("#page-content").width() / $("#page-content").parent().width() * 100;
-            var pixelsPerPercent = $("#page-content").width() / pageContentPercentWidth;
-            var newWidth = pixelsPerPercent * (100 - pageContentPercentWidth - 7);
-
+    function positionRightBlock(currentPos, initialPos, resize) {
+        var pageContentPercentWidth = $("#page-content").width() / $("#page-content").parent().width() * 100;
+        var pixelsPerPercent = $("#page-content").width() / pageContentPercentWidth;
+        var newWidth = pixelsPerPercent * (100 - pageContentPercentWidth - 8);
+        if ($(window).scrollTop() > threshold) {
             var newLeft = !resize ? (currentPos.left) : (($('#page-content').position().left + $('#page-content').width()) + marginLeft);
             rightMenu.css({width: newWidth + 'px', marginLeft: marginLeftPx + 'px', padding: paddingPx + 'px', position: 'fixed', top: 65 + 'px', left: newLeft + 'px', bottom: initialPos.bottom + 'px'});
         } else {
-            rightMenu.css({width: percentWidth + '%', position: 'static'});
+            rightMenu.css({width: newWidth + 'px', position: 'static'});
         }
-        windowWidthDelta = 0;
     }
 });
