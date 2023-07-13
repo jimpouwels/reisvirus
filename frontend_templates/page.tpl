@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="/static/css/styles.css?v=248">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
         <script src="/static/js/jarallax.min.js" type="text/javascript"></script>
-        <script src="/static/js/functions.js?v=155" type="text/javascript"></script>
+        <script src="/static/js/functions.js?v=156" type="text/javascript"></script>
         <script src="/static/js/jarallax.video.min.js" type="text/javascript"></script>
         <script src="/static/js/mobile_scripts.js?v=53" type="text/javascript"></script>
 	</head>
