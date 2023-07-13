@@ -25,6 +25,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
     var rightMenu = $('#right-content');
+    var pageContent = $('#page-content');
     var el = document.getElementById('right-content');
     if (!el) {
         return;
@@ -34,7 +35,7 @@ $(document).ready(function() {
     var threshold = $('#banner-wrapper').height() - $('#header-wrapper').height();
     var paddingPx = parseInt(rightMenu.css('padding').replace('px', ''));
     var marginLeftPx = parseInt(rightMenu.css('margin-left').replace('px', ''));
-    var marginLeft = initialPos.left - ($('#page-content').position().left + $('#page-content').width());
+    var marginLeft = initialPos.left - (pageContent.position().left + pageContent.width());
     positionRightBlock(initialPos, initialPos, false);
     
     $(window).scroll(function(e) { 
@@ -46,14 +47,14 @@ $(document).ready(function() {
     });
 
     function positionRightBlock(currentPos, initialPos, resize) {
-        var pageContentPercentWidth = $("#page-content").width() / $("#page-content").parent().width() * 100;
-        var pixelsPerPercent = $("#page-content").width() / pageContentPercentWidth;
-        var newWidth = pixelsPerPercent * (100 - pageContentPercentWidth - 8);
+        var pageContentPercentWidth = pageContent.width() / pageContent.parent().width() * 100;
+        var newWidth = (pageContent.width() / pageContentPercentWidth) * (100 - pageContentPercentWidth - 8);
         if ($(window).scrollTop() > threshold) {
-            var newLeft = !resize ? (currentPos.left) : (($('#page-content').position().left + $('#page-content').width()) + marginLeft);
+            var newLeft = !resize ? (currentPos.left) : ((pageContent.position().left + pageContent.width()) + marginLeft);
             rightMenu.css({width: newWidth + 'px', marginLeft: marginLeftPx + 'px', padding: paddingPx + 'px', position: 'fixed', top: 65 + 'px', left: newLeft + 'px', bottom: initialPos.bottom + 'px'});
         } else {
             rightMenu.css({width: newWidth + 'px', position: 'static'});
         }
     }
+
 });
