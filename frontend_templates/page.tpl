@@ -10,7 +10,7 @@
         <meta property="og:site_name" content="JQ-Travel">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <link rel="canonical" href="{$canonical_url}" />
-        <link rel="stylesheet" href="/static/css/styles.css?v=314">
+        <link rel="stylesheet" href="/static/css/styles.css?v=350">
         {if !$is_mobile_device}
             <link rel="stylesheet" href="/static/css/styles_desktop.css?v=3">
         {/if}
@@ -25,7 +25,10 @@
             <div id="header-wrapper">
                 <div id="header-content">
                     <div id="header-title">
-                        <a class="logo" href="{$root_page.url}">JQ-Travel</a>
+                        <a class="logo" href="{$root_page.url}">
+                            <img src="/static/img/logo-img.png" class="logo-img" />
+                            <span class="logo-txt">JQ-Travel</span>
+                        </a>
                     </div>
                     <div id="mobile-menu"><a href="#" onclick="return false;"><img src="/static/img/hamburger_menu.svg" /></a></div>
                     <div id="header-menu">
@@ -44,7 +47,7 @@
                 <div id="banner-wrapper">
                     <div id="banner">
                         <div class="jarallax" data-jarallax data-video-src="https://www.youtube.com/watch?v=RTqhONnPsR8">
-                            <div id="title-wrapper">
+                            <div id="quote-wrapper">
                                 {$page.blocks.quote[0]}
                             </div>
                         </div>

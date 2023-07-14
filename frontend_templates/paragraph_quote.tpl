@@ -1,2 +1,2 @@
-<div id="title">{$title}</div>
-<p id="title-sub">{$text}</p>
+<div id="quote">{$title}</div>
+<p id="quote-sub">{$text}</p>
