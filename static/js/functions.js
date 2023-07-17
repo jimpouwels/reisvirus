@@ -1,3 +1,4 @@
+// RESPONDING TO ARTICLE COMMENTS
 function respondToComment(comment_id, name) {
     $('#parent_id_field').attr('value', comment_id);
     $('#respond-to-name').html('Reageer op ' + name);
@@ -10,6 +11,18 @@ function stopResponding() {
     $('#respond-to-name').html('');
 }
 
+// HEADER MENU UNDERLINE EFFECT
+$(document).ready(function() {
+    $("#nav").linkUnderlineAnim({
+        "speed": 300,
+        "color": "#ffffff",
+        "thickness": 1,
+        "distance": 2,
+        "skipClass": "selected"
+    });
+});
+
+// TABLE OF CONTENTS
 $(document).ready(function() {
     $('.table-of-contents a').each(function() {
         $(this).on('click', function() {
@@ -23,6 +36,7 @@ $(document).ready(function() {
     }
 });
 
+// RIGHT BLOCK SCROLLING BEHAVIOR
 $(document).ready(function() {
     var rightMenu = $('#right-content');
     var pageContent = $('#page-content');

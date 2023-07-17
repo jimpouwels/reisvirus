@@ -10,14 +10,15 @@
         <meta property="og:site_name" content="JQ-Travel">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <link rel="canonical" href="{$canonical_url}" />
-        <link rel="stylesheet" href="/static/css/styles.css?v=371">
+        <link rel="stylesheet" href="/static/css/styles.css?v=375">
         {if !$is_mobile_device}
-            <link rel="stylesheet" href="/static/css/styles_desktop.css?v=8">
+            <link rel="stylesheet" href="/static/css/styles_desktop.css?v=9">
         {/if}
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
         <script src="/static/js/jarallax.min.js" type="text/javascript"></script>
-        <script src="/static/js/functions.js?v=180" type="text/javascript"></script>
         <script src="/static/js/jarallax.video.min.js" type="text/javascript"></script>
+        <script src="/static/js/jquery.linkunderanim.min.js?v=11" type="text/javascript"></script>
+        <script src="/static/js/functions.js?v=185" type="text/javascript"></script>
         <script src="/static/js/menu_scripts.js?v=4" type="text/javascript"></script>
 	</head>
 	<body>
@@ -32,11 +33,11 @@
                     </div>
                     <div id="mobile-menu"><a href="#" onclick="return false;"><img src="/static/img/hamburger_menu.svg" /></a></div>
                     <div id="header-menu">
-                        <ul>
-                            <li {if $root_page.is_current_page}class="selected"{/if}><a href="{$root_page.url}">{$root_page.title}</a></li>
+                        <ul id="nav">
+                            <li><a href="{$root_page.url}" {if $root_page.is_current_page}class="selected"{/if}>{$root_page.title}</a></li>
                             {foreach from=$root_page.children item=navigation_item}
                                 {if $navigation_item.show_in_navigation}
-                                    <li {if $navigation_item.is_current_page}class="selected"{/if}><a href="{$navigation_item.url}">{$navigation_item.title}</a></li>
+                                    <li><a {if $navigation_item.is_current_page}class="selected"{/if} href="{$navigation_item.url}">{$navigation_item.title}</a></li>
                                 {/if}
                             {/foreach}
                         </ul>

@@ -164,15 +164,11 @@ h3 {
     color: #ffffff;
 }
 
-#header-menu li.selected a {
+#header-menu li a.selected {
     font-weight: bold;
     color: #ffffff;
     padding-bottom: 3px;
     border-bottom: 1px solid #ffffff;
-}
-
-#header-menu a:hover {
-    color: #000000;
 }
 
 #banner img {
