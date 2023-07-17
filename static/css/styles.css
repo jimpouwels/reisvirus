@@ -103,7 +103,7 @@ html, body {
 #header-wrapper {
     position: fixed;
     top: 0;
-    background-color: green;
+    background-image: linear-gradient(rgb(14, 140, 14), rgb(1, 73, 1));
     height: 85px;
     color: #ffffff;
     width: 100%;
@@ -503,16 +503,16 @@ li span {
     margin-left: 1%;
 }
 
-.two-frame > .photo-album-img:nth-child(n+1):nth-child(-n+2) {
-    width: 49%;
+.two-frame > .photo-album-img {
+    width: 49% !important;
 }
 
 .two-frame > .photo-album-img:nth-child(2) {
-    margin-left: 1%;
+    margin-left: 2%;
 }
 
 .three-frame > .photo-album-img {
-    width: 32%;
+    width: 32% !important;
 }
 
 .three-frame > .photo-album-img:nth-child(n+2):nth-child(-n+3) {
