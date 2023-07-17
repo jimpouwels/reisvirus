@@ -475,7 +475,7 @@ li span {
     margin-bottom: 10px;
 }
 
-.six-frame.four-frame > .photo-album-img:first-child {
+.photo-album > .photo-album-img:first-child {
     width: 100%;
 }
 
@@ -640,9 +640,6 @@ li span {
         padding-left: 30px;
         padding-right: 30px;
     }
-
-
-
 }
 
 @media only screen and (max-width: 900px) {
@@ -717,6 +714,11 @@ li span {
     #contact-panes {
         width: 100%;
     }
+
+    .photo-album-img {
+        width: 100% !important;
+        margin-left: 0% !important;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -737,11 +739,6 @@ li span {
 
     #header-menu {
         width: 50%;
-    }
-
-    .photo-album-img {
-        width: 100% !important;
-        margin-left: 0% !important;
     }
 
     h1 {

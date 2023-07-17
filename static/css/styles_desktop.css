@@ -1,10 +1,10 @@
 @media only screen and (min-width: 2000px) {
 
     #header-content {
-        width: 65%;
+        width: 1600px;
     }
 
     #content-wrapper {
-        width: 65%;
+        width: 1600px;
     }
 }
