@@ -1,23 +1,14 @@
-{assign var="containerWidth" value=100}
-{assign var="imgWidth" value=0}
-{if count($images) == 1}
-    {assign var="imgWidth" value=50}
-    {assign var="containerWidth" value=900}
+{if count($images) == 6 || count($images) == 3}
+    {assign var=class value="six-frame"}
+{elseif count($images) == 4}
+    {assign var=class value="four-frame"}
 {elseif count($images) == 2}
-    {assign var="imgWidth" value=49}
-{elseif count($images) == 3}
-    {assign var="imgWidth" value=32}
+    {assign var=class value="two-frame"}
 {/if}
-<div class="photo-album" style="width: 100%">
-    {foreach from=$images item=image name=image}
-        {assign var="style" value=""}
-        {if $smarty.foreach.image.first}
-            {assign var="style" value="float: left"}
-        {else}
-            {assign var="style" value="margin-left: 2%; float: left"}
-        {/if}
-        <div class="photo-album-img" style="width: {$imgWidth}%; {$style}">
-            <img width="100%" src="{$image.url}" title="{$image.title}" alt-text="{$image.alt_text}" />
+<div class="photo-album {$class}">
+    {foreach from=$images item=image}
+        <div class="photo-album-img">
+            <img src="{$image.url}" title="{$image.title}" alt-text="{$image.alt_text}" />
         </div>
     {/foreach}
 </div>
