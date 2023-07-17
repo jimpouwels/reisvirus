@@ -742,4 +742,8 @@ li span {
         width: 100% !important;
         margin-left: 0% !important;
     }
+
+    h1 {
+        text-align: left;
+    }
 }
