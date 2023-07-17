@@ -471,7 +471,7 @@ li span {
     margin-bottom: 10px;
 }
 
-.photo-album > .photo-album-img:first-child {
+.six-frame > .photo-album-img:first-child {
     width: 100%;
 }
 
@@ -491,6 +491,10 @@ li span {
     margin-left: 2%
 }
 
+.four-frame > .photo-album-img:first-child {
+    width: 100%;
+}
+
 .four-frame > .photo-album-img:nth-child(n+2) {
     width: 32%;
 }
@@ -500,7 +504,7 @@ li span {
 }
 
 .two-frame > .photo-album-img {
-    width: 49% !important;
+    width: 49%;
 }
 
 .two-frame > .photo-album-img:nth-child(2) {
@@ -508,7 +512,7 @@ li span {
 }
 
 .three-frame > .photo-album-img {
-    width: 32% !important;
+    width: 32%;
 }
 
 .three-frame > .photo-album-img:nth-child(n+2):nth-child(-n+3) {
