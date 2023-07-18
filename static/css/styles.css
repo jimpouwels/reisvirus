@@ -25,13 +25,15 @@ html {
 }
 
 .logo-img {
-    filter: invert(1);
+    -webkit-filter: drop-shadow(5px 5px 5px #ffffff);
+    filter: drop-shadow(0px 0px 5px #ffffff);
     width: 50px;
     margin-top: 10px;
 }
 
 .logo-txt {
     margin-left: -8px;
+    text-shadow: #ffffff 0px 0px 5px;
 }
 
 #crumb_path {

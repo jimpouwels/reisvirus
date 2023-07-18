@@ -70,5 +70,4 @@ $(document).ready(function() {
             rightMenu.css({width: newWidth + 'px', position: 'static'});
         }
     }
-
 });

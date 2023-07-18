@@ -9,8 +9,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <meta property="og:site_name" content="JQ-Travel">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="shortcut icon" type="image/x-icon" href="/static/img/favicon.ico">
         <link rel="canonical" href="{$canonical_url}" />
-        <link rel="stylesheet" href="/static/css/styles.css?v=393">
+        <link rel="stylesheet" href="/static/css/styles.css?v=396">
         {if !$is_mobile_device}
             <link rel="stylesheet" href="/static/css/styles_desktop.css?v=9">
         {/if}
@@ -18,7 +19,7 @@
         <script src="/static/js/jarallax.min.js" type="text/javascript"></script>
         <script src="/static/js/jarallax.video.min.js" type="text/javascript"></script>
         <script src="/static/js/jquery.linkunderanim.min.js?v=11" type="text/javascript"></script>
-        <script src="/static/js/functions.js?v=187" type="text/javascript"></script>
+        <script src="/static/js/functions.js?v=200" type="text/javascript"></script>
         <script src="/static/js/menu_scripts.js?v=4" type="text/javascript"></script>
 	</head>
 	<body>
@@ -27,7 +28,7 @@
                 <div id="header-content">
                     <div id="header-title">
                         <a class="logo" href="{$root_page.url}">
-                            <img src="/static/img/logo-img.png" class="logo-img" />
+                            <img src="/static/img/logo-img.png?v=1" class="logo-img" />
                             <span class="logo-txt">JQ-Travel</span>
                         </a>
                     </div>
