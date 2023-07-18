@@ -44,12 +44,11 @@ $(document).ready(function() {
     if (!el) {
         return;
     }
-    var rightBlockMarginTop = 30;
-    el.style.marginTop = rightBlockMarginTop + "px";
+    el.style.marginTop = "30px";
     var initialPos = rightMenu.position();
     var threshold = $('#banner-wrapper').height() - $('#header-wrapper').height();
-    var paddingPx = parseInt(rightMenu.css('padding').replace('px', ''));
-    var marginLeftPx = parseInt(rightMenu.css('margin-left').replace('px', ''));
+    var paddingPx = rightMenu.css('padding');
+    var marginLeftPx = rightMenu.css('margin-left');
     var marginLeft = initialPos.left - (pageContent.position().left + pageContent.width());
     positionRightBlock(initialPos, initialPos, false);
     
@@ -66,7 +65,7 @@ $(document).ready(function() {
         var newWidth = (pageContent.width() / pageContentPercentWidth) * (100 - pageContentPercentWidth - 8);
         if ($(window).scrollTop() > threshold) {
             var newLeft = !resize ? (currentPos.left) : ((pageContent.position().left + pageContent.width()) + marginLeft);
-            rightMenu.css({width: newWidth + 'px', marginLeft: marginLeftPx + 'px', padding: paddingPx + 'px', position: 'fixed', top: $('#header-wrapper').height() + "px", left: newLeft + 'px', bottom: initialPos.bottom + 'px'});
+            rightMenu.css({width: newWidth + 'px', marginLeft: marginLeftPx, padding: paddingPx, position: 'fixed', top: $('#header-wrapper').height() + "px", left: newLeft + 'px', bottom: initialPos.bottom + 'px'});
         } else {
             rightMenu.css({width: newWidth + 'px', position: 'static'});
         }
