@@ -119,6 +119,7 @@
                             <p>JQ-Travel</p>
                             <div class="social-media">
                                 <a title="Instagram - jq_travel" target="_blank" href="https://www.instagram.com/jq_travel/"><img src="/static/img/instagram.png" /></a>
+                                <a href="https://landenverzamelaars.nl/reiziger/18710/jq-travel" title="LandenVerzamelaars - jq-travel" target="_blank"><img class="last" src="/static/img/landenverzamelaars.png" /></a>
                             </div>
                         </div>
                         <div class="contact">
