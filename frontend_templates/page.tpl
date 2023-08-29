@@ -107,25 +107,27 @@
                         <div class="contact">
                             <p>Jim Pouwels</p>
                             <div class="social-media">
-                                <a href="https://www.instagram.com/jim_pouwels" title="@jimpouwels" target="_blank"><img src="/static/img/instagram.png" /></a>
-                                <a href="https://www.facebook.com/jimpouwels" title="Jim Pouwels" target="_blank"><img src="/static/img/facebook.png" /></a>
-                                <a href="https://twitter.com/JimPouwels" title="Jim Pouwels" target="_blank"><img src="/static/img/twitter.png" /></a>
-                                <a href="https://www.youtube.com/channel/UCWa7rOdjk3tOg9fwbPLxwpw" title="Jim Pouwels" target="_blank"><img src="/static/img/youtube.png" /></a>
-                                <a href="https://nl.linkedin.com/in/jim-pouwels-37923310" title="Jim Pouwels" target="_blank"><img class="last" src="/static/img/linkedin.png" /></a>
+                                <a href="https://www.instagram.com/jim_pouwels" title="Instagram - @jimpouwels" target="_blank"><img src="/static/img/instagram.png" /></a>
+                                <a href="https://www.facebook.com/jimpouwels" title="Facebook - jimpouwels" target="_blank"><img src="/static/img/facebook.png" /></a>
+                                <a href="https://twitter.com/JimPouwels" title="Twitter - @JimPouwels" target="_blank"><img src="/static/img/twitter.png" /></a>
+                                <a href="https://www.youtube.com/channel/UCWa7rOdjk3tOg9fwbPLxwpw" title="Youtube - JimPouwels" target="_blank"><img src="/static/img/youtube.png" /></a>
+                                <a href="https://nl.linkedin.com/in/jim-pouwels-37923310" title="LinkedIn - jim-pouwels-37923310" target="_blank"><img class="" src="/static/img/linkedin.png" /></a>
+                                <a href="https://landenverzamelaars.nl/reiziger/18682/jim-pouwels" title="LandenVerzamelaars - jim-pouwels" target="_blank"><img class="last" src="/static/img/landenverzamelaars.png" /></a>
                             </div>
                         </div>
                         <div class="contact">
                             <p>JQ-Travel</p>
                             <div class="social-media">
-                                <a title="JQ-Travel Instagram" target="_blank" href="https://www.instagram.com/jq_travel/"><img src="/static/img/instagram.png" /></a>
+                                <a title="Instagram - jq_travel" target="_blank" href="https://www.instagram.com/jq_travel/"><img src="/static/img/instagram.png" /></a>
                             </div>
                         </div>
                         <div class="contact">
                             <p>Quirine de Loyer</p>
                             <div class="social-media">
-                                <a href="https://www.instagram.com/quirinepouwels" title="@qurinedeloyer" target="_blank"><img src="/static/img/instagram.png" /></a>
-                                <a href="https://www.facebook.com/quirine.deloyer" title="Quirine de Loyer" target="_blank"><img class="" src="/static/img/facebook.png" /></a>
-                                <a href="https://www.polarsteps.com/QuirinedeLoyer" title="Quirine de Loyer" target="_blank"><img class="last" src="/static/img/polarsteps.png" /></a>
+                                <a href="https://www.instagram.com/quirinepouwels" title="Instagram - @qurinedeloyer" target="_blank"><img src="/static/img/instagram.png" /></a>
+                                <a href="https://www.facebook.com/quirine.deloyer" title="Facebook - quirine.deloyer" target="_blank"><img class="" src="/static/img/facebook.png" /></a>
+                                <a href="https://www.polarsteps.com/QuirinedeLoyer" title="PolarSteps - QuirinedeLoyer" target="_blank"><img class="" src="/static/img/polarsteps.png" /></a>
+                                <a href="https://landenverzamelaars.nl/reiziger/18709/quirine-pouwels-de-loyer" title="LandenVerzamelaars - quirine-pouwels-de-loyer" target="_blank"><img class="last" src="/static/img/landenverzamelaars.png" /></a>
                             </div>
                         </div>
                     </div>
