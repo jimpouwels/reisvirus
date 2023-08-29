@@ -48,7 +48,7 @@
             {if !$is_mobile_device}
                 <div id="banner-wrapper">
                     <div id="banner">
-                        <div class="jarallax" data-jarallax data-video-src="https://www.youtube.com/watch?v=RTqhONnPsR8">
+                        <div class="jarallax" data-jarallax data-video-src="https://www.youtube.com/watch?v=1EnrTH77Jco">
                             <div id="quote-wrapper">
                                 {$page.blocks.quote[0]}
                             </div>
@@ -124,7 +124,8 @@
                             <p>Quirine de Loyer</p>
                             <div class="social-media">
                                 <a href="https://www.instagram.com/quirinepouwels" title="@qurinedeloyer" target="_blank"><img src="/static/img/instagram.png" /></a>
-                                <a href="https://www.facebook.com/quirine.deloyer" title="Quirine de Loyer" target="_blank"><img class="last" src="/static/img/facebook.png" /></a>
+                                <a href="https://www.facebook.com/quirine.deloyer" title="Quirine de Loyer" target="_blank"><img class="" src="/static/img/facebook.png" /></a>
+                                <a href="https://www.polarsteps.com/QuirinedeLoyer" title="Quirine de Loyer" target="_blank"><img class="last" src="/static/img/polarsteps.png" /></a>
                             </div>
                         </div>
                     </div>
