@@ -239,6 +239,11 @@ h3 {
     text-decoration: none;
 }
 
+.content a.internal {
+    background-color: rgb(221, 219, 219);
+    font-weight: bold;
+}
+
 .content a:hover {
     color: green;
     text-decoration: underline;

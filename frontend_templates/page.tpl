@@ -11,7 +11,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <link rel="shortcut icon" type="image/x-icon" href="/static/img/favicon.ico">
         <link rel="canonical" href="{$canonical_url}" />
-        <link rel="stylesheet" href="/static/css/styles.css?v=418">
+        <link rel="stylesheet" href="/static/css/styles.css?v=420">
         {if !$is_mobile_device}
             <link rel="stylesheet" href="/static/css/styles_desktop.css?v=9">
         {/if}
@@ -119,7 +119,8 @@
                             <p>JQ-Travel</p>
                             <div class="social-media">
                                 <a title="Instagram - jq_travel" target="_blank" href="https://www.instagram.com/jq_travel/"><img src="/static/img/instagram.png" /></a>
-                                <a href="https://landenverzamelaars.nl/reiziger/18710/jq-travel" title="LandenVerzamelaars - jq-travel" target="_blank"><img class="last" src="/static/img/landenverzamelaars.png" /></a>
+                                <a href="https://landenverzamelaars.nl/reiziger/18710/jq-travel" title="LandenVerzamelaars - jq-travel" target="_blank"><img class="" src="/static/img/landenverzamelaars.png" /></a>
+                                <a href="https://nl.pinterest.com/JQTravel" title="Pinterest - JQTrave" target="_blank"><img class="last" src="/static/img/pinterest.png" /></a>
                             </div>
                         </div>
                         <div class="contact">
