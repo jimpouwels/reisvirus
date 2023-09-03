@@ -311,7 +311,7 @@ h3 {
 #footer .contact {
     width: 250px;
     height: 100px;
-    color: gray;
+    color: rgb(195, 195, 195);
     font-style: italic;
     float: left;
     overflow-y: auto;
@@ -673,8 +673,8 @@ li span {
         -moz-box-sizing: border-box; 
         -webkit-box-sizing: border-box; 
         box-sizing: border-box; 
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
