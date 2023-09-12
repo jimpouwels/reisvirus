@@ -1,5 +1,5 @@
 {foreach from=$elements item=element}
-    {$element}
+    {$element.to_string}
 {/foreach}
 <div id="article-comments">
     {foreach from=$comments item=comment}

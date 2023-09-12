@@ -11,7 +11,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <link rel="shortcut icon" type="image/x-icon" href="/static/img/favicon.ico">
         <link rel="canonical" href="{$canonical_url}" />
-        <link rel="stylesheet" href="/static/css/styles.css?v=439">
+        <link rel="stylesheet" href="/static/css/styles.css?v=445">
         {if !$is_mobile_device}
             <link rel="stylesheet" href="/static/css/styles_desktop.css?v=9">
         {/if}
@@ -73,27 +73,26 @@
                             {foreach from=$crumb_path item=crumb_path_item name=crumb_path_item}
                                 <span class="crumb_path_item">
                                     <a title="{$crumb_path_item.title}" href="{$crumb_path_item.url}">{$crumb_path_item.title}</a>
-                                    <span>/</span>
+                                    {if !$smarty.foreach.crumb_path_item.last}
+                                        <span>/</span>
+                                    {/if}
                                 </span>
                             {/foreach}
-                            <span class="crumb_path_item" style="color: green">
-                                {$title}
-                            </span>
                         </div>
                     {/if}
                     {if $article}
                         {$article.to_string}
                     {else}
                         {foreach from=$page.elements item=element}
-                            {$element}
+                            {$element.to_string}
                         {/foreach}
                     {/if}
                 </div>
                 {if !$page.is_homepage}
                     <div id="right-content" class="content right-content-size">
                         <div class="right-block {if !$article}no_scroll{/if}">
-                            {if $article}
-                                {$article.elements[0]}
+                            {if $article && count($article.elements) > 0 && $article.elements[0].type == 'table_of_contents_element'}
+                                {$article.elements[0].to_string}
                             {else}
                                 {$page.blocks.rechts[0]}
                             {/if}

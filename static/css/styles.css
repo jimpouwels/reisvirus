@@ -60,7 +60,7 @@ html {
 }
 
 #crumb_path {
-    margin-top: 15px;
+    margin-top: 50px;
 }
 
 .error-field {
@@ -395,6 +395,10 @@ h4 {
     margin-bottom: 0px;
 }
 
+#page-content li {
+    line-height: 1.8em;
+}
+
 li {
     color: green;
 }
@@ -405,6 +409,10 @@ li span {
 
 .paragraph-justified {
     text-align: justify;
+}
+
+#page-content .paragraph-justified {
+    line-height: 1.8em;
 }
 
 .paragraph-h4 {
@@ -442,6 +450,7 @@ li span {
 }
 
 .blogpost .title {
+    line-height: 1.2em;
     font-size: 1.5em;
     margin-bottom: 0px;
     margin-top: 5px;
@@ -473,6 +482,11 @@ li span {
 
 .paragraph-center {
     text-align: center;
+}
+
+.destinations {
+    width: 30%;
+    float: left;
 }
 
 .jarallax {
