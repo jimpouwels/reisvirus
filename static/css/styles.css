@@ -98,7 +98,7 @@ html {
 }
 
 .contact-form-field button {
-    background-color: green;
+    background-color: #53914e;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -128,7 +128,7 @@ html, body {
 #header-wrapper {
     position: fixed;
     top: 0;
-    background-image: linear-gradient(rgb(14, 140, 14), rgb(1, 73, 1));
+    background-color: #699e65;
     height: 84px;
     color: #ffffff;
     width: 100%;
@@ -142,7 +142,7 @@ html, body {
 }
 
 h2 {
-    color: green;
+    color: #53914e;
     margin-top: 35px;
     font-size: 1.5em;
     font-weight: normal;
@@ -151,7 +151,7 @@ h2 {
 
 h3 {
     margin-bottom: 5px;
-    color: green;
+    color: #53914e;
 }
 
 #header-title {
@@ -237,7 +237,7 @@ h3 {
 }
 
 .content a {
-    color: green;
+    color: #53914e;
     text-decoration: none;
 }
 
@@ -247,7 +247,7 @@ h3 {
 }
 
 .content a:hover {
-    color: green;
+    color: #53914e;
     text-decoration: underline;
 }
 
@@ -301,7 +301,7 @@ h3 {
     height: 160px;
     color: #ffffff;
     text-align: center;
-    border-top: 5px solid green;
+    border-top: 5px solid #53914e;
     overflow-y: auto;
 }
 
@@ -350,7 +350,7 @@ h3 {
 }
 
 #copyright a {
-    color: green;
+    color: #53914e;
     text-decoration: none;
 }
 
@@ -385,7 +385,7 @@ h3 {
 
 h1 {
     text-align: center;
-    color: green;
+    color: #53914e;
     font-size: 2em;
     margin-bottom: 20px;
     margin-top: 20px;
@@ -402,7 +402,7 @@ h4 {
 }
 
 li {
-    color: green;
+    color: #53914e;
 }
 
 li span {
@@ -461,7 +461,7 @@ li span {
 
 .blogpost a {
     text-decoration: none;
-    color: green;
+    color: #53914e;
 }
 
 .blogpost a:hover {
@@ -624,7 +624,7 @@ li span {
 }
 
 #respond-to-name {
-    color: green;
+    color: #53914e;
     font-style: italic;
     margin-right: 15px;
 }
@@ -723,7 +723,7 @@ li span {
         position: fixed;
         right: 0px;
         top: 84px;
-        background-color: rgb(1, 73, 1);
+        background-color: #699e65;
         text-transform: none;
         max-width: 550px;
         z-index: 999;
@@ -791,9 +791,5 @@ li span {
 
     #header-menu {
         width: 50%;
-    }
-
-    h1 {
-        text-align: left;
     }
 }

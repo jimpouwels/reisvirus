@@ -11,9 +11,9 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <link rel="shortcut icon" type="image/x-icon" href="/static/img/favicon.ico">
         <link rel="canonical" href="{$canonical_url}" />
-        <link rel="stylesheet" href="/static/css/styles.css?v=448">
+        <link rel="stylesheet" href="/static/css/styles.css?v=451">
         {if !$is_mobile_device}
-            <link rel="stylesheet" href="/static/css/styles_desktop.css?v=9">
+            <link rel="stylesheet" href="/static/css/styles_desktop.css?v=10">
         {/if}
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
         <script src="/static/js/jarallax.min.js" type="text/javascript"></script>
