@@ -792,4 +792,8 @@ li span {
     #header-menu {
         width: 50%;
     }
+
+    #crumb_path {
+        margin-top: 0px;
+    }
 }

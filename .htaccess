@@ -1,4 +1,9 @@
 RewriteEngine on
+
+RewriteCond %{HTTP_HOST} !=localhost    
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
 RewriteCond %{REQUEST_URI} !^/index.php
 RewriteRule ^sitemap.xml$ /index.php?sitemap=true [NC,L]
 
