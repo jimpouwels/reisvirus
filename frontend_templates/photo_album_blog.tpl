@@ -8,7 +8,7 @@
 <div class="photo-album {$class}">
     {foreach from=$images item=image}
         <div class="photo-album-img">
-            <img src="{$image.url}" title="{$image.title}" alt-text="{$image.alt_text}" />
+            <img src="{$image.url}" title="{$image.title}" alt="{$image.alt_text}" />
         </div>
     {/foreach}
 </div>
