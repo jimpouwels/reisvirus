@@ -1,4 +1,2 @@
 <?php
-function getPrivateDir(): string {
-    return $_SERVER['HTTP_HOST'] == "localhost" ? "/../private" : "/../httpd.private";
-}
+define("PRIVATE_DIRECTORY", $_SERVER['HTTP_HOST'] == "localhost" ? "/../private" : "/../httpd.private");
