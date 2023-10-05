@@ -1,2 +1,3 @@
 <?php
-define("PRIVATE_DIRECTORY", $_SERVER['HTTP_HOST'] == "localhost" ? "/../private" : "/../httpd.private");
+const PRIVATE_DIR_LOCAL = "/../private";
+const PRIVATE_DIR_PRODUCTION = "/../httpd.private";
