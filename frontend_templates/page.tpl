@@ -12,7 +12,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link rel="shortcut icon" type="image/x-icon" href="/static/img/favicon.ico">
     <link rel="canonical" href="{$canonical_url}"/>
-    <link rel="stylesheet" href="/static/css/styles.css?v=46">
+    <link rel="stylesheet" href="/static/css/styles.css?v=51">
     {if !$is_mobile_device}
         <link rel="stylesheet" href="/static/css/styles_desktop.css?v=11">
     {/if}
@@ -149,6 +149,8 @@
             </div>
             <p id="copyright"><a href="mailto:info@jqtravel.nl" title="info@jqtravel.nl">&copy; JQ Travel
                     2023-{$smarty.now|date_format:"%Y"}</a></p>
+            <p id="powered-by">Powered by <a title="Github: Obcato" target="_blank"
+                                             href="https://github.com/jimpouwels/obcato">Obcato</a></p>
         </div>
     </div>
 </div>
