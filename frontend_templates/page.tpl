@@ -37,8 +37,6 @@
             </div>
             <div id="header-menu">
                 <ul id="nav">
-                    <li><a href="{$root_page.url}"
-                           {if $root_page.is_current_page}class="selected"{/if}>{$root_page.navigation_title}</a></li>
                     {foreach from=$root_page.children item=navigation_item}
                         {if $navigation_item.show_in_navigation}
                             <li><a {if $navigation_item.is_current_page}class="selected"{/if}
