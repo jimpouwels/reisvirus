@@ -98,9 +98,16 @@
         {if !$page.is_homepage}
             <div id="right-content" class="content right-content-size">
                 <div class="right-block {if !$article}no_scroll{/if}">
-                    {if $article && count($article.elements) > 0 && $article.elements[0].type == 'table_of_contents_element'}
-                        {$article.elements[0].to_string}
-                    {else}
+                    {assign var="tocFound" value=false}
+                    {if $article}
+                        {foreach from=$article.elements item=element}
+                            {if $element.type == 'table_of_contents_element'}
+                                {assign var="tocFound" value=true}
+                                {$element.to_string}
+                            {/if}
+                        {/foreach}
+                    {/if}
+                    {if !$tocFound}
                         {$page.blocks.rechts[0]}
                     {/if}
                 </div>
