@@ -12,62 +12,71 @@ function stopResponding() {
 }
 
 // HEADER MENU UNDERLINE EFFECT
-$(document).ready(function() {
+$(document).ready(function () {
     $("#nav").linkUnderlineAnim({
-        "speed": 300,
-        "color": "#ffffff",
-        "thickness": 1,
-        "distance": 2,
-        "skipClass": "selected"
+        "speed": 300, "color": "#ffffff", "thickness": 1, "distance": 2, "skipClass": "selected"
     });
 });
 
 // TABLE OF CONTENTS
-$(document).ready(function() {
-    $('.table-of-contents a').each(function() {
-        $(this).on('click', function() {
+$(document).ready(function () {
+    $('.table-of-contents a').each(function () {
+        $(this).on('click', function () {
             scrollTo($(this).attr('href'));
             return false;
         });
     });
-    
+
     function scrollTo(hash) {
-        document.getElementById(hash.replace('#', '')).scrollIntoView({ behavior: 'smooth' });
+        document.getElementById(hash.replace('#', '')).scrollIntoView({behavior: 'smooth'});
     }
 });
 
 // RIGHT BLOCK SCROLLING BEHAVIOR
-$(document).ready(function() {
-    var rightMenu = $('#right-content');
-    var pageContent = $('#page-content');
-    var el = document.getElementById('right-content');
+$(document).ready(function () {
+    var lastScrollTop = 0;
+    let rightMenu = $('#right-content');
+    let pageContent = $('#page-content');
+    let footer = $('#footer');
+    let footerStartOffset = footer.offset().top;
+    let outSideBottom = false;
+    let el = document.getElementById('right-content');
     if (!el) {
         return;
     }
+    let trackerTop = null;
     el.style.marginTop = "30px";
-    var initialPos = rightMenu.position();
-    var threshold = $('#banner-wrapper').height() - $('#header-wrapper').height();
-    var paddingPx = rightMenu.css('padding');
-    var marginLeftPx = rightMenu.css('margin-left');
-    var marginLeft = initialPos.left - (pageContent.position().left + pageContent.width());
-    positionRightBlock(initialPos, initialPos, false);
-    
-    $(window).scroll(function(e) { 
-        positionRightBlock(rightMenu.position(), initialPos, false);
+    let threshold = $('#banner-wrapper').height() - $('#header-wrapper').height();
+    let marginTop = parseInt(rightMenu.css('margin-top').replace('px', ''));
+    positionRightBlock();
+
+    $(window).scroll(function (e) {
+        positionRightBlock();
+        lastScrollTop = $(window).scrollTop();
     });
 
-    $(window).resize(function() {
-        positionRightBlock(rightMenu.position(), initialPos, true);
+    $(window).resize(function () {
+        threshold = $('#banner-wrapper').height() - $('#header-wrapper').height();
+        positionRightBlock();
     });
 
-    function positionRightBlock(currentPos, initialPos, resize) {
-        var pageContentPercentWidth = pageContent.width() / pageContent.parent().width() * 100;
-        var newWidth = (pageContent.width() / pageContentPercentWidth) * (100 - pageContentPercentWidth - 8);
+    function positionRightBlock() {
+        let pageContentPercentWidth = pageContent.width() / pageContent.parent().width() * 100;
+        let newWidth = (pageContent.width() / pageContentPercentWidth) * (100 - pageContentPercentWidth - 8);
+
+        let outside = ((rightMenu.offset().top + parseInt(rightMenu.height())) > footerStartOffset);
         if ($(window).scrollTop() > threshold) {
-            var newLeft = !resize ? (currentPos.left) : ((pageContent.position().left + pageContent.width()) + marginLeft);
-            rightMenu.css({width: newWidth + 'px', marginLeft: marginLeftPx, padding: paddingPx, position: 'fixed', top: $('#header-wrapper').height() + "px", left: newLeft + 'px', bottom: initialPos.bottom + 'px'});
+            // if (!trackerTop) {
+            //     trackerTop = threshold;
+            // }
+            rightMenu.css({
+                width: newWidth + 'px',
+                marginTop: marginTop + ($(window).scrollTop() - threshold) + 'px',
+            });
         } else {
-            rightMenu.css({width: newWidth + 'px', position: 'static'});
+            trackerTop = null;
+            rightMenu.css({width: newWidth + 'px', marginTop: '30px'});
         }
+        rightMenu.css({width: newWidth + 'px'});
     }
 });
