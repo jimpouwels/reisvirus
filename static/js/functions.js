@@ -50,11 +50,13 @@ $(document).ready(function () {
     positionRightBlock();
 
     $(window).scroll(function (e) {
+        footerStartOffset = footer.offset().top;
         positionRightBlock();
         lastScrollTop = $(window).scrollTop();
     });
 
     $(window).resize(function () {
+        footerStartOffset = footer.offset().top;
         threshold = $('#banner-wrapper').height() - $('#header-wrapper').height();
         positionRightBlock();
     });
@@ -62,8 +64,7 @@ $(document).ready(function () {
     function positionRightBlock() {
         let pageContentPercentWidth = pageContent.width() / pageContent.parent().width() * 100;
         let newWidth = (pageContent.width() / pageContentPercentWidth) * (100 - pageContentPercentWidth - 8);
-
-        let outside = ((rightMenu.offset().top + parseInt(rightMenu.height())) > footerStartOffset);
+        let outside = ((rightMenu.offset().top + parseInt(rightMenu.height())) > footerStartOffset - 100);
         if (outside) {
             outsideAmount += ($(window).scrollTop() - lastScrollTop);
         } else {
