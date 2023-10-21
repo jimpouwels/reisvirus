@@ -39,12 +39,11 @@ $(document).ready(function () {
     let pageContent = $('#page-content');
     let footer = $('#footer');
     let footerStartOffset = footer.offset().top;
-    let outSideBottom = false;
+    let outsideAmount = 0;
     let el = document.getElementById('right-content');
     if (!el) {
         return;
     }
-    let trackerTop = null;
     el.style.marginTop = "30px";
     let threshold = $('#banner-wrapper').height() - $('#header-wrapper').height();
     let marginTop = parseInt(rightMenu.css('margin-top').replace('px', ''));
@@ -65,16 +64,18 @@ $(document).ready(function () {
         let newWidth = (pageContent.width() / pageContentPercentWidth) * (100 - pageContentPercentWidth - 8);
 
         let outside = ((rightMenu.offset().top + parseInt(rightMenu.height())) > footerStartOffset);
-        if ($(window).scrollTop() > threshold) {
-            // if (!trackerTop) {
-            //     trackerTop = threshold;
-            // }
+        if (outside) {
+            outsideAmount += ($(window).scrollTop() - lastScrollTop);
+        } else {
+            outsideAmount = 0;
+        }
+        if (outsideAmount > 0) {
+        } else if ($(window).scrollTop() > threshold) {
             rightMenu.css({
                 width: newWidth + 'px',
                 marginTop: marginTop + ($(window).scrollTop() - threshold) + 'px',
             });
         } else {
-            trackerTop = null;
             rightMenu.css({width: newWidth + 'px', marginTop: '30px'});
         }
         rightMenu.css({width: newWidth + 'px'});
