@@ -34,25 +34,25 @@ $(document).ready(function () {
 
 // RIGHT BLOCK SCROLLING BEHAVIOR
 $(document).ready(function () {
-    var lastScrollTop = 0;
+    let lastScrollTop = 0;
     let rightMenu = $('#right-content');
-    let pageContent = $('#page-content');
     let footer = $('#footer');
     let footerStartOffset = footer.offset().top;
     let outsideAmount = 0;
-    let el = document.getElementById('right-content');
-    if (!el) {
+    let rightContentElement = document.getElementById('right-content');
+    if (!rightContentElement) {
         return;
     }
-    el.style.marginTop = "30px";
+    let originalMargin = "30px";
+    rightContentElement.style.marginTop = originalMargin;
     let threshold = $('#banner-wrapper').height() - $('#header-wrapper').height();
     let marginTop = parseInt(rightMenu.css('margin-top').replace('px', ''));
     positionRightBlock();
 
-    $(window).scroll(function (e) {
+    $(window).scroll(function () {
         footerStartOffset = footer.offset().top;
         positionRightBlock();
-        lastScrollTop = $(window).scrollTop();
+        lastScrollTop = scrollAmount();
     });
 
     $(window).resize(function () {
@@ -62,23 +62,23 @@ $(document).ready(function () {
     });
 
     function positionRightBlock() {
-        let pageContentPercentWidth = pageContent.width() / pageContent.parent().width() * 100;
-        let newWidth = (pageContent.width() / pageContentPercentWidth) * (100 - pageContentPercentWidth - 8);
         let outside = ((rightMenu.offset().top + parseInt(rightMenu.height())) > footerStartOffset - 100);
         if (outside) {
-            outsideAmount += ($(window).scrollTop() - lastScrollTop);
+            outsideAmount += (scrollAmount() - lastScrollTop);
         } else {
             outsideAmount = 0;
         }
         if (outsideAmount > 0) {
-        } else if ($(window).scrollTop() > threshold) {
+        } else if (scrollAmount() > threshold) {
             rightMenu.css({
-                width: newWidth + 'px',
-                marginTop: marginTop + ($(window).scrollTop() - threshold) + 'px',
+                marginTop: marginTop + (scrollAmount() - threshold) + 'px'
             });
         } else {
-            rightMenu.css({width: newWidth + 'px', marginTop: '30px'});
+            rightMenu.css({marginTop: originalMargin});
         }
-        rightMenu.css({width: newWidth + 'px'});
+    }
+
+    function scrollAmount() {
+        return $(window).scrollTop();
     }
 });
