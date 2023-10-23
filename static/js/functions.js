@@ -68,12 +68,11 @@ $(document).ready(function () {
         } else {
             outsideAmount = 0;
         }
-        if (outsideAmount > 0) {
-        } else if (scrollAmount() > threshold) {
+        if (scrollAmount() > threshold && outsideAmount <= 0) {
             rightMenu.css({
                 marginTop: marginTop + (scrollAmount() - threshold) + 'px'
             });
-        } else {
+        } else if (outsideAmount <= 0) {
             rightMenu.css({marginTop: originalMargin});
         }
     }
