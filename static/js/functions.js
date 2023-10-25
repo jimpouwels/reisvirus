@@ -39,45 +39,46 @@ $(document).ready(function () {
     let footer = $('#footer');
     let footerStartOffset = footer.offset().top;
     let outsideAmount = 0;
-    let rightContentElement = document.getElementById('right-content');
-    if (!rightContentElement) {
+    if (!rightMenu.get(0)) {
         return;
     }
-    let originalMargin = "30px";
-    rightContentElement.style.marginTop = originalMargin;
+    rightMenu.get(0).style.marginTop = "30px";
     let threshold = $('#banner-wrapper').height() - $('#header-wrapper').height();
     let marginTop = parseInt(rightMenu.css('margin-top').replace('px', ''));
-    positionRightBlock();
+    let originalMargin = marginTop;
+    positionRightBlock(scrollAmount());
 
     $(window).scroll(function () {
-        footerStartOffset = footer.offset().top;
-        positionRightBlock();
-        lastScrollTop = scrollAmount();
+        let scrollVal = scrollAmount();
+        positionRightBlock(scrollVal);
+        lastScrollTop = scrollVal;
     });
 
     $(window).resize(function () {
-        footerStartOffset = footer.offset().top;
         threshold = $('#banner-wrapper').height() - $('#header-wrapper').height();
-        positionRightBlock();
+        positionRightBlock(scrollAmount());
     });
 
-    function positionRightBlock() {
+    function positionRightBlock(scrollPos) {
+        footerStartOffset = footer.offset().top;
         let outside = ((rightMenu.offset().top + parseInt(rightMenu.height())) > footerStartOffset - 100);
         if (outside) {
-            outsideAmount += (scrollAmount() - lastScrollTop);
+            outsideAmount += (scrollPos - lastScrollTop);
         } else {
             outsideAmount = 0;
         }
-        if (scrollAmount() > threshold && outsideAmount <= 0) {
+        if (scrollPos > threshold && outsideAmount <= 0) {
+            marginTop = scrollAmount() - threshold + originalMargin;
             rightMenu.css({
-                marginTop: marginTop + (scrollAmount() - threshold) + 'px'
+                marginTop: marginTop + 'px'
             });
         } else if (outsideAmount <= 0) {
-            rightMenu.css({marginTop: originalMargin});
+            marginTop = originalMargin;
+            rightMenu.css({marginTop: marginTop});
         }
     }
 
     function scrollAmount() {
-        return $(window).scrollTop();
+        return parseInt($(window).scrollTop());
     }
 });
