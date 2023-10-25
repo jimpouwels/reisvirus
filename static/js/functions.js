@@ -34,51 +34,80 @@ $(document).ready(function () {
 
 // RIGHT BLOCK SCROLLING BEHAVIOR
 $(document).ready(function () {
-    let lastScrollTop = 0;
-    let rightMenu = $('#right-content');
-    let footer = $('#footer');
-    let footerStartOffset = footer.offset().top;
-    let outsideAmount = 0;
-    if (!rightMenu.get(0)) {
+    var rightMenu = $('#right-content');
+    var pageContent = $('#page-content');
+    var el = document.getElementById('right-content');
+    if (!el) {
         return;
     }
-    rightMenu.get(0).style.marginTop = "30px";
+    el.style.marginTop = "30px";
+    let footer = $('#footer');
+
+    let footerStartOffset = footer.offset().top;
+    let outsideAmount = 0;
+    let lastScrollTop = 0;
+
+    let initialPos = rightMenu.position();
     let threshold = $('#banner-wrapper').height() - $('#header-wrapper').height();
+    let paddingPx = rightMenu.css('padding');
+    let marginLeftPx = rightMenu.css('margin-left');
+    let marginLeft = initialPos.left - (pageContent.position().left + pageContent.width());
     let marginTop = parseInt(rightMenu.css('margin-top').replace('px', ''));
     let originalMargin = marginTop;
-    positionRightBlock(scrollAmount());
+    let fakeOffset = parseInt(rightMenu.offset().top) + parseInt(rightMenu.height());
+    let initialOffset = fakeOffset;
 
-    $(window).scroll(function () {
-        let scrollVal = scrollAmount();
-        positionRightBlock(scrollVal);
-        lastScrollTop = scrollVal;
+    positionRightBlock(initialPos, initialPos, false, scrollAmount());
+
+    $(window).scroll(function (e) {
+        positionRightBlock(rightMenu.position(), initialPos, false, scrollAmount());
+        lastScrollTop = scrollAmount();
     });
 
     $(window).resize(function () {
-        threshold = $('#banner-wrapper').height() - $('#header-wrapper').height();
-        positionRightBlock(scrollAmount());
+        positionRightBlock(rightMenu.position(), initialPos, true, scrollAmount());
     });
 
-    function positionRightBlock(scrollPos) {
+    function positionRightBlock(currentPos, initialPos, resize, scrollVal) {
         footerStartOffset = footer.offset().top;
-        let outside = ((rightMenu.offset().top + parseInt(rightMenu.height())) > footerStartOffset - 100);
+
+        const pageContentPercentWidth = pageContent.width() / pageContent.parent().width() * 100;
+        const newWidth = (pageContent.width() / pageContentPercentWidth) * (100 - pageContentPercentWidth - 8);
+
+        let outside = fakeOffset > footerStartOffset - 100;
         if (outside) {
-            outsideAmount += (scrollPos - lastScrollTop);
+            outsideAmount += (scrollVal - lastScrollTop);
         } else {
             outsideAmount = 0;
         }
-        if (scrollPos > threshold && outsideAmount <= 0) {
-            marginTop = scrollAmount() - threshold + originalMargin;
+
+        if (scrollVal > threshold && outsideAmount <= 0) {
+            let prevMargin = marginTop;
+            marginTop = scrollAmount() - threshold + parseInt(originalMargin);
+
+            const newLeft = !resize ? (currentPos.left) : ((pageContent.position().left + pageContent.width()) + marginLeft);
             rightMenu.css({
-                marginTop: marginTop + 'px'
+                width: newWidth + 'px',
+                marginLeft: marginLeftPx,
+                padding: paddingPx,
+                position: 'fixed',
+                top: $('#header-wrapper').height() + "px",
+                left: newLeft + 'px',
+                bottom: initialPos.bottom + 'px',
+                marginTop: "30px"
             });
+            fakeOffset += (parseInt(marginTop) - parseInt(prevMargin));
         } else if (outsideAmount <= 0) {
-            marginTop = originalMargin;
-            rightMenu.css({marginTop: marginTop});
+            marginTop = parseInt(originalMargin);
+            rightMenu.css({width: newWidth + 'px', position: 'static'});
+            fakeOffset = initialOffset;
+        } else {
+            rightMenu.css({marginTop: marginTop + "px", width: newWidth + 'px', position: 'static'});
         }
     }
 
     function scrollAmount() {
         return parseInt($(window).scrollTop());
     }
+
 });
