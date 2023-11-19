@@ -173,7 +173,7 @@ h3 {
 
 #mobile-menu {
     position: absolute;
-    top: 50%;
+    top: 55%;
     right: 0;
     transform: translate(-50%, -58%);
     margin-right: 0px;
@@ -652,7 +652,7 @@ li span {
 }
 
 #stop-respond {
-    color: gray !important;
+    color: rgb(128, 128, 128) !important;
     font-size: 0.8em;
 }
 
@@ -730,6 +730,14 @@ li span {
         margin-top: 15px
     }
 
+    .logo-img {
+        width: 30px;
+    }
+
+    .logo-txt {
+        font-size: 0.6em;
+    }
+
     h3 {
         font-weight: normal;
     }
@@ -738,13 +746,22 @@ li span {
         width: 85%;
     }
 
+    #header-content {
+        position: absolute;
+        top: -20%;
+    }
+
+    #header-wrapper {
+        height: 60px;
+    }
+
     #header-menu {
         margin-top: 0px;
         width: 30%;
         display: none;
         position: fixed;
         right: 0px;
-        top: 84px;
+        top: 60px;
         background-color: #699e65;
         text-transform: none;
         max-width: 550px;
@@ -758,7 +775,6 @@ li span {
     }
 
     .social-media img {
-        filter: grayscale(1);
         width: 40px;
         height: 40px;
     }
