@@ -434,6 +434,10 @@ li span {
     text-align: justify;
 }
 
+.article-intro {
+    font-weight: 600;
+}
+
 #page-content .paragraph-justified {
     line-height: 1.8em;
 }
@@ -662,6 +666,10 @@ li span {
     margin: auto;
 }
 
+.grecaptcha-badge {
+    visibility: hidden !important;
+}
+
 @media only screen and (max-width: 1100px) {
 
     #banner-wrapper {
@@ -772,6 +780,10 @@ li span {
         line-height: 160%;
         display: block;
         margin-bottom: 10px;
+    }
+
+    #nav {
+        padding-left: 15px;
     }
 
     .social-media img {

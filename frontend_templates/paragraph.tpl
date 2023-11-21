@@ -2,8 +2,8 @@
 {if $title}
     <{$heading}>{$title}</{$heading}>
 {/if}
-{assign var=formattedText value=$text}
+{assign var=classes value=""}
 {if $var.is_bold == 'true'}
-    {assign var=formattedText value="<strong>$formattedText</strong>"}
+    {assign var=classes value=" article-intro"}
 {/if}
-<p class="{$var.text_class}">{$formattedText}</p>
+<p class="{$var.text_class}{$classes}">{$text}</p>
