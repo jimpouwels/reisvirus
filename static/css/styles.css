@@ -16,7 +16,7 @@ html {
 
 #divider {
     position: absolute;
-    top: 60vh;
+    top: 62vh;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -125,14 +125,19 @@ html, body {
     width: 100%;
 }
 
-#header-wrapper {
-    position: fixed;
+#header-wrapper-1, #header-wrapper-2 {
+    position: relative;
     top: 0;
     background-color: #699e65;
     height: 84px;
     color: #ffffff;
     width: 100%;
     z-index: 10;
+}
+
+#header-wrapper-2 {
+    display: none;
+    position: fixed;
 }
 
 #header-content {
@@ -208,7 +213,6 @@ h3 {
 #banner {
     display: flex;
     width: 100%;
-    margin-top: 69px;
     height: 60vh;
 }
 
@@ -680,9 +684,13 @@ li span {
         display: none;
     }
 
-    #header-wrapper {
+    #header-wrapper-1 {
         position: relative;
         overflow-y: auto;
+    }
+
+    #header-wrapper-2 {
+        display: none;
     }
 
     .paragraph-home {

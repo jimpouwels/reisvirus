@@ -12,7 +12,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link rel="shortcut icon" type="image/x-icon" href="/static/img/favicon.ico">
     <link rel="canonical" href="{$canonical_url}"/>
-    <link rel="stylesheet" href="/static/css/styles.css?v=98">
+    <link rel="stylesheet" href="/static/css/styles.css?v=100">
     {if !$is_mobile_device}
         <link rel="stylesheet" href="/static/css/styles_desktop.css?v=11">
     {/if}
@@ -20,33 +20,36 @@
     <script src="/static/js/jarallax.min.js" type="text/javascript"></script>
     <script src="/static/js/jarallax.video.min.js" type="text/javascript"></script>
     <script src="/static/js/jquery.linkunderanim.min.js?v=11" type="text/javascript"></script>
-    <script src="/static/js/functions.js?v=219" type="text/javascript"></script>
+    <script src="/static/js/functions.js?v=23" type="text/javascript"></script>
     <script src="/static/js/menu_scripts.js?v=4" type="text/javascript"></script>
 </head>
 <body>
 <div id="root-wrapper">
-    <div id="header-wrapper">
-        <div id="header-content">
-            <div id="header-title">
-                <a class="logo" href="{$root_page.url}">
-                    <img src="/static/img/logo-img.png?v=1" class="logo-img"/>
-                    <span class="logo-txt">JQ-Travel</span>
-                </a>
-            </div>
-            <div id="mobile-menu"><a href="#" onclick="return false;"><img src="/static/img/hamburger_menu.svg"/></a>
-            </div>
-            <div id="header-menu">
-                <ul id="nav">
-                    {foreach from=$root_page.children item=navigation_item}
-                        {if $navigation_item.show_in_navigation}
-                            <li><a {if $navigation_item.is_current_page}class="selected"{/if}
-                                   href="{$navigation_item.url}">{$navigation_item.navigation_title}</a></li>
-                        {/if}
-                    {/foreach}
-                </ul>
+    {for $i=1 to 2}
+        <div id="header-wrapper-{$i}">
+            <div id="header-content">
+                <div id="header-title">
+                    <a class="logo" href="{$root_page.url}">
+                        <img src="/static/img/logo-img.png?v=1" class="logo-img"/>
+                        <span class="logo-txt">JQ-Travel</span>
+                    </a>
+                </div>
+                <div id="mobile-menu"><a href="#" onclick="return false;"><img
+                                src="/static/img/hamburger_menu.svg"/></a>
+                </div>
+                <div id="header-menu">
+                    <ul id="nav">
+                        {foreach from=$root_page.children item=navigation_item}
+                            {if $navigation_item.show_in_navigation}
+                                <li><a {if $navigation_item.is_current_page}class="selected"{/if}
+                                       href="{$navigation_item.url}">{$navigation_item.navigation_title}</a></li>
+                            {/if}
+                        {/foreach}
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
+    {/for}
     {if !$is_mobile_device}
         <div id="banner-wrapper">
             <div id="banner">

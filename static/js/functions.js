@@ -11,6 +11,22 @@ function stopResponding() {
     $('#respond-to-name').html('');
 }
 
+let headerLastScrollTop = $(window).scrollTop();
+
+$(document).ready(function () {
+    $(window).scroll(function (event) {
+        let st = $(window).scrollTop();
+        if (st < $("#header-wrapper-1").height() + 10) {
+            $("#header-wrapper-2").css('display', 'none');
+        } else if (st < headerLastScrollTop) {
+            $("#header-wrapper-2").css('display', 'block');
+        } else {
+            $("#header-wrapper-2").css('display', 'none');
+        }
+        headerLastScrollTop = st;
+    });
+});
+
 // HEADER MENU UNDERLINE EFFECT
 $(document).ready(function () {
     $("#nav").linkUnderlineAnim({
@@ -44,11 +60,11 @@ $(document).ready(function () {
     let footer = $('#footer');
 
     let footerStartOffset = footer.offset().top;
-    let outsideAmount = 0;
     let lastScrollTop = 0;
+    let outsideAmount = 0;
 
     let initialPos = rightMenu.position();
-    let threshold = $('#banner-wrapper').height() - $('#header-wrapper').height();
+    let threshold = 0;
     let paddingPx = rightMenu.css('padding');
     let marginLeftPx = rightMenu.css('margin-left');
     let marginLeft = initialPos.left - (pageContent.position().left + pageContent.width());
@@ -69,6 +85,11 @@ $(document).ready(function () {
     });
 
     function positionRightBlock(currentPos, initialPos, resize, scrollVal) {
+        if ($('#header-wrapper-2').css('display') === 'block') {
+            threshold = $('#banner-wrapper').height() - $('#header-wrapper-1').height();
+        } else {
+            threshold = $('#banner-wrapper').height() + $('#header-wrapper-1').height();
+        }
         footerStartOffset = footer.offset().top;
 
         const pageContentPercentWidth = pageContent.width() / pageContent.parent().width() * 100;
@@ -91,7 +112,7 @@ $(document).ready(function () {
                 marginLeft: marginLeftPx,
                 padding: paddingPx,
                 position: 'fixed',
-                top: $('#header-wrapper').height() + "px",
+                top: $("#header-wrapper-2").css('display') === 'block' ? ($('#header-wrapper-1').height()) : 0 + "px",
                 left: newLeft + 'px',
                 bottom: initialPos.bottom + 'px',
                 marginTop: "30px"
