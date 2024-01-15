@@ -15,6 +15,9 @@ let headerLastScrollTop = $(window).scrollTop();
 
 $(document).ready(function () {
     $(window).scroll(function (event) {
+        if ($('#banner-wrapper').css('display') != 'block') {
+            return;
+        }
         let st = $(window).scrollTop();
         if (st < $("#header-wrapper-1").height() + 10) {
             $("#header-wrapper-2").css('display', 'none');
