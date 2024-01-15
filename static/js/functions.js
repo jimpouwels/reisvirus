@@ -15,16 +15,16 @@ let headerLastScrollTop = $(window).scrollTop();
 
 $(document).ready(function () {
     $(window).scroll(function (event) {
-        if ($('#banner-wrapper').css('display') != 'block') {
+        if (!$('#banner-wrapper').is(':visible')) {
             return;
         }
         let st = $(window).scrollTop();
         if (st < $("#header-wrapper-1").height() + 10) {
-            $("#header-wrapper-2").css('display', 'none');
+            $("#header-wrapper-2").hide();
         } else if (st < headerLastScrollTop) {
-            $("#header-wrapper-2").css('display', 'block');
+            $("#header-wrapper-2").show();
         } else {
-            $("#header-wrapper-2").css('display', 'none');
+            $("#header-wrapper-2").hide();
         }
         headerLastScrollTop = st;
     });
@@ -88,7 +88,7 @@ $(document).ready(function () {
     });
 
     function positionRightBlock(currentPos, initialPos, resize, scrollVal) {
-        if ($('#header-wrapper-2').css('display') === 'block') {
+        if ($('#header-wrapper-2').is(':visible')) {
             threshold = $('#banner-wrapper').height() - $('#header-wrapper-1').height();
         } else {
             threshold = $('#banner-wrapper').height() + $('#header-wrapper-1').height();
@@ -115,7 +115,7 @@ $(document).ready(function () {
                 marginLeft: marginLeftPx,
                 padding: paddingPx,
                 position: 'fixed',
-                top: $("#header-wrapper-2").css('display') === 'block' ? ($('#header-wrapper-1').height()) : 0 + "px",
+                top: $("#header-wrapper-2").is(':visible') ? ($('#header-wrapper-1').height()) : 0 + "px",
                 left: newLeft + 'px',
                 bottom: initialPos.bottom + 'px',
                 marginTop: "30px"
