@@ -8,6 +8,11 @@
     src: url(/static/fonts/Violante-eZoYg.ttf);
 }
 
+@font-face {
+    font-family: AmericanCaptain;
+    src: url(/static/fonts/AmericanCaptain-MdEY.otf);
+}
+
 html {
     -webkit-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
@@ -404,11 +409,12 @@ h3 {
 }
 
 #quote {
-    font-family: Violante;
-    font-size: 7em;
+    font-family: AmericanCaptain;
+    font-size: 5.5em;
     text-align: center;
     margin: auto;
-    font-weight: bold;
+    font-weight: 550;
+    text-transform: uppercase;
 }
 
 #quote-sub {
