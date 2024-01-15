@@ -19,10 +19,13 @@ $(document).ready(function () {
             return;
         }
         let st = $(window).scrollTop();
-        if (st < $("#header-wrapper-1").height() + 10) {
+        console.log(st);
+        if (st === 0) {
+            $("#header-wrapper-2").hide()
+        } else if (st < ($("#header-wrapper-1").height() + 200)) {
             $("#header-wrapper-2").hide();
         } else if (st < headerLastScrollTop) {
-            $("#header-wrapper-2").slideDown();
+            $("#header-wrapper-2").show();
         } else {
             $("#header-wrapper-2").slideUp();
         }
@@ -67,7 +70,7 @@ $(document).ready(function () {
     let outsideAmount = 0;
 
     let initialPos = rightMenu.position();
-    let threshold = $('#banner-wrapper').height() - $('#header-wrapper-1').height();
+    let threshold = $('#banner-wrapper').height() + $('#header-wrapper-1').height();
     let paddingPx = rightMenu.css('padding');
     let marginLeftPx = rightMenu.css('margin-left');
     let marginLeft = initialPos.left - (pageContent.position().left + pageContent.width());
