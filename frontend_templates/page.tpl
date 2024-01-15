@@ -12,7 +12,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link rel="shortcut icon" type="image/x-icon" href="/static/img/favicon.ico">
     <link rel="canonical" href="{$canonical_url}"/>
-    <link rel="stylesheet" href="/static/css/styles.css?v=107">
+    <link rel="stylesheet" href="/static/css/styles.css?v=111">
     {if !$is_mobile_device}
         <link rel="stylesheet" href="/static/css/styles_desktop.css?v=11">
     {/if}
@@ -20,7 +20,7 @@
     <script src="/static/js/jarallax.min.js" type="text/javascript"></script>
     <script src="/static/js/jarallax.video.min.js" type="text/javascript"></script>
     <script src="/static/js/jquery.linkunderanim.min.js?v=11" type="text/javascript"></script>
-    <script src="/static/js/functions.js?v=28" type="text/javascript"></script>
+    <script src="/static/js/functions.js?v=29" type="text/javascript"></script>
     <script src="/static/js/menu_scripts.js?v=4" type="text/javascript"></script>
 </head>
 <body>
@@ -54,9 +54,19 @@
         <div id="banner-wrapper">
             <div id="banner">
                 <div class="jarallax">
-                    {$page.blocks.wallpaper[0]}
+                    {if $article && $article.wallpaper}
+                        <img class="jarallax-img" src="{$article.wallpaper.url}"/>
+                    {else}
+                        {$page.blocks.wallpaper[0]}
+                    {/if}
                     <div id="quote-wrapper">
-                        {$page.blocks.wallpapertitle[0]}
+                        {if $article}
+                            <div id="quote">
+                                {$article.title}
+                            </div>
+                        {else}
+                            {$page.blocks.wallpapertitle[0]}
+                        {/if}
                     </div>
                 </div>
             </div>
@@ -75,9 +85,11 @@
     {/if}
     <div id="content-wrapper">
         <div id="page-content" class="content {if $page.is_homepage}homepage{/if}">
-            <div id="title-container">
-                <h1>{$title}</h1>
-            </div>
+            {if !$article}
+                <div id="title-container">
+                    <h1>{$title}</h1>
+                </div>
+            {/if}
             {if count($crumb_path) > 1}
                 <div id="crumb_path">
                     {foreach from=$crumb_path item=crumb_path_item name=crumb_path_item}

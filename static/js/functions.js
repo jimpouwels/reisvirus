@@ -22,7 +22,7 @@ $(document).ready(function () {
         console.log(st);
         if (st === 0) {
             $("#header-wrapper-2").hide()
-        } else if (st < ($("#header-wrapper-1").height() + 200)) {
+        } else if (st < ($("#header-wrapper-1").height() + 100)) {
             $("#header-wrapper-2").hide();
         } else if (st < headerLastScrollTop) {
             $("#header-wrapper-2").show();
