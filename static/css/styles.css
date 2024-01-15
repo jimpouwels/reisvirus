@@ -192,7 +192,12 @@ h3 {
     margin-right: 15px;
     text-transform: uppercase;
     font-weight: 900;
-    font-size: 1.2em;
+    font-size: 1.15em;
+}
+
+#header-wrapper-2 #header-menu li {
+    font-size: 1em;
+    font-weight: bold;
 }
 
 #header-menu a {

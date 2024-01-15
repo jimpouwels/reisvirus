@@ -27,7 +27,7 @@ $(document).ready(function () {
         } else if (st < headerLastScrollTop) {
             $("#header-wrapper-2").show();
         } else {
-            $("#header-wrapper-2").slideUp();
+            $("#header-wrapper-2").hide();
         }
         headerLastScrollTop = st;
     });
