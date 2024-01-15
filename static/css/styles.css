@@ -65,7 +65,7 @@ html {
 }
 
 #crumb_path {
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .error-field {
@@ -695,6 +695,10 @@ li span {
         display: none;
     }
 
+    #crumb_path {
+        margin-top: 15px;
+    }
+
     #divider {
         display: none;
     }
@@ -867,7 +871,4 @@ li span {
         width: 50%;
     }
 
-    #crumb_path {
-        margin-top: 0px;
-    }
 }
