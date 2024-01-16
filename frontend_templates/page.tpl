@@ -12,7 +12,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link rel="shortcut icon" type="image/x-icon" href="/static/img/favicon.ico">
     <link rel="canonical" href="{$canonical_url}"/>
-    <link rel="stylesheet" href="/static/css/styles.css?v=123">
+    <link rel="stylesheet" href="/static/css/styles.css?v=128">
     {if !$is_mobile_device}
         <link rel="stylesheet" href="/static/css/styles_desktop.css?v=11">
     {/if}
@@ -65,7 +65,13 @@
                                 {$article.title}
                             </div>
                         {else}
-                            {$page.blocks.wallpapertitle[0]}
+                            {if $page.is_homepage}
+                                {$page.blocks.wallpapertitle[0]}
+                            {else}
+                                <div id="quote">
+                                    {$page.title}
+                                </div>
+                            {/if}
                         {/if}
                     </div>
                 </div>
@@ -85,11 +91,6 @@
     {/if}
     <div id="content-wrapper">
         <div id="page-content" class="content {if $page.is_homepage}homepage{/if}">
-            {if !$article}
-                <div id="title-container">
-                    <h1>{$title}</h1>
-                </div>
-            {/if}
             {if count($crumb_path) > 1}
                 <div id="crumb_path">
                     {foreach from=$crumb_path item=crumb_path_item name=crumb_path_item}
@@ -102,6 +103,8 @@
                                 </span>
                     {/foreach}
                 </div>
+            {else}
+                <br/>
             {/if}
             {if $article}
                 {$article.to_string}
