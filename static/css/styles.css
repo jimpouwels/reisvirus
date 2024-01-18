@@ -65,7 +65,7 @@ html {
 }
 
 #crumb_path {
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .error-field {
@@ -806,6 +806,12 @@ li span {
         line-height: 160%;
         display: block;
         margin-bottom: 10px;
+        font-size: 1em;
+        font-weight: 300;
+    }
+
+    #header-menu li a.selected {
+        font-weight: bold;
     }
 
     #nav {
