@@ -1,4 +1,3 @@
-<strong>{$title}</strong><br />
-<p class="paragraph-justified">
-    <i>{$text}</i>
+<p class="paragraph-justified paragraph-tip">
+    <strong>Tip:&nbsp;</strong>{$text}
 </p>

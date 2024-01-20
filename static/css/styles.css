@@ -452,6 +452,12 @@ li span {
     text-align: justify;
 }
 
+.paragraph-tip {
+    background-color: #eff6ee;
+    font-style: italic;
+    padding: 20px;
+}
+
 .article-intro {
     font-weight: 600;
 }
