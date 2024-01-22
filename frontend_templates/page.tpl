@@ -12,7 +12,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link rel="shortcut icon" type="image/x-icon" href="/static/img/favicon.ico">
     <link rel="canonical" href="{$canonical_url}"/>
-    <link rel="stylesheet" href="/static/css/styles.css?v=138">
+    <link rel="stylesheet" href="/static/css/styles.css?v=139">
     {if !$is_mobile_device}
         <link rel="stylesheet" href="/static/css/styles_desktop.css?v=11">
     {/if}
@@ -106,6 +106,9 @@
                     {/foreach}
                 </div>
             {/if}
+            <div id="title-container">
+                <h1>{if $article}{$article.title}{else}{$title}{/if}</h1>
+            </div>
             {if $article}
                 {$article.to_string}
             {else}
