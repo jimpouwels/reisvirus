@@ -21,8 +21,7 @@ html {
 
 #divider {
     position: absolute;
-    top: 92vh;
-    margin-top: -14vh;
+    margin-top: -17vh;
     left: 0;
     width: 100%;
     overflow: hidden;
