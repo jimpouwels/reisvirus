@@ -12,7 +12,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link rel="shortcut icon" type="image/x-icon" href="/static/img/favicon.ico">
     <link rel="canonical" href="{$canonical_url}"/>
-    <link rel="stylesheet" href="/static/css/styles.css?v=170">
+    <link rel="stylesheet" href="/static/css/styles.css?v=176">
     {if !$is_mobile_device}
         <link rel="stylesheet" href="/static/css/styles_desktop.css?v=11">
     {/if}
@@ -20,7 +20,7 @@
     <script src="/static/js/jarallax.min.js" type="text/javascript"></script>
     <script src="/static/js/jarallax.video.min.js" type="text/javascript"></script>
     <script src="/static/js/jquery.linkunderanim.min.js?v=11" type="text/javascript"></script>
-    <script src="/static/js/functions.js?v=35" type="text/javascript"></script>
+    <script src="/static/js/functions.js?v=39" type="text/javascript"></script>
     <script src="/static/js/menu_scripts.js?v=4" type="text/javascript"></script>
 </head>
 <body>

@@ -66,7 +66,8 @@ $(document).ready(function () {
     if (!el) {
         return;
     }
-    el.style.marginTop = "30px";
+    var marginTopInit = 30;
+    el.style.marginTop = marginTopInit + "px";
     let footer = $('#footer');
 
     let footerStartOffset = footer.offset().top;
@@ -74,7 +75,7 @@ $(document).ready(function () {
     let outsideAmount = 0;
 
     let initialPos = rightMenu.position();
-    let threshold = $('#banner-wrapper').height() + $('#header-wrapper-1').height();
+    let threshold = $('#top-wrapper').height();
     let paddingPx = rightMenu.css('padding');
     let marginLeftPx = rightMenu.css('margin-left');
     let marginLeft = initialPos.left - (pageContent.position().left + pageContent.width());

@@ -25,7 +25,7 @@ html {
     overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
-    margin-top: -13vh;
+    margin-top: -8.7vh;
     z-index: 1;
 }
 
@@ -33,7 +33,7 @@ html {
     position: relative;
     display: block;
     width: calc(170% + 1.3px);
-    height: 13vh;
+    height: 8vh;
     transform: rotateY(180deg);
 }
 
@@ -130,7 +130,7 @@ html, body {
 }
 
 #header-wrapper-1, #header-wrapper-2 {
-    position: relative;
+    position: absolute;
     top: 0;
     height: 84px;
     color: #ffffff;
@@ -234,7 +234,7 @@ h3 {
 #banner-wrapper {
     width: 100%;
     overflow: hidden;
-    height: 84vh;
+    height: 91vh;
 }
 
 #content-wrapper {
