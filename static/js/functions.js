@@ -33,6 +33,10 @@ $(document).ready(function () {
     });
 });
 
+$(document).ready(function () {
+    // $("#divider").css('margin-top', -$("#divider-svg").height());
+});
+
 // HEADER MENU UNDERLINE EFFECT
 $(document).ready(function () {
     $("#nav").linkUnderlineAnim({
