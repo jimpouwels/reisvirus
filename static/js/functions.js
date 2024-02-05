@@ -34,7 +34,7 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-    // $("#divider").css('margin-top', -$("#divider-svg").height());
+    // $("#divider").css('margin-top', -($("#divider-svg").height() * 1.4));
 });
 
 // HEADER MENU UNDERLINE EFFECT
