@@ -33,10 +33,6 @@ $(document).ready(function () {
     });
 });
 
-$(document).ready(function () {
-    // $("#divider").css('margin-top', -($("#divider-svg").height() * 1.4));
-});
-
 // HEADER MENU UNDERLINE EFFECT
 $(document).ready(function () {
     $("#nav").linkUnderlineAnim({
@@ -92,6 +88,9 @@ $(document).ready(function () {
     });
 
     $(window).resize(function () {
+        threshold = $('#top-wrapper').height();
+        fakeOffset = parseInt(rightMenu.offset().top) + parseInt(rightMenu.height());
+        initialOffset = fakeOffset;
         positionRightBlock(rightMenu.position(), initialPos, true, scrollAmount());
     });
 

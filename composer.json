@@ -1,0 +1,18 @@
+{
+  "name": "jqtravel/jqtravel",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Jim Pouwels",
+      "email": "jim.pouwels@gmail.com"
+    }
+  ],
+  "require": {
+    "obcato/obcato": "v0.0.12"
+  },
+  "autoload": {
+    "psr-4": {
+      "jqtravel\\jqtravel\\": "src/"
+    }
+  }
+}
