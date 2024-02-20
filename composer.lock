@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "220d3fe13f0421a8a0dab5071367d022",
+    "content-hash": "e0cc0a93c08194edf9adc41ef74173d2",
     "packages": [
         {
             "name": "obcato/component-api",
-            "version": "v1.0.34",
+            "version": "v1.0.36",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jimpouwels/obcato-component-api.git",
-                "reference": "3bbd3b6c999dcaa40a65edd607d2a899e68ffbd6"
+                "reference": "92007b66c35dfc7e6139c3d19602c1c2370d7b25"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jimpouwels/obcato-component-api/zipball/3bbd3b6c999dcaa40a65edd607d2a899e68ffbd6",
-                "reference": "3bbd3b6c999dcaa40a65edd607d2a899e68ffbd6",
+                "url": "https://api.github.com/repos/jimpouwels/obcato-component-api/zipball/92007b66c35dfc7e6139c3d19602c1c2370d7b25",
+                "reference": "92007b66c35dfc7e6139c3d19602c1c2370d7b25",
                 "shasum": ""
             },
             "type": "library",
@@ -42,22 +42,22 @@
             "description": "Custom Component API for Obcato",
             "support": {
                 "issues": "https://github.com/jimpouwels/obcato-component-api/issues",
-                "source": "https://github.com/jimpouwels/obcato-component-api/tree/v1.0.34"
+                "source": "https://github.com/jimpouwels/obcato-component-api/tree/v1.0.36"
             },
-            "time": "2024-02-20T17:58:29+00:00"
+            "time": "2024-02-20T21:30:47+00:00"
         },
         {
             "name": "obcato/obcato",
-            "version": "v0.0.12",
+            "version": "v0.0.19",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jimpouwels/obcato.git",
-                "reference": "4a05ecf1fe5aa79cbb68522263e6f906e7ff2c39"
+                "reference": "81cb20214a71976d9495a5c0d56091e8e99db679"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jimpouwels/obcato/zipball/4a05ecf1fe5aa79cbb68522263e6f906e7ff2c39",
-                "reference": "4a05ecf1fe5aa79cbb68522263e6f906e7ff2c39",
+                "url": "https://api.github.com/repos/jimpouwels/obcato/zipball/81cb20214a71976d9495a5c0d56091e8e99db679",
+                "reference": "81cb20214a71976d9495a5c0d56091e8e99db679",
                 "shasum": ""
             },
             "require": {
@@ -65,7 +65,7 @@
                 "ext-gd": "*",
                 "ext-mysqli": "*",
                 "ext-zip": "*",
-                "obcato/component-api": "v1.0.34",
+                "obcato/component-api": "v1.0.36",
                 "smarty/smarty": "^4.3"
             },
             "require-dev": {
@@ -86,9 +86,9 @@
             ],
             "support": {
                 "issues": "https://github.com/jimpouwels/obcato/issues",
-                "source": "https://github.com/jimpouwels/obcato/tree/v0.0.12"
+                "source": "https://github.com/jimpouwels/obcato/tree/v0.0.19"
             },
-            "time": "2024-02-20T18:12:52+00:00"
+            "time": "2024-02-20T21:47:27+00:00"
         },
         {
             "name": "smarty/smarty",
