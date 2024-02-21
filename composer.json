@@ -8,7 +8,7 @@
     }
   ],
   "require": {
-    "obcato/obcato": "v0.0.19"
+    "obcato/obcato": "v0.0.1"
   },
   "autoload": {
     "psr-4": {
