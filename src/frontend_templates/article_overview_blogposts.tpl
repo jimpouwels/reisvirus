@@ -4,7 +4,6 @@
 {if $itemsPerRow == 2}
     {assign var=divClass value="{$divClass} blogpost-two-by-two"}
 {/if}
-
 <div class="blogposts">
     {if $title}
         <h2>{$title}</h2>
@@ -17,4 +16,7 @@
             <p class="description">{$article.description}<p>
         </div>
     {/foreach}
+    {if empty($articles)}
+        <i>Deze blogs moeten wij nog schrijven!</i>
+    {/if}
 </div>

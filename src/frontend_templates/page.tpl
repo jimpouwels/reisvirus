@@ -12,7 +12,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link rel="shortcut icon" type="image/x-icon" href="/static/img/favicon.ico">
     <link rel="canonical" href="{$canonical_url}"/>
-    <link rel="stylesheet" href="/static/css/styles.css?v=178">
+    <link rel="stylesheet" href="/static/css/styles.css?v=182">
     {if !$is_mobile_device}
         <link rel="stylesheet" href="/static/css/styles_desktop.css?v=11">
     {/if}
@@ -43,7 +43,8 @@
                             {foreach from=$root_page.children item=navigation_item}
                                 {if $navigation_item.show_in_navigation}
                                     <li><a {if $navigation_item.is_current_page}class="selected"{/if}
-                                           href="{$navigation_item.url}">{$navigation_item.navigation_title}</a></li>
+                                           href="{$navigation_item.url}">{$navigation_item.navigation_title}</a>
+                                    </li>
                                 {/if}
                             {/foreach}
                         </ul>
@@ -99,12 +100,12 @@
                 <div id="crumb_path">
                     {foreach from=$crumb_path item=crumb_path_item name=crumb_path_item}
                         <span class="crumb_path_item">
-                                    <a title="{$crumb_path_item.title}"
-                                       href="{$crumb_path_item.url}">{$crumb_path_item.title}</a>
-                                    {if !$smarty.foreach.crumb_path_item.last}
-                                        <span>/</span>
-                                    {/if}
-                                </span>
+                                            <a title="{$crumb_path_item.title}"
+                                               href="{$crumb_path_item.url}">{$crumb_path_item.title}</a>
+                                            {if !$smarty.foreach.crumb_path_item.last}
+                                                <span>/</span>
+                                            {/if}
+                                        </span>
                     {/foreach}
                 </div>
             {/if}
@@ -144,7 +145,8 @@
                 <div class="contact">
                     <p>Jim Pouwels</p>
                     <div class="social-media">
-                        <a href="https://www.instagram.com/jim_pouwels" title="Instagram - @jimpouwels" target="_blank"><img
+                        <a href="https://www.instagram.com/jim_pouwels" title="Instagram - @jimpouwels"
+                           target="_blank"><img
                                     src="/static/img/instagram.png"/></a>
                         <a href="https://landenverzamelaars.nl/reiziger/18682/jim-pouwels"
                            title="LandenVerzamelaars - jim-pouwels" target="_blank"><img class="last"

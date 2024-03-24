@@ -178,6 +178,10 @@ h3 {
     display: none;
 }
 
+.homepage #title-container {
+    display: block;
+}
+
 #header-menu {
     float: right;
     margin-top: 15px;
@@ -255,6 +259,7 @@ h3 {
 
 .homepage {
     width: 100% !important;
+    text-align: center;
 }
 
 .content a {
@@ -476,9 +481,7 @@ li span {
 }
 
 .paragraph-home {
-    text-align: justify;
-    width: 60%;
-    float: left;
+    text-align: center;
     margin-right: 25px;
     margin-top: 0px;
 }
@@ -727,6 +730,7 @@ li span {
 
     .paragraph-home {
         width: 100%;
+        text-align: justify;
     }
 
     #content-wrapper {

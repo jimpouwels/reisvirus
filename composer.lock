@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "28ea253041e2bf8279ded423659b9339",
+    "content-hash": "6bb5f5eb2a013124b9221bc49df136fc",
     "packages": [
         {
             "name": "obcato/obcato",
-            "version": "v0.0.6",
+            "version": "v0.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jimpouwels/obcato.git",
-                "reference": "1b1c0cca8866b96ae109bde140caca2c4614bd94"
+                "reference": "6fc349faf22f678ed1ef39709bbb9cc910d23b4a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jimpouwels/obcato/zipball/1b1c0cca8866b96ae109bde140caca2c4614bd94",
-                "reference": "1b1c0cca8866b96ae109bde140caca2c4614bd94",
+                "url": "https://api.github.com/repos/jimpouwels/obcato/zipball/6fc349faf22f678ed1ef39709bbb9cc910d23b4a",
+                "reference": "6fc349faf22f678ed1ef39709bbb9cc910d23b4a",
                 "shasum": ""
             },
             "require": {
@@ -45,9 +45,9 @@
             ],
             "support": {
                 "issues": "https://github.com/jimpouwels/obcato/issues",
-                "source": "https://github.com/jimpouwels/obcato/tree/v0.0.6"
+                "source": "https://github.com/jimpouwels/obcato/tree/v0.0.7"
             },
-            "time": "2024-02-22T12:26:00+00:00"
+            "time": "2024-02-26T12:29:55+00:00"
         },
         {
             "name": "smarty/smarty",

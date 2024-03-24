@@ -3,4 +3,4 @@
 namespace jqtravel\jqtravel;
 require_once "bootstrap.php";
 
-\Obcato\Core\renderFrontend();
+\Obcato\renderFrontend();
