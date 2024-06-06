@@ -2,6 +2,10 @@
 .idea/modules.xml
 .idea/php.xml
 .idea/vcs.xml
+.idea/codeception.xml
+.idea/phpspec.xml
+.idea/phpunit.xml
 .idea/codeStyles/codeStyleConfig.xml
 .idea/inspectionProfiles/*
 /vendor/
+**/.DS_Store

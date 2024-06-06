@@ -1,14 +1,14 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl_NL" lang="nl_NL">
 <head>
-    <title>JQ-Travel - {$title}</title>
+    <title>Reisvirus - {$title}</title>
     <meta name="keywords"
-          content="{if $keywords}{$keywords}, {/if}{$title}, JQ-Travel, JQ Travel, reizen, travel, rondreis, zelf organiseren"/>
+          content="{if $keywords}{$keywords}, {/if}{$title}, Reisvirus, reizen, travel, rondreis, zelf organiseren"/>
     <meta name="description" content="{$page.description}"/>
-    <meta name="Subject" content="JQ-Travel: {$title}"/>
+    <meta name="Subject" content="Reisvirus: {$title}"/>
     <meta name="robots" content="index, follow"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta property="og:site_name" content="JQ-Travel">
+    <meta property="og:site_name" content="Reisvirus">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link rel="shortcut icon" type="image/x-icon" href="/static/img/favicon.ico">
     <link rel="canonical" href="{$canonical_url}"/>
@@ -32,7 +32,7 @@
                     <div id="header-title">
                         <a class="logo" href="{$root_page.url}">
                             <img src="/static/img/logo-img.png?v=1" class="logo-img"/>
-                            <span class="logo-txt">JQ-Travel</span>
+                            <span class="logo-txt">Reisvirus</span>
                         </a>
                     </div>
                     <div id="mobile-menu"><a href="#" onclick="return false;"><img
@@ -154,12 +154,12 @@
                     </div>
                 </div>
                 <div class="contact">
-                    <p>JQ-Travel</p>
+                    <p>Reisvirus</p>
                     <div class="social-media">
-                        <a title="Instagram - jq_travel" target="_blank"
-                           href="https://www.instagram.com/jq_travel/"><img src="/static/img/instagram.png"/></a>
-                        <a href="https://landenverzamelaars.nl/reiziger/18710/jq-travel"
-                           title="LandenVerzamelaars - jq-travel" target="_blank"><img class=""
+                        <a title="Instagram - reisvirus" target="_blank"
+                           href="https://www.instagram.com/reis_virus"><img src="/static/img/instagram.png"/></a>
+                        <a href="https://landenverzamelaars.nl/reiziger/18710/reis-virus"
+                           title="LandenVerzamelaars - Reisvirus" target="_blank"><img class=""
                                                                                        src="/static/img/landenverzamelaars.png"/></a>
                         <a href="https://nl.pinterest.com/JQTravel" title="Pinterest - JQTrave" target="_blank"><img
                                     class="last" src="/static/img/pinterest.png"/></a>
@@ -178,7 +178,7 @@
                     </div>
                 </div>
             </div>
-            <p id="copyright"><a href="mailto:info@jqtravel.nl" title="info@jqtravel.nl">&copy; JQ Travel
+            <p id="copyright"><a href="mailto:info@reisvirus.com" title="info@reisvirus.com">&copy; Reisvirus
                     2023-{$smarty.now|date_format:"%Y"}</a></p>
             <p id="powered-by">Powered by <a title="Github: Obcato" target="_blank"
                                              href="https://github.com/jimpouwels/obcato">Obcato</a></p>
