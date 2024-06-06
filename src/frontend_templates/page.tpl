@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl_NL" lang="nl_NL">
 <head>
-    <title>Reisvirus - {$title}</title>
+    <title>{if $page.is_homepage}Reisvirus.com • Jouw droomreis begint hier!{/if}{if !$page.is_homepage}{$title} • Reisvirus.com{/if}</title>
     <meta name="keywords"
           content="{if $keywords}{$keywords}, {/if}{$title}, Reisvirus, reizen, travel, rondreis, zelf organiseren"/>
     <meta name="description" content="{$page.description}"/>
