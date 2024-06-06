@@ -8,11 +8,11 @@
     }
   ],
   "require": {
-    "obcato/obcato": "v0.0.7"
+    "obcato/obcato": "v0.0.8"
   },
   "autoload": {
     "psr-4": {
-      "jqtravel\\jqtravel\\": "src/"
+      "reisvirus\\reisvirus\\": "src/"
     }
   }
 }
