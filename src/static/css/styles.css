@@ -182,13 +182,13 @@ h3 {
     display: block;
 }
 
-#header-menu {
+.header-menu {
     float: right;
     margin-top: 15px;
     font-size: 1em;
 }
 
-#mobile-menu {
+.mobile-menu {
     position: absolute;
     top: 55%;
     right: 0;
@@ -199,7 +199,7 @@ h3 {
     filter: invert(1);
 }
 
-#header-menu li {
+.header-menu li {
     display: inline;
     margin-right: 15px;
     text-transform: uppercase;
@@ -207,17 +207,16 @@ h3 {
     font-size: 1.15em;
 }
 
-#header-wrapper-2 #header-menu li {
+#header-wrapper-2 .header-menu li {
     font-size: 1em;
-    font-weight: bold;
 }
 
-#header-menu a {
+.header-menu a {
     text-decoration: none;
     color: #ffffff;
 }
 
-#header-menu li a.selected {
+.header-menu li a.selected {
     font-weight: 900;
     color: #ffffff;
     padding-bottom: 3px;
@@ -702,10 +701,6 @@ li span {
 
 @media only screen and (max-width: 1100px) {
 
-    #banner-wrapper {
-        display: none;
-    }
-
     #title-container {
         display: block;
     }
@@ -714,18 +709,8 @@ li span {
         margin-top: 15px;
     }
 
-    #divider {
-        display: none;
-    }
-
-    #header-wrapper-1 {
-        position: relative;
-        background-color: #699e65;
-        overflow-y: auto;
-    }
-
-    #header-wrapper-2 {
-        display: none;
+    #header-wrapper-1, #header-wrapper-2 {
+        height: 75px;
     }
 
     .paragraph-home {
@@ -773,21 +758,33 @@ li span {
         width: 100%;
     }
 
-    #mobile-menu {
+    #quote {
+        font-size: 4em;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    #quote-sub {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .mobile-menu {
         display: block;
     }
 
-    #mobile-menu img {
+    .mobile-menu img {
         width: 30px;
         margin-top: 15px
     }
 
     .logo-img {
-        width: 30px;
+        margin-top: 25px;
+        width: 45px;
     }
 
     .logo-txt {
-        font-size: 0.6em;
+        font-size: 1em;
     }
 
     h3 {
@@ -807,28 +804,26 @@ li span {
         height: 63px;
     }
 
-    #header-menu {
+    .header-menu {
         margin-top: 0px;
         width: 30%;
         display: none;
         position: fixed;
         right: 0px;
-        top: 60px;
+        top: 75px;
         background-color: #699e65;
         text-transform: none;
-        max-width: 550px;
         z-index: 999;
     }
 
-    #header-menu li {
+    .header-menu li {
         line-height: 160%;
         display: block;
         margin-bottom: 10px;
         font-size: 1em;
-        font-weight: 300;
     }
 
-    #header-menu li a.selected {
+    .header-menu li a.selected {
         font-weight: bold;
     }
 
@@ -887,10 +882,6 @@ li span {
 
     .contact-form-field textarea {
         width: 95%;
-    }
-
-    #header-menu {
-        width: 50%;
     }
 
 }

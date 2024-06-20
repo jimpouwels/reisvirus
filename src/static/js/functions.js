@@ -19,7 +19,6 @@ $(document).ready(function () {
             return;
         }
         let st = $(window).scrollTop();
-        console.log(st);
         if (st === 0) {
             $("#header-wrapper-2").hide()
         } else if (st < ($("#header-wrapper-1").height() + 100)) {

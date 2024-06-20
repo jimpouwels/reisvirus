@@ -1,0 +1,13 @@
+@media only screen and (max-width: 900px) {
+    #quote {
+        font-size: 2em;
+    }
+
+    #quote-sub {
+        font-size: 0.8em;
+    }
+
+    .header-menu {
+        width: 50%;
+    }
+}
