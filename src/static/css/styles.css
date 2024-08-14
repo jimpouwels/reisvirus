@@ -19,28 +19,6 @@ html {
     -ms-text-size-adjust: 100%;
 }
 
-#divider {
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-    margin-top: -8.7vh;
-    z-index: 1;
-}
-
-#divider svg {
-    position: relative;
-    display: block;
-    width: calc(170% + 1.3px);
-    height: 8vh;
-    transform: rotateY(180deg);
-}
-
-#divider .shape-fill {
-    fill: #FFFFFF;
-}
-
 .mandatory-star {
     color: red;
 }
@@ -174,10 +152,6 @@ h3 {
     color: #ffffff;
 }
 
-#title-container {
-    display: none;
-}
-
 .homepage #title-container {
     display: block;
 }
@@ -189,14 +163,23 @@ h3 {
 }
 
 .mobile-menu {
-    position: absolute;
-    top: 55%;
+    position: fixed;
+    top: 45px;
+    background-color: #53914e;
     right: 0;
     transform: translate(-50%, -58%);
     margin-right: 0px;
     display: none;
     float: right;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+}
+
+.mobile-menu img {
     filter: invert(1);
+    margin-top: 7px;
+    margin-left: 7px;
 }
 
 .header-menu li {
@@ -231,13 +214,13 @@ h3 {
 #banner {
     display: flex;
     width: 100%;
-    height: 90vh;
+    /*height: 100vh;*/
 }
 
 #banner-wrapper {
     width: 100%;
     overflow: hidden;
-    height: 91vh;
+    height: 100vh;
 }
 
 #content-wrapper {
@@ -558,14 +541,13 @@ li span {
     top: 0;
     left: 0;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     z-index: -1;
 }
 
 .photo-album {
     width: 100%;
     margin: auto;
-    overflow: auto;
 }
 
 .photo-album-img {
@@ -765,13 +747,12 @@ li span {
         margin-right: 15px;
     }
 
-    .mobile-menu {
-        display: block;
+    #header-wrapper-2 {
+        display: none !important;
     }
 
-    .mobile-menu img {
-        width: 30px;
-        margin-top: 15px
+    .mobile-menu {
+        display: block;
     }
 
     .logo-img {
@@ -857,14 +838,9 @@ li span {
     #contact-panes {
         width: 100%;
     }
-
-    .photo-album-img {
-        width: 100% !important;
-        margin-left: 0% !important;
-    }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .blogposts .blogpost {
         height: inherit;
         width: 100%;
@@ -878,6 +854,15 @@ li span {
 
     .contact-form-field textarea {
         width: 95%;
+    }
+
+    .photo-album-img {
+        margin-left: -15px !important;
+        width: calc(100vw - 15px) !important;
+    }
+
+    .photo-album-img img {
+        width: calc(100vw - 15px);
     }
 
 }

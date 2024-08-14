@@ -10,4 +10,17 @@
     .header-menu {
         width: 50%;
     }
+
+    #banner-wrapper {
+        height: 91vh;
+    }
+
+    .photo-album-img {
+        margin-left: -15px !important;
+        width: calc(100vw) !important;
+    }
+
+    .photo-album-img img {
+        width: calc(100vw);
+    }
 }
