@@ -14,6 +14,18 @@ function stopResponding() {
 let headerLastScrollTop = $(window).scrollTop();
 
 $(document).ready(function() {
+    var mobileNav = $('#mobile-navigation');
+    $(document).mouseup(function(e) {
+        var width = parseInt(mobileNav.css('width').replace('px', ''));
+        if (width > 1) {
+            if (!mobileNav.is(e.target) && mobileNav.has(e.target).length === 0) {
+                hideMobileMenu();
+            }
+        }
+    });
+});
+
+$(document).ready(function() {
     setCorrectTopHeight();
     $(window).resize(function (event) {
         setCorrectTopHeight();
