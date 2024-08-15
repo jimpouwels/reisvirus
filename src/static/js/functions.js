@@ -13,7 +13,11 @@ function stopResponding() {
 
 let headerLastScrollTop = $(window).scrollTop();
 
-$(document).ready(function () {
+$(document).ready(function() {
+    $('#top-wrapper').css('height', $(window).height());
+})
+
+$(document).ready(function() {
     $(window).scroll(function (event) {
         if (!$('#banner-wrapper').is(':visible')) {
             return;

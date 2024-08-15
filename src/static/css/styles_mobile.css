@@ -1,3 +1,7 @@
+#top-wrapper {
+    height: 91vh !important;
+}
+
 @media only screen and (max-width: 900px) {
     #quote {
         font-size: 2em;
@@ -9,10 +13,6 @@
 
     .header-menu {
         width: 50%;
-    }
-
-    #banner-wrapper {
-        height: 91vh;
     }
 
     .photo-album-img {

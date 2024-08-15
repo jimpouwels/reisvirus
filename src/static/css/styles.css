@@ -212,7 +212,6 @@ h2 {
     font-size: 1.5em;
     font-weight: normal;
     line-height: 1.2em;
-    padding-top: 20px;
     clear: both;
 }
 
@@ -296,13 +295,12 @@ h3 {
 #banner {
     display: flex;
     width: 100%;
-    /*height: 100vh;*/
+    height: 100vh;
 }
 
 #banner-wrapper {
     width: 100%;
     overflow: hidden;
-    height: 100vh;
 }
 
 #content-wrapper {
@@ -747,6 +745,10 @@ li span {
     color: #53914e;
     font-style: italic;
     margin-right: 15px;
+}
+
+#top-wrapper {
+    height: 100vh;
 }
 
 #stop-respond {
