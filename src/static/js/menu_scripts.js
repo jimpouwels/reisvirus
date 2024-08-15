@@ -5,7 +5,7 @@ function hideMobileMenu() {
     isVisible = false;
     var mobileNavigation = $("#mobile-navigation");
     mobileNavigation.stop();
-    mobileNavigation.animate({"width": "0vw"}, 350);
+    mobileNavigation.animate({"width": "0vw", opacity: 0}, 350);
     $(".mobile-menu").css('display', '');
 }
 
@@ -20,7 +20,7 @@ $(document).ready(function() {
     mobileNavigation.stop();
     var mobileMenu = $(".mobile-menu");
     isVisible = true;
-    mobileNavigation.animate({"width": "90vw"}, 350);
+    mobileNavigation.animate({"width": "90vw", opacity: 1}, 350);
     mobileMenu.hide();
   });
 

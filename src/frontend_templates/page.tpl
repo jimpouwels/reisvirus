@@ -23,7 +23,7 @@
     <script src="/static/js/jarallax.video.min.js" type="text/javascript"></script>
     <script src="/static/js/jquery.linkunderanim.min.js?v=11" type="text/javascript"></script>
     <script src="/static/js/functions.js?v=44" type="text/javascript"></script>
-    <script src="/static/js/menu_scripts.js?v=94" type="text/javascript"></script>
+    <script src="/static/js/menu_scripts.js?v=95" type="text/javascript"></script>
 </head>
 <body>
 <div id="root-wrapper">
