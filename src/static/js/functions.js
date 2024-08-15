@@ -14,8 +14,36 @@ function stopResponding() {
 let headerLastScrollTop = $(window).scrollTop();
 
 $(document).ready(function() {
+    setCorrectTopHeight();
+    $(window).resize(function (event) {
+        setCorrectTopHeight();
+    });
+});
+
+function setCorrectTopHeight() {
     $('#top-wrapper').css('height', $(window).height());
-})
+}
+
+$(document).ready(function() {
+    handleNavTop();
+    $(window).scroll(function (event) {
+        handleNavTop();
+    });
+
+    $("#nav-top").mouseup(function() {
+        window.scrollTo(0, 0);
+    });
+});
+
+function handleNavTop() {
+    if ($('.mobile-menu').is(":visible")) {
+        if ($(window).scrollTop() > ($(window).height() / 3)) {
+            $("#nav-top").show();
+        } else {
+            $("#nav-top").hide();
+        }
+    }
+}
 
 $(document).ready(function() {
     $(window).scroll(function (event) {

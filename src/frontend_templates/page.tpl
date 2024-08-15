@@ -12,7 +12,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link rel="shortcut icon" type="image/x-icon" href="/static/img/favicon.ico">
     <link rel="canonical" href="{$canonical_url}"/>
-    <link rel="stylesheet" href="/static/css/styles.css?v=129">
+    <link rel="stylesheet" href="/static/css/styles.css?v=139">
     {if !$is_mobile_device}
         <link rel="stylesheet" href="/static/css/styles_desktop.css?v=19">
     {else}
@@ -22,7 +22,7 @@
     <script src="/static/js/jarallax.min.js" type="text/javascript"></script>
     <script src="/static/js/jarallax.video.min.js" type="text/javascript"></script>
     <script src="/static/js/jquery.linkunderanim.min.js?v=11" type="text/javascript"></script>
-    <script src="/static/js/functions.js?v=46" type="text/javascript"></script>
+    <script src="/static/js/functions.js?v=54" type="text/javascript"></script>
     <script src="/static/js/menu_scripts.js?v=95" type="text/javascript"></script>
 </head>
 <body>
@@ -54,6 +54,14 @@
                         class="last" src="/static/img/pinterest.png"/></a>
         </div>
     </div>
+    <div class="mobile-menu"><a href="#" onclick="return false;"><img
+                    src="/static/img/hamburger_menu.svg"/></a>
+    </div>
+    <div id="nav-top">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="26px" height="16.043px" viewBox="57 35.171 26 16.043" enable-background="new 57 35.171 26 16.043" xml:space="preserve">
+                <path d="M57.5,38.193l12.5,12.5l12.5-12.5l-2.5-2.5l-10,10l-10-10L57.5,38.193z"></path>
+                </svg>
+    </div>
     <div id="top-wrapper">
         {for $i=1 to 2}
             <div id="header-wrapper-{$i}">
@@ -63,9 +71,6 @@
                             <img src="/static/img/logo-img.png?v=1" class="logo-img"/>
                             <span class="logo-txt">Reisvirus</span>
                         </a>
-                    </div>
-                    <div class="mobile-menu"><a href="#" onclick="return false;"><img
-                                    src="/static/img/hamburger_menu.svg"/></a>
                     </div>
                     <div class="header-menu">
                         <ul id="nav">
