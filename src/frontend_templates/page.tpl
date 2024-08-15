@@ -12,9 +12,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link rel="shortcut icon" type="image/x-icon" href="/static/img/favicon.ico">
     <link rel="canonical" href="{$canonical_url}"/>
-    <link rel="stylesheet" href="/static/css/styles.css?v=102">
+    <link rel="stylesheet" href="/static/css/styles.css?v=119">
     {if !$is_mobile_device}
-        <link rel="stylesheet" href="/static/css/styles_desktop.css?v=13">
+        <link rel="stylesheet" href="/static/css/styles_desktop.css?v=16">
     {else}
         <link rel="stylesheet" href="/static/css/styles_mobile.css?v=9">
     {/if}
@@ -47,6 +47,12 @@
                 {/if}
             {/foreach}
         </ul>
+        <div id="mobile-navigation-social-media">
+            <a title="Instagram - reisvirus" target="_blank"
+               href="https://www.instagram.com/reis_virus"><img src="/static/img/instagram.png"/></a>
+            <a href="https://nl.pinterest.com/Reisvirus" title="Pinterest - Reisvirus" target="_blank"><img
+                        class="last" src="/static/img/pinterest.png"/></a>
+        </div>
     </div>
     <div id="top-wrapper">
         {for $i=1 to 2}
@@ -171,7 +177,7 @@
                         <a href="https://landenverzamelaars.nl/reiziger/18710/reis-virus"
                            title="LandenVerzamelaars - Reisvirus" target="_blank"><img class=""
                                                                                        src="/static/img/landenverzamelaars.png"/></a>
-                        <a href="https://nl.pinterest.com/JQTravel" title="Pinterest - JQTrave" target="_blank"><img
+                        <a href="https://nl.pinterest.com/Reisvirus" title="Pinterest - Reisvirus" target="_blank"><img
                                     class="last" src="/static/img/pinterest.png"/></a>
                     </div>
                 </div>

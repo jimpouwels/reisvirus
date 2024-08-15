@@ -51,9 +51,33 @@ html {
     margin-left: 0px;
 }
 
+#mobile-navigation-social-media {
+    margin-left: 20px;
+    position: absolute;
+    bottom: 13%;
+}
+
+#mobile-navigation-social-media img {
+    width: 30px;
+    filter: grayscale(100%);
+    margin-right: 10px;
+}
+
+#mobile-navigation-social-media img:hover {
+    filter: none;
+}
+
 #mobile-navigation ul li a {
     text-decoration: none;
     color: black;
+}
+
+#mobile-navigation ul li .selected {
+    color: #53914e;
+}
+
+#mobile-navigation ul li a:hover {
+    color: #53914e;
 }
 
 #mobile-navigation .logo-img {
@@ -188,6 +212,8 @@ h2 {
     font-size: 1.5em;
     font-weight: normal;
     line-height: 1.2em;
+    padding-top: 20px;
+    clear: both;
 }
 
 h3 {
