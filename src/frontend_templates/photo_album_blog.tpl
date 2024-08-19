@@ -16,4 +16,4 @@
         </div>
     {/foreach}
 </div>
-<div class="photo-album-subtitle"><p>{$title}</p></div>
+<div class="photo-album-clear"></div>

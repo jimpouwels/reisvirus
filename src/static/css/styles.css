@@ -195,7 +195,7 @@ html, body {
 }
 
 #header-wrapper-2 {
-    background-color: #699e65;
+    background-color: #355e3b;
     display: none;
     position: fixed;
 }
@@ -208,7 +208,7 @@ html, body {
 
 h2 {
     color: #53914e;
-    margin-top: 35px;
+    margin-top: 25px;
     font-size: 1.5em;
     font-weight: normal;
     line-height: 1.2em;
@@ -656,6 +656,10 @@ li span {
     margin: auto;
 }
 
+.photo-album-clear {
+    clear: both;
+}
+
 .photo-album-img {
     float: left;
     margin-bottom: 10px;
@@ -711,16 +715,6 @@ li span {
 
 .photo-album-img > img {
     width: 100%;
-}
-
-.photo-album-subtitle {
-    text-align: center;
-    font-size: 0.8em;
-    font-style: italic;
-}
-
-.photo-album-subtitle p {
-    margin-top: -5px;
 }
 
 .anchor {
