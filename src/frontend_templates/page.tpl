@@ -12,7 +12,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link rel="shortcut icon" type="image/x-icon" href="/static/img/favicon.ico">
     <link rel="canonical" href="{$canonical_url}"/>
-    <link rel="stylesheet" href="/static/css/styles.css?v=147">
+    <link rel="stylesheet" href="/static/css/styles.css?v=165">
     {if !$is_mobile_device}
         <link rel="stylesheet" href="/static/css/styles_desktop.css?v=19">
     {else}
@@ -65,8 +65,8 @@
     <div id="top-wrapper">
         {for $i=1 to 2}
             <div id="header-wrapper-{$i}">
-                <div id="header-content">
-                    <div id="header-title">
+                <div class="header-content">
+                    <div class="header-title">
                         <a class="logo" href="{$root_page.url}">
                             <img src="/static/img/logo-img.png?v=1" class="logo-img"/>
                             <span class="logo-txt">Reisvirus</span>
