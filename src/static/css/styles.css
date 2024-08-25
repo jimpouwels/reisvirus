@@ -339,7 +339,7 @@ h3 {
 }
 
 #content-wrapper {
-    width: 85%;
+    width: 77%;
     overflow-y: auto;
     margin: auto;
 }
@@ -612,6 +612,10 @@ li span {
     margin-bottom: 0px;
     margin-top: 5px;
     text-align: center;
+}
+
+.blogpost img {
+    border-radius: 5px;
 }
 
 .blogpost a {
