@@ -635,7 +635,7 @@ li span {
 }
 
 .blogpost img {
-    border-radius: 5px;
+    border-radius: 7px;
     height: 475px;
     object-fit: cover;
 }
