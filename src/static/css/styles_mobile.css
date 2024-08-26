@@ -2,6 +2,10 @@
     height: 91vh !important;
 }
 
+.blogpost:hover {
+    opacity: 100%;
+}
+
 @media only screen and (max-width: 900px) {
     #quote {
         font-size: 2em;
