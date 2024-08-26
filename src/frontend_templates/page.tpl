@@ -12,7 +12,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link rel="shortcut icon" type="image/x-icon" href="/static/img/favicon.ico">
     <link rel="canonical" href="{$canonical_url}"/>
-    <link rel="stylesheet" href="/static/css/styles.css?v=233">
+    <link rel="stylesheet" href="/static/css/styles.css?v=237">
     {if !$is_mobile_device}
         <link rel="stylesheet" href="/static/css/styles_desktop.css?v=20">
     {else}

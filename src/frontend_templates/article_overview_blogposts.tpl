@@ -14,6 +14,13 @@
                     <img src="{$article.image.url}" alt="{$article.image.alt_text}" title="{$article.image.title}" width="100%" />
                 </a>
                 <header class="blogpost-header">
+                    {if !empty($article.terms)}
+                        <ul class="blogpost-term-list">
+                            {foreach from=$article.terms item=$term}
+                                <li class="blogpost-term">{$term}</li>
+                            {/foreach}
+                        </ul>
+                    {/if}
                     <h3>
                         <a href="{$article.url}" target="_self">{$article.description}</a>
                     </h3>
