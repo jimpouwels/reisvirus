@@ -17,7 +17,9 @@
                     {if !empty($article.terms)}
                         <ul class="blogpost-term-list">
                             {foreach from=$article.terms item=$term}
-                                <li class="blogpost-term">{$term}</li>
+                                {if $term != 'blogpost'}
+                                    <li class="blogpost-term">{$term}</li>
+                                {/if}
                             {/foreach}
                         </ul>
                     {/if}

@@ -532,11 +532,10 @@ h3 {
 
 h1 {
     text-align: center;
-    color: #53914e;
     font-size: 2em;
     margin-bottom: 20px;
     margin-top: 20px;
-    font-weight: normal;
+    font-weight: 800;
     line-height: 110%;
 }
 
@@ -627,7 +626,7 @@ li span {
     display: inline;
     color: #ffffff;
     background: rgba(255, 255, 255, .4);
-    padding: 8px 12px 8px 12px;
+    padding: 10px 12px 10px 12px;
     border-radius: 25px;
     font-size: 0.9em;
     font-weight: bold;
@@ -1017,7 +1016,6 @@ li span {
         left: -5px;
         font-weight: 700;
         font-size: 20px;
-        bottom: 18px;
     }
 
     .blogpost {
