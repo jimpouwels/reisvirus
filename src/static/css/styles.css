@@ -603,7 +603,7 @@ li span {
     padding: 30px;
     line-height: 1.2;
     font-size: 25px;
-    font-weight: 900;
+    font-weight: 800;
     margin: 0;
     width: calc(100% - 60px);
     color: #fff;
@@ -627,6 +627,10 @@ li span {
     border-radius: 5px;
     height: 475px;
     object-fit: cover;
+}
+
+.blogpost img:hover {
+    opacity: 80%;
 }
 
 .blogpost a {
