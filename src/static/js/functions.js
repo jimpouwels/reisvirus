@@ -48,7 +48,7 @@ $(document).ready(function() {
 });
 
 function handleNavTop() {
-    if ($('.mobile-menu').is(":visible")) {
+    if (!$('#right-content').is(":visible")) {
         if ($(window).scrollTop() > ($(window).height() / 3)) {
             $("#nav-top").show();
         } else {

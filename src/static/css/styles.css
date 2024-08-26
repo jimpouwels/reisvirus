@@ -339,7 +339,8 @@ h3 {
 }
 
 #content-wrapper {
-    width: 77%;
+    width: 1300px;
+    max-width: 90%;
     overflow-y: auto;
     margin: auto;
 }
@@ -595,6 +596,10 @@ li span {
     position: relative;
 }
 
+.row-of-three {
+    width: 32% !important;
+}
+
 .blogpost-header h3 a
 {
     position: absolute;
@@ -604,6 +609,7 @@ li span {
     line-height: 1.2;
     font-size: 25px;
     font-weight: 800;
+    text-align: left;
     margin: 0;
     width: calc(100% - 60px);
     color: #fff;
@@ -621,6 +627,10 @@ li span {
 
 .blogposts .first {
     clear: both;
+}
+
+.blogpost {
+    overflow: hidden;
 }
 
 .blogpost img {
@@ -801,10 +811,16 @@ li span {
     visibility: hidden !important;
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1180px) {
 
     #crumb_path {
         margin-top: 15px;
+    }
+
+    .blogpost-header h3 a
+    {
+        font-size: 20px;
+        font-weight: 700;
     }
 
     #header-wrapper-1, #header-wrapper-2 {
@@ -814,11 +830,6 @@ li span {
     .paragraph-home {
         width: 100%;
         text-align: justify;
-    }
-
-    #content-wrapper {
-        width: 1300px;
-        max-width: 90%;
     }
 
     .header-content {
@@ -855,6 +866,11 @@ li span {
 @media only screen and (max-width: 900px) {
     body {
         width: 100%;
+    }
+
+    #content-wrapper {
+        width: 100%;
+        max-width: 100%;
     }
 
     #quote {
@@ -965,10 +981,6 @@ li span {
 
     h2 {
         font-size: 1.5em;
-    }
-
-    #content-wrapper {
-        max-width: 100%;
     }
 
     .blogposts .blogpost {
