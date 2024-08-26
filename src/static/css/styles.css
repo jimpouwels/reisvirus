@@ -589,13 +589,30 @@ li span {
 }
 
 .blogposts .blogpost {
-    width: 32%;
+    width: 49%;
     float: left;
     margin-bottom: 3%;
+    position: relative;
 }
 
-.blogposts .blogpost-two-by-two {
-    width: 49%;
+.blogpost-header h3 a
+{
+    position: absolute;
+    bottom: 18px;
+    left: 0px;
+    padding: 30px;
+    line-height: 1.2;
+    font-size: 25px;
+    font-weight: 900;
+    margin: 0;
+    width: calc(100% - 60px);
+    color: #fff;
+    z-index: 2;
+}
+
+.blogpost-header h3 a:hover {
+    color: #fff;
+    text-decoration: none;
 }
 
 .blogposts .not-first {
@@ -606,16 +623,10 @@ li span {
     clear: both;
 }
 
-.blogpost .title {
-    line-height: 1.2em;
-    font-size: 1.5em;
-    margin-bottom: 0px;
-    margin-top: 5px;
-    text-align: center;
-}
-
 .blogpost img {
     border-radius: 5px;
+    height: 475px;
+    object-fit: cover;
 }
 
 .blogpost a {
@@ -626,19 +637,6 @@ li span {
 .blogpost a:hover {
     text-decoration: none;
     color: darkgray;
-}
-
-.blogpost .date {
-    font-size: 0.8em;
-    margin: 0px;
-    margin-top: 3px;
-    text-align: center;
-}
-
-.blogpost .description {
-    margin-top: 10px;
-    margin-bottom: 0px;
-    text-align: justify;
 }
 
 .paragraph-center {
@@ -815,7 +813,8 @@ li span {
     }
 
     #content-wrapper {
-        width: 100%;
+        width: 1300px;
+        max-width: 90%;
     }
 
     .header-content {
@@ -964,11 +963,26 @@ li span {
         font-size: 1.5em;
     }
 
+    #content-wrapper {
+        max-width: 100%;
+    }
+
     .blogposts .blogpost {
         height: inherit;
         width: 100%;
-        text-align: center;
         margin-left: 0px;
+    }
+
+    .blogpost-header h3 a
+    {
+        left: -5px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    .blogpost img
+    {
+        height: 330px;
     }
 
     .blogpost .description {
