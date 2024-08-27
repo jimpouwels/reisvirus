@@ -19,6 +19,10 @@ html {
     -ms-text-size-adjust: 100%;
 }
 
+#header-wrapper-1, #header-wrapper-2 {
+    width: 1300px;
+}
+
 #mobile-navigation {
     overflow: hidden;
     width: 0vw;
@@ -167,6 +171,7 @@ html {
     font-size: 16px;
     font-weight: bold;
     float: right;
+    border-radius: 5px;
 }
 
 .contact-form-field button:hover {
@@ -205,7 +210,8 @@ html, body {
 }
 
 .header-content {
-    width: 85%;
+    width: 1300px;
+    max-width: 90%;
     margin: auto;
     overflow: auto;
 }
