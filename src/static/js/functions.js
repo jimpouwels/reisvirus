@@ -34,6 +34,22 @@ $(document).ready(function() {
 
 function setCorrectTopHeight() {
     $('#top-wrapper').css('height', $(window).height());
+    $('#top-wrapper').css('min-height', "-webkit-fill-available");
+
+    $('.jarallax-img').css('height', $(window).height());
+    $('.jarallax-img').css('min-height', "-webkit-fill-available");
+
+    $('#banner').css('height', $(window).height());
+    $('#banner').css('min-height', "-webkit-fill-available");
+
+    $('#banner-wrapper').css('height', $(window).height());
+    $('#banner-wrapper').css('min-height', "-webkit-fill-available");
+
+    $('.jarallax').css('height', $(window).height());
+    $('.jarallax').css('min-height', "-webkit-fill-available");
+
+    $('#banner img').css('max-height', $(window).height());
+    $('#banner img').css('min-height', "-webkit-fill-available");
 }
 
 $(document).ready(function() {
