@@ -7,6 +7,8 @@
         {assign var=class value="four-frame"}
     {elseif count($images) == 2}
         {assign var=class value="two-frame"}
+    {elseif count($images) == 5}
+        {assign var=class value="five-frame"}
     {/if}
 {/if}
 <div class="photo-album {$class}">

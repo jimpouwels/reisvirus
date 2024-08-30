@@ -388,6 +388,10 @@ h3 {
     overflow-y: auto;
 }
 
+.right-block img {
+    border-radius: 5px;
+}
+
 .no_scroll {
     overflow-y: auto;
 }
@@ -412,6 +416,7 @@ h3 {
     padding: 1%;
     margin-left: 3%;
     margin-bottom: 2%;
+    border-radius: 10px;
     margin-top: 30px;
     box-shadow: 0px 10px 30px 0px rgb(0 0 0 / 10%);
 }
@@ -734,6 +739,22 @@ li span {
 
 .six-frame > .photo-album-img:nth-child(n+5):nth-child(-n+6) {
     margin-left: 2%
+}
+
+.five-frame > .photo-album-img:first-child {
+    width: 100%;
+}
+
+.five-frame > .photo-album-img:nth-child(3) {
+    margin-left: 2%;
+}
+
+.five-frame > .photo-album-img:nth-child(n+2):nth-child(-n+5) {
+    width: 49%;
+}
+
+.five-frame > .photo-album-img:nth-child(5) {
+    margin-left: 2%;
 }
 
 .four-frame > .photo-album-img:first-child {
