@@ -1,3 +1,3 @@
-<p class="paragraph-justified paragraph-tip">
+<p class="paragraph paragraph-justified paragraph-tip">
     <strong>Tip:&nbsp;</strong>{$text}
 </p>

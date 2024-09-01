@@ -6,4 +6,4 @@
 {if $var.is_bold == 'true'}
     {assign var=classes value=" article-intro"}
 {/if}
-<p class="{$var.text_class}{$classes}">{$text}</p>
+<p class="paragraph {$var.text_class}{$classes}">{$text}</p>

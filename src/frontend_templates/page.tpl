@@ -1,3 +1,8 @@
+{assign var=fullScreen value=$var.full_screen_page}
+{assign var=fullScreenPage value=false}
+{if $fullScreen == 'yes'}
+    {assign var=fullScreenPage value=true}
+{/if}
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl_NL" lang="nl_NL">
 <head>
@@ -12,7 +17,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link rel="shortcut icon" type="image/x-icon" href="/static/img/favicon.ico">
     <link rel="canonical" href="{$canonical_url}"/>
-    <link rel="stylesheet" href="/static/css/styles.css?v=265">
+    <link rel="stylesheet" href="/static/css/styles.css?v=271">
     {if !$is_mobile_device}
         <link rel="stylesheet" href="/static/css/styles_desktop.css?v=31">
     {else}
@@ -113,17 +118,17 @@
         </div>
     </div>
     <div id="content-wrapper">
-        <div id="page-content" class="content {if $page.is_homepage}homepage{/if}">
+        <div id="page-content" class="content {if $fullScreenPage}fullscreen_page{/if}">
             {if count($crumb_path) > 1}
                 <div id="crumb_path">
                     {foreach from=$crumb_path item=crumb_path_item name=crumb_path_item}
                         <span class="crumb_path_item">
-                                            <a title="{$crumb_path_item.title}"
-                                               href="{$crumb_path_item.url}">{$crumb_path_item.title}</a>
-                                            {if !$smarty.foreach.crumb_path_item.last}
-                                                <span>/</span>
-                                            {/if}
-                                        </span>
+                            <a title="{$crumb_path_item.title}"
+                               href="{$crumb_path_item.url}">{$crumb_path_item.title}</a>
+                            {if !$smarty.foreach.crumb_path_item.last}
+                                <span>/</span>
+                            {/if}
+                        </span>
                     {/foreach}
                 </div>
             {/if}
@@ -140,7 +145,7 @@
                 {/foreach}
             {/if}
         </div>
-        {if !$page.is_homepage}
+        {if !$fullScreenPage}
             <div id="right-content" class="content right-content-size">
                 <div class="right-block {if !$article}no_scroll{/if}">
                     {assign var="tocFound" value=false}

@@ -243,7 +243,7 @@ h3 {
     color: #ffffff;
 }
 
-.homepage #title-container {
+.fullscreen_page #title-container {
     display: block;
 }
 
@@ -280,7 +280,7 @@ h3 {
     z-index: 1;
     position: fixed;
     display: none;
-    bottom: 15px;
+    bottom: 30px;
     right: 15px;
     background-color: #53914e;
     border-radius: 50%;
@@ -364,7 +364,7 @@ h3 {
     margin-top: 10px;
 }
 
-.homepage {
+.fullscreen_page {
     width: 100% !important;
     text-align: center;
 }
@@ -578,12 +578,17 @@ li span {
     padding: 20px;
 }
 
+.paragraph-wrapper-fullscreen {
+    width: 75%;
+    text-align: center;
+    margin: auto;
+}
 
 .article-intro {
     font-weight: 600;
 }
 
-#page-content .paragraph-justified {
+#page-content .paragraph {
     line-height: 1.8em;
 }
 
