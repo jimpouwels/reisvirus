@@ -1039,6 +1039,10 @@ li span {
         font-size: 1.5em;
     }
 
+    .paragraph-wrapper-fullscreen {
+        width: 100% !important;
+    }
+
     .blogposts .blogpost {
         height: inherit;
         width: 100% !important;
