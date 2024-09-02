@@ -303,14 +303,10 @@ h3 {
 
 .header-menu li {
     display: inline;
-    margin-right: 15px;
+    margin-right: 25px;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 1.15em;
-}
-
-#header-wrapper-2 .header-menu li {
-    font-size: 1em;
 }
 
 #header-wrapper-2 .header-title {
@@ -572,6 +568,19 @@ li span {
     text-align: justify;
 }
 
+.paragraph-half {
+    width: 48%;
+}
+
+.paragraph-half-left {
+    margin-right: 4%;
+    float: left;
+}
+
+.paragraph-half-right {
+    float: right;
+}
+
 .paragraph-tip {
     background-color: #eff6ee;
     font-style: italic;
@@ -693,7 +702,15 @@ li span {
 }
 
 .default-img {
-    padding-right: 30px;
+    margin-top: 20px;
+}
+
+.default-img-left {
+    margin-right: 4%;
+}
+
+.default-img-circle {
+    border-radius: 50%;
 }
 
 .destinations {
@@ -933,6 +950,10 @@ li span {
 @media only screen and (max-width: 900px) {
     body {
         width: 100%;
+    }
+
+    .paragraph-half {
+        width: 100% !important;
     }
 
     .default-img {
