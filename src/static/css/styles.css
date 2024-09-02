@@ -598,7 +598,6 @@ li span {
 
 .paragraph-home {
     text-align: center;
-    margin-right: 25px;
     margin-top: 0px;
 }
 
@@ -691,6 +690,10 @@ li span {
 
 .paragraph-center {
     text-align: center;
+}
+
+.default-img {
+    padding-right: 30px;
 }
 
 .destinations {
@@ -884,7 +887,6 @@ li span {
     }
 
     .paragraph-home {
-        width: 100%;
         text-align: justify;
     }
 
@@ -931,6 +933,11 @@ li span {
 @media only screen and (max-width: 900px) {
     body {
         width: 100%;
+    }
+
+    .default-img {
+        padding-right: 0px;
+        width: 100% !important;
     }
 
     #quote {
@@ -1005,10 +1012,6 @@ li span {
     .social-media img {
         width: 40px;
         height: 40px;
-    }
-
-    .paragraph-home {
-        width: 100%;
     }
 
     #footer {

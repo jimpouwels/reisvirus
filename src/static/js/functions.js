@@ -47,9 +47,6 @@ function setCorrectTopHeight() {
 
     $('.jarallax').css('height', $(window).height());
     $('.jarallax').css('min-height', "-webkit-fill-available");
-
-    $('#banner img').css('max-height', $(window).height());
-    $('#banner img').css('min-height', "-webkit-fill-available");
 }
 
 $(document).ready(function() {
