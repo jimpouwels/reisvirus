@@ -890,6 +890,15 @@ li span {
 
     .header-content {
         width: 100%;
+        max-width: 100% !important;
+    }
+
+    #content-wrapper {
+        max-width: 100% !important;
+    }
+
+    .header-menu li {
+        font-size: 1.0em;
     }
 
     .logo {
@@ -922,11 +931,6 @@ li span {
 @media only screen and (max-width: 900px) {
     body {
         width: 100%;
-    }
-
-    #content-wrapper {
-        width: 100%;
-        max-width: 100%;
     }
 
     #quote {
@@ -1033,6 +1037,10 @@ li span {
 @media only screen and (max-width: 768px) {
     #page-content {
         margin-top: 0px;
+    }
+
+    h1 {
+        font-size: 1.7em;
     }
 
     h2 {
