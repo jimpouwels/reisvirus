@@ -113,7 +113,7 @@ $(document).ready(function () {
 // RIGHT BLOCK SCROLLING BEHAVIOR
 $(document).ready(function () {
     var rightMenu = $('#right-content');
-    var pageContent = $('#page-content');
+    var pageContent = $('.page-content');
     var el = document.getElementById('right-content');
     if (!el) {
         return;

@@ -341,7 +341,7 @@ h3 {
     overflow: hidden;
 }
 
-#content-wrapper {
+.content-wrapper {
     width: 1300px;
     max-width: 90%;
     overflow-y: auto;
@@ -349,7 +349,11 @@ h3 {
     clear: both;
 }
 
-#page-content {
+.colored_page .content-top-odd {
+    background-color: #F3FFF7;
+}
+
+.page-content {
     scroll-behavior: smooth;
     float: left;
     font-size: 1em;
@@ -357,7 +361,6 @@ h3 {
     padding-bottom: 20px;
     line-height: 1.3em;
     width: 66%;
-    margin-top: 10px;
 }
 
 .fullscreen_page {
@@ -552,7 +555,7 @@ h4 {
     margin-bottom: 0px;
 }
 
-#page-content li {
+.page-content li {
     line-height: 1.8em;
 }
 
@@ -597,7 +600,7 @@ li span {
     font-weight: 600;
 }
 
-#page-content .paragraph {
+.page-content .paragraph {
     line-height: 1.8em;
 }
 
@@ -608,6 +611,7 @@ li span {
 .paragraph-home {
     text-align: center;
     margin-top: 0px;
+    clear: both;
 }
 
 .blogposts {
@@ -850,7 +854,7 @@ li span {
     line-height: 160%;
 }
 
-#page-content .table-of-contents {
+.page-content .table-of-contents {
     display: none;
 }
 
@@ -912,7 +916,7 @@ li span {
         max-width: 100% !important;
     }
 
-    #content-wrapper {
+    .content-wrapper {
         max-width: 100% !important;
     }
 
@@ -932,11 +936,11 @@ li span {
         display: none;
     }
 
-    #page-content .table-of-contents {
+    .page-content .table-of-contents {
         display: block;
     }
 
-    #page-content {
+    .page-content {
         display: block;
         width: 100%;
         -moz-box-sizing: border-box;
@@ -1059,7 +1063,7 @@ li span {
 }
 
 @media only screen and (max-width: 768px) {
-    #page-content {
+    .page-content {
         margin-top: 0px;
     }
 

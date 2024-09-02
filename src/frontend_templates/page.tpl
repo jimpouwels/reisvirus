@@ -1,3 +1,4 @@
+{assign var=classes value=$var.classes}
 {assign var=fullScreen value=$var.full_screen_page}
 {assign var=fullScreenPage value=false}
 {if $fullScreen == 'yes'}
@@ -17,20 +18,20 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link rel="shortcut icon" type="image/x-icon" href="/static/img/favicon.ico">
     <link rel="canonical" href="{$canonical_url}"/>
-    <link rel="stylesheet" href="/static/css/styles.css?v=310">
+    <link rel="stylesheet" href="/static/css/styles.css?v=332">
     {if !$is_mobile_device}
-        <link rel="stylesheet" href="/static/css/styles_desktop.css?v=31">
+        <link rel="stylesheet" href="/static/css/styles_desktop.css?v=32">
     {else}
         <link rel="stylesheet" href="/static/css/styles_mobile.css?v=28">
     {/if}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="/static/js/jarallax.min.js?v=3" type="text/javascript"></script>
     <script src="/static/js/jquery.linkunderanim.min.js?v=11" type="text/javascript"></script>
-    <script src="/static/js/functions.js?v=125" type="text/javascript"></script>
+    <script src="/static/js/functions.js?v=126" type="text/javascript"></script>
     <script src="/static/js/menu_scripts.js?v=96" type="text/javascript"></script>
 </head>
 <body>
-<div id="root-wrapper">
+<div id="root-wrapper" class="{$classes}">
     <div id="mobile-navigation">
         <div id="mobile-navigation-close-button">
             <svg id="mobile-navigation-close-link" class="close-image" fill="currentColor" width="24" height="24" viewBox="0 0 24 24"><path d="M5.293 6.707l5.293 5.293-5.293 5.293c-0.391 0.391-0.391 1.024 0 1.414s1.024 0.391 1.414 0l5.293-5.293 5.293 5.293c0.391 0.391 1.024 0.391 1.414 0s0.391-1.024 0-1.414l-5.293-5.293 5.293-5.293c0.391-0.391 0.391-1.024 0-1.414s-1.024-0.391-1.414 0l-5.293 5.293-5.293-5.293c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414z"></path></svg>
@@ -117,53 +118,65 @@
             </div>
         </div>
     </div>
-    <div id="content-wrapper">
-        <div id="page-content" class="content {if $fullScreenPage}fullscreen_page{/if}">
-            {if count($crumb_path) > 1}
-                <div id="crumb_path">
-                    {foreach from=$crumb_path item=crumb_path_item name=crumb_path_item}
-                        <span class="crumb_path_item">
-                            <a title="{$crumb_path_item.title}"
-                               href="{$crumb_path_item.url}">{$crumb_path_item.title}</a>
-                            {if !$smarty.foreach.crumb_path_item.last}
-                                <span>/</span>
-                            {/if}
-                        </span>
-                    {/foreach}
-                </div>
-            {/if}
-            {if $page.is_homepage}
-            <div id="title-container">
-                <h1>{$title}</h1>
-            </div>
-            {/if}
-            {if $article}
-                {$article.to_string}
-            {else}
-                {foreach from=$page.elements item=element}
-                    {$element.to_string}
-                {/foreach}
-            {/if}
-        </div>
-        {if !$fullScreenPage}
-            <div id="right-content" class="content right-content-size">
-                <div class="right-block {if !$article}no_scroll{/if}">
-                    {assign var="tocFound" value=false}
+    {assign var="oddEven" value="odd"}
+    {foreach from=$page.element_groups item=element_group}
+        {if $oddEven == 'even'}
+            {assign var=oddEven value="odd"}
+        {else}
+            {assign var=oddEven value="even"}
+        {/if}
+        <div class="content-top-{$oddEven}">
+            <div class="content-wrapper content-wrapper">
+                <div class="page-content content {if $fullScreenPage}fullscreen_page{/if}">
+                    {if count($crumb_path) > 1}
+                        <div id="crumb_path">
+                            {foreach from=$crumb_path item=crumb_path_item name=crumb_path_item}
+                                <span class="crumb_path_item">
+                                    <a title="{$crumb_path_item.title}"
+                                       href="{$crumb_path_item.url}">{$crumb_path_item.title}</a>
+                                    {if !$smarty.foreach.crumb_path_item.last}
+                                        <span>/</span>
+                                    {/if}
+                                </span>
+                            {/foreach}
+                        </div>
+                    {/if}
+                    {if $page.is_homepage}
+                    <div id="title-container">
+                        <h1>{$title}</h1>
+                    </div>
+                    {/if}
                     {if $article}
-                        {foreach from=$article.elements item=element}
-                            {if $element.type == 'table_of_contents_element'}
-                                {assign var="tocFound" value=true}
-                                {$element.to_string}
-                            {/if}
+                        {$article.to_string}
+                    {else}
+                        {foreach from=$element_group item=element}
+                            {$element.to_string}
                         {/foreach}
                     {/if}
-                    {if !$tocFound}
-                        {$page.blocks.rechts[0]}
-                    {/if}
                 </div>
+                {if !$fullScreenPage}
+                    <div id="right-content" class="content right-content-size">
+                        <div class="right-block {if !$article}no_scroll{/if}">
+                            {assign var="tocFound" value=false}
+                            {if $article}
+                                {foreach from=$article.element_groups item=element_group}
+                                    {foreach from=$element_group item=element}
+                                        {if $element.type == 'table_of_contents_element'}
+                                            {assign var="tocFound" value=true}
+                                            {$element.to_string}
+                                        {/if}
+                                    {/foreach}
+                                {/foreach}
+                            {/if}
+                            {if !$tocFound}
+                                {$page.blocks.rechts[0]}
+                            {/if}
+                        </div>
+                    </div>
+                {/if}
             </div>
-        {/if}
-    </div>
+        </div>
+    {/foreach}
     <div id="footer">
         <div id="footer-content">
             <div id="contact-panes">
