@@ -18,11 +18,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link rel="shortcut icon" type="image/x-icon" href="/static/img/favicon.ico">
     <link rel="canonical" href="{$canonical_url}"/>
-    <link rel="stylesheet" href="/static/css/styles.css?v=333">
+    <link rel="stylesheet" href="/static/css/styles.css?v=345">
     {if !$is_mobile_device}
         <link rel="stylesheet" href="/static/css/styles_desktop.css?v=32">
     {else}
-        <link rel="stylesheet" href="/static/css/styles_mobile.css?v=28">
+        <link rel="stylesheet" href="/static/css/styles_mobile.css?v=30">
     {/if}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="/static/js/jarallax.min.js?v=3" type="text/javascript"></script>

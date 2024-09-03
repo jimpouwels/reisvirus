@@ -27,4 +27,8 @@
     .photo-album-img img {
         width: calc(100vw);
     }
+
+    .paragraph {
+        font-size: 0.9em !important;
+    }
 }
