@@ -18,9 +18,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link rel="shortcut icon" type="image/x-icon" href="/static/img/favicon.ico">
     <link rel="canonical" href="{$canonical_url}"/>
-    <link rel="stylesheet" href="/static/css/styles.css?v=367">
+    <link rel="stylesheet" href="/static/css/styles.css?v=373">
     {if !$is_mobile_device}
-        <link rel="stylesheet" href="/static/css/styles_desktop.css?v=32">
+        <link rel="stylesheet" href="/static/css/styles_desktop.css?v=33">
     {else}
         <link rel="stylesheet" href="/static/css/styles_mobile.css?v=30">
     {/if}

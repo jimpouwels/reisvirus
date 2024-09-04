@@ -4,10 +4,6 @@
 
 @media only screen and (min-width: 2000px) {
 
-    .header-content {
-        width: 1600px !important;
-    }
-
     .content-wrapper {
         width: 1600px !important;
     }
