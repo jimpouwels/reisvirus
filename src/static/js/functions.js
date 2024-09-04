@@ -91,8 +91,11 @@ $(document).ready(function() {
 
 // HEADER MENU UNDERLINE EFFECT
 $(document).ready(function () {
-    $("#nav").linkUnderlineAnim({
-        "speed": 300, "color": "#ffffff", "thickness": 1, "distance": 2, "skipClass": "selected"
+    $("#nav-1").linkUnderlineAnim({
+        "speed": 300, "color": '#ffffff', "thickness": 1, "distance": 2, "skipClass": "selected"
+    });
+    $("#nav-2").linkUnderlineAnim({
+        "speed": 300, "color": '#000000', "thickness": 1, "distance": 2, "skipClass": "selected"
     });
 });
 

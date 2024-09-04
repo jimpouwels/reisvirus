@@ -18,7 +18,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link rel="shortcut icon" type="image/x-icon" href="/static/img/favicon.ico">
     <link rel="canonical" href="{$canonical_url}"/>
-    <link rel="stylesheet" href="/static/css/styles.css?v=345">
+    <link rel="stylesheet" href="/static/css/styles.css?v=367">
     {if !$is_mobile_device}
         <link rel="stylesheet" href="/static/css/styles_desktop.css?v=32">
     {else}
@@ -27,7 +27,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="/static/js/jarallax.min.js?v=3" type="text/javascript"></script>
     <script src="/static/js/jquery.linkunderanim.min.js?v=11" type="text/javascript"></script>
-    <script src="/static/js/functions.js?v=126" type="text/javascript"></script>
+    <script src="/static/js/functions.js?v=130" type="text/javascript"></script>
     <script src="/static/js/menu_scripts.js?v=96" type="text/javascript"></script>
 </head>
 <body>
@@ -78,7 +78,7 @@
                         </a>
                     </div>
                     <div class="header-menu">
-                        <ul id="nav">
+                        <ul id="nav-{$i}" class="nav">
                             {foreach from=$root_page.children item=navigation_item}
                                 {if $navigation_item.show_in_navigation}
                                     <li><a {if $navigation_item.is_current_page}class="selected"{/if}
@@ -180,40 +180,15 @@
     <div id="footer">
         <div id="footer-content">
             <div id="contact-panes">
-                <div class="contact">
-                    <p>Jim Pouwels</p>
-                    <div class="social-media">
-                        <a href="https://www.instagram.com/jim_pouwels" title="Instagram - @jimpouwels"
-                           target="_blank"><img
-                                    src="/static/img/instagram.png"/></a>
-                        <a href="https://landenverzamelaars.nl/reiziger/18682/jim-pouwels"
-                           title="LandenVerzamelaars - jim-pouwels" target="_blank"><img class="last"
-                                                                                         src="/static/img/landenverzamelaars.png"/></a>
-                    </div>
-                </div>
-                <div class="contact">
-                    <p>Reisvirus</p>
-                    <div class="social-media">
-                        <a title="Instagram - reisvirus" target="_blank"
-                           href="https://www.instagram.com/reis_virus"><img src="/static/img/instagram.png"/></a>
-                        <a href="https://landenverzamelaars.nl/reiziger/18710/reis-virus"
-                           title="LandenVerzamelaars - Reisvirus" target="_blank"><img class=""
-                                                                                       src="/static/img/landenverzamelaars.png"/></a>
-                        <a href="https://nl.pinterest.com/Reisvirus" title="Pinterest - Reisvirus" target="_blank"><img
-                                    class="last" src="/static/img/pinterest.png"/></a>
-                    </div>
-                </div>
-                <div class="contact">
-                    <p>Quirine Pouwels-de Loyer</p>
-                    <div class="social-media">
-                        <a href="https://www.instagram.com/quirinepouwels" title="Instagram - @qurinedeloyer"
-                           target="_blank"><img src="/static/img/instagram.png"/></a>
-                        <a href="https://www.polarsteps.com/QuirinedeLoyer" title="PolarSteps - QuirinedeLoyer"
-                           target="_blank"><img class="" src="/static/img/polarsteps.png"/></a>
-                        <a href="https://landenverzamelaars.nl/reiziger/18709/quirine-pouwels-de-loyer"
-                           title="LandenVerzamelaars - quirine-pouwels-de-loyer" target="_blank"><img class="last"
-                                                                                                      src="/static/img/landenverzamelaars.png"/></a>
-                    </div>
+                <p>Reisvirus</p>
+                <div class="social-media">
+                    <a title="Instagram - reisvirus" target="_blank"
+                       href="https://www.instagram.com/reis_virus"><img src="/static/img/instagram.png"/></a>
+                    <a href="https://landenverzamelaars.nl/reiziger/18710/reis-virus"
+                       title="LandenVerzamelaars - Reisvirus" target="_blank"><img class=""
+                                                                                   src="/static/img/landenverzamelaars.png"/></a>
+                    <a href="https://nl.pinterest.com/Reisvirus" title="Pinterest - Reisvirus" target="_blank"><img
+                                class="last" src="/static/img/pinterest.png"/></a>
                 </div>
             </div>
             <p id="copyright"><a href="mailto:info@reisvirus.com" title="info@reisvirus.com">&copy; Reisvirus
