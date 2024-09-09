@@ -7,18 +7,19 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl_NL" lang="nl_NL">
 <head>
-    <title>{if $page.is_homepage}Reisvirus.com • Jouw droomreis begint hier!{/if}{if !$page.is_homepage}{$title} • Reisvirus.com{/if}</title>
+    <title>{if $page.is_homepage}Reisvirus • Jouw droomreis begint hier!{/if}{if !$page.is_homepage}{$title} • Reisvirus{/if}</title>
     <meta name="keywords"
           content="{if $keywords}{$keywords}, {/if}{$title}, Reisvirus, reizen, travel, rondreis, zelf organiseren"/>
     <meta name="description" content="{$page.description}"/>
     <meta name="Subject" content="Reisvirus: {$title}"/>
     <meta name="robots" content="index, follow"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta property="og:locale" content="nl_NL" />
     <meta property="og:site_name" content="Reisvirus">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link rel="shortcut icon" type="image/x-icon" href="/static/img/favicon.ico">
     <link rel="canonical" href="{$canonical_url}"/>
-    <link rel="stylesheet" href="/static/css/styles.css?v=374">
+    <link rel="stylesheet" href="/static/css/styles.css?v=375">
     {if !$is_mobile_device}
         <link rel="stylesheet" href="/static/css/styles_desktop.css?v=33">
     {else}
