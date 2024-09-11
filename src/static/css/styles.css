@@ -315,9 +315,8 @@ h3 {
 .header-menu li {
     display: inline;
     margin-right: 25px;
-    text-transform: uppercase;
     font-weight: bold;
-    font-size: 1.15em;
+    font-size: 1.25em;
 }
 
 #header-wrapper-1 .header-menu a {
