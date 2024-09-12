@@ -11,6 +11,11 @@
         font-weight: 700;
     }
 
+    .blogpost-header h3 a
+    {
+        font-synthesis: weight !important;
+    }
+
     #quote {
         font-size: 2em;
     }
