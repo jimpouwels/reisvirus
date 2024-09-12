@@ -7,7 +7,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl_NL" lang="nl_NL">
 <head>
-    <title>{if $page.is_homepage}Reisvirus • Jouw droomreis begint hier!{/if}{if !$page.is_homepage}{$title} • Reisvirus{/if}</title>
+    <title>{if $page.is_homepage}Reisvirus • Jouw droomreis begint hier!{/if}{if !$page.is_homepage}{$title}{/if}</title>
     <meta name="keywords"
           content="{if $keywords}{$keywords}, {/if}{$title}, Reisvirus, reizen, travel, rondreis, zelf organiseren"/>
     <meta name="description" content="{$page.description}"/>
@@ -23,8 +23,15 @@
     {if !$is_mobile_device}
         <link rel="stylesheet" href="/static/css/styles_desktop.css?v=33">
     {else}
-        <link rel="stylesheet" href="/static/css/styles_mobile.css?v=30">
+        <link rel="stylesheet" href="/static/css/styles_mobile.css?v=31">
     {/if}
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org/",
+            "@type": "Website",
+            "name": "Reisvirus"
+        }
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="/static/js/jarallax.min.js?v=3" type="text/javascript"></script>
     <script src="/static/js/jquery.linkunderanim.min.js?v=11" type="text/javascript"></script>
