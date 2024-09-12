@@ -7,6 +7,10 @@
 }
 
 @media only screen and (max-width: 900px) {
+    h2 {
+        font-weight: 700;
+    }
+
     #quote {
         font-size: 2em;
     }

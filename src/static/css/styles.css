@@ -19,6 +19,10 @@ html {
     -ms-text-size-adjust: 100%;
 }
 
+body {
+    font-synthesis: none !important;
+}
+
 #mobile-navigation {
     overflow: hidden;
     width: 0vw;
@@ -43,9 +47,8 @@ html {
 }
 
 #mobile-navigation ul li {
-    text-transform: uppercase;
     font-weight: bold;
-    font-size: 1.15em;
+    font-size: 1.3em;
     list-style-type: none;
     line-height: 2.5em;
     margin-left: 0px;
@@ -125,6 +128,7 @@ html {
 }
 
 .logo-txt {
+    font-synthesis: initial;
     margin-left: -8px;
 }
 
@@ -224,7 +228,7 @@ h2 {
     color: #000000;
     margin-top: 25px;
     font-size: 1.7em;
-    font-weight: bold;
+    font-weight: 900;
     line-height: 1.2em;
     clear: both;
 }
