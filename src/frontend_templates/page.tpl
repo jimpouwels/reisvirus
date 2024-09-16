@@ -191,8 +191,10 @@
             <div id="contact-panes">
                 <p>Reisvirus</p>
                 <div class="social-media">
-                    <a title="Instagram - reisvirus" target="_blank"
+                    <a title="Instagram - reis_virus" target="_blank"
                        href="https://www.instagram.com/reis_virus"><img src="/static/img/instagram.png"/></a>
+                    <a title="Facebook - Reisvirus" target="_blank"
+                       href="https://www.facebook.com/profile.php?id=61565760935259"><img src="/static/img/facebook.png"/></a>
                     <a href="https://landenverzamelaars.nl/reiziger/18710/reis-virus"
                        title="LandenVerzamelaars - Reisvirus" target="_blank"><img class=""
                                                                                    src="/static/img/landenverzamelaars.png"/></a>
