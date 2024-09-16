@@ -26,6 +26,9 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
+    if (!$('#banner-wrapper').is(':visible')) {
+        return;
+    }
     setCorrectTopHeight();
     $(window).resize(function (event) {
         setCorrectTopHeight();
@@ -90,14 +93,18 @@ $(document).ready(function() {
 });
 
 // HEADER MENU UNDERLINE EFFECT
-$(document).ready(function () {
-    $("#nav-1").linkUnderlineAnim({
-        "speed": 300, "color": '#ffffff', "thickness": 1, "distance": 2, "skipClass": "selected"
-    });
-    $("#nav-2").linkUnderlineAnim({
-        "speed": 300, "color": '#000000', "thickness": 1, "distance": 2, "skipClass": "selected"
-    });
-});
+// $(document).ready(function () {
+//     var color = '#000000';
+//     if ($('#banner-wrapper').is(':visible')) {
+//         color = "#ffffff";
+//     }
+//     $("#nav-1").linkUnderlineAnim({
+//         "speed": 300, "color": color, "thickness": 1, "distance": 2, "skipClass": "selected"
+//     });
+//     $("#nav-2").linkUnderlineAnim({
+//         "speed": 300, "color": '#000000', "thickness": 1, "distance": 2, "skipClass": "selected"
+//     });
+// });
 
 // TABLE OF CONTENTS
 $(document).ready(function () {

@@ -115,7 +115,7 @@ body {
     margin-left: 25px;
 }
 
-#header-wrapper-2 .logo-img {
+#header-wrapper-2 .logo-img, .no_banner #header-wrapper-1 .logo-img {
     filter: invert(100%);
     width: 40px;
 }
@@ -244,6 +244,10 @@ h3 {
     overflow: hidden;
 }
 
+.no_banner #header-wrapper-1 .header-title a {
+    color: #000000;
+}
+
 #header-wrapper-1 .header-title a {
     color: #ffffff;
 }
@@ -319,6 +323,10 @@ h3 {
     margin-right: 25px;
     font-weight: bold;
     font-size: 1.25em;
+}
+
+.no_banner #header-wrapper-1 .header-menu a {
+    color: #000000;
 }
 
 #header-wrapper-1 .header-menu a {
@@ -876,6 +884,10 @@ li span {
     margin-right: 15px;
 }
 
+.no_banner #top-wrapper {
+    height: 110px !important;
+}
+
 #top-wrapper {
     height: 100dvh;
 }
@@ -893,6 +905,21 @@ li span {
 
 .grecaptcha-badge {
     visibility: hidden !important;
+}
+
+#sitewide-pages {
+    margin-top: 20px;
+    color: #000000;
+}
+
+#sitewide-pages a {
+    font-size: 0.8em;
+    text-decoration: none;
+    color: #000000;
+}
+
+#sitewide-pages a:hover {
+    text-decoration: underline;
 }
 
 @media only screen and (max-width: 1180px) {

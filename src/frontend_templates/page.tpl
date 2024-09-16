@@ -1,4 +1,9 @@
 {assign var=classes value=$var.classes}
+{assign var=noBanner value=$var.no_banner}
+{assign var=noBannerPage value=false}
+{if $noBanner == 'yes'}
+    {assign var=noBannerPage value=true}
+{/if}
 {assign var=fullScreen value=$var.full_screen_page}
 {assign var=fullScreenPage value=false}
 {if $fullScreen == 'yes'}
@@ -20,7 +25,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link rel="shortcut icon" type="image/x-icon" href="/static/img/favicon.ico">
     <link rel="canonical" href="{$canonical_url}"/>
-    <link rel="stylesheet" href="/static/css/styles.css?v=401">
+    <link rel="stylesheet" href="/static/css/styles.css?v=419">
     {if !$is_mobile_device}
         <link rel="stylesheet" href="/static/css/styles_desktop.css?v=33">
     {else}
@@ -36,7 +41,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="/static/js/jarallax.min.js?v=3" type="text/javascript"></script>
     <script src="/static/js/jquery.linkunderanim.min.js?v=11" type="text/javascript"></script>
-    <script src="/static/js/functions.js?v=130" type="text/javascript"></script>
+    <script src="/static/js/functions.js?v=133" type="text/javascript"></script>
     <script src="/static/js/menu_scripts.js?v=96" type="text/javascript"></script>
 </head>
 <body>
@@ -77,7 +82,11 @@
                 </svg>
     </div>
     <div id="top-wrapper">
-        {for $i=1 to 2}
+        {assign var=upTo value=2}
+        {if $noBannerPage}
+            {assign var=upTo value=1}
+        {/if}
+        {for $i=1 to $upTo}
             <div id="header-wrapper-{$i}">
                 <div class="header-content">
                     <div class="header-title">
@@ -100,32 +109,34 @@
                 </div>
             </div>
         {/for}
-        <div id="banner-wrapper">
-            <div id="banner">
-                <div class="jarallax">
-                    {if $article && $article.wallpaper}
-                        <img class="jarallax-img" src="{$article.wallpaper.url}"/>
-                    {else}
-                        {$blocks.wallpaper[0].to_string}
-                    {/if}
-                    <div id="quote-wrapper">
-                        {if $article}
-                            <div id="quote">
-                                {$article.title}
-                            </div>
+        {if !$noBannerPage}
+            <div id="banner-wrapper">
+                <div id="banner">
+                    <div class="jarallax">
+                        {if $article && $article.wallpaper}
+                            <img class="jarallax-img" src="{$article.wallpaper.url}"/>
                         {else}
-                            {if $page.is_homepage}
-                                {$blocks.wallpapertitle[0].to_string}
-                            {else}
-                                <div id="quote">
-                                    {$page.title}
-                                </div>
-                            {/if}
+                            {$blocks.wallpaper[0].to_string}
                         {/if}
+                        <div id="quote-wrapper">
+                            {if $article}
+                                <div id="quote">
+                                    {$article.title}
+                                </div>
+                            {else}
+                                {if $page.is_homepage}
+                                    {$blocks.wallpapertitle[0].to_string}
+                                {else}
+                                    <div id="quote">
+                                        {$page.title}
+                                    </div>
+                                {/if}
+                            {/if}
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        {/if}
     </div>
     {assign var="oddEven" value="odd"}
     {foreach from=$page.element_groups item=element_group}
@@ -136,6 +147,7 @@
         {/if}
         <div class="content-top-{$oddEven}">
             <div class="content-wrapper content-wrapper">
+                <div id="title"><h1>{$title}</h1></div>
                 <div class="page-content content {if $fullScreenPage}fullscreen_page{/if}">
                     {if count($crumb_path) > 1}
                         <div id="crumb_path">
@@ -201,6 +213,9 @@
                     <a href="https://nl.pinterest.com/Reisvirus" title="Pinterest - Reisvirus" target="_blank"><img
                                 class="last" src="/static/img/pinterest.png"/></a>
                 </div>
+            </div>
+            <div id="sitewide-pages">
+                {$blocks.sitewide[0].to_string}
             </div>
             <p id="copyright"><a href="mailto:info@reisvirus.com" title="info@reisvirus.com">&copy; Reisvirus
                     2023-{$smarty.now|date_format:"%Y"}</a></p>
