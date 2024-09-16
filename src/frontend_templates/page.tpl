@@ -16,6 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta property="og:locale" content="nl_NL" />
     <meta property="og:site_name" content="Reisvirus">
+    <meta property="og:image" content="{$base_url}{if $article}{$article.wallpaper.url}{else}{$blocks.wallpaper[0].element_groups[0][0].image_url}{/if}" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link rel="shortcut icon" type="image/x-icon" href="/static/img/favicon.ico">
     <link rel="canonical" href="{$canonical_url}"/>
@@ -105,7 +106,7 @@
                     {if $article && $article.wallpaper}
                         <img class="jarallax-img" src="{$article.wallpaper.url}"/>
                     {else}
-                        {$page.blocks.wallpaper[0]}
+                        {$blocks.wallpaper[0].to_string}
                     {/if}
                     <div id="quote-wrapper">
                         {if $article}
@@ -114,7 +115,7 @@
                             </div>
                         {else}
                             {if $page.is_homepage}
-                                {$page.blocks.wallpapertitle[0]}
+                                {$blocks.wallpapertitle[0].to_string}
                             {else}
                                 <div id="quote">
                                     {$page.title}
@@ -177,7 +178,7 @@
                                 {/foreach}
                             {/if}
                             {if !$tocFound}
-                                {$page.blocks.rechts[0]}
+                                {$blocks.rechts[0].to_string}
                             {/if}
                         </div>
                     </div>
