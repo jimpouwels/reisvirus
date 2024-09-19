@@ -16,7 +16,7 @@
 </head>
 <body>
     <include template="partials/google-tag-manager-body-include.tpl" />
-    <div id="root-wrapper" class="{$classes} {if $noBannerPage && count($page.element_groups) == 1}colored_page_white_first{/if}">
+    <div id="root-wrapper" class="{$classes}">
         <div id="mobile-navigation">
             <div id="mobile-navigation-close-button">
                 <svg id="mobile-navigation-close-link" class="close-image" fill="currentColor" width="24" height="24" viewBox="0 0 24 24"><path d="M5.293 6.707l5.293 5.293-5.293 5.293c-0.391 0.391-0.391 1.024 0 1.414s1.024 0.391 1.414 0l5.293-5.293 5.293 5.293c0.391 0.391 1.024 0.391 1.414 0s0.391-1.024 0-1.414l-5.293-5.293 5.293-5.293c0.391-0.391 0.391-1.024 0-1.414s-1.024-0.391-1.414 0l-5.293 5.293-5.293-5.293c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414z"></path></svg>
@@ -108,11 +108,7 @@
         {if $noBannerPage}
             <div id="title"><h1>{$title}</h1></div>
         {/if}
-        {if count($page.element_groups) == 1}
-            {assign var=oddEven value="even"}
-        {else}
-            {assign var="oddEven" value="odd"}
-        {/if}
+        {assign var="oddEven" value="odd"}
         {foreach from=$page.element_groups item=element_group}
             {if $oddEven == 'even'}
                 {assign var=oddEven value="odd"}

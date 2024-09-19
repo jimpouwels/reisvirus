@@ -457,15 +457,11 @@ h3 {
     clear: both;
 }
 
-.colored_page {
+.colored_page .content-top-odd {
     background-color: #e9f2ec;
 }
 
-.colored_page_white_first {
-    background-color: #ffffff;
-}
-
-.colored_page .content-top-odd {
+.colored_page .content-top-even {
     background-color: #ffffff;
 }
 
