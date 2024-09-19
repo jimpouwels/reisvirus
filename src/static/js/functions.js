@@ -75,9 +75,6 @@ function handleNavTop() {
 
 $(document).ready(function() {
     $(window).scroll(function (event) {
-        if (!$('#banner-wrapper').is(':visible')) {
-            return;
-        }
         let st = $(window).scrollTop();
         if (st === 0) {
             $("#header-wrapper-2").hide()
@@ -93,18 +90,18 @@ $(document).ready(function() {
 });
 
 // HEADER MENU UNDERLINE EFFECT
-// $(document).ready(function () {
-//     var color = '#000000';
-//     if ($('#banner-wrapper').is(':visible')) {
-//         color = "#ffffff";
-//     }
-//     $("#nav-1").linkUnderlineAnim({
-//         "speed": 300, "color": color, "thickness": 1, "distance": 2, "skipClass": "selected"
-//     });
-//     $("#nav-2").linkUnderlineAnim({
-//         "speed": 300, "color": '#000000', "thickness": 1, "distance": 2, "skipClass": "selected"
-//     });
-// });
+$(document).ready(function () {
+    var color = '#000000';
+    if ($('#banner-wrapper').is(':visible')) {
+        color = "#ffffff";
+    }
+    $("#nav-1").linkUnderlineAnim({
+        "speed": 300, "color": color, "thickness": 1, "distance": 2, "skipClass": "selected"
+    });
+    $("#nav-2").linkUnderlineAnim({
+        "speed": 300, "color": '#000000', "thickness": 1, "distance": 2, "skipClass": "selected"
+    });
+});
 
 // TABLE OF CONTENTS
 $(document).ready(function () {

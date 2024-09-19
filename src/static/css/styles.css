@@ -417,8 +417,14 @@ h3 {
     color: #ffffff;
 }
 
+.no_banner #header-wrapper-1 .header-menu li a.selected {
+    color: #53914e;
+    border-bottom: 1px solid #53914e;
+}
+
 #header-wrapper-2 .header-menu li a.selected {
     color: #53914e;
+    border-bottom: 1px solid #53914e;
 }
 
 .header-menu li a.selected {
@@ -451,8 +457,16 @@ h3 {
     clear: both;
 }
 
-.colored_page .content-top-odd {
+.colored_page {
     background-color: #e9f2ec;
+}
+
+.colored_page_white_first {
+    background-color: #ffffff;
+}
+
+.colored_page .content-top-odd {
+    background-color: #ffffff;
 }
 
 .page-content {
@@ -962,7 +976,7 @@ li span {
 }
 
 .no_banner #top-wrapper {
-    height: 110px !important;
+    height: 95px !important;
 }
 
 #top-wrapper {
