@@ -873,7 +873,7 @@ li span {
 }
 
 .default-img-circle {
-    border-radius: 50%;
+    border-radius: 25px;
 }
 
 .destinations {
