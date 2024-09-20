@@ -547,6 +547,33 @@ h3 {
     margin-top: 30px;
 }
 
+#blocks-for-narrow {
+    display: none;
+    clear: both;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+}
+
+#blocks-for-narrow p {
+    width: 60%;
+    float: left;
+}
+
+#blocks-for-narrow img {
+    border-radius: 50%;
+    float: right;
+    width: 35%;
+}
+
+#blocks-for-narrow h3 {
+    color: white;
+}
+
+#blocks-for-narrow .right-block {
+    max-height: none;
+}
+
 .right-block-wrapper {
     background-color: var(--green);
     padding: 10px;
@@ -1097,6 +1124,10 @@ li span {
 
     #right-content {
         display: none;
+    }
+
+    #blocks-for-narrow {
+        display: block;
     }
 
     #right-content .table-of-contents {

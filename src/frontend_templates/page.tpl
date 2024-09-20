@@ -179,6 +179,17 @@
                 </div>
             </div>
         {/foreach}
+        <div id="blocks-for-narrow">
+            {if isset($blocks.rechts)}
+                {foreach from=$blocks.rechts item=block}
+                    <div class="right-block-wrapper"">
+                        <div class="right-block {if !$article}no_scroll{/if}">
+                            {$block.to_string}
+                        </div>
+                    </div>
+                {/foreach}
+            {/if}
+        </div>
         <include template="partials/footer.tpl" />
     </div>
     <include template="partials/google-cookie-consent-banner.tpl" />
