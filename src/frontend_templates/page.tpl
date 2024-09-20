@@ -166,11 +166,13 @@
                                         </div>
                                     </div>
                                 {/if}
-                                <div class="right-block-wrapper" style="margin-top: 40px">
-                                    <div class="right-block {if !$article}no_scroll{/if}">
-                                        {$blocks.rechts[0].to_string}
+                                {foreach from=$blocks.rechts item=block}
+                                    <div class="right-block-wrapper" style="{if $tocElement || $block@index > 0}margin-top: 40px{/if}">
+                                        <div class="right-block {if !$article}no_scroll{/if}">
+                                            {$block.to_string}
+                                        </div>
                                     </div>
-                                </div>
+                                {/foreach}
                             </div>
                         </div>
                     {/if}
