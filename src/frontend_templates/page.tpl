@@ -159,14 +159,14 @@
                                     {/foreach}
                                 {/if}
                                 {if $tocElement}
-                                    <div class="right-block-wrapper">
+                                    <div class="right-block-wrapper" id="toc-block-wrapper">
                                         <h3>{$tocElement.title}</h3>
                                         <div class="right-block {if !$article}no_scroll{/if}">
                                             {$tocElement.to_string}
                                         </div>
                                     </div>
                                 {/if}
-                                <div class="right-block-wrapper" style="margin-top: 20px">
+                                <div class="right-block-wrapper" style="margin-top: 40px">
                                     <div class="right-block {if !$article}no_scroll{/if}">
                                         {$blocks.rechts[0].to_string}
                                     </div>

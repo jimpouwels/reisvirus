@@ -135,8 +135,10 @@ $(document).ready(function () {
     topWrapper = $('#top-wrapper');
 
     setCorrectRightContentHeight();
+    manipulateTop();
     $(window).resize(function () {
         setCorrectRightContentHeight();
+        manipulateTop();
     });
     $(window).scroll(function () {
         setCorrectRightContentHeight();
