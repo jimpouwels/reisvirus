@@ -13,6 +13,10 @@
     src: url(/static/fonts/AmericanCaptain-MdEY.otf);
 }
 
+:root {
+    --green: #4e996f;
+}
+
 html {
     -webkit-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
@@ -76,11 +80,11 @@ body {
 }
 
 #mobile-navigation ul li .selected {
-    color: #53914e;
+    color: var(--green);
 }
 
 #mobile-navigation ul li a:hover {
-    color: #53914e;
+    color: var(--green);
 }
 
 #mobile-navigation .logo-img {
@@ -232,7 +236,7 @@ body {
 }
 
 .contact-form-field button, .consent-buttons button {
-    background-color: #53914e;
+    background-color: var(--green);
     border: none;
     color: white;
     padding: 15px 22px;
@@ -345,7 +349,7 @@ h3 {
 .mobile-menu {
     position: fixed;
     top: 45px;
-    background-color: #53914e;
+    background-color: var(--green);
     right: -8px;
     transform: translate(-50%, -58%);
     margin-right: 0px;
@@ -371,7 +375,7 @@ h3 {
     display: none;
     bottom: 30px;
     right: 15px;
-    background-color: #53914e;
+    background-color: var(--green);
     border-radius: 50%;
     width: 30px;
     height: 30px;
@@ -418,13 +422,13 @@ h3 {
 }
 
 .no_banner #header-wrapper-1 .header-menu li a.selected {
-    color: #53914e;
-    border-bottom: 1px solid #53914e;
+    color: var(--green);
+    border-bottom: 1px solid var(--green);
 }
 
 #header-wrapper-2 .header-menu li a.selected {
-    color: #53914e;
-    border-bottom: 1px solid #53914e;
+    color: var(--green);
+    border-bottom: 1px solid var(--green);
 }
 
 .header-menu li a.selected {
@@ -481,7 +485,8 @@ h3 {
 }
 
 .content a {
-    color: #53914e;
+    color: var(--green);
+    font-weight: 600;
     text-decoration: none;
 }
 
@@ -491,13 +496,22 @@ h3 {
 }
 
 .content a:hover {
-    color: #53914e;
+    color: var(--green);
     text-decoration: underline;
 }
 
 .right-block {
     max-height: 500px;
     overflow-y: auto;
+    padding-right: 10px;
+}
+
+.right-block ul {
+    margin-left: -10px;
+}
+
+.right-block .table-of-contents h3 {
+    display: none;
 }
 
 .right-block img {
@@ -525,16 +539,31 @@ h3 {
 #right-content {
     width: 26%;
     float: left;
+    background-color: var(--green);
     padding: 1%;
     margin-left: 3%;
     margin-bottom: 2%;
+    color: white;
+    font-weight: 600;
     border-radius: 10px;
     margin-top: 30px;
     box-shadow: 0px 10px 30px 0px rgb(0 0 0 / 10%);
 }
 
+#right-content a {
+    color: white;
+    font-weight: 600;
+}
+
+#right-content li::marker {
+    color: white;
+}
+
 #right-content h3 {
+    color: white;
+    font-weight: 900;
     text-align: center;
+    margin-top: 5px;
 }
 
 #right-content .paragraph-justified {
@@ -593,7 +622,7 @@ h3 {
 }
 
 #copyright a {
-    color: #53914e;
+    color: var(--green);
     text-decoration: none;
 }
 
@@ -609,7 +638,7 @@ h3 {
 
 #powered-by a {
     text-decoration: none;
-    color: #53914e
+    color: var(--green)
 }
 
 #powered-by a:hover {
@@ -663,7 +692,7 @@ h4 {
 }
 
 li::marker {
-    color: #53914e;
+    color: var(--green);
 }
 
 li span {
@@ -796,7 +825,7 @@ li span {
 
 .blogpost a {
     text-decoration: none;
-    color: #53914e;
+    color: var(--green);
 }
 
 .blogpost a:hover {
@@ -966,7 +995,7 @@ li span {
 }
 
 #respond-to-name {
-    color: #53914e;
+    color: var(--green);
     font-style: italic;
     margin-right: 15px;
 }

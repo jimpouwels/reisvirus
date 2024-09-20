@@ -146,19 +146,24 @@
                     </div>
                     {if !$fullScreenPage}
                         <div id="right-content" class="content right-content-size">
-                            <div class="right-block {if !$article}no_scroll{/if}">
-                                {assign var="tocFound" value=false}
-                                {if $article}
-                                    {foreach from=$article.element_groups item=element_group}
-                                        {foreach from=$element_group item=element}
-                                            {if $element.type == 'table_of_contents_element'}
-                                                {assign var="tocFound" value=true}
-                                                {$element.to_string}
-                                            {/if}
-                                        {/foreach}
+                            {assign var=tocElement value=''}
+                            {if $article}
+                                {foreach from=$article.element_groups item=element_group}
+                                    {foreach from=$element_group item=element}
+                                        {if $element.type == 'table_of_contents_element'}
+                                            {assign var="tocFound" value=true}
+                                            {assign var=tocElement value=$element}
+                                        {/if}
                                     {/foreach}
-                                {/if}
-                                {if !$tocFound}
+                                {/foreach}
+                            {/if}
+                            {if $tocElement}
+                                <h3>{$tocElement.title}</h3>
+                            {/if}
+                            <div class="right-block {if !$article}no_scroll{/if}">
+                                {if $tocElement}
+                                    {$tocElement.to_string}
+                                {else}
                                     {$blocks.rechts[0].to_string}
                                 {/if}
                             </div>
