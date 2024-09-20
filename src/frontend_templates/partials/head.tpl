@@ -31,5 +31,5 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 <script src="/static/js/jarallax.min.js?v=3" type="text/javascript"></script>
 <script src="/static/js/jquery.linkunderanim.min.js?v=11" type="text/javascript"></script>
-<script src="/static/js/functions.js?v=352" type="text/javascript"></script>
+<script src="/static/js/functions.js?v=353" type="text/javascript"></script>
 <script src="/static/js/menu_scripts.js?v=96" type="text/javascript"></script>
