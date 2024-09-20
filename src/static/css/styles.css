@@ -575,7 +575,7 @@ h3 {
 
 #right-content-sticker {
     position: sticky;
-    bottom: 30px;
+    /*bottom: 30px;*/
     top: 30px;
 }
 
