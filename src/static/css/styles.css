@@ -512,10 +512,15 @@ h3 {
 
 .right-block ul {
     margin-left: -20px;
+    margin-bottom: 0;
 }
 
 .right-block .table-of-contents h3 {
     display: none;
+}
+
+.right-block .table-of-contents ul {
+    margin-top: -5px;
 }
 
 .right-block img {

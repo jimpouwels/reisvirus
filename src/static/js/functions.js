@@ -159,12 +159,7 @@ function correctRightContentPosition() {
         setCurrentTop(getCurrentTop() - headerWrapper2.height());
     }
 
-    if (scroll === 0) {
-        setCurrentTop(originalTop);
-        return;
-    }
-
-    if (Math.abs(getCurrentTop()) < scrollSpace) {
+        if (Math.abs(getCurrentTop()) < scrollSpace) {
         setCurrentTop(Math.max(-scrollSpace, Math.min(getCurrentTop() - delta, originalTop + headerWrapper2.height())));
     } else if (delta < 0) {
         setCurrentTop(Math.min(getCurrentTop() - delta, originalTop + headerWrapper2.height()));
