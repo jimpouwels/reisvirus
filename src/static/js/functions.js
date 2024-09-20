@@ -117,86 +117,35 @@ $(document).ready(function () {
     }
 });
 
-// RIGHT BLOCK SCROLLING BEHAVIOR
+let originalTop = 0;
+let headerWrapper2;
+let rightContent;
+let rightBlockWrappers;
+let pageContent;
 $(document).ready(function () {
-    var rightMenu = $('#right-content');
-    var pageContent = $('.page-content');
-    var el = document.getElementById('right-content');
-    if (!el) {
-        return;
-    }
-    var marginTopInit = 30;
-    el.style.marginTop = marginTopInit + "px";
-    let footer = $('#footer');
+    rightBlockWrappers = $('.right-block-wrapper');
+    originalTop = parseInt(rightBlockWrappers.css('top').replace('px', ''));
+    headerWrapper2 = $('#header-wrapper-2');
+    rightContent = $('#right-content');
+    pageContent = $('.page-content');
 
-    let footerStartOffset = footer.offset().top;
-    let lastScrollTop = 0;
-    let outsideAmount = 0;
-
-    let initialPos = rightMenu.position();
-    let threshold = $('#top-wrapper').height();
-    let paddingPx = rightMenu.css('padding');
-    let marginLeftPx = rightMenu.css('margin-left');
-    let marginLeft = initialPos.left - (pageContent.position().left + pageContent.width());
-    let marginTop = parseInt(rightMenu.css('margin-top').replace('px', ''));
-    let originalMargin = marginTop;
-    let fakeOffset = parseInt(rightMenu.offset().top) + parseInt(rightMenu.height());
-    let initialOffset = fakeOffset;
-
-    positionRightBlock(initialPos, initialPos, false, scrollAmount());
-
-    $(window).scroll(function (e) {
-        positionRightBlock(rightMenu.position(), initialPos, false, scrollAmount());
-        lastScrollTop = scrollAmount();
-    });
-
+    setCorrectRightContentHeight();
     $(window).resize(function () {
-        threshold = $('#top-wrapper').height();
-        fakeOffset = parseInt(rightMenu.offset().top) + parseInt(rightMenu.height());
-        initialOffset = fakeOffset;
-        positionRightBlock(rightMenu.position(), initialPos, true, scrollAmount());
+        setCorrectRightContentHeight();
     });
-
-    function positionRightBlock(currentPos, initialPos, resize, scrollVal) {
-        footerStartOffset = footer.offset().top;
-
-        const pageContentPercentWidth = pageContent.width() / pageContent.parent().width() * 100;
-        const newWidth = (pageContent.width() / pageContentPercentWidth) * (100 - pageContentPercentWidth - 8);
-
-        let outside = fakeOffset > footerStartOffset - 100;
-        if (outside) {
-            outsideAmount += (scrollVal - lastScrollTop);
-        } else {
-            outsideAmount = 0;
-        }
-
-        if (scrollVal > threshold && outsideAmount <= 0) {
-            let prevMargin = marginTop;
-            marginTop = scrollAmount() - threshold + parseInt(originalMargin);
-
-            const newLeft = !resize ? (currentPos.left) : ((pageContent.position().left + pageContent.width()) + marginLeft);
-            rightMenu.css({
-                width: newWidth + 'px',
-                marginLeft: marginLeftPx,
-                padding: paddingPx,
-                position: 'fixed',
-                top: $("#header-wrapper-2").is(':visible') ? ($('#header-wrapper-1').height()) : 0 + "px",
-                left: newLeft + 'px',
-                bottom: initialPos.bottom + 'px',
-                marginTop: "30px"
-            });
-            fakeOffset += (parseInt(marginTop) - parseInt(prevMargin));
-        } else if (outsideAmount <= 0) {
-            marginTop = parseInt(originalMargin);
-            rightMenu.css({width: newWidth + 'px', position: 'static'});
-            fakeOffset = initialOffset;
-        } else {
-            rightMenu.css({marginTop: marginTop + "px", width: newWidth + 'px', position: 'static'});
-        }
-    }
-
-    function scrollAmount() {
-        return parseInt($(window).scrollTop());
-    }
-
+    $(window).scroll(function () {
+        setCorrectRightContentHeight();
+    });
 });
+
+function setCorrectRightContentHeight() {
+    let pageHeight = pageContent.height();
+    rightContent.css('height', pageHeight + 'px');
+
+    if (headerWrapper2.is(':visible')) {
+        console.log('orig: ' + originalTop + ', header: ' + headerWrapper2.height());
+        rightBlockWrappers.css('top', (originalTop + headerWrapper2.height()) + 'px');
+    } else {
+        rightBlockWrappers.css('top', originalTop);
+    }
+}

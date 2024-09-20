@@ -158,15 +158,19 @@
                                 {/foreach}
                             {/if}
                             {if $tocElement}
-                                <h3>{$tocElement.title}</h3>
+                                <div class="right-block-wrapper">
+                                    <h3>{$tocElement.title}</h3>
+                                    <div class="right-block {if !$article}no_scroll{/if}">
+                                        {$tocElement.to_string}
+                                    </div>
+                                </div>
+                            {else}
+                                <div class="right-block-wrapper" style="margin-top: 20px">
+                                    <div class="right-block {if !$article}no_scroll{/if}">
+                                        {$blocks.rechts[0].to_string}
+                                    </div>
+                                </div>
                             {/if}
-                            <div class="right-block {if !$article}no_scroll{/if}">
-                                {if $tocElement}
-                                    {$tocElement.to_string}
-                                {else}
-                                    {$blocks.rechts[0].to_string}
-                                {/if}
-                            </div>
                         </div>
                     {/if}
                 </div>
