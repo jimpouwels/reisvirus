@@ -14,7 +14,7 @@
 }
 
 :root {
-    --green: #4e996f;
+    --green: #4f8972;
 }
 
 html {
@@ -468,6 +468,10 @@ h3 {
     background-color: #ffffff;
 }
 
+.colored_page .content-top {
+    overflow: auto;
+}
+
 .page-content {
     scroll-behavior: smooth;
     float: left;
@@ -571,8 +575,8 @@ h3 {
 
 #right-content-sticker {
     position: sticky;
+    bottom: 30px;
     top: 30px;
-    bottom: 0;
 }
 
 #right-content a {

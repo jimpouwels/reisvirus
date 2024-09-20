@@ -155,14 +155,17 @@ function manipulateTop() {
     let delta = scroll - previousScroll;
     previousScroll = scroll;
 
+    if (previousDelta < 0 && delta > 0) {
+        setCurrentTop(getCurrentTop() - headerWrapper2.height());
+    }
+    if (previousDelta > 0 && delta < 0) {
+        setCurrentTop(getCurrentTop() + headerWrapper2.height());
+    }
+
     if (Math.abs(getCurrentTop()) < scrollSpace) {
         setCurrentTop(Math.max(-scrollSpace, Math.min(getCurrentTop() - delta, originalTop + headerWrapper2.height())));
     } else if (delta < 0) {
         setCurrentTop(Math.min(getCurrentTop() - delta, originalTop + headerWrapper2.height()));
-    } else {
-        if (previousDelta < 0 && delta > 0) {
-            setCurrentTop(getCurrentTop() - headerWrapper2.height());
-        }
     }
     previousDelta = delta;
 }

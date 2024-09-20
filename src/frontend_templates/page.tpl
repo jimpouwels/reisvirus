@@ -115,7 +115,7 @@
             {else}
                 {assign var=oddEven value="even"}
             {/if}
-            <div class="content-top-{$oddEven}">
+            <div class="content-top-{$oddEven} content-top">
                 <div class="content-wrapper content-wrapper">
                     <div class="page-content content {if $fullScreenPage}fullscreen_page{/if}">
                         {if count($crumb_path) > 1}
