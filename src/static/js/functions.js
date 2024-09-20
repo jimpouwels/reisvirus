@@ -135,21 +135,21 @@ $(document).ready(function () {
     topWrapper = $('#top-wrapper');
 
     setCorrectRightContentHeight();
-    manipulateTop();
+    correctRightContentPosition();
     $(window).resize(function () {
         setCorrectRightContentHeight();
-        manipulateTop();
+        correctRightContentPosition();
     });
     $(window).scroll(function () {
         setCorrectRightContentHeight();
-        manipulateTop();
+        correctRightContentPosition();
     });
 });
 
 let previousScroll = 0;
 let previousDelta = 0;
 
-function manipulateTop() {
+function correctRightContentPosition() {
     let scrollSpace = rightContentSticker.height() - window.innerHeight + originalTop;
     let scroll = $(window).scrollTop();
     let delta = scroll - previousScroll;
