@@ -120,14 +120,19 @@ $(document).ready(function () {
 let originalTop = 0;
 let headerWrapper2;
 let rightContent;
-let rightBlockWrappers;
+let rightContentSticker;
 let pageContent;
+let topWrapper;
+let currentTop;
+let originalScrollSpace;
 $(document).ready(function () {
-    rightBlockWrappers = $('.right-block-wrapper');
-    originalTop = parseInt(rightBlockWrappers.css('top').replace('px', ''));
+    rightContentSticker = $('#right-content-sticker');
+    originalTop = getCurrentTop();
+    currentTop = getCurrentTop();
     headerWrapper2 = $('#header-wrapper-2');
     rightContent = $('#right-content');
     pageContent = $('.page-content');
+    topWrapper = $('#top-wrapper');
 
     setCorrectRightContentHeight();
     $(window).resize(function () {
@@ -135,17 +140,40 @@ $(document).ready(function () {
     });
     $(window).scroll(function () {
         setCorrectRightContentHeight();
+        manipulateTop();
     });
 });
+
+let previousScroll = 0;
+let previousDelta = 0;
+
+function manipulateTop() {
+    let scrollSpace = rightContentSticker.height() - window.innerHeight + originalTop;
+    let scroll = $(window).scrollTop();
+    let delta = scroll - previousScroll;
+    previousScroll = scroll;
+
+    if (Math.abs(getCurrentTop()) < scrollSpace) {
+        setCurrentTop(Math.max(-scrollSpace, Math.min(getCurrentTop() - delta, originalTop + headerWrapper2.height())));
+    } else if (delta < 0) {
+        setCurrentTop(Math.min(getCurrentTop() - delta, originalTop + headerWrapper2.height()));
+    } else {
+        if (previousDelta < 0 && delta > 0) {
+            setCurrentTop(getCurrentTop() - headerWrapper2.height());
+        }
+    }
+    previousDelta = delta;
+}
 
 function setCorrectRightContentHeight() {
     let pageHeight = pageContent.height();
     rightContent.css('height', pageHeight + 'px');
+}
 
-    if (headerWrapper2.is(':visible')) {
-        console.log('orig: ' + originalTop + ', header: ' + headerWrapper2.height());
-        rightBlockWrappers.css('top', (originalTop + headerWrapper2.height()) + 'px');
-    } else {
-        rightBlockWrappers.css('top', originalTop);
-    }
+function getCurrentTop() {
+    return parseInt(rightContentSticker.css('top').replace('px', ''));
+}
+
+function setCurrentTop(value) {
+    rightContentSticker.css('top', value + 'px');
 }

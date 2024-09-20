@@ -146,31 +146,32 @@
                     </div>
                     {if !$fullScreenPage}
                         <div id="right-content" class="content right-content-size">
-                            {assign var=tocElement value=''}
-                            {if $article}
-                                {foreach from=$article.element_groups item=element_group}
-                                    {foreach from=$element_group item=element}
-                                        {if $element.type == 'table_of_contents_element'}
-                                            {assign var="tocFound" value=true}
-                                            {assign var=tocElement value=$element}
-                                        {/if}
+                            <div id="right-content-sticker">
+                                {assign var=tocElement value=''}
+                                {if $article}
+                                    {foreach from=$article.element_groups item=element_group}
+                                        {foreach from=$element_group item=element}
+                                            {if $element.type == 'table_of_contents_element'}
+                                                {assign var="tocFound" value=true}
+                                                {assign var=tocElement value=$element}
+                                            {/if}
+                                        {/foreach}
                                     {/foreach}
-                                {/foreach}
-                            {/if}
-                            {if $tocElement}
-                                <div class="right-block-wrapper">
-                                    <h3>{$tocElement.title}</h3>
-                                    <div class="right-block {if !$article}no_scroll{/if}">
-                                        {$tocElement.to_string}
+                                {/if}
+                                {if $tocElement}
+                                    <div class="right-block-wrapper">
+                                        <h3>{$tocElement.title}</h3>
+                                        <div class="right-block {if !$article}no_scroll{/if}">
+                                            {$tocElement.to_string}
+                                        </div>
                                     </div>
-                                </div>
-                            {else}
+                                {/if}
                                 <div class="right-block-wrapper" style="margin-top: 20px">
                                     <div class="right-block {if !$article}no_scroll{/if}">
                                         {$blocks.rechts[0].to_string}
                                     </div>
                                 </div>
-                            {/if}
+                            </div>
                         </div>
                     {/if}
                 </div>

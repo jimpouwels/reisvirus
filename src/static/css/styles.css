@@ -547,13 +547,16 @@ h3 {
     background-color: var(--green);
     padding: 10px;
     padding-bottom: 20px;
-    position: sticky;
-    top: 30px;
-    bottom: 0;
     color: white;
     font-weight: 600;
     border-radius: 10px;
     box-shadow: 0px 10px 30px 0px rgb(0 0 0 / 10%);
+}
+
+#right-content-sticker {
+    position: sticky;
+    top: 30px;
+    bottom: 0;
 }
 
 #right-content a {
