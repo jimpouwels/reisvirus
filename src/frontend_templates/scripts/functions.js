@@ -4,6 +4,30 @@ let scrollDelta = 0;
 let isScrollingUp = false;
 let isScrollingDown = false;
 let scrollPosition = 0;
+let originalTop = 0;
+let headerWrapper2;
+let rightContentSticker;
+
+$(document).ready(function () {
+    handleNavTop();
+    rightContentSticker = $('#right-content-sticker');
+    originalTop = getCurrentTop();
+    headerWrapper2 = $('#header-wrapper-2');
+
+    setCorrectRightContentHeight();
+    $(window).resize(function () {
+        setCorrectRightContentHeight();
+    });
+    $(window).scroll(function () {
+        scrollPosition = $(window).scrollTop();
+        scrollDelta = scrollPosition - previousScroll;
+        previousScroll = scrollPosition;
+        isScrollingUp = scrollDelta < 0;
+        isScrollingDown = scrollDelta > 0;
+        onScroll();
+        previousScrollDelta = scrollDelta;
+    });
+});
 
 // RESPONDING TO ARTICLE COMMENTS
 function respondToComment(comment_id, name) {
@@ -99,30 +123,6 @@ $(document).ready(function () {
     function scrollTo(hash) {
         document.getElementById(hash.replace('#', '')).scrollIntoView({behavior: 'smooth'});
     }
-});
-
-let originalTop = 0;
-let headerWrapper2;
-let rightContentSticker;
-$(document).ready(function () {
-    handleNavTop();
-    rightContentSticker = $('#right-content-sticker');
-    originalTop = getCurrentTop();
-    headerWrapper2 = $('#header-wrapper-2');
-
-    setCorrectRightContentHeight();
-    $(window).resize(function () {
-        setCorrectRightContentHeight();
-    });
-    $(window).scroll(function () {
-        scrollPosition = $(window).scrollTop();
-        scrollDelta = scrollPosition - previousScroll;
-        previousScroll = scrollPosition;
-        isScrollingUp = scrollDelta < 0;
-        isScrollingDown = scrollDelta > 0;
-        onScroll();
-        previousScrollDelta = scrollDelta;
-    });
 });
 
 function onScroll() {
