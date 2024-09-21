@@ -5,7 +5,7 @@
         <div class="cookie-consent-options" id="cookie-consent-preferences">
             <div class="cookie-consent-option-block">
                 <span>Functioneel</span>
-                <label><input id="consent-necessary" type="checkbox" value="Necessary" checked disabled></label>
+                <label><input id="consent-necessary" type="checkbox" value="Necessary" checked></label>
                 <div class="cookie-option-text">De technische opslag of toegang is strikt noodzakelijk voor het legitieme doel het gebruik mogelijk te maken van een specifieke dienst waarom de abonnee of gebruiker uitdrukkelijk heeft gevraagd, of met als enig doel de uitvoering van de transmissie van een communicatie over een elektronisch communicatienetwerk.</div>
             </div>
             <div class="cookie-consent-option-block">
