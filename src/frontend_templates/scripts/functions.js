@@ -3,6 +3,7 @@ let previousScrollDelta = 0;
 let scrollDelta = 0;
 let isScrollingUp = false;
 let isScrollingDown = false;
+let scrollPosition = 0;
 
 // RESPONDING TO ARTICLE COMMENTS
 function respondToComment(comment_id, name) {
@@ -16,8 +17,6 @@ function stopResponding() {
     $('#respond-to-container').hide();
     $('#respond-to-name').html('');
 }
-
-let headerLastScrollTop = $(window).scrollTop();
 
 $(document).ready(function() {
     var mobileNav = $('#mobile-navigation');
@@ -59,11 +58,6 @@ function setCorrectTopHeight() {
 }
 
 $(document).ready(function() {
-    handleNavTop();
-    $(window).scroll(function (event) {
-        handleNavTop();
-    });
-
     $("#nav-top").mouseup(function() {
         window.scrollTo({ top: 0, behavior: 'smooth' } );
     });
@@ -78,22 +72,6 @@ function handleNavTop() {
         }
     }
 }
-
-$(document).ready(function() {
-    $(window).scroll(function (event) {
-        let st = $(window).scrollTop();
-        if (st === 0) {
-            $("#header-wrapper-2").hide()
-        } else if (st < ($("#header-wrapper-1").height() + 100)) {
-            $("#header-wrapper-2").hide();
-        } else if (st < headerLastScrollTop) {
-            $("#header-wrapper-2").show();
-        } else {
-            $("#header-wrapper-2").hide();
-        }
-        headerLastScrollTop = st;
-    });
-});
 
 // HEADER MENU UNDERLINE EFFECT
 $(document).ready(function () {
@@ -131,6 +109,7 @@ let pageContent;
 let topWrapper;
 let currentTop;
 $(document).ready(function () {
+    handleNavTop();
     rightContentSticker = $('#right-content-sticker');
     originalTop = getCurrentTop();
     currentTop = getCurrentTop();
@@ -144,9 +123,9 @@ $(document).ready(function () {
         setCorrectRightContentHeight();
     });
     $(window).scroll(function () {
-        let scroll = $(window).scrollTop();
-        scrollDelta = scroll - previousScroll;
-        previousScroll = scroll;
+        scrollPosition = $(window).scrollTop();
+        scrollDelta = scrollPosition - previousScroll;
+        previousScroll = scrollPosition;
         isScrollingUp = scrollDelta < 0;
         isScrollingDown = scrollDelta > 0;
         onScroll();
@@ -155,6 +134,8 @@ $(document).ready(function () {
 });
 
 function onScroll() {
+    handleHeaderMenuScroll();
+    handleNavTop();
     setCorrectRightContentHeight();
     correctRightContentPosition();
 }
@@ -172,6 +153,18 @@ function correctRightContentPosition() {
         setCurrentTop(Math.min(getCurrentTop() - scrollDelta, originalTop + headerWrapper2.height()));
     } else if (isScrollingDown) {
         setCurrentTop(originalTop);
+    }
+}
+
+function handleHeaderMenuScroll() {
+    if (scrollPosition === 0) {
+        $("#header-wrapper-2").hide()
+    } else if (scrollPosition < ($("#header-wrapper-1").height() + 100)) {
+        $("#header-wrapper-2").hide();
+    } else if (isScrollingUp) {
+        $("#header-wrapper-2").show();
+    } else {
+        $("#header-wrapper-2").hide();
     }
 }
 
