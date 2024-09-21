@@ -34,4 +34,6 @@
 <script type="text/javascript">
     <include template="scripts/functions.js" />
 </script>
-<script src="/static/js/menu_scripts.js?v=96" type="text/javascript"></script>
+<script type="text/javascript">
+    <include template="scripts/mobile_menu.js" />
+</script>
