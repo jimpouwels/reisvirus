@@ -1,3 +1,9 @@
+let previousScroll = 0;
+let previousScrollDelta = 0;
+let scrollDelta = 0;
+let isScrollingUp = false;
+let isScrollingDown = false;
+
 // RESPONDING TO ARTICLE COMMENTS
 function respondToComment(comment_id, name) {
     $('#parent_id_field').attr('value', comment_id);
@@ -117,10 +123,6 @@ $(document).ready(function () {
     }
 });
 
-let previousScroll = 0;
-let previousScrollDelta = 0;
-let scrollDelta = 0;
-
 let originalTop = 0;
 let headerWrapper2;
 let rightContent;
@@ -138,15 +140,15 @@ $(document).ready(function () {
     topWrapper = $('#top-wrapper');
 
     setCorrectRightContentHeight();
-    correctRightContentPosition();
     $(window).resize(function () {
         setCorrectRightContentHeight();
-        correctRightContentPosition();
     });
     $(window).scroll(function () {
         let scroll = $(window).scrollTop();
         scrollDelta = scroll - previousScroll;
         previousScroll = scroll;
+        isScrollingUp = scrollDelta < 0;
+        isScrollingDown = scrollDelta > 0;
         onScroll();
         previousScrollDelta = scrollDelta;
     });
@@ -166,9 +168,9 @@ function correctRightContentPosition() {
 
     if (Math.abs(getCurrentTop()) < scrollSpace) {
         setCurrentTop(Math.max(-scrollSpace, Math.min(getCurrentTop() - scrollDelta, originalTop + headerWrapper2.height())));
-    } else if (scrollDelta < 0) {
+    } else if (isScrollingUp) {
         setCurrentTop(Math.min(getCurrentTop() - scrollDelta, originalTop + headerWrapper2.height()));
-    } else if (scrollDelta > 0) {
+    } else if (isScrollingDown) {
         setCurrentTop(originalTop);
     }
 }
