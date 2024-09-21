@@ -64,7 +64,7 @@ $(document).ready(function() {
 });
 
 function handleNavTop() {
-    if (!$('#right-content').is(":visible")) {
+    if (!$('#header-wrapper-2 .header-menu').is(":visible")) {
         if ($(window).scrollTop() > ($(window).height() / 3)) {
             $("#nav-top").show();
         } else {
@@ -103,16 +103,12 @@ $(document).ready(function () {
 
 let originalTop = 0;
 let headerWrapper2;
-let rightContent;
 let rightContentSticker;
-let pageContent;
 $(document).ready(function () {
     handleNavTop();
     rightContentSticker = $('#right-content-sticker');
     originalTop = getCurrentTop();
     headerWrapper2 = $('#header-wrapper-2');
-    rightContent = $('#right-content');
-    pageContent = $('.page-content');
 
     setCorrectRightContentHeight();
     $(window).resize(function () {
@@ -165,12 +161,16 @@ function handleHeaderMenuScroll() {
 }
 
 function setCorrectRightContentHeight() {
+    let rightContent = $('#right-content');
+    let pageContent = $('.page-content');
     let pageHeight = pageContent.height();
     rightContent.css('height', pageHeight + 'px');
 }
 
 function getCurrentTop() {
-    return parseInt(rightContentSticker.css('top').replace('px', ''));
+    if (rightContentSticker.is(':visible')) {
+        return parseInt(rightContentSticker.css('top').replace('px', ''));
+    }
 }
 
 function setCurrentTop(value) {
