@@ -1,45 +1,27 @@
-var isVisible = false;
-var lastScroll = 0;
-
-function hideMobileMenu() {
-    isVisible = false;
-    var mobileNavigation = $("#mobile-navigation");
-    mobileNavigation.stop();
-    mobileNavigation.animate({"width": "0vw", opacity: 0}, 350);
-    $(".mobile-menu").css('display', '');
-}
+let mobileNavigation;
+let mobileHamburgerMenu;
+let mobileNavigationCloseButton;
 
 $(document).ready(function() {
-    $("#mobile-navigation-close-link").mouseup(function(e) {
+    mobileNavigation = $("#mobile-navigation");
+    mobileHamburgerMenu = $(".mobile-hamburger-menu");
+    mobileNavigationCloseButton = $("#mobile-navigation-close-link");
+
+    mobileNavigationCloseButton.mouseup(function() {
         hideMobileMenu();
         return false;
     });
 
-    $(".mobile-menu").mouseup(function(e) {
-        var mobileNavigation = $("#mobile-navigation");
+    mobileHamburgerMenu.mouseup(function() {
         mobileNavigation.stop();
-        var mobileMenu = $(".mobile-menu");
-        isVisible = true;
         mobileNavigation.animate({"width": "90vw", opacity: 1}, 350);
-        mobileMenu.hide();
-    });
-
-    $(document).mouseup(function(e) {
-        if (!$(".mobile-menu").is(":visible")) {
-            return;
-        }
-        var container = $(this).find(".header-menu").is(':visible');
-        if (container) {
-            $(".header-menu").each(function(m) { $(this).hide(); });
-        }
-        return false;
-    });
-
-    $(window).scroll(function(e) {
-        if ($(".mobile-menu").is(":visible") && ($(this).scrollTop() > lastScroll)) {
-            $(".header-menu").hide();
-            isVisible = false;
-        }
+        mobileHamburgerMenu.hide();
     });
 
 });
+
+function hideMobileMenu() {
+    mobileNavigation.stop();
+    mobileNavigation.animate({"width": "0vw", opacity: 0}, 350);
+    mobileHamburgerMenu.css('display', '');
+}

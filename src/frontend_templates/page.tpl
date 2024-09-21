@@ -44,7 +44,7 @@
                             class="last" src="/static/img/pinterest.png"/></a>
             </div>
         </div>
-        <div class="mobile-menu"><a href="#" onclick="return false;"><img
+        <div class="mobile-hamburger-menu"><a href="#" onclick="return false;"><img
                         src="/static/img/hamburger_menu.svg"/></a>
         </div>
         <div id="nav-top">
