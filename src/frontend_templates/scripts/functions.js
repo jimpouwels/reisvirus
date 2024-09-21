@@ -65,7 +65,7 @@ $(document).ready(function() {
 
 function handleNavTop() {
     if (!$('#header-wrapper-2 .header-menu').is(":visible")) {
-        if ($(window).scrollTop() > ($(window).height() / 3)) {
+        if (scrollPosition > ($(window).height() / 3)) {
             $("#nav-top").show();
         } else {
             $("#nav-top").hide();
