@@ -135,14 +135,10 @@ function onScroll() {
 }
 
 function correctRightContentPosition() {
-    let scrollSpace = rightContentSticker.height() - window.innerHeight + originalTop;
+    let differenceBetweenScreenHeightAndRightContentHeight = rightContentSticker.height() - window.innerHeight + originalTop;
 
-    if (previousScrollDelta < 0 && scrollDelta > 0) {
-        setCurrentTop(getCurrentTop() - headerWrapper2.height());
-    }
-
-    if (Math.abs(getCurrentTop()) < scrollSpace) {
-        setCurrentTop(Math.max(-scrollSpace, Math.min(getCurrentTop() - scrollDelta, originalTop + headerWrapper2.height())));
+    if (rightContentSticker[0].getBoundingClientRect().bottom > (window.innerHeight - originalTop) || (isScrollingDown && getCurrentTop() > originalTop)) {
+        setCurrentTop(Math.max(Math.min(-differenceBetweenScreenHeightAndRightContentHeight, originalTop), Math.min(getCurrentTop() - scrollDelta, originalTop + headerWrapper2.height())));
     } else if (isScrollingUp) {
         setCurrentTop(Math.min(getCurrentTop() - scrollDelta, originalTop + headerWrapper2.height()));
     }
