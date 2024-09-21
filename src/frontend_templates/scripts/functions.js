@@ -15,8 +15,10 @@ $(document).ready(function () {
     headerWrapper2 = $('#header-wrapper-2');
 
     setCorrectRightContentHeight();
+    correctRightContentPosition();
     $(window).resize(function () {
         setCorrectRightContentHeight();
+        correctRightContentPosition();
     });
     $(window).scroll(function () {
         scrollPosition = $(window).scrollTop();
@@ -143,8 +145,6 @@ function correctRightContentPosition() {
         setCurrentTop(Math.max(-scrollSpace, Math.min(getCurrentTop() - scrollDelta, originalTop + headerWrapper2.height())));
     } else if (isScrollingUp) {
         setCurrentTop(Math.min(getCurrentTop() - scrollDelta, originalTop + headerWrapper2.height()));
-    } else if (isScrollingDown) {
-        setCurrentTop(originalTop);
     }
 }
 
