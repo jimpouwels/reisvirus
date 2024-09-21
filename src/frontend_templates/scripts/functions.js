@@ -158,13 +158,13 @@ function correctRightContentPosition() {
 
 function handleHeaderMenuScroll() {
     if (scrollPosition === 0) {
-        $("#header-wrapper-2").hide()
+        headerWrapper2.hide()
     } else if (scrollPosition < ($("#header-wrapper-1").height() + 100)) {
-        $("#header-wrapper-2").hide();
+        headerWrapper2.hide();
     } else if (isScrollingUp) {
-        $("#header-wrapper-2").show();
+        headerWrapper2.show();
     } else {
-        $("#header-wrapper-2").hide();
+        headerWrapper2.hide();
     }
 }
 
