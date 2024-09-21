@@ -106,17 +106,13 @@ let headerWrapper2;
 let rightContent;
 let rightContentSticker;
 let pageContent;
-let topWrapper;
-let currentTop;
 $(document).ready(function () {
     handleNavTop();
     rightContentSticker = $('#right-content-sticker');
     originalTop = getCurrentTop();
-    currentTop = getCurrentTop();
     headerWrapper2 = $('#header-wrapper-2');
     rightContent = $('#right-content');
     pageContent = $('.page-content');
-    topWrapper = $('#top-wrapper');
 
     setCorrectRightContentHeight();
     $(window).resize(function () {
