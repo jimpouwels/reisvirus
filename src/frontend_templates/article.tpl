@@ -1,15 +1,6 @@
 {assign var=landTipsFound value=false}
 {foreach from=$element_groups item=element_group}
     {foreach from=$element_group item=element}
-        {if $element.template == 'Land Tips' && !$landTipsFound}
-            {assign var=landTipsFound value=true}
-            <div id="country-tips">
-                <div id="country-tips-wrapper">
-        {/if}
-        {if $element.template != 'Land Tips' && $landTipsFound}
-            {assign var=landTipsFound value=false}
-            </div></div>
-        {/if}
         {$element.to_string}
     {/foreach}
 {/foreach}
