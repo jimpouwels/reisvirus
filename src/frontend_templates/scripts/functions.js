@@ -128,6 +128,7 @@ $(document).ready(function () {
 });
 
 function onScroll() {
+    setCorrectTopHeight();
     handleHeaderMenuScroll();
     handleNavTop();
     setCorrectRightContentHeight();
@@ -135,6 +136,9 @@ function onScroll() {
 }
 
 function correctRightContentPosition() {
+    if (!rightContentSticker[0]) {
+        return;
+    }
     let differenceBetweenScreenHeightAndRightContentHeight = rightContentSticker.height() - window.innerHeight + originalTop;
 
     if (rightContentSticker[0].getBoundingClientRect().bottom > (window.innerHeight - originalTop) || (isScrollingDown && getCurrentTop() > originalTop)) {

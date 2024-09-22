@@ -7,7 +7,7 @@
 <meta name="description" content="{$page.description}"/>
 <meta name="Subject" content="Reisvirus: {$title}"/>
 <meta name="robots" content="index, follow"/>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, interactive-widget=resizes-content">
 <meta property="og:locale" content="nl_NL" />
 <meta property="og:site_name" content="Reisvirus">
 <meta property="og:image" content="{$base_url}{if $article}{$article.wallpaper.url}{else}{$blocks.wallpaper[0].element_groups[0][0].image_url}{/if}" />
