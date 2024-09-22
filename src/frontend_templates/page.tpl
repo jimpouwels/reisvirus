@@ -117,19 +117,21 @@
             {/if}
             <div class="content-top-{$oddEven} content-top">
                 <div class="content-wrapper content-wrapper">
-                    <div class="page-content content {if $fullScreenPage}fullscreen_page{/if}">
-                        {if count($crumb_path) > 1}
-                            <div id="crumb_path">
-                                {foreach from=$crumb_path item=crumb_path_item name=crumb_path_item}
-                                    <span class="crumb_path_item">
-                                        <a title="{$crumb_path_item.title}"
-                                           href="{$crumb_path_item.url}">{$crumb_path_item.title}</a>
-                                        {if !$smarty.foreach.crumb_path_item.last}
-                                            <span>/</span>
-                                        {/if}
-                                    </span>
-                                {/foreach}
-                            </div>
+                    <div class="page-content content {if $fullScreenPage}fullscreen_page{else}page_width_right_block{/if}">
+                        {if !$fullScreenPage}
+                            {if count($crumb_path) > 1}
+                                <div id="crumb_path">
+                                    {foreach from=$crumb_path item=crumb_path_item name=crumb_path_item}
+                                        <span class="crumb_path_item">
+                                            <a title="{$crumb_path_item.title}"
+                                               href="{$crumb_path_item.url}">{$crumb_path_item.title}</a>
+                                            {if !$smarty.foreach.crumb_path_item.last}
+                                                <span>/</span>
+                                            {/if}
+                                        </span>
+                                    {/foreach}
+                                </div>
+                            {/if}
                         {/if}
                         {if $page.is_homepage}
                             <div id="title-container">

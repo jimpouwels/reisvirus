@@ -15,6 +15,7 @@
 
 :root {
     --green: #4f8972;
+    --lightgreen: #e9f2ec;
 }
 
 html {
@@ -461,7 +462,7 @@ h3 {
 }
 
 .colored_page .content-top-odd {
-    background-color: #e9f2ec;
+    background-color: var(--lightgreen);
 }
 
 .colored_page .content-top-even {
@@ -781,7 +782,7 @@ li span {
 }
 
 .paragraph-wrapper-fullscreen {
-    width: 75%;
+    max-width: 800px;
     text-align: center;
     margin: auto;
 }
@@ -806,17 +807,13 @@ li span {
 
 .blogposts {
     overflow-y: auto;
+    clear: both;
 }
 
 .blogposts .blogpost {
-    width: 49%;
+    max-width: 400px;
     float: left;
-    margin-bottom: 25px;
     position: relative;
-}
-
-.row-of-three {
-    width: 32% !important;
 }
 
 .blogpost-header h3 a
@@ -858,8 +855,20 @@ li span {
     text-decoration: none;
 }
 
-.blogposts .not-first {
-    margin-left: 2%;
+.blogposts-wrapper {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.page_width_right_block .blogposts-wrapper {
+    justify-content: left;
+}
+
+.page_width_right_block .blogpost {
+    max-width: 45%;
+    flex: 40%;
 }
 
 .blogposts .first {
@@ -889,6 +898,39 @@ li span {
 .blogpost a:hover {
     text-decoration: none;
     color: darkgray;
+}
+
+#country-tips {
+    max-width: 800px;
+    margin: auto;
+}
+
+#country-tips-wrapper {
+    margin: auto;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.country-tip-block {
+    height: 300px;
+    text-align: center;
+    width: 250px;
+    float: left;
+    background-color: var(--lightgreen);
+}
+
+.country-tip-block .text {
+    padding: 15px;
+    padding-top: 0;
+}
+
+.country-tip-block h3 {
+    margin-top: 0;
+    padding: 15px;
+    padding-bottom: 0;
+    text-align: center;
 }
 
 .paragraph-center {
@@ -1170,6 +1212,34 @@ li span {
         display: block;
     }
 
+    #country-tips {
+        width: 100%;
+        float: none;
+        overflow: auto;
+        margin: unset;
+        max-width: none;
+    }
+
+    .country-tip-block {
+        width: 100%;
+        height: 250px;
+    }
+
+    .blogpost {
+        width: 100%;
+        max-width: none !important;
+    }
+
+    .blogposts-wrapper {
+        width: auto;
+        display: block;
+    }
+
+    .blogpost:not(:first-child) {
+        margin: 0;
+        margin-top: 20px;
+    }
+
     .cookie-consent-button {
         width: 100% !important;
         margin-bottom: 10px;
@@ -1298,6 +1368,19 @@ li span {
 
     h2 {
         font-size: 1.5em;
+    }
+
+    #country-tips-wrapper {
+        display: block;
+    }
+
+    .country-tip-block {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .country-tip-block:not(:first-child) {
+        margin-top: 20px;
     }
 
     .paragraph-wrapper-fullscreen {
