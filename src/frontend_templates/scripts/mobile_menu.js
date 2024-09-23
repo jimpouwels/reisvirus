@@ -42,7 +42,7 @@ function handleDestinationsClick() {
     }
     mobileDestinationsButton.css('-webkit-transform', nextTransformValue);
     mobileDestinationsButton.css('transform', nextTransformValue);
-    destinationsButtonUp = false;
+    destinationsButtonUp = !destinationsButtonUp;
 }
 
 function hideMobileMenu() {
