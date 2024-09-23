@@ -29,12 +29,12 @@ body {
 }
 
 #mobile-navigation {
-    overflow: hidden;
     width: 0vw;
     max-width: 500px;
-    z-index: 99;
+    z-index: 80;
     height: 100dvh;
     position: fixed;
+    overflow-y: scroll;
     background-color: white;
     color: #000000;
     text-decoration: none;
@@ -61,8 +61,6 @@ body {
 
 #mobile-navigation-social-media {
     margin-left: 20px;
-    position: absolute;
-    bottom: 30px;
 }
 
 #mobile-navigation-social-media img {
@@ -90,6 +88,44 @@ body {
 
 #mobile-navigation .logo-img {
     filter: invert(1);
+}
+
+#mobile-nav .destinations {
+    float: none;
+    font-size: 0.8em !important;
+    line-height: 1.6em;
+    width: fit-content;
+}
+
+#mobile-nav .destinations:not(:first-child) {
+    margin: 0;
+}
+
+#mobile-destinations-wrapper {
+    display: none;
+    margin-left: 20px;
+}
+
+#mobile-nav .destinations h3 {
+    line-height: 2em;
+    padding: 0;
+}
+
+#mobile-destinations-button {
+    width: 15px;
+    cursor: pointer;
+}
+
+#mobile-destinations-link {
+    cursor: pointer;
+}
+
+#mobile-nav .destinations-title {
+    width: fit-content;
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
 }
 
 #mobile-navigation-close-button {
