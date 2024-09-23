@@ -64,6 +64,14 @@ body {
     margin-bottom: 30px;
 }
 
+#header-wrapper-2 .header-menu-link:hover {
+    color: var(--green) !important;
+}
+
+#header-wrapper-1 .header-menu-link:hover {
+    border-bottom: 1px solid #ffffff;
+}
+
 #mobile-navigation-social-media img {
     width: 30px;
     filter: grayscale(100%);
