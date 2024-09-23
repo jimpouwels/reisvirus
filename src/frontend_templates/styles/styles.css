@@ -657,6 +657,11 @@ h3 {
     clear: both;
 }
 
+#attributions {
+    color: gray;
+    font-size: 0.9em;
+}
+
 .social-media {
     width: 100%;
     margin: auto;
@@ -910,7 +915,7 @@ li span {
 }
 
 .country-info-entry-wrapper {
-    max-width: 250px;
+    max-width: 260px;
 }
 
 .country-info-icon {
@@ -932,7 +937,7 @@ li span {
     font-size: 0.8em;
     font-weight: bold;
     float: left;
-    margin-top: 4px;
+    margin-top: 7px;
     text-align: left;
     margin-left: 10px;
 }
@@ -955,7 +960,7 @@ li span {
     padding: 7px;
     background-color: var(--green);
     color: white;
-    width: 200px;
+    width: 240px;
     margin: auto;
     font-weight: 800;
     border-radius: 30px;
@@ -1021,6 +1026,28 @@ li span {
     text-align: center;
 }
 
+#destinations-wrapper {
+    margin: auto;
+    max-width: 750px;
+    overflow: auto;
+}
+
+.destinations {
+    float: left;
+    width: 170px;
+}
+
+.destinations h3 {
+    color: white;
+    padding: 6px;
+}
+
+.destinations-title {
+    margin: auto;
+    background-color: var(--green);
+    text-align: center;
+}
+
 .paragraph-center {
     text-align: center;
 }
@@ -1037,9 +1064,8 @@ li span {
     border-radius: 25px;
 }
 
-.destinations {
-    width: 30%;
-    float: left;
+.destinations:not(:first-child) {
+    margin-left: 20px;
 }
 
 .jarallax {
@@ -1317,6 +1343,35 @@ li span {
         height: fit-content;
     }
 
+    #country-info {
+        justify-content: center;
+        gap: 30px !important;
+        max-width: none;
+    }
+
+    .country-info-icon {
+        height: 25px;
+    }
+
+    .country-info-icon img {
+        width: 25px;
+    }
+
+    .country-info-entry-wrapper {
+        flex: 1 1 0px;
+    }
+
+    .country-info-value {
+        text-align: center !important;
+        float: none;
+        clear: both;
+        margin-left: 0;
+    }
+
+    .country-info-icon {
+        float: none;
+    }
+
     .blogpost {
         width: 100%;
         max-width: none !important;
@@ -1462,33 +1517,19 @@ li span {
         font-size: 1.5em;
     }
 
-    #country-info {
+    #destinations-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin: 0;
+        overflow: inherit;
         justify-content: center;
-        gap: 30px !important;
-        max-width: none;
     }
 
-    .country-info-icon {
-        height: 25px;
-    }
-
-    .country-info-icon img {
-        width: 25px;
-    }
-
-    .country-info-entry-wrapper {
-        flex: 1 1 0px;
-    }
-
-    .country-info-value {
-        text-align: center !important;
+    .destinations {
+        margin-left: 0 !important;
         float: none;
-        clear: both;
-        margin-left: 0;
-    }
-
-    .country-info-icon {
-        float: none;
+        flex: 1 1 170px;
     }
 
     .paragraph-wrapper-fullscreen {

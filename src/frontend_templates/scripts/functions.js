@@ -142,7 +142,7 @@ $(document).ready(function () {
         buttonImg.css('-webkit-transform', nextTransformValue);
         buttonImg.css('transform', nextTransformValue);
 
-        practicalInfoContainer.slideToggle('slow');
+        practicalInfoContainer.slideToggle('fast');
         practicalButtonUp = !practicalButtonUp;
     });
 });

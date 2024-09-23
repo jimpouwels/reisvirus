@@ -21,5 +21,8 @@
                 2023-{$smarty.now|date_format:"%Y"}</a></p>
         <p id="powered-by">Powered by <a title="Github: Obcato" target="_blank"
                                          href="https://github.com/jimpouwels/obcato">Obcato</a></p>
+        <p id="attributions">
+            <i>This website contains icons made by UICONS from www.flaticon.com</i>
+        </p>
     </div>
 </div>
