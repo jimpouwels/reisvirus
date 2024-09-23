@@ -4,7 +4,7 @@
         {$element.to_string}
     {/foreach}
 {/foreach}
-{if $comments}
+{if $comment_webform}
     <div id="article-comments">
         {foreach from=$comments item=comment}
             <div class="blog-item-comment">
