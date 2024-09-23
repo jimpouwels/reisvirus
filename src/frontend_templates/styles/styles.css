@@ -958,6 +958,9 @@ li span {
     width: 200px;
     margin: auto;
     font-weight: 800;
+    border-radius: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 #country-practical-button {
@@ -996,6 +999,7 @@ li span {
     width: 250px;
     float: left;
     background-color: var(--green);
+    border-radius: 5px;
 }
 
 .country-tip-block .text a {
