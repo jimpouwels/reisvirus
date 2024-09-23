@@ -61,6 +61,7 @@ body {
 
 #mobile-navigation-social-media {
     margin-left: 20px;
+    margin-bottom: 30px;
 }
 
 #mobile-navigation-social-media img {
@@ -381,6 +382,73 @@ h3 {
     float: right;
     margin-top: 15px;
     font-size: 1em;
+}
+
+.header-menu-destinations-link {
+    cursor: pointer;
+}
+
+.header-menu-destinations-link:hover > .header-destinations-list-wrapper {
+    opacity: 1;
+    visibility: visible;
+}
+
+.header-destinations-list-wrapper {
+    position: absolute;
+    right: 20px;
+    top: 57px;
+    opacity: 0;
+    visibility: hidden;
+    width: 630px;
+    border-top: 20px solid rgba(255, 255, 255, .0);
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box;
+}
+
+.header-destinations-list-wrapper .destinations {
+    width: 170px;
+}
+
+.header-destinations-list-wrapper a {
+    color: black !important;
+    font-size: 0.8em !important;
+    font-weight: 500;
+}
+
+.header-destinations-list-wrapper a:hover {
+    color: var(--green) !important;
+}
+
+.header-destinations-list-wrapper .destinations-title {
+    margin: 0 !important;
+    text-align: left !important;
+    width: fit-content !important;
+}
+
+.header-destinations-list-wrapper h3 {
+    font-size: 0.8em;
+}
+
+#header-wrapper-1 .header-destinations-list {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#header-wrapper-2 .header-destinations-list {
+    border-left: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+}
+
+.header-destinations-list {
+    background-color: white;
+    overflow: auto;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: auto;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 20px;
 }
 
 .mobile-hamburger-menu {
@@ -1314,7 +1382,7 @@ li span {
     }
 
     .header-menu li {
-        font-size: 1.0em;
+        font-size: 1.1em;
         margin-right: 15px;
     }
 

@@ -40,8 +40,14 @@
                             <ul id="nav-{$i}" class="nav">
                                 {foreach from=$root_page.children item=navigation_item}
                                     {if $navigation_item.show_in_navigation}
-                                        <li><a {if $navigation_item.is_current_page}class="selected"{/if}
-                                               href="{$navigation_item.url}">{$navigation_item.navigation_title}</a>
+                                        <li class="{if $navigation_item.id == 35}header-menu-destinations-link{/if}">
+                                            {if $navigation_item.id == 35}
+                                                <include template="partials/destinations-list.tpl" />
+                                                <a href="{$navigation_item.url}" class="{if $navigation_item.is_current_page}selected{/if}">{$navigation_item.navigation_title}</a>
+                                            {else}
+                                                <a {if $navigation_item.is_current_page}class="selected"{/if}
+                                                   href="{$navigation_item.url}">{$navigation_item.navigation_title}</a>
+                                            {/if}
                                         </li>
                                     {/if}
                                 {/foreach}
