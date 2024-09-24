@@ -116,8 +116,9 @@ body {
 }
 
 #mobile-nav .destinations h3 {
-    line-height: 2em;
+    line-height: 1.8em;
     padding: 0;
+    font-size: 1.1em;
 }
 
 #mobile-destinations-button {
