@@ -36,7 +36,7 @@
                                 <span class="logo-txt">Reisvirus</span>
                             </a>
                         </div>
-                        <div class="header-menu">
+                        <nav class="header-menu">
                             <ul id="nav-{$i}" class="nav">
                                 {foreach from=$root_page.children item=navigation_item}
                                     {if $navigation_item.show_in_navigation}
@@ -52,7 +52,7 @@
                                     {/if}
                                 {/foreach}
                             </ul>
-                        </div>
+                        </nav>
                     </div>
                 </div>
             {/for}

@@ -32,7 +32,12 @@
         document.getElementById('cookie-consent-banner').style.display = 'none';
     }
 
+    function showBanner() {
+        document.getElementById('cookie-consent-banner').style.display = 'flex';
+    }
+
     if (localStorage.getItem('consentMode') === null) {
+        showBanner();
         document.getElementById('btn-accept').addEventListener('click', function() {
             setConsent( {
                 necessary: true,
