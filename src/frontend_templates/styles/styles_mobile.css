@@ -2,6 +2,16 @@
     opacity: 100%;
 }
 
+@media only screen and (max-width: 768px) {
+    .logo-txt {
+        font-size: 0.7em !important;
+    }
+
+    .logo-img {
+        width: 30px !important;
+    }
+}
+
 @media only screen and (max-width: 900px) {
     h2 {
         font-weight: 700;

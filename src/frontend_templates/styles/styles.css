@@ -444,9 +444,9 @@ h3 {
 }
 
 #header-wrapper-2 .header-destinations-list {
-    border-left: 1px solid lightgray;
-    border-bottom: 1px solid lightgray;
-    border-right: 1px solid lightgray;
+    border-left: 2px solid lightgray;
+    border-bottom: 2px solid lightgray;
+    border-right: 2px solid lightgray;
 }
 
 .header-destinations-list {
@@ -981,12 +981,12 @@ li span {
 }
 
 .page_width_right_block .blogposts-wrapper {
-    justify-content: left;
+    justify-content: space-between;
+    gap: 1%;
 }
 
 .page_width_right_block .blogpost {
-    max-width: 45%;
-    flex: 40%;
+    max-width: 49%;
 }
 
 .blogposts .first {
@@ -1568,7 +1568,7 @@ li span {
 
     .header-content {
         position: absolute;
-        top: -20%;
+        top: -5px;
     }
 
     #header-wrapper-1 {
