@@ -47,6 +47,10 @@ body {
     white-space: nowrap;
 }
 
+
+#mobile-navigation .logo-img {
+    margin-top: 10px;
+}
 #mobile-navigation ul {
     padding-left: 20px;
 }
