@@ -401,6 +401,10 @@ h3 {
     cursor: pointer;
 }
 
+.header-menu .header-destinations-list-wrapper {
+    cursor: auto;
+}
+
 .header-menu-destinations-link:hover > .header-destinations-list-wrapper {
     opacity: 1;
     visibility: visible;
