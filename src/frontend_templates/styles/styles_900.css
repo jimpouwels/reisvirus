@@ -123,6 +123,11 @@
         font-size: 3em;
     }
 
+    #blocks-for-narrow {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
     .blog #quote-wrapper {
         padding-left: 15px;
         padding-right: 15px;
