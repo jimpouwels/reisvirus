@@ -578,7 +578,7 @@ h3 {
 .content-wrapper {
     display: flex;
     justify-content: space-around;
-    max-width: 1300px;
+    max-width: 1200px;
     width: 90%;
     gap: 50px;
     margin: auto;
@@ -602,7 +602,6 @@ h3 {
     font-size: 1em;
     padding-bottom: 20px;
     line-height: 1.3em;
-    width: 70%;
 }
 
 .fullscreen_page {
@@ -845,8 +844,8 @@ h3 {
 }
 
 .blog #quote-wrapper {
-    width: 1300px;
-    max-width: 80%;
+    max-width: 1200px;
+    width: 90%;
     bottom: 10%;
     transform: translate(-50%, 0%);
     top: initial;
