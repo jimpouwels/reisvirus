@@ -605,7 +605,7 @@ h3 {
 }
 
 .fullscreen_page {
-    width: 100% !important;
+    max-width: 1300px;
     text-align: center;
 }
 
@@ -960,7 +960,8 @@ li span {
 }
 
 .blogposts .blogpost {
-    max-width: 400px;
+    max-width: 48%;
+    width: 400px;
     float: left;
     position: relative;
 }
@@ -976,9 +977,7 @@ li span {
     font-weight: 800;
     text-align: left;
     margin: 0;
-    width: calc(100% - 60px);
     color: #fff;
-    z-index: 2;
 }
 
 .blogpost-term-list {
@@ -1012,12 +1011,13 @@ li span {
 }
 
 .page_width_right_block .blogposts-wrapper {
-    justify-content: space-between;
+    justify-content: center;
     gap: 10px;
 }
 
 .page_width_right_block .blogpost {
-    max-width: 49%;
+    max-width: 48%;
+    width: fit-content;
 }
 
 .blogposts .first {
