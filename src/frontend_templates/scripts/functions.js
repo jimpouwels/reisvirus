@@ -14,10 +14,8 @@ $(document).ready(function () {
     originalTop = getCurrentTop();
     headerWrapper2 = $('#header-wrapper-2');
 
-    setCorrectRightContentHeight();
     correctRightContentPosition();
     $(window).resize(function () {
-        setCorrectRightContentHeight();
         correctRightContentPosition();
     });
     $(window).scroll(function () {
@@ -141,7 +139,6 @@ function onScroll() {
     setCorrectTopHeight();
     handleHeaderMenuScroll();
     handleNavTop();
-    setCorrectRightContentHeight();
     correctRightContentPosition();
 }
 
@@ -168,13 +165,6 @@ function handleHeaderMenuScroll() {
     } else {
         headerWrapper2.hide();
     }
-}
-
-function setCorrectRightContentHeight() {
-    let rightContent = $('#right-content');
-    let pageContent = $('.page-content');
-    let pageHeight = pageContent.height();
-    rightContent.css('height', pageHeight + 'px');
 }
 
 function getCurrentTop() {

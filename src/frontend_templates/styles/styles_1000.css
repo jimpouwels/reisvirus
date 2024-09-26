@@ -1,12 +1,32 @@
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
     body {
+        width: 100%;
+    }
+
+    .content-wrapper {
         width: 100%;
     }
 
     .page-content {
         width: 100%;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    #right-content {
+        display: none;
+    }
+
+    #blocks-for-narrow {
+        display: block;
+    }
+
+    #right-content .table-of-contents {
+        display: none;
+    }
+
+    .page-content .table-of-contents {
+        display: block;
     }
 
     #cookie-consent-banner {

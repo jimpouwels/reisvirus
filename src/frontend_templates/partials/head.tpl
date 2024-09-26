@@ -17,7 +17,7 @@
 <style>
     <include template="styles/styles.css" />
     <include template="styles/styles_1180.css" />
-    <include template="styles/styles_900.css" />
+    <include template="styles/styles_1000.css" />
     <include template="styles/styles_768.css" />
 </style>
 {if !$is_mobile_device}

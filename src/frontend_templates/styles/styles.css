@@ -576,10 +576,12 @@ h3 {
 }
 
 .content-wrapper {
-    width: 1300px;
-    max-width: 80%;
+    display: flex;
+    justify-content: space-around;
+    max-width: 1300px;
+    width: 90%;
+    gap: 50px;
     margin: auto;
-    clear: both;
 }
 
 .colored_page .content-top-odd {
@@ -600,7 +602,7 @@ h3 {
     font-size: 1em;
     padding-bottom: 20px;
     line-height: 1.3em;
-    width: 66%;
+    width: 70%;
 }
 
 .fullscreen_page {
@@ -667,9 +669,8 @@ h3 {
 }
 
 #right-content {
-    width: 26%;
-    float: left;
-    margin-left: 50px;
+    min-width: 300px;
+    max-width: 300px;
     margin-top: 30px;
 }
 
