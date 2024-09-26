@@ -15,7 +15,8 @@
             </div>
         </div>
         <div id="sitewide-pages">
-            {$blocks.sitewide[0].to_string}
+            {$blocks.sitewide[0].to_string} |
+            <span><a title="Cookie instellingen" href="javascript:void(0);" class="internal" id="cookie-settings-link">Cookie instellingen</a></span>
         </div>
         <p id="copyright"><a href="mailto:info@reisvirus.com" title="info@reisvirus.com">&copy; Reisvirus
                 2023-{$smarty.now|date_format:"%Y"}</a></p>

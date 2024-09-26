@@ -1013,7 +1013,7 @@ li span {
 
 .page_width_right_block .blogposts-wrapper {
     justify-content: space-between;
-    gap: 1%;
+    gap: 10px;
 }
 
 .page_width_right_block .blogpost {
