@@ -960,7 +960,6 @@ li span {
 }
 
 .blogposts .blogpost {
-    max-width: 48%;
     width: 400px;
     float: left;
     position: relative;
@@ -1010,12 +1009,12 @@ li span {
     flex-wrap: wrap;
 }
 
-.page_width_right_block .blogposts-wrapper {
+.page_with_right_block .blogposts-wrapper {
     justify-content: center;
     gap: 10px;
 }
 
-.page_width_right_block .blogpost {
+.page_with_right_block .blogpost {
     max-width: 48%;
     width: fit-content;
 }

@@ -35,7 +35,7 @@
         display: block;
     }
 
-    .blogpost:not(:first-child) {
+    .blogposts .blogpost:not(:first-child) {
         margin: 0;
         margin-top: 20px;
     }

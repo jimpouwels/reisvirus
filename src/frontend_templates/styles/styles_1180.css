@@ -1,5 +1,18 @@
 @media only screen and (max-width: 1180px) {
 
+    .page_with_right_block .blogposts-wrapper {
+        display: block;
+    }
+
+    .page_with_right_block .blogposts-wrapper .blogpost {
+        width: 100%;
+        max-width: none;
+    }
+
+    .page_with_right_block .blogposts-wrapper .blogpost:not(:first-child) {
+        margin-top: 20px;
+    }
+
     #crumb_path {
         margin-top: 15px;
     }

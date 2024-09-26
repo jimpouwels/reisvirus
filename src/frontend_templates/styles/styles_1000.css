@@ -124,6 +124,22 @@
         font-size: 4.3em;
     }
 
+    .page_with_right_block .blogposts-wrapper {
+        display: flex;
+    }
+
+    .page_with_right_block .blogposts-wrapper .blogpost {
+        max-width: 48%;
+    }
+
+    .page_with_right_block .blogposts-wrapper .blogpost:not(:first-child) {
+        margin-top: 0;
+    }
+
+    .fullscreen_page .blogposts-wrapper .blogpost {
+        max-width: 48%;
+    }
+
     .blog #quote {
         font-size: 3em;
     }
