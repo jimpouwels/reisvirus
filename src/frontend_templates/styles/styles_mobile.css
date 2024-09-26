@@ -22,10 +22,6 @@
         font-synthesis: weight !important;
     }
 
-    #quote {
-        font-size: 2em;
-    }
-
     #quote-sub {
         font-size: 0.8em;
     }
@@ -49,5 +45,13 @@
 
     .page-content ul li {
         font-size: 0.9em !important;
+    }
+
+    .blog #quote {
+        font-size: 2em;
+    }
+
+    .blog #quote-country {
+        font-size: 0.9em;
     }
 }

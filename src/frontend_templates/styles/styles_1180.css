@@ -1,0 +1,80 @@
+@media only screen and (max-width: 1180px) {
+
+    #crumb_path {
+        margin-top: 15px;
+    }
+
+    .blogpost-term {
+        font-size: 0.7em;
+    }
+
+    .blogpost-header h3 a
+    {
+        font-size: 20px;
+        font-weight: 900;
+    }
+
+    .blog #quote-wrapper {
+        max-width: none;
+        width: auto;
+        transform: none;
+        left: 0;
+        text-align: left;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    #quote {
+        font-size: 4.5em;
+    }
+
+    .blog #quote {
+        font-size: 4em;
+        width: 100%;
+    }
+
+    .header-content {
+        width: 100%;
+        max-width: 100% !important;
+    }
+
+    .content-wrapper {
+        max-width: 100% !important;
+    }
+
+    .header-menu li {
+        font-size: 1.1em;
+        margin-right: 15px;
+    }
+
+    #right-content {
+        display: none;
+    }
+
+    #blocks-for-narrow {
+        display: block;
+    }
+
+    #right-content .table-of-contents {
+        display: none;
+    }
+
+    .page-content .table-of-contents {
+        display: block;
+    }
+
+    .page-content {
+        display: block;
+        width: 100%;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    #blocks-for-narrow {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}

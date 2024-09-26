@@ -67,8 +67,15 @@
                             {/if}
                             <div id="quote-wrapper">
                                 {if $article}
+                                    {if $article.parent_article}
+                                        <div id="quote-country">{$article.parent_article.title}</div>
+                                    {/if}
                                     <div id="quote">
-                                        {$article.title}
+                                        {if !$article.description}
+                                            {$article.title}
+                                        {else}
+                                            {$article.description}
+                                        {/if}
                                     </div>
                                 {else}
                                     {if $page.is_homepage}

@@ -577,7 +577,7 @@ h3 {
 
 .content-wrapper {
     width: 1300px;
-    max-width: 90%;
+    max-width: 80%;
     margin: auto;
     clear: both;
 }
@@ -843,6 +843,14 @@ h3 {
     color: white;
 }
 
+.blog #quote-wrapper {
+    width: 1300px;
+    max-width: 80%;
+    bottom: 10%;
+    transform: translate(-50%, 0%);
+    top: initial;
+}
+
 #quote {
     font-family: AmericanCaptain;
     font-size: 5.5em;
@@ -852,10 +860,25 @@ h3 {
     text-transform: uppercase;
 }
 
+.blog #quote {
+    width: 70%;
+    font-size: 5em;
+    text-align: left;
+    margin: initial;
+}
+
 #quote-sub {
     text-align: center;
     font-weight: bold;
     font-size: 1.3em;
+}
+
+.blog #quote-country {
+    text-align: left;
+    margin-bottom: 15px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-left: 3px;
 }
 
 h1 {
@@ -1371,330 +1394,4 @@ li span {
 
 #sitewide-pages a:hover {
     text-decoration: underline;
-}
-
-@media only screen and (max-width: 1180px) {
-
-    #crumb_path {
-        margin-top: 15px;
-    }
-
-    .blogpost-term {
-        font-size: 0.7em;
-    }
-
-    .blogpost-header h3 a
-    {
-        font-size: 20px;
-        font-weight: 900;
-    }
-
-    .header-content {
-        width: 100%;
-        max-width: 100% !important;
-    }
-
-    .content-wrapper {
-        max-width: 100% !important;
-    }
-
-    .header-menu li {
-        font-size: 1.1em;
-        margin-right: 15px;
-    }
-
-    #right-content {
-        display: none;
-    }
-
-    #blocks-for-narrow {
-        display: block;
-    }
-
-    #right-content .table-of-contents {
-        display: none;
-    }
-
-    .page-content .table-of-contents {
-        display: block;
-    }
-
-    .page-content {
-        display: block;
-        width: 100%;
-        -moz-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-}
-
-@media only screen and (max-width: 900px) {
-    body {
-        width: 100%;
-    }
-
-    #cookie-consent-banner {
-        border-radius: 20px 20px 0px 0px;
-        bottom: 0px;
-        right: 0px;
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .consent-buttons {
-        display: block;
-    }
-
-    #country-tips {
-        float: none;
-        overflow: auto;
-        margin: unset;
-        max-width: none;
-    }
-
-    #country-tips-wrapper {
-        flex-wrap: wrap;
-    }
-
-    .country-tip-block {
-        max-width: none;
-        width: 100%;
-        height: fit-content;
-    }
-
-    #country-info {
-        justify-content: center;
-        gap: 30px !important;
-        max-width: none;
-    }
-
-    .country-info-icon {
-        height: 25px;
-    }
-
-    .country-info-icon img {
-        width: 25px;
-    }
-
-    .country-info-entry-wrapper {
-        flex: 1 1 0px;
-    }
-
-    .country-info-value {
-        text-align: center !important;
-        float: none;
-        clear: both;
-        margin-left: 0;
-    }
-
-    .country-info-icon {
-        float: none;
-    }
-
-    .blogpost {
-        width: 100%;
-        max-width: none !important;
-    }
-
-    .blogposts-wrapper {
-        width: auto;
-        display: block;
-    }
-
-    .blogpost:not(:first-child) {
-        margin: 0;
-        margin-top: 20px;
-    }
-
-    .cookie-consent-button {
-        width: 100% !important;
-        margin-bottom: 10px;
-    }
-
-    #title h1 {
-        text-align: left !important;
-        margin-left: 15px;
-    }
-
-    .no_banner h2 {
-        text-align: left !important;
-    }
-
-    .no_banner .paragraph-home {
-        text-align: left !important;
-    }
-
-    .paragraph-half {
-        width: 100% !important;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-    }
-
-    .default-img {
-        margin-right: 0;
-        width: 100% !important;
-    }
-
-    .logo {
-        margin-left: 15px;
-    }
-
-    #quote {
-        font-size: 4em;
-        margin-left: 15px;
-        margin-right: 15px;
-    }
-
-    #quote-sub {
-        margin-left: 15px;
-        margin-right: 15px;
-    }
-
-    #header-wrapper-2 {
-        display: none !important;
-    }
-
-    .mobile-hamburger-menu {
-        display: block;
-    }
-
-    .logo-img {
-        margin-top: 25px;
-        width: 35px;
-    }
-
-    .logo-txt {
-        font-size: 0.8em;
-    }
-
-    .header-title {
-        width: 85%;
-        height: 80px;
-    }
-
-    .header-content {
-        position: absolute;
-        top: -5px;
-    }
-
-    #header-wrapper-1 {
-        height: 63px;
-    }
-
-    .header-menu {
-        margin-top: 0px;
-        width: 30%;
-        display: none !important;
-        position: fixed;
-        right: 0px;
-        top: 75px;
-        background-color: #699e65;
-        text-transform: none;
-        z-index: 999;
-    }
-
-    .header-menu li {
-        line-height: 160%;
-        display: block;
-        margin-bottom: 10px;
-        font-size: 1em;
-    }
-
-    .header-menu li a.selected {
-        font-weight: bold;
-    }
-
-    .nav {
-        padding-left: 15px;
-    }
-
-    .social-media img {
-        width: 40px;
-        height: 40px;
-    }
-
-    #footer #footer-content {
-        width: 100%;
-        margin: auto;
-    }
-
-    #contact-panes {
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .page-content {
-        margin-top: 0px;
-    }
-
-    h1 {
-        font-size: 1.7em;
-    }
-
-    h2 {
-        font-size: 1.5em;
-    }
-
-    #destinations-wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        margin: 0;
-        overflow: inherit;
-        justify-content: center;
-    }
-
-    .destinations {
-        margin-left: 0 !important;
-        float: none;
-        flex: 1 1 170px;
-    }
-
-    .paragraph-wrapper-fullscreen {
-        width: 100% !important;
-    }
-
-    .blogposts .blogpost {
-        height: inherit;
-        width: 100% !important;
-        margin-left: 0px;
-    }
-
-    .blogpost-header h3 a
-    {
-        left: -5px;
-        font-weight: 700;
-        font-size: 18px;
-    }
-
-    .blogpost {
-        height: 330px !important;
-        margin-bottom: 15px !important;
-    }
-
-    .blogpost img
-    {
-        height: 330px;
-    }
-
-    .blogpost .description {
-        height: inherit;
-    }
-
-    .contact-form-field textarea {
-        width: 95%;
-    }
-
-    .photo-album-img {
-        margin-left: -15px !important;
-        width: calc(100vw - 15px) !important;
-    }
-
-    .photo-album-img img {
-        width: calc(100vw - 15px);
-    }
-
 }

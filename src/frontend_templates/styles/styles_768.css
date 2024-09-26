@@ -1,0 +1,85 @@
+@media only screen and (max-width: 768px) {
+    .page-content {
+        margin-top: 0px;
+    }
+
+    h1 {
+        font-size: 1.7em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    #destinations-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin: 0;
+        overflow: inherit;
+        justify-content: center;
+    }
+
+    .destinations {
+        margin-left: 0 !important;
+        float: none;
+        flex: 1 1 170px;
+    }
+
+    .paragraph-wrapper-fullscreen {
+        width: 100% !important;
+    }
+
+    .blogposts .blogpost {
+        height: inherit;
+        width: 100% !important;
+        margin-left: 0px;
+    }
+
+    .blogpost-header h3 a
+    {
+        left: -5px;
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+    .blogpost {
+        height: 330px !important;
+        margin-bottom: 15px !important;
+    }
+
+    .blogpost img
+    {
+        height: 330px;
+    }
+
+    .blogpost .description {
+        height: inherit;
+    }
+
+    .contact-form-field textarea {
+        width: 95%;
+    }
+
+    .photo-album-img {
+        margin-left: -15px !important;
+        width: calc(100vw - 15px) !important;
+    }
+
+    .photo-album-img img {
+        width: calc(100vw - 15px);
+    }
+
+    #quote {
+        font-size: 3em;
+    }
+
+    .blog #quote-wrapper {
+        bottom: 10%;
+    }
+
+    .blog #quote {
+        font-size: 2.5em;
+    }
+
+}
