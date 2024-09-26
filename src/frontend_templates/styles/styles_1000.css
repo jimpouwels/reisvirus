@@ -61,7 +61,7 @@
     #country-info {
         justify-content: center;
         gap: 30px !important;
-        max-width: none;
+        width: 80%;
     }
 
     .country-info-icon {

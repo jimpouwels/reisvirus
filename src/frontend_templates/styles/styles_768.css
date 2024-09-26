@@ -93,4 +93,8 @@
         font-size: 2.5em;
     }
 
+    #country-info {
+        width: 100%;
+    }
+
 }
