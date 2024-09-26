@@ -31,7 +31,7 @@
     }
 
     .photo-album-img {
-        margin-left: -15px !important;
+        margin-left: -25px !important;
         width: calc(100vw) !important;
     }
 
@@ -48,6 +48,10 @@
     }
 
     .blog #quote {
+        font-size: 2em;
+    }
+
+    #quote {
         font-size: 2em;
     }
 
