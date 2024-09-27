@@ -130,8 +130,14 @@
     }
 
     .blog #quote {
-        font-size: 4.3em;
-        width: 100%;
+        font-size: 3em;
+        /*width: 100%;*/
+    }
+
+    .blog #quote-wrapper {
+        padding-left: 15px;
+        padding-right: 15px;
+        width: auto;
     }
 
     .page_with_right_block .blogposts-wrapper {
@@ -153,12 +159,6 @@
     #blocks-for-narrow {
         padding-left: 15px;
         padding-right: 15px;
-    }
-
-    .blog #quote-wrapper {
-        padding-left: 15px;
-        padding-right: 15px;
-        width: auto;
     }
 
     #quote-sub {
