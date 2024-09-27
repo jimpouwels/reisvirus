@@ -29,13 +29,16 @@
         <include template="styles/styles_mobile.css" />
     </style>
 {/if}
-<script type="application/ld+json">
-    {
-        "@context": "https://schema.org/",
-        "@type": "Website",
-        "name": "Reisvirus"
-    }
-</script>
+{if $page.is_homepage}
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Reisvirus",
+            "url" : "https://www.reisvirus.com/"
+        }
+    </script>
+{/if}
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 <script src="/static/js/jarallax.min.js?v=3" type="text/javascript"></script>
