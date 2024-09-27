@@ -86,7 +86,11 @@
     }
 
     .blog #quote {
-        font-size: 3.3em;
+        font-size: 3em;
+    }
+
+    .blog #quote-wrapper {
+        margin-bottom: 12%;
     }
 
     #country-info {

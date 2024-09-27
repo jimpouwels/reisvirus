@@ -47,11 +47,11 @@
         font-size: 0.9em !important;
     }
 
-    .blog #quote {
-        font-size: 2.3em;
+    #quote {
+        font-size: 2em;
     }
 
-    #quote {
+    .blog #quote {
         font-size: 2em;
     }
 
