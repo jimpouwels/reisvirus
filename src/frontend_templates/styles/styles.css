@@ -1203,6 +1203,7 @@ li span {
 
 .jarallax {
     display: flex;
+    min-height: 600px;
     flex-direction: column;
     justify-content: center;
     width: 100%;
@@ -1357,12 +1358,12 @@ li span {
     margin-right: 15px;
 }
 
-.no_banner #top-wrapper {
-    height: 95px !important;
-}
-
 #top-wrapper {
     height: 100dvh;
+}
+
+.no_banner #top-wrapper {
+    height: 95px !important;
 }
 
 #stop-respond {

@@ -66,24 +66,10 @@ $(document).ready(function() {
 
 function setCorrectTopHeight() {
     $('#top-wrapper').css('height', $(window).height());
-    $('#top-wrapper').css('min-height', "600px");
-    $('#top-wrapper').css('max-height', "-webkit-fill-available");
-
     $('.jarallax-img').css('height', $(window).height());
-    $('.jarallax-img').css('min-height', "600px");
-    $('.jarallax-img').css('max-height', "-webkit-fill-available");
-
     $('#banner').css('height', $(window).height());
-    $('#banner').css('min-height', "600px");
-    $('#banner').css('max-height', "-webkit-fill-available");
-
     $('#banner-wrapper').css('height', $(window).height());
-    $('#banner-wrapper').css('min-height', "600px");
-    $('#banner-wrapper').css('max-height', "-webkit-fill-available");
-
     $('.jarallax').css('height', $(window).height());
-    $('.jarallax').css('min-height', "600px");
-    $('.jarallax').css('max-height', "-webkit-fill-available");
 }
 
 $(document).ready(function() {

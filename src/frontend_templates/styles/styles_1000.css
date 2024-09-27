@@ -145,10 +145,6 @@
         max-width: 48%;
     }
 
-    .blog #quote {
-        font-size: 3em;
-    }
-
     #blocks-for-narrow {
         padding-left: 15px;
         padding-right: 15px;
@@ -157,7 +153,7 @@
     .blog #quote-wrapper {
         padding-left: 15px;
         padding-right: 15px;
-        bottom: 10%;
+        /*bottom: 10%;*/
         width: auto;
     }
 
