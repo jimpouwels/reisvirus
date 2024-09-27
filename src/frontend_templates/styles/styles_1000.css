@@ -129,6 +129,11 @@
         font-size: 4.3em;
     }
 
+    .blog #quote {
+        font-size: 4.3em;
+        width: 100%;
+    }
+
     .page_with_right_block .blogposts-wrapper {
         display: flex;
     }
@@ -153,7 +158,6 @@
     .blog #quote-wrapper {
         padding-left: 15px;
         padding-right: 15px;
-        /*bottom: 10%;*/
         width: auto;
     }
 
