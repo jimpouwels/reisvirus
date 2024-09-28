@@ -40,7 +40,11 @@
     }
 
     .blog #quote {
-        font-size: 4em;
+        font-size: 3.5em;
+    }
+
+    .homepage #quote {
+        font-size: 2.5em;
     }
 
     .header-content {

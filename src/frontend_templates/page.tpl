@@ -16,7 +16,7 @@
 </head>
 <body>
     <include template="partials/google-tag-manager-body-include.tpl" />
-    <div id="root-wrapper" class="{$classes}">
+    <div id="root-wrapper" class="{$classes}{if $page.is_homepage} homepage{/if}">
         <include template="partials/mobile-navigation.tpl" />
         <div class="mobile-hamburger-menu"><a href="#" onclick="return false;"><img
                         src="/static/img/hamburger_menu.svg"/></a>

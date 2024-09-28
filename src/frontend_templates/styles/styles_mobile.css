@@ -55,6 +55,10 @@
         font-size: 1.7em;
     }
 
+    .homepage #quote {
+        font-size: 1.5em;
+    }
+
     .blog #quote-country {
         font-size: 0.9em;
     }
