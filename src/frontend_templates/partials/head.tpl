@@ -12,7 +12,7 @@
 <meta property="og:site_name" content="Reisvirus">
 <meta property="og:image" content="{$base_url}{if $article}{$article.wallpaper.url}{else}{$blocks.wallpaper[0].element_groups[0][0].image_url}{/if}" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-<link rel="shortcut icon" type="image/x-icon" href="/static/img/favicon.ico">
+<link rel="icon" type="image/x-icon" href="/static/img/favicon.ico">
 <link rel="canonical" href="{$canonical_url}"/>
 <style>
     <include template="styles/styles.css" />

@@ -959,7 +959,7 @@ li span {
 }
 
 .blogposts .blogpost {
-    max-width: 400px;
+    width: 400px;
     position: relative;
 }
 
@@ -1004,6 +1004,7 @@ li span {
     display: flex;
     gap: 20px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .page_with_right_block .blogposts-wrapper {
@@ -1357,6 +1358,10 @@ li span {
     display: none;
 }
 
+.page-content .table-of-contents a {
+    font-weight: 600;
+}
+
 #respond-to-container {
     margin-bottom: 10px;
 }
@@ -1374,6 +1379,7 @@ li span {
 
 .no_banner #top-wrapper {
     height: 95px !important;
+    min-height: initial;
 }
 
 #stop-respond {
