@@ -7,6 +7,10 @@
         width: 100%;
     }
 
+    .blogposts-wrapper {
+        flex-wrap: wrap;
+    }
+
     .blog .jarallax {
         width: 100%;
         max-width: none;

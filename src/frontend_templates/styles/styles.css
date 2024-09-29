@@ -426,6 +426,10 @@ h3 {
     width: 170px;
 }
 
+.destination a {
+    font-weight: 500 !important;
+}
+
 .header-destinations-list-wrapper a {
     color: black !important;
     font-size: 0.8em !important;
@@ -613,7 +617,7 @@ h3 {
 
 .content a {
     color: var(--green);
-    font-weight: 900;
+    font-weight: 800;
     text-decoration: none;
     font-synthesis: weight;
 }
@@ -955,8 +959,7 @@ li span {
 }
 
 .blogposts .blogpost {
-    width: 400px;
-    float: left;
+    max-width: 400px;
     position: relative;
 }
 
@@ -1001,11 +1004,11 @@ li span {
     display: flex;
     gap: 20px;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
 .page_with_right_block .blogposts-wrapper {
-    justify-content: center;
+    justify-content: left;
+    flex-wrap: wrap;
     gap: 10px;
 }
 
