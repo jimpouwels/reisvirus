@@ -617,7 +617,7 @@ h3 {
 
 .content a {
     color: var(--green);
-    font-weight: 800;
+    font-weight: 700;
     text-decoration: none;
     font-synthesis: weight;
 }
@@ -936,7 +936,7 @@ li span {
 }
 
 .article-intro {
-    font-weight: 600;
+    font-weight: 800;
 }
 
 .page-content .paragraph {
