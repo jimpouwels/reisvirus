@@ -929,6 +929,10 @@ li span {
     padding: 20px;
 }
 
+.paragraph-tip a {
+    font-style: italic;
+}
+
 .paragraph-wrapper-fullscreen {
     max-width: 800px;
     text-align: center;
