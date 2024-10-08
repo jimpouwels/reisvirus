@@ -122,10 +122,6 @@ $(document).ready(function () {
     });
 });
 
-$(document).ready(function () {
-    // $("#header-destinations-list-wrapper").css('top', $('#header-wrapper-2').height() + 'px');
-});
-
 function onScroll() {
     setCorrectTopHeight();
     handleHeaderMenuScroll();

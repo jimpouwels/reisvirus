@@ -72,12 +72,12 @@
         width: 95%;
     }
 
-    .photo-album-img {
+    .photo-album-img-wrapper-full {
         margin-left: -15px !important;
         width: calc(100vw - 15px) !important;
     }
 
-    .photo-album-img img {
+    .photo-album-img-full {
         width: calc(100vw - 15px);
     }
 
