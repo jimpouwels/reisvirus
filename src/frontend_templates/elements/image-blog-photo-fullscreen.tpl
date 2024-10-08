@@ -3,13 +3,9 @@
 
 <div class="photo-album" style="width: 100%">
     <div class="photo-album-img {$imgWrapperClass}" style="width: 100%;">
-        {if $link}
-            <a href="{$link.url}" title="{$link.title}" target="{$link.target} "/>
-        {/if}
-        <img width="100%" class="{$imgClass}" src="{$image_url}" title="{$img_title}" alt="{$img_alt_text}" />
-        {if $link}
-            </a>
-        {/if}
+        {$link.open_tag}
+            <img width="100%" class="{$imgClass}" src="{$image_url}" title="{$img_title}" alt="{$img_alt_text}" />
+        {$link.close_tag}
     </div>
 </div>
 <div class="photo-album-clear"></div>
