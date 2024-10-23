@@ -13,8 +13,8 @@
 {/if}
 <div class="photo-album {$class}">
     {foreach from=$images item=image}
-        <div class="photo-album-img">
-            <img src="{$image.url}" title="{$image.title}" alt="{$image.alt_text}"/>
+        <div class="photo-album-img photo-album-img-wrapper-full">
+            <img class="photo-album-img-full" src="{$image.url}" title="{$image.title}" alt="{$image.alt_text}"/>
         </div>
     {/foreach}
 </div>

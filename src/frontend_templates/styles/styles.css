@@ -523,7 +523,7 @@ h3 {
 .header-menu li {
     display: inline;
     margin-right: 25px;
-    font-weight: bold;
+    font-weight: 900;
     font-size: 1.25em;
 }
 
