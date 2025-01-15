@@ -42,7 +42,6 @@
     });
 
     if (localStorage.getItem('consentMode') === null) {
-        console.log('test');
         showBanner();
     }
     document.getElementById('btn-accept').addEventListener('click', function() {
