@@ -9,7 +9,9 @@
             <div id="quote-wrapper">
                 {if $article}
                     {if $article.parent_article}
-                        <div id="quote-country">{$article.parent_article.title}</div>
+                        <div id="quote-country">
+                            <p id="banner-country-label">{$article.parent_article.title}</p>
+                        </div>
                     {/if}
                     <div id="quote">
                         {if !$article.description}
