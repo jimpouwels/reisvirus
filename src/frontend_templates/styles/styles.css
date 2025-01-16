@@ -719,9 +719,8 @@ h3 {
 }
 
 #toc-block-wrapper {
-    background-color: var(--verylightgreen);
+    background-color: white;
     margin-top: 15px;
-    border: 1px solid var(--intermediategreen);
 }
 
 #toc-block-wrapper a {
