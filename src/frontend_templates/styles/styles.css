@@ -16,6 +16,8 @@
 :root {
     --green: #4f8972;
     --lightgreen: #e9f2ec;
+    --verylightgreen: #f4f7f5;
+    --intermediategreen: #c7e1d0;
 }
 
 html {
@@ -709,17 +711,17 @@ h3 {
 
 .right-block-wrapper {
     background-color: var(--green);
-    padding: 10px;
-    padding-bottom: 20px;
+    padding: 10px 10px 20px;
     color: white;
     font-weight: 600;
     border-radius: 10px;
-    box-shadow: 0px 10px 30px 0px rgb(0 0 0 / 10%);
+    box-shadow: 0 10px 30px 0 rgb(0 0 0 / 10%);
 }
 
 #toc-block-wrapper {
-    background-color: white;
+    background-color: var(--verylightgreen);
     margin-top: 15px;
+    border: 1px solid var(--intermediategreen);
 }
 
 #toc-block-wrapper a {
