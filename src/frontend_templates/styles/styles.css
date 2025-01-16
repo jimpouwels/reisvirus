@@ -719,6 +719,7 @@ h3 {
 
 #toc-block-wrapper {
     background-color: white;
+    margin-top: 15px;
 }
 
 #toc-block-wrapper a {
@@ -726,7 +727,11 @@ h3 {
 }
 
 #toc-block-wrapper h3 {
-    color: black !important;;
+    color: white !important;;
+    background-color: var(--green);
+    width: 100px;
+    padding: 5px 10px;
+    margin: -25px auto 15px !important;
 }
 
 #toc-block-wrapper li::marker {
