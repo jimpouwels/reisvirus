@@ -458,9 +458,8 @@ h3 {
 }
 
 #header-wrapper-2 .header-destinations-list {
-    border-left: 2px solid lightgray;
-    border-bottom: 2px solid lightgray;
-    border-right: 2px solid lightgray;
+    box-shadow: 0 10px 30px 0 rgb(0 0 0 / 10%);
+    border-radius: 10px;
 }
 
 .header-destinations-list {
