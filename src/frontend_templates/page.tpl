@@ -47,7 +47,7 @@
                                         <li class="{if $navigation_item.id == 35} header-menu-destinations-link{/if}">
                                             {if $navigation_item.id == 35}
                                                 <include template="partials/destinations-list.tpl" />
-                                                <a href="{$navigation_item.url}" class="header-menu-link">{$navigation_item.navigation_title}</a>
+                                                <a href="{$navigation_item.url}" class="header-menu-link{if $navigation_item.is_current_page} selected"{/if}">{$navigation_item.navigation_title}</a>
                                             {else}
                                                 <a class="header-menu-link{if $navigation_item.is_current_page} selected"{/if}"
                                                    href="{$navigation_item.url}">{$navigation_item.navigation_title}</a>
