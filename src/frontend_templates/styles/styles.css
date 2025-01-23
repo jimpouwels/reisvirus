@@ -545,6 +545,7 @@ h3 {
     margin-right: 25px;
     font-weight: 900;
     font-size: 1.15em;
+    text-transform: uppercase;
 }
 
 .header-menu li:last-child {
