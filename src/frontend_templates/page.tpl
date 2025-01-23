@@ -57,6 +57,9 @@
                                 {/foreach}
                             </ul>
                         </nav>
+                        <div class="instagram-link">
+                            <a href="https://www.instagram.com/reis_virus" title="Reisvirus - Instgram" target="_blank"><img src="/static/img/instagram-white.png" /></a>
+                        </div>
                     </div>
                 </div>
             {/for}

@@ -78,6 +78,26 @@ body {
     border-bottom: 1px solid #ffffff;
 }
 
+.nav {
+    padding-left: 0;
+}
+
+.instagram-link {
+    position: absolute;
+    right: 25px;
+    top: 20px;
+    border-radius: 50%;
+    padding: 10px 10px 5px 10px
+}
+
+.instagram-link img {
+    width: 30px;
+}
+
+.instagram-link:hover {
+    background-color: var(--green);
+}
+
 #mobile-navigation-social-media img {
     width: 30px;
     filter: grayscale(100%);
@@ -394,8 +414,8 @@ h3 {
 }
 
 .header-menu {
-    float: right;
-    margin-top: 15px;
+    width: fit-content;
+    margin: 35px auto auto;
     font-size: 1em;
 }
 
@@ -414,7 +434,6 @@ h3 {
 
 .header-destinations-list-wrapper {
     position: absolute;
-    right: 20px;
     top: 50px;
     opacity: 0;
     visibility: hidden;
@@ -526,6 +545,10 @@ h3 {
     margin-right: 25px;
     font-weight: 900;
     font-size: 1.15em;
+}
+
+.header-menu li:last-child {
+    margin-right: 0;
 }
 
 .no_banner #header-wrapper-1 .header-menu a {
@@ -1049,6 +1072,10 @@ li span {
     border-radius: 7px;
     height: 475px;
     object-fit: cover;
+}
+
+.blogposts-wrapper-smaller-badges .blogpost, .blogposts-wrapper-smaller-badges img {
+    height: 300px
 }
 
 .blogpost:hover {

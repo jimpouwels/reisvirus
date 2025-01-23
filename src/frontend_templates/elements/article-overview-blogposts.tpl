@@ -1,9 +1,9 @@
-{assign var=divClass value=""}
+{assign var=divClass value=$var.div_class}
 <div class="blogposts">
     {if $title}
         <h2>{$title}</h2>
     {/if}
-    <div class="blogposts-wrapper">
+    <div class="blogposts-wrapper {$divClass}">
         {foreach from=$articles item=article name=article}
             <div class="blogpost">
                 <a href="{$article.url}">
