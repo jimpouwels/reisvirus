@@ -95,7 +95,7 @@
                                 </div>
                             {/if}
                         {/if}
-                        {if $page.is_homepage}
+                        {if $page.is_homepage && $element_group@iteration == 1}
                             <div id="title-container">
                                 <h1>{$title}</h1>
                             </div>
