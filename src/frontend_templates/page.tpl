@@ -143,8 +143,8 @@
                 </div>
             </div>
         {/foreach}
-        <div id="blocks-for-narrow">
-            {if isset($blocks.rechts)}
+        {if isset($blocks.rechts)}
+            <div class="bottom-blocks{if !$fullScreenPage} bottom-blocks-narrow{/if}">
                 {foreach from=$blocks.rechts item=block}
                     <div class="right-block-wrapper"">
                         <div class="right-block {if !$article}no_scroll{/if}">
@@ -152,8 +152,8 @@
                         </div>
                     </div>
                 {/foreach}
-            {/if}
-        </div>
+            </div>
+        {/if}
         <include template="partials/footer.tpl" />
     </div>
     <include template="partials/google-cookie-consent-banner.tpl" />

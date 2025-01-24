@@ -719,31 +719,35 @@ h3 {
     margin-top: 30px;
 }
 
-#blocks-for-narrow {
-    display: none;
+.bottom-blocks {
     clear: both;
     padding-left: 15px;
     padding-right: 15px;
-    margin: auto;
+    max-width: 550px;
+    margin: 40px auto auto;
 }
 
-#blocks-for-narrow p {
+.bottom-blocks p {
     width: 60%;
     float: left;
 }
 
-#blocks-for-narrow img {
+.bottom-blocks img {
     border-radius: 50%;
     float: right;
     width: 35%;
 }
 
-#blocks-for-narrow h3 {
+.bottom-blocks h3 {
     color: white;
 }
 
-#blocks-for-narrow .right-block {
+.bottom-blocks .right-block {
     max-height: none;
+}
+
+.bottom-blocks-narrow {
+    display: none;
 }
 
 .right-block-wrapper {

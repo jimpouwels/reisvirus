@@ -26,7 +26,11 @@
         display: none;
     }
 
-    #blocks-for-narrow {
+    .bottom-blocks {
+        margin-top: 25px;
+    }
+
+    .bottom-blocks-narrow {
         display: block;
     }
 
@@ -160,7 +164,7 @@
         max-width: 48%;
     }
 
-    #blocks-for-narrow {
+    .bottom-blocks {
         padding-left: 15px;
         padding-right: 15px;
     }

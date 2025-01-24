@@ -83,7 +83,7 @@
         box-sizing: border-box;
     }
 
-    #blocks-for-narrow {
+    .bottom-blocks {
         padding-left: 50px;
         padding-right: 50px;
     }
