@@ -1093,6 +1093,10 @@ li span {
     height: 300px
 }
 
+.blogposts-wrapper-smaller-badges {
+    margin-bottom: 15px;
+}
+
 .blogpost:hover {
     opacity: 80%;
 }
