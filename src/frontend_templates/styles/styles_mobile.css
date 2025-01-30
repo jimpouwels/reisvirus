@@ -36,12 +36,19 @@
     }
 
     .photo-album-img-wrapper-full {
-        margin-left: -15px !important;
         width: calc(100vw) !important;
     }
 
-    .photo-album-img-full {
-        width: calc(100vw);
+    .photo-album-img-wrapper-full-portrait {
+        width: calc(50vw - 7px) !important;
+    }
+
+    .photo-album-img-full-portrait {
+        width: calc(50vw - 7px) !important;
+    }
+
+    .photo-album-img-wrapper-full-portrait > img {
+        width: calc(50vw - 7px) !important;
     }
 
     .paragraph {

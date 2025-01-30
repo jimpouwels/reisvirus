@@ -5,6 +5,9 @@
     {/foreach}
 {/foreach}
 {if $comment_webform}
+    {if count($comments) > 0}
+        <h2>Reacties</h2>
+    {/if}
     <div id="article-comments">
         {foreach from=$comments item=comment}
             <div class="blog-item-comment">
