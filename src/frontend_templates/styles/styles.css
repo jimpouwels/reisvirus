@@ -977,6 +977,7 @@ li span {
 
 .paragraph-tip a {
     font-style: italic;
+    font-synthesis: unset;
 }
 
 .paragraph-wrapper-fullscreen {
