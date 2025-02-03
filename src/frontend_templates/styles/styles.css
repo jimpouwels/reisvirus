@@ -107,6 +107,10 @@ body {
     padding: 20px 10px 5px 10px
 }
 
+#header-wrapper-2 .instagram-link:hover img {
+    filter: none;
+}
+
 #mobile-navigation-social-media img {
     width: 30px;
     filter: grayscale(100%);
