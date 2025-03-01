@@ -63,7 +63,7 @@
 
     .header-menu {
         float: right;
-        margin-top: 15px;
+        margin-top: 15px !important;
         margin-right: 25px;
     }
 

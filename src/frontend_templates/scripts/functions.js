@@ -112,7 +112,6 @@ $(document).ready(function () {
         let nextTransformValue = "none";
         if (!practicalButtonUp) {
             nextTransformValue = originalTransformValue;
-        } else {
         }
         buttonImg.css('-webkit-transform', nextTransformValue);
         buttonImg.css('transform', nextTransformValue);

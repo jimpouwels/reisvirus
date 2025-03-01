@@ -428,6 +428,11 @@ h3 {
     display: block;
 }
 
+.fullscreen_page .blogposts h2 {
+    margin-top: 35px;
+    margin-bottom: 25px;
+}
+
 .header-menu {
     width: fit-content;
     margin: 35px auto auto;
@@ -907,7 +912,7 @@ h3 {
 }
 
 .blog #quote {
-    width: 75%;
+    width: 80%;
     font-size: 4em;
     text-align: left;
     margin: initial;
