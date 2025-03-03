@@ -16,7 +16,7 @@
         </div>
         <div id="sitewide-pages">
             {foreach from=$sitewide_pages item=sitewide_page}
-                <span><a title="{$sitewide_page.title}" href="{$sitewide_page.url}>{$sitewide_page.title}</a></span> |
+                <span><a title="{$sitewide_page.title}" href="{$sitewide_page.url}">{$sitewide_page.title}</a></span> |
             {/foreach}
             <span><a title="Cookie instellingen" href="javascript:void(0);" class="internal" id="cookie-settings-link">Cookie instellingen</a></span>
         </div>
