@@ -102,7 +102,7 @@
     }
 
     .highlight-quote {
-        font-size: 1.5em;
+        font-size: 1.8em;
     }
 
     .highlight-subtitle {
@@ -116,6 +116,7 @@
 
     .highlight-button {
         font-size: 0.9em;
+        margin-top: 30px;
     }
 
     .highlight-tag {

@@ -14,11 +14,7 @@
                         </div>
                     {/if}
                     <div id="quote">
-                        {if !$article.description}
-                            {$article.title}
-                        {else}
-                            {$article.description}
-                        {/if}
+                        {$article.title}
                     </div>
                 {else}
                     {if $page.is_homepage}

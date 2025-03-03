@@ -1,7 +1,7 @@
 <include template="partials/google-cookie-consent-setdefault-script.tpl" />
 <include template="partials/google-tag-manager-include.tpl" />
 
-<title>{if $page.is_homepage}Reisvirus • Jouw droomreis begint hier!{else}{if $article}{if $article.description}{$article.description}{else}{$article.title}{/if}{else}{$title}{/if}{/if}</title>
+<title>{if $page.is_homepage}Reisvirus • Jouw droomreis begint hier!{else}{if $article}{if $article.title}{$article.title}{else}{$article.title}{/if}{else}{$title}{/if}{/if}</title>
 <meta name="keywords"
       content="{if $keywords}{$keywords}, {/if}{$title}, Reisvirus, reizen, travel, rondreis, zelf organiseren"/>
 <meta name="description" content="{$page.description}"/>

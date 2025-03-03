@@ -21,7 +21,7 @@
                             </ul>
                         {/if}
                         <h3>
-                            <a href="{$article.url}" target="_self">{$article.description}</a>
+                            <a href="{$article.url}" target="_self">{$article.title}</a>
                         </h3>
                     </header>
                     <div class="entry-content clear">

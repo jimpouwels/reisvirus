@@ -875,9 +875,11 @@ h3 {
     background-color: var(--button-hover-color);
 }
 
-.highlight-button a {
+.highlight-button {
     text-decoration: none;
     color: white;
+    margin-top: 50px;
+    display: block;
 }
 
 .highlight-subtitle {
