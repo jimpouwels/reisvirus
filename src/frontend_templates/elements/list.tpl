@@ -1,5 +1,6 @@
+{assign var=titleTag value=$var.title_tag}
 {if $title}
-    <h2>{$title}</h2>
+    <{$titleTag}>{$title}</{$titleTag}>
 {/if}
 <ul>
     {foreach from=$items item=item}

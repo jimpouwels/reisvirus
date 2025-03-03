@@ -101,6 +101,22 @@
         margin-bottom: 12%;
     }
 
+    .highlight-quote {
+        font-size: 2.3em;
+    }
+
+    .highlight-blogpost {
+        height: 500px;
+    }
+
+    .highlight-button {
+        font-size: 0.9em;
+    }
+
+    .highlight-tag {
+        font-size: 0.9em;
+    }
+
     .homepage #quote {
         font-size: 2em;
     }

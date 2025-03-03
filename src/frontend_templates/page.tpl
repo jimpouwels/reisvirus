@@ -143,6 +143,9 @@
                 </div>
             </div>
         {/foreach}
+        {if $page.is_homepage}
+            {$blocks.uitgelicht[0].to_string}
+        {/if}
         {if isset($blocks.rechts)}
             <div class="bottom-blocks{if !$fullScreenPage} bottom-blocks-narrow{/if}">
                 {foreach from=$blocks.rechts item=block}

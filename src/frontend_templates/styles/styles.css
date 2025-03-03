@@ -18,6 +18,7 @@
     --lightgreen: #e9f2ec;
     --verylightgreen: #f4f7f5;
     --intermediategreen: #c7e1d0;
+    --button-hover-color: #054922;
 }
 
 html {
@@ -344,7 +345,7 @@ body {
 }
 
 .contact-form-field button:hover {
-    background-color: #054922;
+    background-color: var(--button-hover-color);
     cursor: pointer;
 }
 
@@ -820,6 +821,72 @@ h3 {
     margin-top: 0px;
 }
 
+.highlight-quote-wrapper {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+.highlight-quote-content {
+    width: 1200px;
+    max-width: 90%;
+}
+
+.highlight-blogpost {
+    margin-top: 30px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.highlight-quote {
+    width: 100%;
+    text-align: left;
+    font-size: 4em;
+    color: white;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.highlight-button {
+    background-color: var(--green);
+    margin: 30px 0 0;
+    padding: 10px;
+    width: fit-content;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    font-size: 1.1em;
+}
+
+.highlight-tag {
+    background-color: rgb(255, 255, 255, 0.5);
+    width: fit-content;
+    margin: 0px;
+    margin-bottom: 20px;
+    padding: 7px;
+    border-radius: 30px;
+    color: white;
+    font-weight: 800;
+}
+
+.highlight-button:hover {
+    background-color: var(--button-hover-color);
+}
+
+.highlight-button a {
+    text-decoration: none;
+    color: white;
+}
+
+.highlight-subtitle {
+    font-size: 1.3em;
+    font-weight: 700;
+    color: white;
+}
+
 #footer {
     color: #ffffff;
     text-align: center;
@@ -909,6 +976,7 @@ h3 {
     text-align: center;
     margin: auto;
     font-weight: 900;
+    color: #ffffff;
 }
 
 .blog #quote {
