@@ -3,7 +3,7 @@
     <div class="highlight-quote-wrapper">
         <div class="highlight-quote-content">
             <div class="highlight-tag">
-                Uitgelicht
+                Favoriet
             </div>
             <div class="highlight-quote">
                 {$title}
