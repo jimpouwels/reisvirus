@@ -23,7 +23,7 @@
         <p id="copyright"><a href="mailto:info@reisvirus.com" title="info@reisvirus.com">&copy; Reisvirus
                 2023-{$smarty.now|date_format:"%Y"}</a></p>
         <p id="powered-by">Powered by <a title="Github: Obcato" target="_blank"
-                                         href="https://github.com/jimpouwels/obcato">Obcato</a></p>
+                                         href="https://github.com/jimpouwels/obcato">Obcato</a>, implemented by <a href="https://www.linkedin.com/in/jim-pouwels-37923310/?originalSubdomain=nl" title="Jim Pouwels - LinkedIn" target="_blank">Jim Pouwels</a></p>
         <p id="attributions">
             <i>This website contains icons made by UICONS from www.flaticon.com</i>
         </p>
