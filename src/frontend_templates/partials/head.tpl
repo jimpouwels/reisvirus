@@ -5,7 +5,7 @@
 <meta name="keywords"
       content="{if $keywords}{$keywords}, {/if}{$title}, Reisvirus, reizen, travel, rondreis, zelf organiseren"/>
 <meta name="description" content="{$page.description}"/>
-<meta name="Subject" content="Reisvirus: {$title}"/>
+<meta name="Subject" content="{$title}"/>
 <meta name="robots" content="index, follow"/>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, interactive-widget=resizes-content">
 <meta property="og:locale" content="nl_NL" />

@@ -1,5 +1,6 @@
 {assign var=divClass value=$var.div_class}
-{if count($articles) > 0}
+{assign var=showNoBlogsFoundMessage value=$var.show_no_blogs_found_message}
+{if count($articles) > 0 || $showNoBlogsFoundMessage == 'true'}
     <div class="blogposts">
         {if $title}
             <h2>{$title}</h2>

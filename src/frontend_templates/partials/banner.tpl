@@ -13,6 +13,13 @@
                             <p id="banner-country-label">{$article.parent_article.title}</p>
                         </div>
                     {/if}
+                    {foreach from=$article.terms item=term}
+                        {if $term == "Reistip"}
+                            <div id="quote-country">
+                                <p id="banner-country-label">{$term}</p>
+                            </div>
+                        {/if}
+                    {/foreach}
                     <div id="quote">
                         {$article.title}
                     </div>

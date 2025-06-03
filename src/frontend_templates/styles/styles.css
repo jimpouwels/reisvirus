@@ -388,7 +388,7 @@ html, body {
 
 h2 {
     color: #000000;
-    margin-top: 15px;
+    margin-top: 25px;
     margin-bottom: 10px;
     font-size: 2.3em;
     font-weight: 900;
@@ -674,7 +674,7 @@ h3 {
 
 .content a.internal {
     background-color: #f3faf2;
-    font-weight: 900;
+    font-weight: 800;
 }
 
 .content a:hover {
@@ -706,10 +706,6 @@ h3 {
     border-radius: 5px;
 }
 
-.no_scroll {
-    overflow-y: auto;
-}
-
 .right-block::-webkit-scrollbar {
     width: 10px;
 }
@@ -738,12 +734,16 @@ h3 {
     margin: 40px auto auto;
 }
 
+.bottom-blocks-article {
+    margin-top: 0 !important;
+}
+
 .bottom-blocks p {
     width: 60%;
     float: left;
 }
 
-.bottom-blocks img {
+.bottom-blocks .wie-zijn-wij {
     border-radius: 50%;
     float: right;
     width: 35%;
@@ -761,13 +761,69 @@ h3 {
     display: none;
 }
 
+.bottom-blocks .right-block-wrapper {
+    margin-top: 0 !important;
+}
+
 .right-block-wrapper {
-    background-color: var(--green);
     padding: 10px 10px 20px;
     color: white;
     font-weight: 600;
     border-radius: 10px;
     box-shadow: 0 10px 30px 0 rgb(0 0 0 / 10%);
+}
+
+.right-block-green {
+    background-color: var(--green);
+}
+
+.right-block-zelf-regelen {
+    box-shadow: none;
+    padding-left: 0;
+}
+
+.right-block-zelf-regelen h3, .right-block-zelf-regelen a {
+    color: #000000 !important;
+}
+
+.right-block-zelf-regelen h3 {
+    text-align: left !important;
+    margin-bottom: 25px !important;
+    font-size: 1.4em;
+}
+
+.zelf-regelen-value {
+    height: 50px;
+    display : flex;
+    align-items : center;
+}
+
+.zelf-regelen-value p {
+    margin: 0;
+    width: 100%;
+}
+
+.zelf-regelen-icon {
+    width: 30px;
+    float: left;
+    margin-right: 10px;
+    background-color: var(--lightgreen);
+    padding: 8px;
+    border-radius: 50%;
+    display : flex;
+    align-items : center;
+}
+
+.zelf-regelen-icon img {
+    width: 30px;
+}
+
+.zelf-regelen-wrapper {
+    height: 40px;
+}
+
+.zelf-regelen-wrapper:not(.last) {
+    margin-bottom: 20px;
 }
 
 #toc-block-wrapper {
@@ -969,7 +1025,7 @@ h3 {
     max-width: 1200px;
     width: 100%;
     top: initial;
-    margin-bottom: 11%;
+    margin-bottom: 9%;
 }
 
 #quote {

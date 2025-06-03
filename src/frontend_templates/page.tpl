@@ -125,17 +125,13 @@
                                 {if $tocElement}
                                     <div class="right-block-wrapper" id="toc-block-wrapper">
                                         <h3>{$tocElement.title}</h3>
-                                        <div class="right-block {if !$article}no_scroll{/if}">
+                                        <div class="right-block">
                                             {$tocElement.to_string}
                                         </div>
                                     </div>
                                 {/if}
                                 {foreach from=$blocks.rechts item=block}
-                                    <div class="right-block-wrapper" style="{if $tocElement || $block@index > 0}margin-top: 40px{/if}">
-                                        <div class="right-block {if !$article}no_scroll{/if}">
-                                            {$block.to_string}
-                                        </div>
-                                    </div>
+                                    {$block.to_string}
                                 {/foreach}
                             </div>
                         </div>
@@ -147,13 +143,9 @@
             {$blocks.uitgelicht[0].to_string}
         {/if}
         {if isset($blocks.rechts)}
-            <div class="bottom-blocks{if !$fullScreenPage} bottom-blocks-narrow{/if}">
+            <div class="bottom-blocks{if !$fullScreenPage} bottom-blocks-narrow{/if} {if $article}bottom-blocks-article{/if}">
                 {foreach from=$blocks.rechts item=block}
-                    <div class="right-block-wrapper"">
-                        <div class="right-block {if !$article}no_scroll{/if}">
-                            {$block.to_string}
-                        </div>
-                    </div>
+                    {$block.to_string}
                 {/foreach}
             </div>
         {/if}
