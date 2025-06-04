@@ -38,6 +38,28 @@
         display: block;
     }
 
+    .destinations {
+        column-count: 1;
+        padding-left: 0 !important;
+    }
+
+    .destination-entry {
+        margin-left: 0;
+        font-size: 0.9em !important;
+        line-height: 2.2em;
+    }
+
+    .destination-title {
+        padding-top: 0;
+        padding-bottom: 0;
+        color: #ffffff !important;
+        margin-bottom: 15px;
+    }
+
+    .destination-title:not(:first-child) {
+        margin-top: 15px;
+    }
+
     #cookie-consent-banner {
         border-radius: 20px 20px 0px 0px;
         bottom: 0px;

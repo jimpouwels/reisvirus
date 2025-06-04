@@ -68,7 +68,7 @@
             {/if}
         </div>
         {if $noBannerPage}
-            <div id="title"><h1>{$title}</h1></div>
+            <div id="title"><h1>{$page.title}</h1></div>
         {/if}
         {assign var="oddEven" value="odd"}
         {foreach from=$page.element_groups item=element_group}
@@ -97,7 +97,7 @@
                         {/if}
                         {if $page.is_homepage && $element_group@iteration == 1}
                             <div id="title-container">
-                                <h1>{$title}</h1>
+                                <h1>{$page.title}</h1>
                             </div>
                         {/if}
                         {if $article}

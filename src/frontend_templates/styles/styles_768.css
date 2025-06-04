@@ -11,19 +11,7 @@
         font-size: 1.5em;
     }
 
-    #destinations-wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        margin: 0;
-        overflow: inherit;
-        justify-content: center;
-    }
-
     .destinations {
-        margin-left: 0 !important;
-        float: none;
-        flex: 1 1 170px;
     }
 
     .paragraph-wrapper-fullscreen {
