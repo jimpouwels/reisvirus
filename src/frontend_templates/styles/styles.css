@@ -478,12 +478,6 @@ h3 {
     color: var(--green) !important;
 }
 
-.header-destinations-list-wrapper .destinations-title {
-    margin: 0 !important;
-    text-align: left !important;
-    width: fit-content !important;
-}
-
 .header-destinations-list-wrapper h3 {
     font-size: 0.8em;
 }
@@ -547,7 +541,7 @@ h3 {
     background-color: var(--green);
     right: -8px;
     transform: translate(-50%, -58%);
-    margin-right: 0px;
+    margin-right: 0;
     display: none;
     float: right;
     border-radius: 50%;
