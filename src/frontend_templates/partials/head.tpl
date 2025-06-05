@@ -12,6 +12,7 @@
 <meta property="og:site_name" content="Reisvirus">
 <meta property="og:image" content="{$base_url}{if $article}{$article.wallpaper.url}{else}{$blocks.wallpaper[0].element_groups[0][0].image_url}{/if}" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="tradetracker-site-verification" content="012df7a375cb835c935ba183196c09bcc5e6cbdf" />
 <link rel="icon" type="image/x-icon" href="/static/img/favicon.ico">
 <link rel="canonical" href="{$canonical_url}"/>
 <style>

@@ -60,7 +60,7 @@
         max-width: 100% !important;
     }
 
-    .header-menu li {
+    .header-menu .header-menu-item {
         font-size: 1.1em;
         margin-right: 15px;
     }

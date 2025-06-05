@@ -45,7 +45,7 @@
 
     .destination-entry {
         margin-left: 0;
-        font-size: 0.9em !important;
+        font-size: 0.8em !important;
         line-height: 2.2em;
     }
 
@@ -56,7 +56,7 @@
         margin-bottom: 15px;
     }
 
-    .destination-title:not(:first-child) {
+    .destination-title {
         margin-top: 15px;
     }
 
@@ -240,14 +240,14 @@
         z-index: 999;
     }
 
-    .header-menu li {
+    .header-menu .header-menu-item {
         line-height: 160%;
         display: block;
         margin-bottom: 10px;
         font-size: 1em;
     }
 
-    .header-menu li a.selected {
+    .header-menu .header-menu-item a.selected {
         font-weight: bold;
     }
 
