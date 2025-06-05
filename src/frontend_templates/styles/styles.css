@@ -821,7 +821,11 @@ h3 {
 }
 
 .zelf-regelen-value a {
-    text-decoration: underline !important;
+    text-decoration: underline;
+}
+
+.zelf-regelen-value a:hover {
+    color: var(--green) !important;
 }
 
 .zelf-regelen-value p {
@@ -858,11 +862,11 @@ h3 {
 }
 
 #toc-block-wrapper a {
-    color: var(--green) !important;;
+    color: var(--green) !important;
 }
 
 #toc-block-wrapper h3 {
-    color: white !important;;
+    color: white !important;
     background-color: var(--green);
     width: 100px;
     padding: 5px 10px;
