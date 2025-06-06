@@ -5,7 +5,7 @@
         {if $title}
             <h2>{$title}</h2>
         {/if}
-        <div class="blogposts-wrapper {$divClass}">
+        <div class="blogposts-wrapper {$divClass}{if $divClass == 'category'} category-selector-{$terms[0]}{/if}">
             {foreach from=$articles item=article name=article}
                 <div class="blogpost">
                     <a href="{$article.url}">

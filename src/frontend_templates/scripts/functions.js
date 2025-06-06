@@ -102,6 +102,28 @@ $(document).ready(function () {
     }
 });
 
+// CATEGORY SELECTOR
+$(document).ready(() => {
+    $('.category').first().css('display', 'flex');
+});
+
+function showCategory(term) {
+    $('.category').each((_, obj) => {
+        if ($(obj).hasClass('category-selector-' + term)) {
+            $(obj).css('display', 'flex');
+        } else {
+            $(obj).css('display', 'none');
+        }
+    });
+    $('.category-button').each((_, obj) => {
+        if ($(obj).hasClass('category-button-' + term)) {
+            $(obj).addClass('category-button-selected');
+        } else {
+            $(obj).removeClass('category-button-selected');
+        }
+    });
+}
+
 let practicalButtonUp = true;
 $(document).ready(function () {
     let practicalInfoContainer = $("#country-tips");
