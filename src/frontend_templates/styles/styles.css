@@ -1152,7 +1152,7 @@ li span {
 .paragraph-wrapper-fullscreen {
     max-width: 800px;
     text-align: center;
-    margin: 0 auto 40px;
+    margin: 0 auto;
 }
 
 .article-intro {
@@ -1232,6 +1232,7 @@ li span {
 
 .category-selector {
     margin-bottom: 25px;
+    margin-top: 40px;
 }
 
 .blogpost-header h3 a
