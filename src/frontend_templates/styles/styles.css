@@ -1212,7 +1212,6 @@ li span {
     width: fit-content;
     margin: auto;
     display: inline;
-    font-weight: bold;
     cursor: pointer;
     border: 1px solid var(--green);
 }
@@ -1226,6 +1225,7 @@ li span {
 }
 
 .category-button-selected {
+    font-weight: bold;
     background-color: var(--green);
     color: white;
 }
