@@ -1100,10 +1100,6 @@ h1 {
     line-height: 110%;
 }
 
-h4 {
-    margin-bottom: 0px;
-}
-
 .page-content ul {
     padding-left: 25px;
 }
@@ -1171,10 +1167,6 @@ li span {
     width: fit-content;
     border-radius: 20px;
     font-size: 0.9em;
-}
-
-.paragraph-h4 {
-    margin-top: 0px;
 }
 
 .paragraph-home {
@@ -1338,9 +1330,8 @@ li span {
     float: left;
     padding: 12px;
     border-radius: 50%;
-    margin: auto;
     background-color: var(--lightgreen);
-    margin-bottom: 5px;
+    margin: auto auto 5px;
 }
 
 .country-info-icon img {
