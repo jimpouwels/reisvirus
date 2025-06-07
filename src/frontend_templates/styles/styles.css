@@ -896,7 +896,7 @@ h3 {
 }
 
 #right-content .paragraph-justified {
-    padding-top: 0px;
+    padding-top: 0;
 }
 
 .paragraph-left {
@@ -904,7 +904,7 @@ h3 {
 }
 
 #right-content h2 {
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 .highlight-quote-wrapper {
@@ -1209,7 +1209,7 @@ li span {
 }
 
 .category-button:hover {
-    opacity: 80%;
+    opacity: 70%;
 }
 
 .category-button:not(:first-child) {
