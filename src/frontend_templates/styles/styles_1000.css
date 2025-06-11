@@ -30,6 +30,18 @@
         display: block;
     }
 
+    .bottom-blocks {
+        max-width: none;
+    }
+
+    .bottom-blocks .right-block-green img {
+        width: 15%;
+    }
+
+    .bottom-blocks .right-block-green p {
+        width: 80%;
+    }
+
     #right-content .table-of-contents {
         display: none;
     }
@@ -266,6 +278,10 @@
     }
 
     #contact-panes {
+        width: 100%;
+    }
+
+    #article-comments-alignment-wrapper {
         width: 100%;
     }
 }
