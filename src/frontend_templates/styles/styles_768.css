@@ -124,6 +124,10 @@
         width: 30%;
     }
 
+    .bottom-blocks .right-block h3 {
+        margin-top: 0;
+    }
+
     .bottom-blocks .right-block-green p {
         width: 60%;
     }

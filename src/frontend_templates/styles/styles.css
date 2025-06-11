@@ -766,6 +766,7 @@ h3 {
 
 .bottom-blocks-related-articles .blogpost {
     width: 393px !important;
+    max-width: 30%;
 }
 
 .bottom-blocks-related-articles h2 {
