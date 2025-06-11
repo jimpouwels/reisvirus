@@ -195,7 +195,7 @@
         margin-top: 0;
     }
 
-    .fullscreen_page .blogposts-wrapper .blogpost {
+    .fullscreen_page .blogposts-wrapper .blogpost, #bottom-blocks-wrapper .blogpost {
         max-width: 48%;
     }
 
