@@ -11,7 +11,7 @@
             <div class="highlight-subtitle">
                 {$article.description}
             </div>
-            <a class="highlight-button" href="{$article.url}" title="{$article.title}">Lees meer</a>
+            <a class="green-button" href="{$article.url}" title="{$article.title}">Lees meer</a>
         </div>
     </div>
 </div>

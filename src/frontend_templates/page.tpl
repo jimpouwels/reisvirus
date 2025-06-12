@@ -157,6 +157,9 @@
                     {foreach from=$blocks.onder item=block}
                         {$block.to_string}
                     {/foreach}
+                    <div style="width: fit-content; margin: auto;">
+                        <a class="green-button" href="{$article.parent_article.url}" title="Alle reisinspiratie voor {$article.parent_article.description}">Alle reisinspiratie voor {$article.parent_article.description} &rarr;</a>
+                    </div>
                 </div>
             </div>
         {/if}
