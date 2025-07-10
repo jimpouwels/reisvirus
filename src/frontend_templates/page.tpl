@@ -162,7 +162,7 @@
                         {assign var=allDescription value=""}
                         {if $article.parent_article}
                             {assign var=allUrl value=$article.parent_article.url}
-                            {assign var=allDescription value="Alle reisinspiratie voor " + $article.parent_article.description}
+                            {assign var=allDescription value="Alle reisinspiratie voor `$article.parent_article.description`"}
                         {else}
                             {assign var=allUrl value=$page.parent.url}
                             {assign var=allDescription value="Alle reistips"}
