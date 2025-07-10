@@ -158,7 +158,16 @@
                         {$block.to_string}
                     {/foreach}
                     <div style="width: fit-content; margin: auto;">
-                        <a class="green-button" href="{$article.parent_article.url}" title="Alle reisinspiratie voor {$article.parent_article.description}">Alle reisinspiratie voor {$article.parent_article.description} &rarr;</a>
+                        {assign var=allUrl value=""}
+                        {assign var=allDescription value=""}
+                        {if $article.parent_article}
+                            {assign var=allUrl value=$article.parent_article.url}
+                            {assign var=allDescription value="Alle reisinspiratie voor " + $article.parent_article.description}
+                        {else}
+                            {assign var=allUrl value=$page.parent.url}
+                            {assign var=allDescription value="Alle reistips"}
+                        {/if}
+                        <a class="green-button" href="{$allUrl}" title="{$allDescription}">{$allDescription} &rarr;</a>
                     </div>
                 </div>
             </div>

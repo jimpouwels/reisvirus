@@ -694,6 +694,11 @@ h3 {
     font-synthesis: weight;
 }
 
+.content h3 {
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
 .content a.internal {
     background-color: #f3faf2;
     font-weight: 800;
@@ -909,6 +914,11 @@ h3 {
     color: var(--green) !important;
 }
 
+table, th, td {
+    border: 1px solid var(--green);
+    border-collapse: collapse;
+}
+
 #right-content-sticker {
     position: sticky;
     top: 40px;
@@ -923,6 +933,7 @@ h3 {
     color: white;
     font-weight: 900;
     text-align: center;
+    font-size: 1.2em;
     margin-top: 5px;
     margin-bottom: 15px;
 }
@@ -1434,7 +1445,7 @@ li span {
 }
 
 .country-tip-block {
-    height: 300px;
+    height: 320px;
     text-align: center;
     max-width: 250px;
     float: left;
@@ -1445,20 +1456,21 @@ li span {
 .country-tip-block .text a {
     color: white;
     font-weight: 800;
+    text-decoration: underline;
 }
 
 .country-tip-block .text {
-    padding: 15px;
-    padding-top: 0;
+    padding: 0 15px 15px;
     color: white;
     text-align: justify;
 }
 
 .country-tip-block h3 {
     margin-top: 0;
-    padding: 15px;
+    margin-bottom: 10px;
+    font-weight: 600;
     color: white;
-    padding-bottom: 0;
+    padding: 15px 15px 0;
     text-align: center;
 }
 

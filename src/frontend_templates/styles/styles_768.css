@@ -132,4 +132,9 @@
         width: 60%;
     }
 
+    .content h3 {
+        font-size: 1.2em;
+        font-weight: 800;
+    }
+
 }
