@@ -1412,7 +1412,8 @@ li span {
     clip-path: inset(0 -100vmax);
     background-color: var(--lightgreen);
     max-width: 80%;
-    margin: 30px auto auto;
+    margin: 40px auto auto;
+    margin-bottom: 30px;
 }
 
 #country-tips h2 {
