@@ -85,20 +85,7 @@
     }
 
     #country-tips {
-        float: none;
-        overflow: auto;
-        margin: unset;
         max-width: none;
-    }
-
-    #country-tips-wrapper {
-        flex-wrap: wrap;
-    }
-
-    .country-tip-block {
-        max-width: none;
-        width: 100%;
-        height: fit-content;
     }
 
     #country-info {

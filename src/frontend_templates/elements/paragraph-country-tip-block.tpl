@@ -1,5 +1,5 @@
 <div class="country-tip-block">
-    <h3>{$title}</h3>
+    <p class="country-tip-title">{$title}</p>
     <div class="text">
         {$text}
     </div>

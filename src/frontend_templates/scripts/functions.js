@@ -124,25 +124,6 @@ function showCategory(term) {
     });
 }
 
-let practicalButtonUp = true;
-$(document).ready(function () {
-    let practicalInfoContainer = $("#country-tips");
-    let button = $("#country-practical-button");
-    let buttonImg = $("#country-practical-button img");
-    let originalTransformValue = buttonImg.css('transform');
-    button.click(function() {
-        let nextTransformValue = "none";
-        if (!practicalButtonUp) {
-            nextTransformValue = originalTransformValue;
-        }
-        buttonImg.css('-webkit-transform', nextTransformValue);
-        buttonImg.css('transform', nextTransformValue);
-
-        practicalInfoContainer.slideToggle('fast');
-        practicalButtonUp = !practicalButtonUp;
-    });
-});
-
 function onScroll() {
     setCorrectTopHeight();
     handleHeaderMenuScroll();
