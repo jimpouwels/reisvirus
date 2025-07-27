@@ -429,6 +429,10 @@ h3 {
     display: block;
 }
 
+.fullscreen_page h2 {
+    font-size: 2em;
+}
+
 .fullscreen_page .blogposts h2 {
     margin-top: 35px;
     margin-bottom: 25px;
@@ -1203,6 +1207,10 @@ li span {
     line-height: 1.9em;
 }
 
+.fullscreen_page .paragraph {
+    line-height: 2.1em;
+}
+
 #banner-country-label {
     margin: 0 0 15px;
     background-color: var(--green);
@@ -1358,7 +1366,7 @@ li span {
 #country-info {
     display: flex;
     justify-content: center;
-    margin: 25px auto 30px;
+    margin: 35px auto 30px;
     gap: 45px;
     flex-wrap: wrap;
 }
@@ -1405,7 +1413,7 @@ li span {
 }
 
 #country-tips {
-    padding-top: 10px;
+    padding-top: 5px;
     padding-bottom: 20px;
     display: block;
     box-shadow: 0 0 0 100vmax var(--lightgreen);
@@ -1433,13 +1441,14 @@ li span {
 }
 
 .country-tip-block .text a {
-    font-weight: 800;
+    font-weight: 700;
     text-decoration: underline;
     background-color: transparent;
 }
 
 .country-tip-block .text {
     text-align: justify;
+    line-height: 1.8em;
 }
 
 .country-tip-block h3 {
