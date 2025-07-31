@@ -209,6 +209,7 @@ body {
 
 #header-wrapper-2 .logo img {
     filter: none;
+    margin-top: 15px;
 }
 
 #crumb_path {
