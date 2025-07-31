@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1180px) {
+@media only screen and (max-width: 1300px) {
 
     .page_with_right_block .blogposts-wrapper {
         display: block;
@@ -15,10 +15,6 @@
 
     #crumb_path {
         margin-top: 15px;
-    }
-
-    .blogpost-term {
-        font-size: 0.7em;
     }
 
     .blogpost-header h3 a

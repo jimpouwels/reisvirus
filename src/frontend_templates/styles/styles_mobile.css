@@ -3,12 +3,16 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .logo-txt {
-        font-size: 0.7em !important;
+    .logo img {
+        margin-top: 25px;
     }
 
-    .logo-img {
-        width: 30px !important;
+    .logo img {
+        width: 180px !important;
+    }
+
+    #mobile-navigation .logo img {
+        width: 200px;
     }
 
     #banner-country-label {

@@ -150,6 +150,10 @@
         margin-left: 15px;
     }
 
+    .logo img {
+        width: 200px;
+    }
+
     #quote {
         font-size: 4.3em;
     }

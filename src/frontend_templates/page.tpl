@@ -36,8 +36,7 @@
                     <div class="header-content">
                         <div class="header-title">
                             <a class="logo" href="{$root_page.url}">
-                                <img src="/static/img/logo-img.png?v=1" class="logo-img"/>
-                                <span class="logo-txt">Reisvirus</span>
+                                <img src="/static/img/logo-reisvirus.png?v=1" class="logo-img"/>
                             </a>
                         </div>
                         <nav class="header-menu">
