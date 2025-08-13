@@ -7,6 +7,10 @@
         font-size: 1.7em;
     }
 
+    .no_banner h1 {
+        font-size: 2.2em;
+    }
+
     h2 {
         font-size: 1.5em;
     }
@@ -16,6 +20,11 @@
 
     .paragraph-wrapper-fullscreen {
         width: 100% !important;
+    }
+
+    .paragraph-half-left {
+        float: initial;
+        text-align: center;
     }
 
     .blogposts-wrapper {

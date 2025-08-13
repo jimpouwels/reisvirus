@@ -424,10 +424,6 @@ h3 {
     display: block;
 }
 
-.fullscreen_page h2 {
-    font-size: 2em;
-}
-
 .fullscreen_page .blogposts h2 {
     margin-top: 35px;
     margin-bottom: 25px;
@@ -1145,6 +1141,11 @@ h1 {
     margin-top: 40px;
     font-weight: 800;
     line-height: 110%;
+}
+
+.no_banner h1 {
+    font-size: 2.8em;
+    font-weight: 900;
 }
 
 .page-content ul {
