@@ -203,8 +203,12 @@ body {
 
 .logo img {
     margin-top: 20px;
-    width: 225px;
+    width: 210px;
     filter: invert(1);
+}
+
+.no_banner .logo img {
+    filter: none;
 }
 
 #header-wrapper-2 .logo img {
