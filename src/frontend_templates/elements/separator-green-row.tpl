@@ -1,5 +1,5 @@
 {if !$is_closing}
-    <div id="country-tips">
+    <div id="separator-green-row">
         <h2>{$title}</h2>
 {else}
     </div>

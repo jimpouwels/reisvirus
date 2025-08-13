@@ -1413,7 +1413,7 @@ li span {
     margin: 0;
 }
 
-#country-tips {
+#separator-green-row {
     padding-top: 5px;
     padding-bottom: 20px;
     display: block;
@@ -1422,10 +1422,9 @@ li span {
     background-color: var(--lightgreen);
     max-width: 80%;
     margin: 40px auto auto;
-    margin-bottom: 30px;
 }
 
-#country-tips h2 {
+#separator-green-row h2 {
     margin-bottom: 30px;
 }
 
@@ -1443,7 +1442,6 @@ li span {
 
 .country-tip-block .text a {
     font-weight: 700;
-    text-decoration: underline;
     background-color: transparent;
 }
 
