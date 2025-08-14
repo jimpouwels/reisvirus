@@ -887,8 +887,8 @@ h3 {
 
 .separator-zelfregelen {
     width: fit-content;
-    margin: auto;
     overflow: auto;
+    margin: 40px auto auto;
 }
 
 .zelfregelen-container {
