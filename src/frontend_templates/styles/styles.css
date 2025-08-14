@@ -910,6 +910,16 @@ h3 {
     max-width: 400px;
 }
 
+.separator-zelfregelen .zelf-regelen-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.separator-zelfregelen .zelf-regelen-value {
+    height: fit-content;
+}
+
 .separator-zelfregelen .zelf-regelen-icon {
     background-color: var(--green);
     width: 25px;
@@ -933,7 +943,7 @@ h3 {
 }
 
 .zelf-regelen-list > .zelf-regelen-wrapper:not(:last-child) {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .fullscreen_page .zelf-regelen-wrapper p {
