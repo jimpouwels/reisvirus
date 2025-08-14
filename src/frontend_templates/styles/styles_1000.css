@@ -275,4 +275,8 @@
     #article-comments-alignment-wrapper {
         width: 100%;
     }
+
+    .zelfregelen-container {
+        gap: 20px;
+    }
 }

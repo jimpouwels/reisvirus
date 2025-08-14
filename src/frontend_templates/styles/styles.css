@@ -888,27 +888,51 @@ h3 {
 .separator-zelfregelen {
     width: fit-content;
     margin: auto;
-    max-width: 90%;
+    overflow: auto;
+}
+
+.zelfregelen-container {
+    overflow: auto;
+    margin: auto;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    gap: 40px;
+}
+
+.zelfregelen-container > .img-default-container > img {
+    width: 100%;
+    margin-top: 0;
+}
+
+.zelfregelen-container > div {
+    max-width: 400px;
 }
 
 .separator-zelfregelen .zelf-regelen-icon {
     background-color: var(--green);
+    width: 25px;
 }
 
 .separator-zelfregelen .zelf-regelen-icon img {
     filter: invert(1);
+    width: 25px;
+}
+
+.separator-zelfregelen .default-img-left {
+    margin-top: 0;
+}
+
+.right-block .zelf-regelen-wrapper:not(:last-child) {
+    margin-bottom: 15px;
 }
 
 .zelf-regelen-wrapper {
-    height: 40px;
+    height: fit-content;
 }
 
-.zelf-regelen-wrapper:not(.last) {
-    margin-bottom: 20px;
-}
-
-.fullscreen_page .zelf-regelen-wrapper {
-    width: fit-content;
+.zelf-regelen-list > .zelf-regelen-wrapper:not(:last-child) {
+    margin-bottom: 10px;
 }
 
 .fullscreen_page .zelf-regelen-wrapper p {
@@ -1438,6 +1462,7 @@ li span {
 .separator-green-row {
     padding-top: 5px;
     padding-bottom: 20px;
+    overflow-y: auto;
     display: block;
     box-shadow: 0 0 0 100vmax var(--lightgreen);
     clip-path: inset(0 -100vmax);

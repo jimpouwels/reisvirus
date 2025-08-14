@@ -150,4 +150,29 @@
         font-size: 1.5em;
     }
 
+    .separator-zelfregelen {
+        overflow-y: auto;
+        height: fit-content;
+    }
+
+    .zelfregelen-container {
+        display: block;
+        height: fit-content;
+    }
+
+    .zelfregelen-container > img {
+        float: initial !important;
+    }
+
+    .zelfregelen-container > div {
+        width: 100%;
+        max-width: none;
+        height: fit-content;
+    }
+
+    .zelfregelen-container .zelf-regelen-list {
+        margin: 25px auto auto;
+        width: 100%;
+        max-width: 500px;
+    }
 }
