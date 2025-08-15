@@ -1,4 +1,4 @@
-<div class="right-block-wrapper right-block-zelf-regelen" style="margin-top: 30px">
+<div class="right-block-wrapper right-block-zelf-regelen"">
     <div class="right-block">
         <h3>{$title} {$article.parent_article.description}</h3>
         {foreach from=$element_groups item=element_group}

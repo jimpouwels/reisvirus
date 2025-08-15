@@ -841,6 +841,10 @@ h3 {
     padding-left: 0;
 }
 
+#right-content .right-block-green {
+    margin-top: 30px;
+}
+
 .right-block-zelf-regelen h3, .right-block-zelf-regelen a {
     color: #000000 !important;
 }
@@ -978,6 +982,10 @@ table, th, td {
 #right-content-sticker {
     position: sticky;
     top: 40px;
+}
+
+#right-content .right-block-zelf-regelen {
+    margin-top: 30px;
 }
 
 #right-content a {
