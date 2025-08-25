@@ -1,8 +1,13 @@
 {assign var=classes value=$var.classes}
 {assign var=noBanner value=$var.no_banner}
+{assign var=hideTitle value=$var.hide_title}
 {assign var=noBannerPage value=false}
 {if $noBanner == 'yes'}
     {assign var=noBannerPage value=true}
+{/if}
+{assign var=hideTitlePage value=false}
+{if $hideTitle == 'yes'}
+    {assign var=hideTitlePage value=true}
 {/if}
 {assign var=fullScreen value=$var.full_screen_page}
 {assign var=fullScreenPage value=false}
@@ -66,7 +71,7 @@
                 <include template="partials/banner.tpl" />
             {/if}
         </div>
-        {if $noBannerPage}
+        {if $noBannerPage && !$hideTitlePage}
             <div id="title"><h1>{$page.title}</h1></div>
         {/if}
         {assign var="oddEven" value="odd"}

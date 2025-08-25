@@ -1,27 +1,26 @@
 {assign var=imageFilename value=$var.image_filename}
 {assign var=type value=$var.type}
 
+{assign var=val value=""}
+{if $type == "organisatie" && $article.parent_article.zelf_regelen_organisatie.value != ""}
+    {assign var=val value=$article.parent_article.zelf_regelen_organisatie.value}
+{elseif $type == "vlucht" && $article.parent_article.zelf_regelen_vliegticket.value != ""}
+    {assign var=val value=$article.parent_article.zelf_regelen_vliegticket.value}
+{elseif $type == "auto" && $article.parent_article.zelf_regelen_autohuur.dedicated_value != "no-render"}
+    {assign var=val value=$article.parent_article.zelf_regelen_autohuur.value}
+{elseif $type == "accommodatie"}
+    {assign var=val value="https://booking.tp.st/HyqfZGlb"}
+{/if}
+
+{if $val}
 <div class="zelf-regelen-wrapper">
     <div class="zelf-regelen-icon">
         <img src="/static/img/{$imageFilename}" />
     </div>
     <div class="zelf-regelen-value">
         <p>
-        {if $text|strstr:"<a"}
-            {$text}
-        {else}
-            {assign var=val value=""}
-            {if $type == "organisatie" && $article.parent_article.zelf_regelen_organisatie.value != ""}
-                {assign var=val value=$article.parent_article.zelf_regelen_organisatie.value}
-            {elseif $type == "vlucht" && $article.parent_article.zelf_regelen_vliegticket.value != ""}
-                {assign var=val value=$article.parent_article.zelf_regelen_vliegticket.value}
-            {elseif $type == "auto" && $article.parent_article.zelf_regelen_autohuur.dedicated_value != "no-render"}
-                {assign var=val value=$article.parent_article.zelf_regelen_autohuur.value}
-            {elseif $type == "accommodatie"}
-                {assign var=val value="https://booking.tp.st/HyqfZGlb"}
-            {/if}
             <a title="{$text}" target="_blank" href="{$val}" class="external">{$text}</a>
-        {/if}
         </p>
     </div>
 </div>
+{/if}
