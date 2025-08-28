@@ -4,11 +4,6 @@
 }
 
 @font-face {
-    font-family: Violante;
-    src: url(/static/fonts/Violante-eZoYg.ttf);
-}
-
-@font-face {
     font-family: AmericanCaptain;
     src: url(/static/fonts/AmericanCaptain-MdEY.otf);
 }
@@ -25,10 +20,6 @@ html {
     -webkit-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
-}
-
-body {
-    font-synthesis: style !important;
 }
 
 #mobile-navigation {
@@ -345,9 +336,10 @@ body {
 }
 
 html, body {
-    margin: 0px;
+    margin: 0;
     width: 100%;
     font-family: 'Raleway', sans-serif;
+    font-weight: 500;
     -webkit-font-smoothing: antialiased;
 }
 
