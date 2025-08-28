@@ -127,7 +127,11 @@
         margin-left: 15px;
     }
 
-    .no_banner .paragraph-home {
+    .no_banner .paragraph-fullscreen-wide {
+        text-align: left !important;
+    }
+
+    .no_banner .paragraph-fullscreen-wide-title {
         text-align: left !important;
     }
 

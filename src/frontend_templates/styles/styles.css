@@ -1162,7 +1162,7 @@ table, th, td {
     max-width: 1200px;
     width: 100%;
     top: initial;
-    margin-bottom: 9%;
+    margin-bottom: 7%;
 }
 
 #quote {
@@ -1285,7 +1285,7 @@ li span {
     font-size: 0.9em;
 }
 
-.paragraph-home {
+.paragraph-fullscreen-wide {
     text-align: center;
     margin-top: 0px;
     clear: both;
