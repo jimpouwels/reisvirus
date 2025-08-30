@@ -55,7 +55,7 @@
         width: calc(50vw - 7px) !important;
     }
 
-    .paragraph {
+    .paragraph, .country-tip-block {
         font-size: 0.9em !important;
     }
 

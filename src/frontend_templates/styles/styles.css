@@ -1221,10 +1221,6 @@ li span {
     color: black;
 }
 
-.paragraph-justified {
-    text-align: justify;
-}
-
 .paragraph-half {
     width: 48%;
 }
