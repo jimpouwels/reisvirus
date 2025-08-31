@@ -127,6 +127,10 @@
         margin-left: 15px;
     }
 
+    .no_banner #title h1 {
+        margin-top: 5px;
+    }
+
     .no_banner .paragraph-fullscreen-wide {
         text-align: left !important;
     }
