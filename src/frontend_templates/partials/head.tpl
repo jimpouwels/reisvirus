@@ -13,7 +13,12 @@
 <meta property="og:image" content="{$base_url}{if $article}{$article.wallpaper.url}{else}{$blocks.wallpaper[0].element_groups[0][0].image_url}{/if}" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <meta name="tradetracker-site-verification" content="012df7a375cb835c935ba183196c09bcc5e6cbdf" />
-<link rel="icon" type="image/x-icon" href="/static/img/favicon.ico">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/static/img/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/static/img/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/static/img/favicon/favicon-16x16.png">
+<link rel="manifest" href="/static/img/favicon/site.webmanifest">
+
 <link rel="canonical" href="{$canonical_url}"/>
 <style>
     <include template="styles/styles.css" />
