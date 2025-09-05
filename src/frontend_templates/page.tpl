@@ -179,8 +179,8 @@
         {if $article && $article.comment_webform}
             <div id="article-comments-wrapper">
                 <div id="article-comments-alignment-wrapper">
-                    <h3>Laat een reactie achter</h3>
                     <div id="article-comment-form">
+                        <h3>Laat een reactie achter</h3>
                         <div id="respond-to-container" style="display: none;">
                             <span id="respond-to-name"></span>
                             <a href="#" onclick="stopResponding(); return false;" id="stop-respond">Niet meer reageren</a>

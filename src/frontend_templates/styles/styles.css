@@ -184,10 +184,6 @@ html {
     color: #000000;
 }
 
-.mandatory-star {
-    color: red;
-}
-
 .logo {
     margin-left: 25px;
 }
@@ -231,18 +227,19 @@ html {
     margin-bottom: 15px;
 }
 
-.contact-form-field label {
-    float: left;
-    min-width: 200px;
-}
-
 .contact-form-field input {
     min-width: 260px;
+    height: 20px;
+    font-size: 1.1em;
+    padding: 5px;
 }
 
 .contact-form-field textarea {
-    width: 60%;
+    width: 500px;
+    max-width: 90%;
     height: 250px;
+    padding: 5px;
+    font-size: 1.1em;
 }
 
 #cookie-consent-banner-content {
@@ -1718,11 +1715,17 @@ li span {
 #article-comments-wrapper {
     width: 90%;
     max-width: 1200px;
-    margin: 30px auto auto;
+    margin: 0 auto auto;
+}
+
+#article-comments-wrapper h3 {
+    margin-bottom: 15px;
 }
 
 #article-comment-form {
     padding-top: 15px;
+    margin: auto;
+    width: fit-content;
 }
 
 #article-comments-alignment-wrapper {
