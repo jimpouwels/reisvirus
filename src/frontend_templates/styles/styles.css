@@ -374,7 +374,7 @@ h2 {
     color: #000000;
     margin-top: 25px;
     margin-bottom: 10px;
-    font-size: 2.3em;
+    font-size: 2.1em;
     font-weight: 900;
     line-height: 1.3em;
     clear: both;
@@ -755,7 +755,7 @@ h3 {
 }
 
 .bottom-blocks-related-articles .blogposts-wrapper {
-    gap: 10px;
+    gap: 25px;
 }
 
 .bottom-blocks-related-articles .blogpost {
@@ -1186,6 +1186,10 @@ table, th, td {
     font-size: 3.5em;
 }
 
+.homepage h2 {
+    text-align: center;
+}
+
 h1 {
     text-align: center;
     font-size: 2em;
@@ -1228,6 +1232,7 @@ li span {
 
 .paragraph-half-right {
     float: right;
+    text-align: left;
 }
 
 .paragraph-tip {
@@ -1258,6 +1263,10 @@ li span {
 
 .fullscreen_page .paragraph {
     line-height: 2.1em;
+}
+
+.paragraph-half-left {
+    text-align: left;
 }
 
 #banner-country-label {
