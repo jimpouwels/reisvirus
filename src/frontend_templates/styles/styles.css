@@ -679,7 +679,6 @@ h3 {
     color: var(--green);
     font-weight: 700;
     text-decoration: none;
-    font-synthesis: weight;
 }
 
 .content h3 {
@@ -1243,7 +1242,6 @@ li span {
 
 .paragraph-tip a {
     font-style: italic;
-    font-synthesis: unset;
 }
 
 .paragraph-wrapper-fullscreen {
@@ -1693,6 +1691,13 @@ li span {
 
 .page-content .table-of-contents a {
     font-weight: 600;
+}
+
+.page-content .external {
+    background-color: var(--lightgreen);
+    background-origin: padding-box;
+    padding: 2px 3px;
+    font-weight: 800 !important;
 }
 
 #respond-to-container {
