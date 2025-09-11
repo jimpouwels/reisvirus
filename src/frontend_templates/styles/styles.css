@@ -1697,6 +1697,7 @@ li span {
     background-color: var(--lightgreen);
     background-origin: padding-box;
     padding: 2px 3px;
+    border-radius: 5px;
 }
 
 #respond-to-container {

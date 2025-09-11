@@ -10,6 +10,8 @@
     {assign var=val value=$article.parent_article.zelf_regelen_autohuur.value}
 {elseif $type == "accommodatie"}
     {assign var=val value="https://booking.tp.st/HyqfZGlb"}
+{elseif $type == "ferry" && $article.parent_article.zelf_regelen_ferry.value != ""}
+    {assign var=val value=$article.parent_article.zelf_regelen_ferry.value}
 {/if}
 
 {if $val}
