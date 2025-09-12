@@ -698,7 +698,6 @@ h3 {
 
 .right-block {
     max-height: 500px;
-    overflow-y: auto;
     padding-right: 10px;
     padding-left: 10px;
 }
@@ -1499,6 +1498,7 @@ li span {
 .country-tip-block .text a {
     font-weight: 700;
     background-color: transparent;
+    padding: 0;
 }
 
 .country-tip-block .text {
