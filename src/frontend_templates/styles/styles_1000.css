@@ -40,6 +40,10 @@
         width: 80%;
     }
 
+    .right-block {
+        overflow: auto;
+    }
+
     #right-content .table-of-contents {
         display: none;
     }
