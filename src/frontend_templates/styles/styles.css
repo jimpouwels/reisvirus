@@ -810,6 +810,10 @@ h3 {
     margin-top: 30 !important;
 }
 
+.bottom-blocks .right-block {
+    overflow: auto;
+}
+
 .right-block-wrapper {
     padding: 10px 10px 20px;
     color: white;
