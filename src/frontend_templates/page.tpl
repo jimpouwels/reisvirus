@@ -129,7 +129,7 @@
                                 {if $tocElement}
                                     <div class="right-block-wrapper" id="toc-block-wrapper">
                                         <h3>{$tocElement.title}</h3>
-                                        <div class="right-block">
+                                        <div class="right-block toc-block">
                                             {$tocElement.to_string}
                                         </div>
                                     </div>

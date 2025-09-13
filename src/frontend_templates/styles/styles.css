@@ -845,6 +845,10 @@ h3 {
     font-size: 1.4em;
 }
 
+.toc-block {
+    overflow: auto;
+}
+
 .zelf-regelen-value {
     height: 50px;
     display : flex;
