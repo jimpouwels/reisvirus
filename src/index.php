@@ -3,4 +3,4 @@
 namespace reisvirus\reisvirus;
 require_once "bootstrap.php";
 
-\Obcato\renderFrontend();
+\Obcato\render();
