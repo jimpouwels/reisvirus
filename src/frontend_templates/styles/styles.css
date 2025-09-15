@@ -1767,6 +1767,10 @@ li span {
     margin-bottom: 15px;
 }
 
+#article-comments-wrapper {
+    margin-top: 30px;
+}
+
 #article-comment-form h3 {
     border-bottom: 2px solid var(--green);
     padding-bottom: 15px;
