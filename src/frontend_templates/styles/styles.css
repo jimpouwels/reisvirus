@@ -1242,7 +1242,7 @@ h1 {
 }
 
 .page_with_right_block .page-content .zelf-regelen-wrapper {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .page_with_right_block .page-content .zelf-regelen-list {
@@ -1788,6 +1788,7 @@ li span {
 
 .affeliate-notice {
     margin-top: 30px;
+    line-height: 1.8em;
     font-style: italic;
     font-size: 0.9em;
     color: var(--green);
