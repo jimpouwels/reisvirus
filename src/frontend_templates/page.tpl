@@ -111,6 +111,40 @@
                                 {$element.to_string}
                             {/foreach}
                         {/if}
+                        <p class="affeliate-notice">Het kan zijn dat dit artikel affiliate links bevat. Wanneer je via deze links iets boekt zorgt dat ervoor dat wij een kleine commissie ontvangen. Jij maakt hiervoor natuurlijk geen extra kosten! Door op deze manier te boeken help je ons om deze website mogelijk te maken en kunnen we je blijven voorzien van de nieuwste reisinspiratie! Groetjes, Jim en Quirine.</p>
+                        {if $article && $article.comment_webform}
+                            <div id="article-comments-wrapper">
+                                <div id="article-comments-alignment-wrapper">
+                                    <div id="article-comment-form">
+                                        <h3>Laat een reactie achter</h3>
+                                        <div id="respond-to-container" style="display: none;">
+                                            <span id="respond-to-name"></span>
+                                            <a href="#" onclick="stopResponding(); return false;" id="stop-respond">Niet meer reageren</a>
+                                        </div>
+                                        {$article.comment_webform}
+                                    </div>
+                                    {if count($article.comments) > 0}
+                                        <div id="article-comments">
+                                            {foreach from=$article.comments item=comment}
+                                                <div class="blog-item-comment">
+                                                    <span class="name">{$comment.name}</span>
+                                                    <span class="timestamp">{$comment.created_at}</span>
+                                                    <p>{$comment.message}</p>
+                                                    <a href="#" onclick="respondToComment({$comment.id}, '{$comment.name}'); return false;">Reageer</a>
+                                                </div>
+                                                {foreach from=$comment.children item=child}
+                                                    <div class="blog-item-comment blog-item-comment-child">
+                                                        <span class="name">{$child.name}</span>
+                                                        <span class="timestamp">{$child.created_at}</span>
+                                                        <p>{$child.message}</p>
+                                                    </div>
+                                                {/foreach}
+                                            {/foreach}
+                                        </div>
+                                    {/if}
+                                </div>
+                            </div>
+                        {/if}
                     </div>
                     {if !$fullScreenPage}
                         <div id="right-content" class="content right-content-size">
@@ -172,41 +206,6 @@
                             {assign var=allDescription value="Alle reistips"}
                         {/if}
                         <a class="green-button" href="{$allUrl}" title="{$allDescription}">{$allDescription} &rarr;</a>
-                    </div>
-                </div>
-            </div>
-        {/if}
-        {if $article && $article.comment_webform}
-            <div id="article-comments-wrapper">
-                <div id="article-comments-alignment-wrapper">
-                    <div id="article-comment-form">
-                        <h3>Laat een reactie achter</h3>
-                        <div id="respond-to-container" style="display: none;">
-                            <span id="respond-to-name"></span>
-                            <a href="#" onclick="stopResponding(); return false;" id="stop-respond">Niet meer reageren</a>
-                        </div>
-                        {$article.comment_webform}
-                    </div>
-
-                    {if count($article.comments) > 0}
-                        <h2>Reacties</h2>
-                    {/if}
-                    <div id="article-comments">
-                        {foreach from=$article.comments item=comment}
-                            <div class="blog-item-comment">
-                                <span class="name">{$comment.name}</span>
-                                <span class="timestamp">{$comment.created_at}</span>
-                                <p>{$comment.message}</p>
-                                <a href="#" onclick="respondToComment({$comment.id}, '{$comment.name}'); return false;">Reageer</a>
-                            </div>
-                            {foreach from=$comment.children item=child}
-                                <div class="blog-item-comment blog-item-comment-child">
-                                    <span class="name">{$child.name}</span>
-                                    <span class="timestamp">{$child.created_at}</span>
-                                    <p>{$child.message}</p>
-                                </div>
-                            {/foreach}
-                        {/foreach}
                     </div>
                 </div>
             </div>

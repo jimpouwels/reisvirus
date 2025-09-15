@@ -32,6 +32,10 @@
         width: 100%;
     }
 
+    #article-comment-form form {
+        width: 100%;
+    }
+
     .blogposts-wrapper {
         width: auto;
         display: block;
