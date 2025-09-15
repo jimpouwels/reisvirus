@@ -739,6 +739,10 @@ h3 {
     margin-top: 30px;
 }
 
+#right-content .zelf-regelen-value {
+    font-size: 0.95em;
+}
+
 .bottom-blocks-related-articles {
     width: 90%;
     max-width: 1250px;
