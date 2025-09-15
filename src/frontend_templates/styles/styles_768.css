@@ -180,4 +180,9 @@
         width: 100%;
         max-width: 500px;
     }
+
+    .page_with_right_block .page-content .zelf-regelen-value a {
+        font-weight: 600;
+    }
+
 }

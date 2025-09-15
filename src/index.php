@@ -2,9 +2,8 @@
 
 namespace reisvirus\reisvirus;
 
-define("PRIVATE_DIR", __DIR__ . "/../httpd.private");
-define("OBCATO_ROOT", PRIVATE_DIR . "/vendor/obcato/obcato/src");
+define("PUBLIC_ROOT", __DIR__);
+define("PRIVATE_ROOT", PUBLIC_ROOT . "/../httpd.private");
+define("OBCATO_ROOT", PRIVATE_ROOT . "/vendor/obcato/obcato/src");
 
 require_once OBCATO_ROOT . "/bootstrap.php";
-
-\Obcato\render();

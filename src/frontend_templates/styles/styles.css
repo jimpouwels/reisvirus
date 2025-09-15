@@ -1219,6 +1219,35 @@ h1 {
     text-align: left !important;
 }
 
+.page_with_right_block .page-content .zelf-regelen-value a {
+    background-color: initial;
+    text-decoration: none;
+}
+
+.page_with_right_block .page-content .zelf-regelen-value a:hover {
+    text-decoration: underline;
+}
+
+.page_with_right_block .page-content .zelf-regelen-icon {
+    margin-right: 5px;
+}
+
+.page_with_right_block .page-content .zelf-regelen-icon, .page_with_right_block .page-content .zelf-regelen-icon img {
+    width: 25px;
+}
+
+.page_with_right_block .page-content .zelf-regelen-value {
+    height: 38px;
+}
+
+.page_with_right_block .page-content .zelf-regelen-wrapper {
+    margin-bottom: 10px;
+}
+
+.page_with_right_block .page-content .zelf-regelen-list {
+     margin-bottom: 25px;
+ }
+
 li::marker {
     color: var(--green);
 }
