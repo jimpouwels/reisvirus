@@ -670,6 +670,10 @@ h3 {
     line-height: 1.3em;
 }
 
+.page-content h3 {
+    margin-top: 15px;
+}
+
 .fullscreen_page {
     max-width: 1250px;
     text-align: center;
@@ -1250,7 +1254,8 @@ h1 {
 }
 
 .page_with_right_block .page-content .zelf-regelen-list {
-     margin-bottom: 25px;
+    margin-bottom: 25px;
+    overflow:auto;
  }
 
 li::marker {
