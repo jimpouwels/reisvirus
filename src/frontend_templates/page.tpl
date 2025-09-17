@@ -106,7 +106,7 @@
                                 {$element.to_string}
                             {/foreach}
                         {/if}
-                        {if $article}
+                        {if $article && !$fullScreenPage}
                             <p class="affeliate-notice">Het kan zijn dat dit artikel affiliate links bevat. Wanneer je via deze links iets boekt zorgt dat ervoor dat wij een kleine commissie ontvangen. Jij maakt hiervoor natuurlijk geen extra kosten! Door op deze manier te boeken help je ons om deze website mogelijk te maken en kunnen we je blijven voorzien van de nieuwste reisinspiratie! Groetjes, Jim en Quirine.</p>
                         {/if}
                         {if $article && $article.comment_webform}
