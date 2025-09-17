@@ -95,12 +95,21 @@
         margin-left: 29px;
     }
 
-    #quote {
-        font-size: 3em;
+    .blog #quote h1 {
+        font-size: 2.3em;
     }
 
-    .blog #quote {
-        font-size: 2.3em;
+    .page #quote h1 {
+        font-size: 2.2em;
+    }
+
+    .homepage #quote h1 {
+        font-size: 1.1em;
+    }
+
+    #title h1 {
+        font-size: 2em;
+        margin-left: 15px;
     }
 
     .blog #quote-wrapper {

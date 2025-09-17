@@ -413,6 +413,14 @@ h3 {
     display: block;
 }
 
+#title h1 {
+    color: #000000;
+    text-align: center;
+    font-weight: 900;
+    font-size: 2.5em;
+    margin-top: 25px;
+}
+
 .fullscreen_page .blogposts h2 {
     margin-top: 35px;
     margin-bottom: 25px;
@@ -1167,17 +1175,8 @@ table, th, td {
     margin-bottom: 7%;
 }
 
-#quote {
-    font-size: 4.5em;
-    text-align: center;
-    margin: auto;
-    font-weight: 800;
-    color: #ffffff;
-}
-
 .blog #quote {
     width: 80%;
-    font-size: 4em;
     text-align: left;
     margin: initial;
 }
@@ -1196,26 +1195,33 @@ table, th, td {
     margin-left: 3px;
 }
 
-.homepage #quote {
+h1 {
+    color: #ffffff;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+}
+
+.blog #quote h1 {
+    font-size: 4.2em;
+}
+
+.page #quote {
+    text-align: center;
+    margin: auto;
+}
+
+.page #quote h1 {
+    font-size: 4em;
+    color: #ffffff;
+}
+
+.homepage #quote h1 {
     font-size: 3.5em;
 }
 
 .homepage h2 {
     text-align: center;
-}
-
-h1 {
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 20px;
-    margin-top: 40px;
-    font-weight: 800;
-    line-height: 110%;
-}
-
-.no_banner h1 {
-    font-size: 2.8em;
-    font-weight: 900;
 }
 
 .page-content ul {
@@ -1804,7 +1810,8 @@ li span {
     line-height: 1.8em;
     font-style: italic;
     font-size: 0.9em;
-    color: var(--green);
+    background-color: var(--lightgreen);
+    padding: 15px;
 }
 
 .grecaptcha-badge {

@@ -67,12 +67,12 @@
         font-size: 0.9em !important;
     }
 
-    #quote {
+    #quote h1 {
         font-size: 2em;
     }
 
     .blog #quote {
-        font-size: 1.7em;
+        font-size: 0.8em;
     }
 
     .homepage #quote {

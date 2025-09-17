@@ -21,14 +21,14 @@
                         {/if}
                     {/foreach}
                     <div id="quote">
-                        {$article.title}
+                        <h1>{$article.title}</h1>
                     </div>
                 {else}
                     {if $page.is_homepage}
                         {$blocks.wallpapertitle[0].to_string}
                     {else}
                         <div id="quote">
-                            {$page.title}
+                            <h1>{$page.title}</h1>
                         </div>
                     {/if}
                 {/if}

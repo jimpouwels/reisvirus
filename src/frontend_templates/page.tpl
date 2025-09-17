@@ -71,7 +71,7 @@
                 <include template="partials/banner.tpl" />
             {/if}
         </div>
-        {if $noBannerPage && !$hideTitlePage}
+        {if ($page.is_homepage || $noBannerPage) && !$hideTitlePage}
             <div id="title"><h1>{$page.title}</h1></div>
         {/if}
         {assign var="oddEven" value="odd"}
@@ -99,11 +99,6 @@
                                 </div>
                             {/if}
                         {/if}
-                        {if $page.is_homepage && $element_group@iteration == 1}
-                            <div id="title-container">
-                                <h1>{$page.title}</h1>
-                            </div>
-                        {/if}
                         {if $article}
                             {$article.to_string}
                         {else}
@@ -111,7 +106,9 @@
                                 {$element.to_string}
                             {/foreach}
                         {/if}
-                        <p class="affeliate-notice">Het kan zijn dat dit artikel affiliate links bevat. Wanneer je via deze links iets boekt zorgt dat ervoor dat wij een kleine commissie ontvangen. Jij maakt hiervoor natuurlijk geen extra kosten! Door op deze manier te boeken help je ons om deze website mogelijk te maken en kunnen we je blijven voorzien van de nieuwste reisinspiratie! Groetjes, Jim en Quirine.</p>
+                        {if $article}
+                            <p class="affeliate-notice">Het kan zijn dat dit artikel affiliate links bevat. Wanneer je via deze links iets boekt zorgt dat ervoor dat wij een kleine commissie ontvangen. Jij maakt hiervoor natuurlijk geen extra kosten! Door op deze manier te boeken help je ons om deze website mogelijk te maken en kunnen we je blijven voorzien van de nieuwste reisinspiratie! Groetjes, Jim en Quirine.</p>
+                        {/if}
                         {if $article && $article.comment_webform}
                             <div id="article-comments-wrapper">
                                 <div id="article-comments-alignment-wrapper">
