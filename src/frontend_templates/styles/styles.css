@@ -1229,33 +1229,39 @@ h1 {
     text-align: left !important;
 }
 
-.page_with_right_block .page-content .zelf-regelen-value a {
+.blog .page-content .zelf-regelen-value a {
     background-color: initial;
     text-decoration: none;
     padding: 0;
 }
 
-.page_with_right_block .page-content .zelf-regelen-value a:hover {
+.blog .page-content .zelf-regelen-value a:hover {
     text-decoration: underline;
 }
 
-.page_with_right_block .page-content .zelf-regelen-icon {
-    margin-right: 10px;
+.blog .page-content .zelf-regelen-icon {
+    margin-right: 0;
 }
 
-.page_with_right_block .page-content .zelf-regelen-icon, .page_with_right_block .page-content .zelf-regelen-icon img {
+.blog .page-content .zelf-regelen-icon, .page_with_right_block .page-content .zelf-regelen-icon img {
     width: 25px;
 }
 
-.page_with_right_block .page-content .zelf-regelen-value {
+.blog .page-content .zelf-regelen-value {
     height: 38px;
 }
 
-.page_with_right_block .page-content .zelf-regelen-wrapper {
+.blog .page-content .zelf-regelen-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.blog .page-content .zelf-regelen-wrapper:not(:last-child) {
     margin-bottom: 15px;
 }
 
-.page_with_right_block .page-content .zelf-regelen-list {
+.blog .page-content .zelf-regelen-list {
     margin-bottom: 25px;
     overflow:auto;
  }
@@ -1743,7 +1749,6 @@ li span {
 }
 
 .page-content .external {
-    background-color: var(--lightgreen);
     background-origin: padding-box;
     padding: 2px 3px;
     border-radius: 5px;
