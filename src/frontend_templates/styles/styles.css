@@ -1586,7 +1586,7 @@ li span {
     margin-left: 20px;
 }
 
-.jarallax {
+.wallpaper {
     display: flex;
     min-height: 600px;
     flex-direction: column;
@@ -1595,14 +1595,14 @@ li span {
     z-index: -1;
 }
 
-.blog .jarallax {
+.blog .wallpaper {
     max-width: 1250px;
     width: 90%;
     justify-content: end;
     margin: auto;
 }
 
-.jarallax > .jarallax-img {
+.wallpaper > .jarallax-img {
     position: absolute;
     object-fit: cover;
     min-height: 600px;

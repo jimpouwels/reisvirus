@@ -1,6 +1,6 @@
 <div id="banner-wrapper">
     <div id="banner">
-        <div class="jarallax">
+        <div class="wallpaper">
             {if $article && $article.wallpaper}
                 <img class="jarallax-img" src="{$article.wallpaper.url}" alt="{$article.wallpaper.alt_text}" />
             {else}

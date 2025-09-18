@@ -69,7 +69,7 @@ function setCorrectTopHeight() {
     $('.jarallax-img').css('height', $(window).height());
     $('#banner').css('height', $(window).height());
     $('#banner-wrapper').css('height', $(window).height());
-    $('.jarallax').css('height', $(window).height());
+    $('.wallpaper').css('height', $(window).height());
 }
 
 $(document).ready(function() {
