@@ -4,7 +4,7 @@
     </div>
     <div id="mobile-navigation-logo">
         <a class="logo" href="{$root_page.url}">
-            <img src="/static/img/logo-reisvirus.png" class="logo-img"/>
+            <img src="/static/img/logo-reisvirus.png" class="logo-img" alt="Reisvirus" />
         </a>
     </div>
     <ul id="mobile-nav">

@@ -4,14 +4,14 @@
             <p>Reisvirus</p>
             <div class="social-media">
                 <a title="Instagram - reis_virus" target="_blank"
-                   href="https://www.instagram.com/reis_virus"><img src="/static/img/instagram.png"/></a>
+                   href="https://www.instagram.com/reis_virus"><img src="/static/img/instagram.png" alt="Volg ons op Instagram" /></a>
                 <a title="Facebook - Reisvirus" target="_blank"
-                   href="https://www.facebook.com/profile.php?id=61565760935259"><img src="/static/img/facebook.png"/></a>
+                   href="https://www.facebook.com/profile.php?id=61565760935259"><img src="/static/img/facebook.png" alt="Volg ons op Facebook" /></a>
                 <a href="https://landenverzamelaars.nl/reiziger/18710/reis-virus"
                    title="LandenVerzamelaars - Reisvirus" target="_blank"><img class=""
-                                                                               src="/static/img/landenverzamelaars.png"/></a>
+                                                                               src="/static/img/landenverzamelaars.png" alt="Volg ons op LandenVerzamelaars" /></a>
                 <a href="https://nl.pinterest.com/Reisvirus" title="Pinterest - Reisvirus" target="_blank"><img
-                            class="last" src="/static/img/pinterest.png"/></a>
+                            class="last" src="/static/img/pinterest.png" alt="Volg ons op Pinstagram" /></a>
             </div>
         </div>
         <div id="sitewide-pages">

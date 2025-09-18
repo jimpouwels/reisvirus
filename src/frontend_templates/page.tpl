@@ -41,7 +41,7 @@
                     <div class="header-content">
                         <div class="header-title">
                             <a class="logo" href="{$root_page.url}">
-                                <img src="/static/img/logo-reisvirus.png?v=1" class="logo-img"/>
+                                <img src="/static/img/logo-reisvirus.png?v=1" class="logo-img" alt="Reisvirus" />
                             </a>
                         </div>
                         <nav class="header-menu">
