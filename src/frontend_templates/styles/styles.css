@@ -1,11 +1,7 @@
 @font-face {
     font-family: Raleway;
+    font-display: swap;
     src: url(/static/fonts/Raleway-VariableFont_wght.ttf);
-}
-
-@font-face {
-    font-family: AmericanCaptain;
-    src: url(/static/fonts/AmericanCaptain-MdEY.otf);
 }
 
 :root {
