@@ -1602,7 +1602,7 @@ li span {
     margin: auto;
 }
 
-.wallpaper > .jarallax-img {
+.wallpaper > .wallpaper-img {
     position: absolute;
     object-fit: cover;
     min-height: 600px;

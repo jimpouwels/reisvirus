@@ -2,7 +2,7 @@
     <div id="banner">
         <div class="wallpaper">
             {if $article && $article.wallpaper}
-                <img class="jarallax-img" src="{$article.wallpaper.url}" alt="{$article.wallpaper.alt_text}" />
+                <img class="wallpaper-img" src="{$article.wallpaper.url}" alt="{$article.wallpaper.alt_text}" />
             {else}
                 {$blocks.wallpaper[0].to_string}
             {/if}
