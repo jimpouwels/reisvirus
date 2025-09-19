@@ -116,6 +116,10 @@
         margin-bottom: 10% !important;
     }
 
+    .blog #quote {
+        width: 100% !important;
+    }
+
     .highlight-quote {
         font-size: 1.8em;
     }

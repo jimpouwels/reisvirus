@@ -107,7 +107,6 @@ function showCategory(term) {
 }
 
 function onScroll() {
-    setCorrectTopHeight();
     handleHeaderMenuScroll();
     handleNavTop();
     correctRightContentPosition();
