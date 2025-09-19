@@ -650,7 +650,7 @@ h3 {
     display: flex;
     justify-content: space-around;
     max-width: 1250px;
-    gap: 80px;
+    gap: 5%;
     margin: auto;
 }
 
