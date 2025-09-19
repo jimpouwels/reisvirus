@@ -55,24 +55,6 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-    if (!$('#banner-wrapper').is(':visible')) {
-        return;
-    }
-    setCorrectTopHeight();
-    $(window).resize(function (event) {
-        setCorrectTopHeight();
-    });
-});
-
-function setCorrectTopHeight() {
-    $('#top-wrapper').css('height', $(window).height());
-    $('.wallpaper-img img').css('height', $(window).height());
-    $('#banner').css('height', $(window).height());
-    $('#banner-wrapper').css('height', $(window).height());
-    $('.wallpaper').css('height', $(window).height());
-}
-
-$(document).ready(function() {
     $("#nav-top").mouseup(function() {
         window.scrollTo({ top: 0, behavior: 'smooth' } );
     });
