@@ -417,6 +417,10 @@ h3 {
     margin-top: 25px;
 }
 
+.page #title h1 {
+    margin-bottom: 20px;
+}
+
 .fullscreen_page .blogposts h2 {
     margin-top: 35px;
     margin-bottom: 25px;
@@ -1208,7 +1212,8 @@ h1 {
 }
 
 .blog #quote h1 {
-    font-size: 4.2em;
+    font-size: 3.8em;
+    font-weight: 800;
 }
 
 .page #quote {
