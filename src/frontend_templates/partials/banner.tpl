@@ -3,7 +3,7 @@
         <div class="wallpaper">
             {if $article && $article.wallpaper}
                 <picture class="wallpaper-img">
-                    <source media="(max-width: 768px)" srcset="{$article.wallpaper.url}&mobile=true">
+                    <source media="(max-width: 768px)" srcset="{$article.wallpaper.url_mobile}">
                     <img src="{$article.wallpaper.url}" alt="{$article.wallpaper.alt_text}" fetchpriority=high />
                 </picture>
             {else}

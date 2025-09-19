@@ -5,7 +5,7 @@
     <div class="photo-album-img {$imgWrapperClass}" style="width: 100%;">
         {$link.open_tag}
         <picture class="{$imgClass}">
-            <source media="(max-width: 768px)" srcset="{$image_url}&mobile=true">
+            <source media="(max-width: 768px)" srcset="{$image_url_mobile}">
             <img width="100%" src="{$image_url}" title="{$img_title}" alt="{$img_alt_text}" />
         </picture>
         {$link.close_tag}

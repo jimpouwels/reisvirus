@@ -10,7 +10,7 @@
                 <div class="blogpost">
                     <a href="{$article.url}">
                         <picture>
-                            <source media="(max-width: 768px)" srcset="{$article.image.url}&mobile=true">
+                            <source media="(max-width: 768px)" srcset="{$article.image.url_mobile}">
                             <img src="{$article.image.url}" alt="{$article.image.alt_text}" title="{$article.image.title}" width="100%" />
                         </picture>
                     </a>

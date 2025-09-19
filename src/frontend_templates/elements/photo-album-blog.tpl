@@ -19,7 +19,7 @@
         {/if}
         <div class="photo-album-img photo-album-img-wrapper-full{if $image.height > $image.width} photo-album-img-wrapper-full-portrait{/if}">
             <picture class="photo-album-img-full{if $nrPortrait == 2} photo-album-img-full-portrait-margin{/if}">
-                <source media="(max-width: 768px)" srcset="{$image.url}&mobile=true">
+                <source media="(max-width: 768px)" srcset="{$image.url_mobile}">
                 <img src="{$image.url}" title="{$image.title}" alt="{$image.alt_text}"/>
             </picture>
         </div>
