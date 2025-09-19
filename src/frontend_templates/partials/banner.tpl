@@ -2,7 +2,10 @@
     <div id="banner">
         <div class="wallpaper">
             {if $article && $article.wallpaper}
-                <img class="wallpaper-img" src="{$article.wallpaper.url}" alt="{$article.wallpaper.alt_text}" />
+                <picture class="wallpaper-img">
+                    <source media="(max-width: 768px)" srcset="{$article.wallpaper.url}&mobile=true">
+                    <img src="{$article.wallpaper.url}" alt="{$article.wallpaper.alt_text}" fetchpriority=high />
+                </picture>
             {else}
                 {$blocks.wallpaper[0].to_string}
             {/if}

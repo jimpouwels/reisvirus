@@ -9,7 +9,10 @@
             {foreach from=$articles item=article name=article}
                 <div class="blogpost">
                     <a href="{$article.url}">
-                        <img src="{$article.image.url}" alt="{$article.image.alt_text}" title="{$article.image.title}" width="100%" />
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="{$article.image.url}&mobile=true">
+                            <img src="{$article.image.url}" alt="{$article.image.alt_text}" title="{$article.image.title}" width="100%" />
+                        </picture>
                     </a>
                     <header class="blogpost-header">
                         {if !empty($article.terms)}

@@ -66,7 +66,7 @@ $(document).ready(function() {
 
 function setCorrectTopHeight() {
     $('#top-wrapper').css('height', $(window).height());
-    $('.wallpaper-img').css('height', $(window).height());
+    $('.wallpaper-img img').css('height', $(window).height());
     $('#banner').css('height', $(window).height());
     $('#banner-wrapper').css('height', $(window).height());
     $('.wallpaper').css('height', $(window).height());

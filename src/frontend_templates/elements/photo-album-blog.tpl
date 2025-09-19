@@ -18,7 +18,10 @@
             {assign var=nrPortrait value=$nrPortrait + 1}
         {/if}
         <div class="photo-album-img photo-album-img-wrapper-full{if $image.height > $image.width} photo-album-img-wrapper-full-portrait{/if}">
-            <img class="photo-album-img-full{if $nrPortrait == 2} photo-album-img-full-portrait-margin{/if}" src="{$image.url}" title="{$image.title}" alt="{$image.alt_text}"/>
+            <picture class="photo-album-img-full{if $nrPortrait == 2} photo-album-img-full-portrait-margin{/if}">
+                <source media="(max-width: 768px)" srcset="{$image.url}&mobile=true">
+                <img src="{$image.url}" title="{$image.title}" alt="{$image.alt_text}"/>
+            </picture>
         </div>
     {/foreach}
 </div>

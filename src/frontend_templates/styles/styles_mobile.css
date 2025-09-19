@@ -51,7 +51,7 @@
         width: calc(50vw - 7px) !important;
     }
 
-    .photo-album-img-wrapper-full-portrait > img {
+    .photo-album-img-wrapper-full-portrait > picture {
         width: calc(50vw - 7px) !important;
     }
 
@@ -72,7 +72,7 @@
     }
 
     .blog #quote {
-        font-size: 0.8em;
+        font-size: 0.7em;
     }
 
     .homepage #quote {

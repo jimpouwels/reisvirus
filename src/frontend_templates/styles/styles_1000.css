@@ -149,6 +149,9 @@
 
     .default-img {
         margin-right: 0;
+    }
+
+    .default-img img {
         width: 100% !important;
     }
 
