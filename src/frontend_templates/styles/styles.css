@@ -1162,6 +1162,7 @@ table, th, td {
 
 #quote-wrapper {
     color: white;
+    width: 100%;
 }
 
 .page #quote-wrapper {
