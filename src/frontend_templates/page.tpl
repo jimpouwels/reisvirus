@@ -72,7 +72,13 @@
             {/if}
         </div>
         {if ($page.is_homepage || $noBannerPage) && !$hideTitlePage}
-            <div id="title"><h1>{$page.title}</h1></div>
+            <div id="title">
+                {if $page.is_homepage}
+                    <h2>{$page.title}</h2>
+                {else}
+                    <h1>{$page.title}</h1>
+                {/if}
+            </div>
         {/if}
         {assign var="oddEven" value="odd"}
         {foreach from=$page.element_groups item=element_group}

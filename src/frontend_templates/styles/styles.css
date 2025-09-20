@@ -1272,7 +1272,7 @@ h1 {
 }
 
 .blog .page-content .zelf-regelen-wrapper:not(:last-child) {
-    margin-bottom: 15px;
+    margin-bottom: 8px;
 }
 
 .blog .page-content .zelf-regelen-list {
@@ -1779,7 +1779,6 @@ li span {
 
 #top-wrapper {
     height: 100dvh;
-    min-height: 600px;
 }
 
 .no_banner #top-wrapper {
