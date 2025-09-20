@@ -163,6 +163,10 @@
         width: 60%;
     }
 
+    .bottom-blocks .right-block-green {
+        margin-bottom: 30px;
+    }
+
     .content h3 {
         font-size: 1.2em;
         font-weight: 800;
