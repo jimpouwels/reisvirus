@@ -1631,6 +1631,7 @@ li span {
 .photo-album {
     width: 100%;
     margin: auto;
+    margin-top: 30px;
 }
 
 .photo-album-clear {
