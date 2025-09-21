@@ -171,7 +171,7 @@
                                         </div>
                                     </div>
                                 {/if}
-                                {foreach from=$blocks.rechts item=block}
+                                {foreach from=$blocks.rechts|array_reverse item=block}
                                     {$block.to_string}
                                 {/foreach}
                             </div>
@@ -186,7 +186,7 @@
         {if isset($blocks.rechts)}
             <div class="bottom-blocks{if !$fullScreenPage} bottom-blocks-narrow{/if} {if $article}bottom-blocks-article{/if}">
                 {if isset($blocks.rechts)}
-                    {foreach from=$blocks.rechts item=block}
+                    {foreach from=$blocks.rechts|array_reverse item=block}
                         {$block.to_string}
                     {/foreach}
                 {/if}
