@@ -1747,12 +1747,12 @@ li span {
     line-height: 160%;
 }
 
-.page-content .table-of-contents {
+#right-content .table-of-contents .toc-title {
     display: none;
 }
 
-.page-content .table-of-contents a {
-    font-weight: 600;
+.page-content .table-of-contents {
+    display: none;
 }
 
 .page-content .external {

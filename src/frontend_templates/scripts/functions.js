@@ -27,6 +27,11 @@ $(document).ready(function () {
         onScroll();
         previousScrollDelta = scrollDelta;
     });
+
+    $('.page-content .table-of-contents span').on('click',() => {
+        $('.page-content .table-of-contents ul').toggleClass('collapsed');
+        $('.page-content .table-of-contents img').toggleClass('arrow-collapsed');
+    });
 });
 
 // RESPONDING TO ARTICLE COMMENTS

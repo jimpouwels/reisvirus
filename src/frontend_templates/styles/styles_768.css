@@ -176,10 +176,6 @@
         font-weight: 800;
     }
 
-    .page-content .table-of-contents h3 {
-        font-size: 1.5em;
-    }
-
     .separator-zelfregelen {
         overflow-y: auto;
         height: fit-content;

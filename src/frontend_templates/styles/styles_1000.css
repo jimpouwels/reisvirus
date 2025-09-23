@@ -50,6 +50,50 @@
 
     .page-content .table-of-contents {
         display: block;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-top: 10px;
+        width: 100%;
+        background-color: var(--lightgreen);
+        text-align: center;
+    }
+
+    .page-content .table-of-contents img {
+        width: 15px;
+        margin-left: 5px;
+        vertical-align: middle;
+    }
+
+    .page-content .table-of-contents h3 {
+        display: none;
+    }
+
+    .page-content .table-of-contents a {
+        font-weight: 600;
+    }
+
+    .page-content .table-of-contents .toc-title {
+        font-size: 1em;
+        text-align: center;
+        cursor: pointer;
+        margin-top: 0;
+        padding: 10px;
+        text-decoration: underline;
+    }
+
+    .page-content .table-of-contents .arrow-collapsed {
+        transform: scale(-1, -1);
+    }
+
+    .page-content .table-of-contents ul {
+        display: none;
+        margin: 0 15px;
+    }
+
+    .page-content .table-of-contents ul.collapsed {
+        display: block;
+        padding-bottom: 10px;
+        margin-top: 10px;
     }
 
     .destinations {
