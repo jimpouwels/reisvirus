@@ -374,7 +374,7 @@ h2 {
     margin-top: 25px;
     margin-bottom: 10px;
     font-size: 2.1em;
-    font-weight: 900;
+    font-weight: 800;
     line-height: 1.3em;
     clear: both;
 }
@@ -901,7 +901,7 @@ h3 {
 .separator-zelfregelen {
     width: fit-content;
     overflow: auto;
-    margin: 40px auto auto;
+    margin: 20px auto auto;
 }
 
 .zelfregelen-container {
