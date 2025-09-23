@@ -199,14 +199,6 @@ html {
     margin-top: 15px;
 }
 
-#crumb_path {
-    margin-top: 20px;
-}
-
-#crumb_path a {
-    font-weight: 600;
-}
-
 .error-field {
     border: 1px solid red;
 }

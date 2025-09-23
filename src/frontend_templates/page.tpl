@@ -90,21 +90,6 @@
             <div class="content-top-{$oddEven} content-top">
                 <div class="content-wrapper content-wrapper{if $fullScreenPage} fullscreen_page{else} page_with_right_block{/if}">
                     <div class="page-content content">
-                        {if !$fullScreenPage}
-                            {if count($crumb_path) > 1}
-                                <div id="crumb_path">
-                                    {foreach from=$crumb_path item=crumb_path_item name=crumb_path_item}
-                                        <span class="crumb_path_item">
-                                            <a title="{$crumb_path_item.title}"
-                                               href="{$crumb_path_item.url}">{$crumb_path_item.title}</a>
-                                            {if !$smarty.foreach.crumb_path_item.last}
-                                                <span>/</span>
-                                            {/if}
-                                        </span>
-                                    {/foreach}
-                                </div>
-                            {/if}
-                        {/if}
                         {if $article}
                             {$article.to_string}
                         {else}

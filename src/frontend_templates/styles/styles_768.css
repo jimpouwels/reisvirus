@@ -206,4 +206,8 @@
         font-weight: 600;
     }
 
+    .blog .page-content .zelf-regelen-value a {
+        font-size: 0.9em;
+    }
+
 }
