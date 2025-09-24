@@ -826,6 +826,10 @@ h3 {
     overflow: auto;
 }
 
+.right-block-green p {
+    line-height: 1.5em;
+}
+
 .right-block-wrapper {
     padding: 10px 10px 20px;
     color: white;
