@@ -50,8 +50,8 @@
 
     .page-content .table-of-contents {
         display: block;
-        padding-top: 5px;
-        padding-bottom: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
         margin-top: 10px;
         width: 100%;
         background-color: var(--lightgreen);
@@ -92,7 +92,6 @@
 
     .page-content .table-of-contents ul.collapsed {
         display: block;
-        padding-bottom: 10px;
         margin-top: 10px;
     }
 
