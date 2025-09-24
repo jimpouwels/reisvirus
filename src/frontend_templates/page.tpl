@@ -80,24 +80,46 @@
                 {/if}
             </div>
         {/if}
-        {assign var="oddEven" value="odd"}
-        {foreach from=$page.element_groups item=element_group}
-            {if $oddEven == 'even'}
-                {assign var=oddEven value="odd"}
-            {else}
-                {assign var=oddEven value="even"}
-            {/if}
-            <div class="content-top-{$oddEven} content-top">
-                <div class="content-wrapper content-wrapper{if $fullScreenPage} fullscreen_page{else} page_with_right_block{/if}">
+
+        {if $fullScreenPage}
+            {assign var="oddEven" value="odd"}
+            {foreach from=$page.element_groups item=element_group}
+                {if $oddEven == 'even'}
+                    {assign var=oddEven value="odd"}
+                {else}
+                    {assign var=oddEven value="even"}
+                {/if}
+                <div class="content-top-{$oddEven} content-top">
+                    <div class="content-wrapper content-wrapper fullscreen_page">
+                        <div class="page-content content">
+                            {if $article}
+                                {$article.to_string}
+                            {else}
+                                {foreach from=$element_group item=element}
+                                    {$element.to_string}
+                                {/foreach}
+                            {/if}
+                        </div>
+                    </div>
+                </div>
+                {if $page.is_homepage}
+                    {$blocks.uitgelicht[0].to_string}
+                {/if}
+            {/foreach}
+        {else}
+            <div class="content-top">
+                <div class="content-wrapper content-wrapper page_with_right_block">
                     <div class="page-content content">
                         {if $article}
                             {$article.to_string}
                         {else}
-                            {foreach from=$element_group item=element}
-                                {$element.to_string}
+                            {foreach from=$page.element_groups item=element_group}
+                                {foreach from=$element_group item=element}
+                                    {$element.to_string}
+                                {/foreach}
                             {/foreach}
                         {/if}
-                        {if $article && !$fullScreenPage}
+                        {if $article}
                             <p class="affeliate-notice">Het kan zijn dat dit artikel affiliate links bevat. Wanneer je via deze links iets boekt zorgt dat ervoor dat wij een kleine commissie ontvangen. Jij maakt hiervoor natuurlijk geen extra kosten! Door op deze manier te boeken help je ons om deze website mogelijk te maken en kunnen we je blijven voorzien van de nieuwste reisinspiratie! Groetjes, Jim en Quirine.</p>
                         {/if}
                         {if $article && $article.comment_webform}
@@ -134,40 +156,36 @@
                             </div>
                         {/if}
                     </div>
-                    {if !$fullScreenPage}
-                        <div id="right-content" class="content right-content-size">
-                            <div id="right-content-sticker">
-                                {assign var=tocElement value=''}
-                                {if $article}
-                                    {foreach from=$article.element_groups item=element_group}
-                                        {foreach from=$element_group item=element}
-                                            {if $element.type == 'table_of_contents_element'}
-                                                {assign var="tocFound" value=true}
-                                                {assign var=tocElement value=$element}
-                                            {/if}
-                                        {/foreach}
+                    <div id="right-content" class="content right-content-size">
+                        <div id="right-content-sticker">
+                            {assign var=tocElement value=''}
+                            {if $article}
+                                {foreach from=$article.element_groups item=element_group}
+                                    {foreach from=$element_group item=element}
+                                        {if $element.type == 'table_of_contents_element'}
+                                            {assign var="tocFound" value=true}
+                                            {assign var=tocElement value=$element}
+                                        {/if}
                                     {/foreach}
-                                {/if}
-                                {if $tocElement}
-                                    <div class="right-block-wrapper" id="toc-block-wrapper">
-                                        <h3>{$tocElement.title}</h3>
-                                        <div class="right-block toc-block">
-                                            {$tocElement.to_string}
-                                        </div>
-                                    </div>
-                                {/if}
-                                {foreach from=$blocks.rechts|array_reverse item=block}
-                                    {$block.to_string}
                                 {/foreach}
-                            </div>
+                            {/if}
+                            {if $tocElement}
+                                <div class="right-block-wrapper" id="toc-block-wrapper">
+                                    <h3>{$tocElement.title}</h3>
+                                    <div class="right-block toc-block">
+                                        {$tocElement.to_string}
+                                    </div>
+                                </div>
+                            {/if}
+                            {foreach from=$blocks.rechts|array_reverse item=block}
+                                {$block.to_string}
+                            {/foreach}
                         </div>
-                    {/if}
+                    </div>
                 </div>
             </div>
-        {/foreach}
-        {if $page.is_homepage}
-            {$blocks.uitgelicht[0].to_string}
         {/if}
+
         {if isset($blocks.rechts)}
             <div class="bottom-blocks{if !$fullScreenPage} bottom-blocks-narrow{/if} {if $article}bottom-blocks-article{/if}">
                 {if isset($blocks.rechts)}
