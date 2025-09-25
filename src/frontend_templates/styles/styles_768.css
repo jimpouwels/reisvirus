@@ -116,6 +116,10 @@
         margin-left: 15px;
     }
 
+    .over_ons_intro_title {
+        font-size: 1.5em;
+    }
+
     .blog #quote-wrapper {
         margin-bottom: 10% !important;
     }
@@ -210,4 +214,13 @@
         font-size: 0.9em;
     }
 
+    .image-element-right img {
+        width: 100%;
+        float: initial;
+    }
+
+    .image-element-left img {
+        width: 100%;
+        float: initial;
+    }
 }

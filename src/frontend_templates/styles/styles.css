@@ -407,8 +407,23 @@ h3 {
 #title h1 {
     color: #000000;
     text-align: center;
-    font-weight: 900;
-    font-size: 2.5em;
+    font-weight: 800;
+    font-size: 2.1em;
+    margin-top: 25px;
+}
+
+.over_ons_page #title {
+    display: none;
+}
+
+.over_ons_intro_title {
+    text-align: left;
+    font-weight: 700;
+    font-size: 2.1em;
+    margin-bottom: -10px;
+}
+
+.over_ons_page .content-top {
     margin-top: 25px;
 }
 
@@ -1591,8 +1606,15 @@ li span {
     margin-right: 4%;
 }
 
-.default-img-circle {
+.image-element-right img {
     border-radius: 25px;
+    width: 48%;
+    float: right;
+}
+
+.image-element-left img {
+    width: 48%;
+    float: left;
 }
 
 .destinations:not(:first-child) {
