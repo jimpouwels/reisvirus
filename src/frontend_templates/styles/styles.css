@@ -925,12 +925,7 @@ h3 {
     gap: 40px;
 }
 
-.zelfregelen-container > .img-default-container img {
-    width: 100%;
-    margin-top: 0;
-}
-
-.zelfregelen-container > div {
+.zelfregelen-container > picture {
     max-width: 400px;
 }
 
@@ -952,10 +947,6 @@ h3 {
 .separator-zelfregelen .zelf-regelen-icon img {
     filter: invert(1);
     width: 25px;
-}
-
-.separator-zelfregelen .default-img-left {
-    margin-top: 0;
 }
 
 .right-block .zelf-regelen-wrapper:not(:last-child) {
@@ -1596,14 +1587,6 @@ li span {
 
 .paragraph-center {
     text-align: center;
-}
-
-.default-img {
-    margin-top: 20px;
-}
-
-.default-img-left {
-    margin-right: 4%;
 }
 
 .image-element-right img {
