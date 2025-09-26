@@ -1006,7 +1006,7 @@ h3 {
 #toc-block-wrapper h3 {
     color: white !important;
     background-color: var(--green);
-    width: 100px;
+    width: fit-content;
     padding: 5px 10px;
     margin: -25px auto 15px !important;
 }
@@ -1307,7 +1307,7 @@ h1 {
 }
 
 .blog .page-content .zelf-regelen-list {
-    margin-bottom: 25px;
+    margin-bottom: 35px;
     overflow:auto;
  }
 
