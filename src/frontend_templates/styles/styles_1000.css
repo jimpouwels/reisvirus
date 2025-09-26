@@ -78,6 +78,9 @@
         cursor: pointer;
         margin-top: 0;
         padding: 10px;
+    }
+
+    .page-content .table-of-contents .toc-title:hover {
         text-decoration: underline;
     }
 
