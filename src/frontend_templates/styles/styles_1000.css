@@ -82,6 +82,7 @@
 
     .page-content .table-of-contents .toc-title:hover {
         text-decoration: underline;
+        text-underline-offset: 4px;
     }
 
     .page-content .table-of-contents .arrow-collapsed {
