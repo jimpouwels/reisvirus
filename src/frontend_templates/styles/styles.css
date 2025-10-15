@@ -1011,6 +1011,7 @@ h3 {
     font-weight: 700 !important;
     padding: 5px 10px;
     margin: -25px auto 15px !important;
+    border-radius: 5px !important;
 }
 
 #toc-block-wrapper li::marker {
