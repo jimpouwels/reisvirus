@@ -888,7 +888,13 @@ h3 {
 
 .right-block-zelf-regelen {
     box-shadow: none;
-    padding-left: 0;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.right-block-zelf-regelen .right-block {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 
 .right-block-zelf-regelen h3, .right-block-zelf-regelen a {
