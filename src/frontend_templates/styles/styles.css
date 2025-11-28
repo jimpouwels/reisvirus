@@ -850,6 +850,10 @@ h3 {
     width: 35%;
 }
 
+.bottom-blocks .right-block-green {
+    text-align: left;
+}
+
 .bottom-blocks h3 {
     color: white;
 }
@@ -860,6 +864,7 @@ h3 {
 
 .right-block-green {
     margin-top: 15px !important;
+    text-align: center;
 }
 
 .bottom-blocks-narrow {
@@ -879,7 +884,6 @@ h3 {
     color: white;
     font-weight: 600;
     border-radius: 10px;
-    box-shadow: 0 10px 30px 0 rgb(0 0 0 / 10%);
 }
 
 .right-block-green {
@@ -1001,8 +1005,9 @@ h3 {
 }
 
 #toc-block-wrapper {
-    background-color: white;
+    background-color: var(--verylightgreen);
     margin-top: 15px;
+    border-radius: 0px !important;
 }
 
 #toc-block-wrapper a {
@@ -1013,9 +1018,9 @@ h3 {
     color: white !important;
     background-color: var(--green);
     width: fit-content;
-    font-size: 1.1em !important;
+    font-size: 1.0em !important;
     font-weight: 700 !important;
-    padding: 5px 10px;
+    padding: 10px 15px;
     margin: -25px auto 15px !important;
     border-radius: 5px !important;
 }
