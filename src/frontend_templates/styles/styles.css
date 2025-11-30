@@ -749,7 +749,6 @@ h3 {
 }
 
 .right-block {
-    height: fit-content;
     padding-right: 10px;
     padding-left: 10px;
 }
@@ -860,6 +859,10 @@ h3 {
 
 .bottom-blocks .right-block {
     max-height: none;
+}
+
+.bottom-blocks .zelf-regelen-value {
+    font-weight: 600;
 }
 
 .right-block-green {
