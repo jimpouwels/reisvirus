@@ -580,7 +580,7 @@ h3 {
     top: 50px;
     opacity: 0;
     visibility: hidden;
-    width: fit-content;
+    width: 850px;
     border-top: 22px solid rgba(255, 255, 255, .0);
     -webkit-background-clip: padding-box; /* for Safari */
     background-clip: padding-box;
