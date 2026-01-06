@@ -953,6 +953,7 @@ h3 {
 
 .separator-zelfregelen {
     width: fit-content;
+    max-width: 70%;
     overflow: auto;
     margin: 20px auto auto;
 }
@@ -1000,6 +1001,10 @@ h3 {
 
 .zelf-regelen-list > .zelf-regelen-wrapper:not(:last-child) {
     margin-bottom: 20px;
+}
+
+.page .zelf-regelen-list {
+    max-width: 400px;
 }
 
 .fullscreen_page .zelf-regelen-wrapper p {
@@ -1325,7 +1330,7 @@ h1 {
 
 .blog .page-content .zelf-regelen-list {
     margin-bottom: 35px;
-    overflow:auto;
+    overflow: auto;
  }
 
 li::marker {
