@@ -913,6 +913,10 @@ h3 {
     font-size: 1.4em;
 }
 
+#right-content .toc-block {
+    max-height: 400px !important;
+}
+
 .toc-block {
     overflow: auto;
 }

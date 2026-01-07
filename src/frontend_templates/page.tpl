@@ -24,7 +24,9 @@
     <include template="partials/head.tpl" />
 </head>
 <body>
-    <include template="partials/google-tag-manager-body-include.tpl" />
+    {if !$is_preview}
+        <include template="partials/google-tag-manager-body-include.tpl" />
+    {/if}
     <div id="root-wrapper" class="{$classes}{if $page.is_homepage} homepage{/if}">
         <include template="partials/mobile-navigation.tpl" />
         <div class="mobile-hamburger-menu"><a href="#" onclick="return false;"><img

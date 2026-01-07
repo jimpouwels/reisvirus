@@ -1,5 +1,7 @@
 <include template="partials/google-cookie-consent-setdefault-script.tpl" />
-<include template="partials/google-tag-manager-include.tpl" />
+{if !$is_preview}
+    <include template="partials/google-tag-manager-include.tpl" />
+{/if}
 <include template="partials/travelpayouts.tpl" />
 
 <title>{if $page.is_homepage}Reisvirus • Jouw droomreis begint hier!{else}{if $article}{if $article.title}{$article.title}{else}{$article.title}{/if}{else}{$page.title}{/if}{/if}</title>
