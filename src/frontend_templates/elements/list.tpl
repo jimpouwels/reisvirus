@@ -2,7 +2,7 @@
 {if $title}
     <{$titleTag}>{$title}</{$titleTag}>
 {/if}
-<ul>
+<ul class="list-element">
     {foreach from=$items item=item}
         <li><span>{$item}</span></li>
     {/foreach}

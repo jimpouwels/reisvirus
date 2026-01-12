@@ -1295,6 +1295,10 @@ h1 {
     padding-left: 25px;
 }
 
+.page-content .list-element li {
+    line-height: 2.1em;
+}
+
 .page-content li {
     line-height: 1.8em;
     text-align: left !important;
