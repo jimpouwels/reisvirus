@@ -1825,6 +1825,10 @@ li span {
     display: none;
 }
 
+.page-content a {
+    font-weight: 800;
+}
+
 .page-content .external {
     background-origin: padding-box;
     border-radius: 5px;
