@@ -16,3 +16,5 @@
 These components are hierchically loaded by the cms and all the smarty references (starting with $), are loaded in the obcato cms.
 
 The css (/styles) and scrips (/scripts) are also templates, but rendered differently. It's not part of the cms data, and therefore loaded as an include from another template. This also holds for /partials.
+
+Responsiveness is dealth with in /styles/styles_<width>.css.

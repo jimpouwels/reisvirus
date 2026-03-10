@@ -335,4 +335,9 @@
         margin-top: 0;
     }
 
+    /* Footer responsive */
+    .footer-main {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
 }
