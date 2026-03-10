@@ -91,13 +91,15 @@ $(document).ready(function () {
 
 // CATEGORY SELECTOR
 $(document).ready(() => {
-    $('.category').first().css('display', 'flex');
+    const displayValue = window.innerWidth <= 768 ? 'block' : 'flex';
+    $('.category').first().css('display', displayValue);
 });
 
 function showCategory(term) {
+    const displayValue = window.innerWidth <= 768 ? 'block' : 'flex';
     $('.category').each((_, element) => {
         if ($(element).hasClass('category-selector-' + term)) {
-            $(element).css('display', 'flex');
+            $(element).css('display', displayValue);
         } else {
             $(element).css('display', 'none');
         }

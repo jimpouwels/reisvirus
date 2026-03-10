@@ -45,6 +45,10 @@
         display: block;
     }
 
+    .blogposts-wrapper.category {
+        display: none;
+    }
+
     .blogposts .blogpost:not(:first-child) {
         margin: 0;
         margin-top: 20px;

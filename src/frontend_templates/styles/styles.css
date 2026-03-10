@@ -1327,48 +1327,6 @@ table, th, td {
     font-style: italic;
 }
 
-#contact-panes {
-    margin: auto;
-}
-
-#footer-content p {
-    clear: both;
-}
-
-#attributions {
-    color: gray;
-    font-size: 0.7em;
-}
-
-#copyright {
-    margin-bottom: 5px;
-}
-
-#copyright a {
-    color: var(--green);
-    text-decoration: none;
-    text-underline-offset: 4px;
-}
-
-#copyright a:hover {
-    text-decoration: underline;
-}
-
-#powered-by {
-    font-style: italic;
-    font-size: 0.8em;
-    color: #000000;
-}
-
-#powered-by a {
-    text-decoration: none;
-    color: var(--green)
-}
-
-#powered-by a:hover {
-    text-decoration: underline;
-}
-
 #quote-wrapper {
     color: white;
     width: 100%;
