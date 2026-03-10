@@ -27,7 +27,6 @@
             </div>
             
             <div class="footer-column footer-navigation">
-                <h4>Menu</h4>
                 <nav class="footer-main-nav" aria-label="Footer hoofdnavigatie">
                     {foreach from=$root_page.children item=navigation_item}
                         {if $navigation_item.show_in_navigation}

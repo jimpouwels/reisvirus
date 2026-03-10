@@ -1239,21 +1239,34 @@ table, th, td {
     color: var(--green);
 }
 
+.footer-navigation {
+    margin-top: 50px;
+}
+
 .footer-main-nav {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 12px;
+    align-items: flex-start;
 }
 
 .footer-main-nav a {
-    color: #555555;
+    color: var(--green);
+    background-color: var(--lightgreen);
     text-decoration: none;
     font-size: 0.95em;
-    transition: color 0.3s ease;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    width: auto;
 }
 
 .footer-main-nav a:hover {
-    color: var(--green);
+    background-color: #c5e8d3;
+    transform: translateY(-2px);
 }
 
 .social-media {

@@ -344,4 +344,8 @@
         grid-template-columns: 1fr;
         gap: 40px;
     }
+
+    .footer-navigation {
+        margin-top: 0;
+    }
 }

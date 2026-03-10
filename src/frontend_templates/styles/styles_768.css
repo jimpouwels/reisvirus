@@ -281,8 +281,13 @@
         gap: 12px;
     }
 
+    .footer-navigation {
+        margin-top: 20px;
+    }
+
     .footer-main-nav {
         gap: 10px;
+        justify-content: center;
     }
 
     .footer-main-nav a {
