@@ -237,7 +237,7 @@
         margin-top: 0;
     }
 
-    .fullscreen_page .blogposts-wrapper .blogpost, #bottom-blocks-wrapper .blogpost {
+    .fullscreen_page .blogposts-wrapper .blogpost {
         max-width: 48%;
     }
 
@@ -314,9 +314,13 @@
         height: 40px;
     }
 
-    #footer #footer-content {
-        width: 100%;
-        margin: auto;
+    #footer {
+        padding: 60px 0 0;
+    }
+
+    #footer-content {
+        max-width: 100%;
+        padding: 0 20px;
     }
 
     #contact-panes {

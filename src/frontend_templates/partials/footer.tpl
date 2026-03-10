@@ -26,9 +26,15 @@
                 </div>
             </div>
             
-            <div class="footer-column footer-contact">
-                <h4>Contact</h4>
-                <a href="mailto:info@reisvirus.com" class="footer-email" title="Stuur ons een email">info@reisvirus.com</a>
+            <div class="footer-column footer-navigation">
+                <h4>Menu</h4>
+                <nav class="footer-main-nav" aria-label="Footer hoofdnavigatie">
+                    {foreach from=$root_page.children item=navigation_item}
+                        {if $navigation_item.show_in_navigation}
+                            <a title="{$navigation_item.navigation_title}" href="{$navigation_item.url}">{$navigation_item.navigation_title}</a>
+                        {/if}
+                    {/foreach}
+                </nav>
             </div>
         </div>
         
