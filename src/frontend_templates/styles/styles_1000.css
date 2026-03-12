@@ -50,19 +50,18 @@
     }
 
     .page-content .table-of-contents {
-        display: block;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        display: inline-block;
+        padding: 0;
         margin-top: 10px;
-        width: 100%;
         background-color: var(--lightgreen);
-        text-align: center;
+        text-align: left;
     }
 
     .page-content .table-of-contents img {
         width: 15px;
         margin-left: 5px;
-        vertical-align: middle;
+        vertical-align: text-bottom;
+        transition: transform 0.3s ease;
     }
 
     .page-content .table-of-contents h3 {
@@ -75,15 +74,18 @@
 
     .page-content .table-of-contents .toc-title {
         font-size: 1em;
-        text-align: center;
+        text-align: left;
         cursor: pointer;
         margin-top: 0;
         padding: 10px;
+        display: inline-flex;
+        align-items: center;
+        white-space: nowrap;
+        font-weight: 600;
     }
 
     .page-content .table-of-contents .toc-title:hover {
-        text-decoration: underline;
-        text-underline-offset: 4px;
+        text-decoration: none;
     }
 
     .page-content .table-of-contents .arrow-collapsed {
@@ -91,13 +93,23 @@
     }
 
     .page-content .table-of-contents ul {
-        display: none;
-        margin: 0 15px;
+        margin: 0;
+        padding: 0 15px 0 35px;
+        text-align: left;
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        width: 0;
+        white-space: nowrap;
+        transition: max-height 0.35s ease, opacity 0.3s ease, padding 0.3s ease, width 0.25s ease 0.35s;
     }
 
     .page-content .table-of-contents ul.collapsed {
-        display: block;
-        margin-top: 10px;
+        max-height: 1000px;
+        opacity: 1;
+        padding-bottom: 10px;
+        width: auto;
+        transition: width 0.25s ease, max-height 0.35s ease 0.25s, opacity 0.3s ease 0.25s, padding 0.3s ease 0.25s;
     }
 
     .destinations {
