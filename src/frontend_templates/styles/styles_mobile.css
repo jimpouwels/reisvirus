@@ -67,6 +67,12 @@
         font-size: 0.9em !important;
     }
 
+    .page-content table,
+    .page-content td,
+    .page-content th {
+        font-size: 0.9em !important;
+    }
+
     #quote h1 {
         font-size: 2em;
     }
