@@ -4,7 +4,7 @@
 {/if}
 <include template="partials/travelpayouts.tpl" />
 
-<title>{if $page.is_homepage}Reisvirus • Jouw droomreis begint hier!{else}{if $article}{if $article.title}{$article.title}{else}{$article.title}{/if}{else}{$page.title}{/if}{/if}</title>
+<title>{if $page.is_homepage}Reisvirus • Jouw droomreis begint hier!{else}{if $article}{$article.title}{else}{$page.title}{/if}{/if}</title>
 <meta name="keywords"
       content="{if $keywords}{$keywords}, {/if}{$page.title}, Reisvirus, reizen, travel, rondreis, zelf organiseren" />
 <meta name="description" content="{$meta_description}" />
