@@ -73,7 +73,7 @@
                 <include template="partials/banner.tpl" />
             {/if}
         </div>
-        {if ($page.is_homepage || $noBannerPage) && !$hideTitlePage}
+        {if ($noBannerPage) && !$hideTitlePage}
             <div id="title">
                 {if $page.is_homepage}
                     <h2>{$page.title}</h2>
