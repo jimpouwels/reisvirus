@@ -32,6 +32,24 @@
         float: initial;
     }
 
+    .paragraph, .country-tip-block {
+        font-size: 1.0em !important;
+    }
+
+    .separator-zelfregelen .zelf-regelen-value {
+        font-size: 1.0em !important;
+    }
+
+    .page-content ul li {
+        font-size: 1.0em !important;
+    }
+
+    .page-content table,
+    .page-content td,
+    .page-content th {
+        font-size: 1.0em !important;
+    }
+
     #article-comment-form {
         width: 100%;
     }
@@ -216,10 +234,6 @@
 
     .page_with_right_block .page-content .zelf-regelen-value a {
         font-weight: 600;
-    }
-
-    .blog .page-content .zelf-regelen-value a {
-        font-size: 0.9em;
     }
 
     .image-element-right img {
