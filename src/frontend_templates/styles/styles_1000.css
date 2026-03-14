@@ -100,7 +100,6 @@
         overflow: hidden;
         opacity: 0;
         width: 0;
-        white-space: nowrap;
         transition: max-height 0.35s ease, opacity 0.3s ease, padding 0.3s ease, width 0.25s ease 0.35s;
     }
 
@@ -109,6 +108,8 @@
         opacity: 1;
         padding-bottom: 10px;
         width: auto;
+        max-width: calc(100vw - 40px);
+        white-space: normal;
         transition: width 0.25s ease, max-height 0.35s ease 0.25s, opacity 0.3s ease 0.25s, padding 0.3s ease 0.25s;
     }
 
